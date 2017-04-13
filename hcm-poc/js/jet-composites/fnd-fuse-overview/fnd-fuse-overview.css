@@ -1,0 +1,97 @@
+.ocaj-fuse-page-tabs.oj-tabs-icon-only > .oj-tabs-nav-root > .oj-tabs-tab.oj-selected{
+    border-color: #d1d1d1;   
+}
+
+html:not([dir="rtl"]) .ocaj-fuse-page-tabs > .oj-tabs-panel{
+    border-radius: 3px;   
+}
+
+/* Demo Classes only*/
+.demo-fuse-tabs-opportunities:before{
+    content: url('../../../images/func_briefcasecash_24_ena.png')
+}
+
+.oj-selected .demo-fuse-tabs-opportunities:before {
+    content: url('../../../images/func_briefcasecash_24_ovr.png')
+}
+
+.demo-springboard .oj-navigationlist-listview-container{
+    text-align: center;
+}
+
+.demo-springboard .oj-navigationlist-item{
+    opacity: 0.4;
+}
+
+.demo-springboard .oj-navigationlist-item.oj-hover{
+    background-color: transparent;
+}
+
+.demo-springboard .oj-navigationlist-item.oj-selected,
+.demo-springboard .oj-navigationlist-item.oj-hover{
+    opacity: 1;
+}
+
+
+
+
+/* infolet related style classes to be reviewed later */
+.infolet-container{
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .35);
+    float: left;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.infolet-header{
+    font-weight: bold;
+    text-align: start;
+    padding: 5px 0 0 10px;
+}
+
+.oj-masonrylayout-tile-1x1{
+    width: 160px;
+    height: 160px;
+}
+
+.oj-masonrylayout-tile-2x1{
+    width: 330px;
+    height: 160px; 
+}
+
+.ocaj-dashboard-icon{
+    display: inline-block;
+}
+
+.ocaj-dashboard-icon .suiicon{
+    width: 32px;
+    height: 32px;
+}
+
+.ocaj-dashboard-icon svg{
+    opacity: 0.5;
+    transform: scale(0.9);
+    background-color: transparent;
+    fill: var();
+}
+
+.ocaj-dashboard-icon .svg-cluster,
+.ocaj-dashboard-icon .svg-shortcut{
+    display: none;
+}
+
+.ocaj-dashboard-icon:hover svg{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: none !important;
+}
+
+.ocaj-dashboard-icon-selected svg{
+    opacity: 1;
+    transform: scale(1);
+}
+.ocaj-dashboard-icon svg .svg-icon08{
+    fill: var(--GLOBAL_REGION_LABEL_COLOR, #2e444c);
+}

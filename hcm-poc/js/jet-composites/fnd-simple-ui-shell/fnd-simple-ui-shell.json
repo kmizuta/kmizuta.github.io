@@ -1,0 +1,34 @@
+{
+    "properties": {
+        "homeRendered": {
+            "type": "boolean",
+            "value": true,
+            "descriptions": "Whether home icon is rendered"
+        },
+        "navigatorRendered": {
+            "type": "boolean",
+            "value": true,
+            "descriptions": "Whether navigator is rendered"
+        },
+        "searchRendered": {
+            "type": "boolean",
+            "value": true,
+            "descriptions": "Whether search is rendered"
+        },
+        "watchlistRendered": {
+            "type": "boolean",
+            "value": true,
+            "descriptions": "Whether search is rendered"
+        },
+        "notificationRendered": {
+            "type": "boolean",
+            "value": true,
+            "descriptions": "Whether notification is rendered"
+        },
+        "userMenuRendered": {
+            "type": "boolean",
+            "value": true,
+            "descriptions": "Whether user menu is rendered"
+        }
+    }
+}

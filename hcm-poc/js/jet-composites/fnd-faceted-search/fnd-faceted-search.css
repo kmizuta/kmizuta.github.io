@@ -1,0 +1,198 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 4, 2017, 9:39:15 AM
+    Author     : saurameh
+*/
+.ocaj-fs-arrow-expanded{
+    background-image: url(images/func_arrowmovedown_16_ena.png);
+    width: 20px;
+    height: 20px;
+}
+
+.ocaj-fs-arrow-expanded:hover{
+    background-image: url(images/func_arrowmovedown_16_act.png);
+}
+
+.ocaj-fs-arrow-collapsed{
+    background-image: url(images/func_arrowmoveleft_16_rtl_ena.png);
+}
+
+.ocaj-fs-arrow-collapsed:hover{
+    background-image: url(images/images/func_arrowmoveleft_16_rtl_act.png);
+}
+
+.ocaj-fs-separator{
+    background-image: url(images/seperator_img.png);
+    width: 2px;
+    height: 17px;
+    margin: -3px 3px;
+}
+
+.ocaj-fs-clear-search{
+    background-image: url(images/close_ena.png);
+    width:16px;
+    height:16px;
+    margin-top: 2px;
+}
+
+.ocaj-fs-clear-search:hover{
+    background-image: url(images/close_ena.png);
+    width:16px;
+    height:16px;
+    margin-top: 2px;
+}
+
+.ocaj-fs-search-icon:before {
+  content: "\e986";
+}
+
+.ocaj-fs-setting-icon:before {
+  content: url(images/func_gear_16_ena.png);
+}
+
+.ocaj-fs-setting-icon:before:hover {
+  content: url(images/func_gear_16_act.png);
+}
+
+/*fnd-faceted-search .oj-inputsearch-search-icon{
+    display: none;
+}*/
+
+.ocaj-fs-filterPanel{
+    left: 0px;
+}
+
+.ocaj-fs-stickey-filter{
+    position: fixed;
+    padding: 5px 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 5px #aaa, 0px -2px 5px #aaa;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+fnd-faceted-search .text-normal-3{
+    background-color: #dedede;
+}
+
+fnd-faceted-search .background-lightgray{
+    background-color: #f4f4f4;
+}
+
+.border-radius{
+    border-radius: 5px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.vertical-middle{
+    vertical-align: middle;
+}
+
+.overflow-ellipses{
+    background-image: url(images/func_ellipses_24_act.png);
+    width: 24px;
+    height: 24px;
+}
+
+.overflow-ellipses:hover{
+    background-image: url(images/func_ellipses_24_hov.png);
+    width: 24px;
+    height: 24px;
+}
+
+.filter-text-overflow{
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.ocaj-fs-add-icon{
+    background-image: url(images/func_add_16_ena.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.ocaj-fs-copy-icon{
+    content: url(images/func_receipt_32_ena.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.ocaj-fs-edit-icon{
+    content: url(images/func_pencil_24_ena.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.ocaj-fs-remove-icon{
+    content: url(images/func_remove_16_ena.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.ocaj-fs-summary-icon{
+    content: url(images/func_summary_32_ena.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.ocaj-fs-close-icon {
+    background-image: url(images/fuse-icon-close-banner.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+.oj-buttonset-multi.oj-button-outlined-chrome .oj-button{
+    border-right-width: 1px;
+    border-radius: 5px !important;
+}
+
+.oj-button.oj-selected.oj-button-outlined-chrome{
+    color: #000;
+    font-weight: bold;
+    background-color: lightblue;
+    border-width: 2px;
+    border-color: #0572ce !important;
+    border-radius: 5px !important;
+}
+
+.oj-button.oj-selected.oj-hover.oj-button-outlined-chrome{
+    color: #0572ce;
+    font-weight: bold;
+    background-color: lightblue;
+    border-width: 2px;
+    border-color: #0572ce !important;
+    border-radius: 5px !important;
+}
+
+fnd-faceted-search .oj-fwk-icon-clock:before{
+    content: url(images/us_qualifier.png);
+}

@@ -1,0 +1,19 @@
+fnd-card-list-form-layout:not(.oj-complete){
+    visibility: hidden;
+}
+
+fnd-card-list-form-layout .oj-listview.oj-focus-ancestor .oj-listview-item.oj-focus{
+    outline: none;
+    background-color: white;
+    border: none;
+}
+
+fnd-card-list-form-layout .oj-listview-item.oj-hover{
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 1009px) {
+    .sortBy{
+        display: none;
+    }
+}

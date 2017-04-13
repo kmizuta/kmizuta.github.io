@@ -1,0 +1,64 @@
+<div id="_FAO_container" data-bind="css:  ($root.selectedNodeId() == undefined || $root.selectedNodeId() == '') ? '': 'ocaj-application-container-width' ">
+    <!-- ko if: null !== $props.homePageDashboards && $props.homePageDashboards.length > 0 && ! $root.isMobileView() && ! stripNodeList().length > 0-->
+    <div class="ocaj-application-container-width" style="text-align: center;">
+        <a href="#" class="ocaj-dashboard-icon" 
+           data-bind="click: showSelectedDashboard.bind(null, -1), css: selectedDashboard() == -1 ? 'ocaj-dashboard-icon-selected' : '' ">
+            <img id="_UIShell_pagination_icon" data-icon="navi_pagination" class="suiicon" title="pagination" alt="home">
+        </a>
+        <!-- ko foreach: $props.homePageDashboards -->
+        <a href="#" class="ocaj-dashboard-icon" 
+           data-bind="click: $parent.showSelectedDashboard.bind($data, $index()), css: ($parent.selectedDashboard() == $index()) ? 'ocaj-dashboard-icon-selected' : '' ">
+            <img id="_UIShell_pagination_icon_infolets" data-icon="navi_pagination" class="suiicon" title="pagination" alt="infolets">
+        </a>
+
+        <!-- /ko -->
+    </div>
+    <!-- /ko -->
+
+    <!-- ko if: selectedDashboard() == -1 || stripNodeList().length > 0-->
+    <!-- ko if: ! $root.isMobileView() -->
+
+    <!-- ko if: $root.selectedNodeId() == undefined || $root.selectedNodeId() == ''-->
+    <fnd-osn-panel style="    margin-bottom: 15px; display: block;" vertical-alignment="false"></fnd-osn-panel>
+    <!-- /ko -->
+    <fnd-springboard id="ocaj-fnd-grid" data="{{ $root.navigatorData }}" data-bind="attr: {style: showDetail() ? 'display: none' : 'margin: 0 auto; display: block;'}"
+                     action-callback="{{ $root.gridSelectionCallback }}" filmstrip-mode=""></fnd-springboard>
+    <!-- /ko -->
+    <!-- ko if: ! showDetail() -->
+    <!-- ko foreach: stripNodeList() -->
+    <!-- ko if: $data.id == $parent.currenStriptNodeId() && $data.module.length > 1-->
+    <div id="_FAO_tabs" class="oj-tabs-icon-only" data-bind="ojComponent:{component: 'ojTabs', 
+                                                                    rootAttributes: {class: 'ocaj-fuse-page-tabs'},
+                                                                    optionChange: $parent._optionChangeHandler,
+                                                                    selected: $parent.disclosedTabIndex,
+                                                                    edge: ($root.isMobileView()) ? 'bottom' : 'start'}">
+
+        <ul>
+            <!-- ko foreach: module -->
+            <li><span aria-label="Home" role="img" data-bind="attr: {'title': name, 'aria-label': name}, css:icon"></li>   
+
+            <!-- /ko -->
+        </ul>
+        <!-- ko foreach: module -->
+        <div data-bind="attr: {id: 'tabscontent-' + ($index())}"  class="oacj-page-container">
+            <!-- ko if: $index() == $parents[1].disclosedTabIndex() -->
+            <div data-bind="ojModule: module"  style="overflow: auto; height: 100%;"></div>
+            <!-- /ko -->
+        </div>  
+        <!-- /ko -->
+    </div>
+    <!-- /ko -->
+    <!-- ko if: ($data.id == $parent.currenStriptNodeId()) && ($data.module.length == 1) -->
+    <div data-bind="ojModule: module[0].module" class="oacj-page-container"/>
+    <!-- /ko -->
+    <!-- /ko -->
+    <!-- /ko -->
+    <!-- ko if: showDetail() -->
+    <div data-bind="ojModule: {name: detailModuleName, params: detailParams}" class="oacj-page-container"/>
+    <!-- /ko -->
+    <!-- /ko -->
+    <!-- ko if: selectedDashboard() >= 0 && stripNodeList().length == 0-->
+    <div data-bind="ojModule: $props.homePageDashboards[selectedDashboard()].moduleId" class="ocaj-infolet-landing"/>
+    <!-- /ko -->
+
+</div>

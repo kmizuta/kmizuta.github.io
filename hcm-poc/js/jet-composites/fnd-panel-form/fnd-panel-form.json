@@ -1,0 +1,26 @@
+{
+    "properties" : {
+        "dataUrl" : {
+            "type" : "string",
+            "readOnly" : false,
+            "description" : "The URL for the JSON data to be parsed."
+        },"describeDataUrl" : {
+            "type" : "string",
+            "readOnly" : false,
+            "description" : "The URL for the JSON data describe to be parsed."
+        },
+        "readOnly" : {
+            "type" : "boolean",
+            "readOnly" : false,
+            "description" : "Determines whether all elements of the form are read only or editable."
+        },
+        "values" : {
+            "type" : "object",
+            "readOnly" : false,
+            "value": {},
+            "description" : "The object of values to be pased by the form. Use a listener to interact with this object."
+        }
+    },
+    "methods" : {
+    }
+}

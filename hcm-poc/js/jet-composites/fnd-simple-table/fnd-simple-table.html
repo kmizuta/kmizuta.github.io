@@ -1,0 +1,17 @@
+<table id="ST_table" summary="Table" aria-label="Tasks Table" 
+       data-bind="
+    ojComponent: {component: 'ojTable', 
+    data: tableDS(), columns: column_attr(), columnsDefault: {sortable: $props.sortable}, 
+    rowTemplate: 'row_template', emptyText: 'No data to display', scrollPolicy: 'loadMoreOnScroll',
+    scrollPolicyOptions: {'fetchSize': 12},
+    selectionMode: {row: $props.rowSelection},                                                                        
+    rootAttributes: {style: tableStyle()}}">
+</table>
+<template id="row_template">
+    <tr style="cursor:pointer;"> 
+      <!-- ko foreach: $parent.column_attr()  -->
+        <td data-bind="text: $parentContext.$data[column]">
+        </td>    
+      <!-- /ko --> 
+    </tr>            
+</template>

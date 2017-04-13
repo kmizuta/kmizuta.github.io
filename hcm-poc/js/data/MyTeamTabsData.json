@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "id": "nav_actions",
+            "label": "Career Development",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_signpost_16.png"
+        },
+        {
+            "id": "nav_actions1",
+            "label": "Goals",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_persontarget_16.png"
+        },
+        {
+            "id": "nav_actions2",
+            "label": "Performance",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_growth_16.png"
+        },
+        {
+            "id": "nav_actions3",
+            "label": "Talent Review",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_persongrid_16.png"
+        },
+        {
+            "id": "nav_actions4",
+            "label": "Workforce Modeling",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_organizationarrange_16.png"
+        },
+        {
+            "id": "nav_actions5",
+            "label": "Workforce Predictions",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_crystalball_16.png"
+        },
+        {
+            "id": "nav_actions6",
+            "label": "Workforce Compensation",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_moneyanalytics_16.png"
+        },
+        {
+            "id": "nav_actions7",
+            "label": "Manage User",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_personselect_16.png"
+        },
+        {
+            "id": "nav_actions8",
+            "label": "New Person",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_personnew_16.png"
+        },
+        {
+            "id": "nav_actions9",
+            "label": "Document Records",
+            "visible": "true",
+            "disabled": "false",
+            "iconPath": "qual_document_16.png"
+        }
+    ]
+}

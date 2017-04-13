@@ -1,0 +1,325 @@
+.ocaj-func-fieldsearch-16:before {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.ocaj-func-fieldsearch-16:before {
+    content: url('images/func_fieldsearch_16_ena.png');
+}
+
+.ocaj-func-fieldsearch-16:hover:before {
+    content: url('images/func_fieldsearch_16_hov.png');
+}
+
+.ocaj-func-details-16:before {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.ocaj-func-details-16:before {
+    content: url('images/func_details_16_ena.png');
+}
+
+.ocaj-func-details-16:hover:before {
+    content: url('images/func_details_16_hov.png');
+}
+
+
+.ocaj-func-pencil-16:before {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.ocaj-func-pencil-16:before {
+    content: url('images/func_pencil_16_ena.png');
+}
+
+.ocaj-func-pencil-16:hover:before {
+    content: url('images/func_pencil_16_hov.png');
+}
+
+.ocaj-func-contextpop-orange-20:before {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.ocaj-func-contextpop-orange-20:before {
+    content: url('images/func_contextpop_orange_20_ena.png');
+}
+
+.ocaj-func-contextpop-orange-20:hover:before {
+    content: url('images/func_contextpop_orange_20_hov.png');
+}
+
+.ocaj-contextpop-position {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+
+.ocaj-triangle {
+    position: relative;
+}
+
+.ocaj-triangle::before,
+.ocaj-triangle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.ocaj-triangle::after {
+    border-radius: 0;
+    border-width: 5px;
+    border-left-color: #ffd573;
+    border-top-color: #ffd573;
+}
+
+
+.ocaj-form-cols-max3 {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; 
+}
+
+.ocaj-form-cols-max4 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4; 
+}
+
+/*.ocaj-form-label{
+    font-weight: bold;
+    font-size: 0.9rem;
+}*/
+
+.ocaj-panel-form .oj-form-control{
+    padding-bottom: 0px;
+}
+
+.ocaj-mobile-agent .ocaj-panel-form {
+    padding: 0px;
+}
+
+.ocaj-panel-form {
+    padding: 0px 15px;
+}
+
+.oj-read-only .oj-inputtext-input{
+    text-overflow: ellipsis;
+}
+
+.oj-inputdatetime-input{
+    font-size: 100%;
+}
+
+.ocaj-mobile-agent h4.ocaj-form-subheaders{
+    font-size: 1.286rem;
+    background-color: #F2F2F2;
+    border-top: 1px solid #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px 9px;
+    margin-bottom: 10px;
+}
+
+.ocaj-mobile-agent .ocaj-form-subheaders > .oj-collapsible-header-icon:before{
+    display: none;
+}
+
+.ocaj-form-subheaders.ocaj-form-subheaders-disabled > .oj-collapsible-header-icon:before{
+    display: none;
+}
+
+.ocaj-sm-form-cols-max1 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+.ocaj-sm-form-nomax .oj-inputtext,
+.ocaj-sm-form-nomax .oj-textarea {
+    max-width: none;
+}
+
+
+@media (min-width: 500px) {
+    .ocaj-500-form-max .oj-inputtext,
+    .ocaj-500-form-max .oj-textarea {
+        max-width: 18em;
+    }
+
+    .ocaj-500-form-cols-max1 {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    .ocaj-500-form-cols-max2 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .ocaj-500-odd-cols-4>.oj-flex>.oj-flex-item:nth-child(odd) {
+        -webkit-flex: 0 1 33.3333333333%;
+        flex: 0 1 33.3333333333%;
+        max-width: 33.3333333333%;
+        width: 33.3333333333%;
+    }
+
+    .ocaj-500-odd-cols-4>.oj-flex>.oj-flex-item:nth-child(even) {
+        -webkit-flex: 0 1 66.6666666667%;
+        flex: 0 1 66.6666666667%;
+        max-width: 66.6666666667%;
+        width: 66.6666666667%;
+    }
+
+    html:not([dir="rtl"]) .ocaj-500-label-inline.oj-label,
+    html:not([dir="rtl"]) .ocaj-500-labels-inline>.oj-flex>.oj-flex-item>.oj-label,
+    html:not([dir="rtl"]) .ocaj-500-labels-inline>.oj-flex>.oj-flex-item>.oj-label-nocomp {
+        padding-right: 0.5em;
+    }
+
+    .oj-form>.oj-flex>.oj-flex-item:nth-child(odd)>.ocaj-500-label-inline,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd)>.oj-label,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd)>.oj-label-nocomp {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
+
+    .ocaj-500-label-inline.oj-label,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item>.oj-label,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item>.oj-label-nocomp {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0.4em;
+        box-sizing: border-box;
+    }
+
+    .oj-form>.oj-flex>.oj-flex-item:nth-child(odd)>.ocaj-500-label-inline .oj-label-group,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd)>.oj-label .oj-label-group {
+        width: inherit;
+        overflow: inherit;
+        text-overflow: inherit;
+        line-height: 1.6em;
+    }
+
+    .oj-form>.oj-flex>.oj-flex-item:nth-child(odd)>.ocaj-500-label-inline,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd)>.oj-label,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd)>.oj-label-nocomp {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
+
+    .ocaj-500-label-inline .oj-label-required-icon,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd) .oj-label-required-icon,
+    .ocaj-500-label-inline .oj-label-help-icon,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd) .oj-label-help-icon,
+    .ocaj-500-label-inline.oj-label label,
+    .ocaj-500-labels-inline>.oj-flex>.oj-flex-item:nth-child(odd) label {
+        float: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .ocaj-lg-form-cols-max2 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .ocaj-lg-form-cols-max3 {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1280px) {
+    .ocaj-xl-form-cols-max3 {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ocaj-2xl-form-cols-max3 {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+fnd-panel-form .oj-read-only {
+    padding-left: 5px;
+}
+
+.ocaj-mobile-agent fnd-panel-form .oj-flex:not(:last-child){
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 12px;
+}
+.ocaj-mobile-agent fnd-panel-form .oj-flex:first-child{
+    margin-top: 5px;
+}
+.ocaj-mobile-agent fnd-panel-form .oj-label{
+    margin-bottom: 0px;
+}
+.ocaj-mobile-agent fnd-panel-form .oj-inputtext-input, .oj-inputpassword-input, .oj-inputtext-nocomp, .oj-inputpassword-nocomp{
+    height: 1.6rem;
+}
+.ocaj-mobile-agent fnd-panel-form .oj-select-choice{
+    border-width: 0px; 
+    border-radius: 0px;
+    background-color: transparent;
+}
+html:not([dir="rtl"]) .ocaj-mobile-agent fnd-panel-form .oj-select-choice{
+    padding-left: 0px;
+}
+html[dir="rtl"] .ocaj-mobile-agent fnd-panel-form .oj-select-choice{
+    padding-right: 0px;
+}
+.ocaj-mobile-agent fnd-panel-form .oj-combobox-choice{
+    border-width: 0px; 
+    border-radius: 0px;
+    background-color: transparent;
+}
+html:not([dir="rtl"]) .ocaj-mobile-agent fnd-panel-form .oj-combobox-choice{
+     padding-left: 0px;
+}
+html[dir="rtl"] .ocaj-mobile-agent fnd-panel-form .oj-combobox-choice{
+     padding-right: 0px;
+}
+.ocaj-mobile-agent fnd-panel-form .oj-combobox-input{
+    background-color: transparent;
+}
+.ocaj-mobile-agent fnd-panel-form  .oj-combobox-divider{
+    border-left: 0px;
+}
+.ocaj-mobile-agent fnd-panel-form .oj-inputtext-input,
+.ocaj-mobile-agent fnd-panel-form  .oj-inputpassword-input,
+.ocaj-mobile-agent fnd-panel-form .oj-textarea-input,
+.ocaj-mobile-agent fnd-panel-form .oj-inputtext-nocomp,
+.ocaj-mobile-agent fnd-panel-form .oj-inputpassword-nocomp,
+.ocaj-mobile-agent fnd-panel-form .oj-textarea-nocomp{
+    border-width: 0px; 
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.oj-textarea{
+    max-width: inherit;
+}

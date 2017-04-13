@@ -1,0 +1,138 @@
+<div id="form-container">
+    <div class="oj-form-layout">
+        <div class="
+        oj-form
+        oj-sm-odd-cols-12
+        oj-form-cols
+        ocaj-sm-form-nomax
+        ocaj-500-form-max
+        ocaj-500-odd-cols-4
+        ocaj-500-labels-inline
+        ocaj-sm-form-cols-max1
+        ocaj-lg-form-cols-max2
+        ocaj-2xl-form-cols-max3
+        ocaj-panel-form
+                ">
+            <!--ko foreach: fields -->
+            <!-- ko if:! (value() == null && $props.readOnly) -->
+            <div class="oj-flex">
+                <!-- ko if: (component == 'ojInputText' || component == 'ojInputDate')-->
+                <div class="oj-flex-item">
+                    <label for="inputcontrol" data-bind="text: label, css: 'ocaj-form-label', attr: {'title': label}" style="white-space: nowrap;"></label>
+                </div>
+                <div class="oj-flex-item" data-bind="
+                css: {'ocaj-triangle': info},
+                event: {
+                mouseover: $parent.showContextpop.bind(null,name),
+                mouseout: $parent.hideContextpop
+                }
+                ">
+                    <span class="ocaj-func-contextpop-orange-20 ocaj-contextpop-position" 
+                        data-bind="
+                        if: info != null,
+                        attr: {id: name},
+                        click: function(){$parent.launchCardPCAHanlder('CM_pcalink'+$unique, $props.keyAttribute)}
+                        " style="display: none"></span>
+                    <input id="inputcontrol" data-bind="ojComponent: {component: component,
+                                value: value() == 'TEST_EMP_NAME' ? $root.dummyName() : value(), required: required, readOnly: $props.readOnly}">
+                </div>
+                <!-- /ko -->
+                <!-- ko if: component == 'ojSelect'-->
+                <div class="oj-flex-item">
+                    <label data-bind="attr: {'for': $unique+'inputSelectControl'+$index(), 'title': label}, text: label, css: 'oj-label-group ocaj-form-label'" style="white-space: nowrap;"></label>
+                </div>
+                <div class="oj-flex-item">
+                    <select id="inputSelectControl" data-bind="attr:{'id': $unique+'inputSelectControl'+$index()}, ojComponent: {component: component,
+                                value: value, readOnly: $props.readOnly}">
+                        <!-- ko foreach: list[0] -->
+                        <option data-bind="attr: {'value': val}, text: label"></option>
+                        <!-- /ko -->
+                    </select>
+                </div>
+                <!-- /ko -->
+                <!-- ko if: component == 'ojCombobox'-->
+                <div class="oj-flex-item">
+                    <label data-bind="text: label, css: 'ocaj-form-label', attr: {'for': 'inputCombo'+$unique +'_'+ $index(), 'title': label}" style="white-space: nowrap;"></label>
+                </div>
+                <div class="oj-flex-item">
+                    <datalist data-bind="attr:{'id': $unique+ 'inputComboControl'+$index()}">
+                        <!-- ko foreach: list[0] -->
+                        <option data-bind="attr: {'value': val}, text: label"></option>
+                        <!-- /ko -->
+                    </datalist>
+                    <input data-bind="attr:{'list': $unique+'inputComboControl'+$index(), 'id': 'inputCombo'+$unique +'_'+ $index()}, ojComponent: {component: 'ojCombobox',
+                            value: value}"/>
+                    <!-- ko if: details != null -->
+                    <span class="ocaj-func-details-16" data-bind="
+                    click: function() {$('#modalDialog1').ojDialog('open');}
+                    "></span>
+                    <div style="display:none" id="modalDialog1" data-bind="
+                    attr: {title: details.title},
+                    ojComponent:{
+                    component: 'ojDialog',
+                    initialVisibility: 'hide'
+                    }">
+                        <div class="oj-dialog-body">
+                            <div data-bind="text: details.title"></div>
+                        </div>
+                        <div class="oj-dialog-footer">
+                        </div>
+                    </div>
+                    <!-- /ko -->
+                </div>
+                <!-- /ko -->
+                <!-- ko if: component == 'ojCheckboxset'-->
+                <div class="oj-flex-item">
+                    <!-- ko if: labelRendered -->
+                    <label data-bind="text: label, css: 'ocaj-form-label', attr: {'for': $unique + 'checkboxItem', 'value': selectedValue, 'title': label}" style="white-space: nowrap;"></label>
+                    <!-- /ko -->
+                </div>
+                <div class="oj-flex-item">
+                    <div id="checkboxSetAgreeId" aria-labelledby="agreeId"
+                         data-bind= "ojComponent: {component: component, 
+                             value: value(), required: required}">
+                        <span class="oj-choice-row">
+                            <input type="checkbox" data-bind="attr: {'id': $unique + 'checkboxItem', 'value': selectedValue}">
+                            <label data-bind="attr: {'for': $unique + 'checkboxItemlabel', 'title': text}, text: text" style="white-space: nowrap;"></label>
+                        </span>
+                    </div>
+                </div>
+                <!-- /ko -->
+                <!-- ko if: component == 'ojInputNumber'-->
+                <div class="oj-flex-item">
+                    <!-- ko if: labelRendered -->
+                    <label data-bind=" attr: {'for': $unique + 'InputNumber'+$index(), 'title': label}, text: label, css: 'ocaj-form-label'"  style="white-space: nowrap;"></label>
+                    <!-- /ko -->
+                </div>
+                <div class="oj-flex-item">
+                    <input  data-bind="attr: {'id': $unique + 'InputNumber'+$index()}, ojComponent: {component                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              : 'ojInputNumber', 
+                       max: 80, min: 0,  step: 1,  value: value()}"/>
+                </div>
+                <!-- /ko -->
+            </div>
+            <!-- /ko -->
+            <!-- /ko -->
+           
+
+        </div>
+    </div>
+</div>
+
+<!--
+<div style="display:none" id="contextualActionPopup" class=""
+       data-bind="ojComponent:{component: 'ojPopup'}">
+      <contextual-action team-data="http://mockrest/applcore/rest/employees" navigation-tab-data="http://mockrest/applcore/rest/employee/tabs"
+                   team-actions-data="http://mockrest/applcore/rest/employee/actions" image-shape="circle" show-actions-tab="true" show-information-tab="true" show-navigation-tab="true" show-header="true" custom-tab-enabled="false" default-tab="actions" header-title="{{ headerTitlePCA() }}">
+        <div slot="ocaj-contextual-actions-header-slot">
+            <div data-bind="text: jobTitlePCA()"></div>
+            <div data-bind="text: emailPCA()"></div>
+            <div data-bind="text: phoneNumberPCA()"></div>
+        </div>
+        <div slot="ocaj-footerEnd-content-slot">
+            <i class="person-header-social"></i>
+            <i class="person-header-kudos"></i>
+            <i class="person-header-share"></i>
+        </div>
+      </contextual-action>
+ </div>
+-->

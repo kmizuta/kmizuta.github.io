@@ -1,0 +1,192 @@
+{
+    "properties": {
+        "header": {
+            "type": "string",
+            "descriptions": "Simple Panel Title"
+        },
+        "titleTemplate": {
+            "type": "string",
+            "value": "simple",
+            "description": "Title template pattern: Valid values - simple (default), objectTypeAndValue, tabbedPage. [Action] [Object Type] : [Object Name].TODO: implement trainPage"
+        },
+        "titleObjType": {
+            "type": "string",
+            "descriptions": "Simple Panel Title [Action]"
+        },
+        "titleObjValue": {
+            "type": "string",
+            "descriptions": "Simple Panel Title [Object Type]"
+        },
+        "titleName": {
+            "type": "string",
+            "descriptions": "Simple Panel Title [Object Name]"
+        },
+        "titleWidth": {
+            "type": "string",
+            "descriptions": "Simple Panel Title [Object Name] width"
+        },
+        "cancelShortDesc": {
+            "type": "String",
+            "description": "Defines cancel button short description"
+        },
+        "saveShortDesc": {
+            "type": "String",
+            "description": "Defines save button short description"
+        },
+        "editShortDesc": {
+            "type": "String",
+            "description": "Defines edit button short description"
+        },
+        "saveAndCreateAnotherShortDesc": {
+            "type": "String",
+            "description": "Defines save and continue short description"
+        },
+        "saveAndCloseShortDesc": {
+            "type": "String",
+            "description": "Defines save and close short description"
+        },
+        "submitShortDesc": {
+            "type": "String",
+            "description": "Defines submit button short description"
+        },
+        "doneShortDesc": {
+            "type": "String",
+            "description": "Defines done button short description"
+        },
+        "cancelRendered": {
+            "type": "boolean",
+            "description": "Defines whether cancel button is Rendered"
+        },
+        "saveRendered": {
+            "type": "boolean",
+            "description": "Defines whether save button is Rendered"
+        },
+        "saveAndCreateAnotherRendered": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether save and continue button is Rendered"
+        },
+        "saveAndCloseRendered": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether save and close button is Rendered"
+        },
+        "submitRendered": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether submit button is Rendered"
+        },
+        "editRendered": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether edit button is Rendered"
+        },
+        "doneRendered": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether done button is Rendered"
+        },
+        "cancelDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether cancel button is Disabled"
+        },
+        "saveDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether save button is Disabled"
+        },
+        "editDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether edit button is Disabled"
+        },
+        "saveAndCreateAnotherDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether save button is Disabled"
+        },
+        "saveAndCloseDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether save button is Disabled"
+        },
+        "submitDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether submit button is Disabled"
+        },
+        "doneDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Defines whether done button is Disabled"
+        },
+        "primarySave": {
+            "type": "String",
+            "value": "separate",
+            "description": "Defines whether save buttons should be side by side or drop button. In case of drop button, this attribute takes the value of the primary action [save] or [saveAndClose]"
+        },
+        "submitStyle": {
+            "type": "String",
+            "value": "dropButton",
+            "description": "Defines whether submit will have drop buttons rendered: [dropButton]. TODO"
+        },
+        "submitText": {
+            "type": "String",
+            "value": "Submit",
+            "description": "Defines text to display in Submit button"
+        },
+        "submitAccessKey": {
+            "type": "String",
+            "description": "Defines access key for submit button"
+        },
+        "profileWidth": {
+            "type": "String",
+            "value": "53px",
+            "description": "Defines the profile width"
+        },
+        "profileHeight": {
+            "type": "String",
+            "value": "65px",
+            "description": "Defines the profile height"
+        },
+        "stickyHeaderEnabled": {
+            "type": "boolean",
+            "value": true,
+            "description": "Defines whether simple panel will stick to the browser chrome"
+        },
+        "saveAction": {
+            "type": "object",
+            "description": "Click Action for the Save Button"
+        },
+        "submitAction": {
+            "type": "object",
+            "description": "Click Action for the Submit Button"
+        },
+        "editAction": {
+            "type": "object",
+            "description": "Click Action for the Edit Button"
+        },
+        "saveAndCloseAction": {
+            "type": "object",
+            "description": "Click Action for the Save and Close Button"
+        },
+        "saveAndCreateAnotherAction": {
+            "type": "object",
+            "description": "Click Action for the Save and Continue Button"
+        },
+        "cancelAction": {
+            "type": "object",
+            "description": "Click Action for the Cancel Button"
+        },
+        "doneAction": {
+            "type": "object",
+            "description": "Click Action for the Done Button"
+        },
+        "detailPage": {
+            "type": "boolean",
+            "value": false,
+            "description": "Use this if your page is a detail page. Helpful for mobile view."
+        }
+    }
+}

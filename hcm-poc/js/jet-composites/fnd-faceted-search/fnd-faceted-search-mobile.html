@@ -1,0 +1,304 @@
+<div id="FS_root">
+    <!-- keyword search section -->
+    <form id="form1">
+        <div id="myToolbar" aria-label="Editing Toolbar" aria-controls="controlled"
+             data-bind="ojComponent: {component:'ojToolbar'}">
+            <!--input id="inputSearch" placeholder="Search..." data-bind="ojComponent: {
+            component: 'ojInputSearch', 
+            options: $props.suggestionGroupList,
+            value: keywordSearchValue,
+            optionsKeys: {
+              label: 'groupName',
+              children: 'items',
+              childKeys: {
+                label: 'label',
+                value: 'value'
+              }
+            },
+            optionTemplate: 'optionTemplate',
+            rootAttributes: {style:'max-width: 23em;'}}" />  
+            <button id= "button" style="margin-left: 5px; margin-top: -5px;"
+                    data-bind="click: keyboardSearchHandler,
+                    ojComponent: { component: 'ojButton', chroming: 'full', display: 'icons',
+                    icons: {start:'oj-fwk-icon-magnifier oj-fwk-icon'}, label: 'OK' }">
+            </button-->
+            <!-- ko if: filterToolbars().length > 0 -->
+            <div class="ocaj-fs-separator inline-block" style="margin-right: 12px;"></div>
+            <!-- /ko -->
+            <!-- ko foreach: filterToolbars() -->
+            <span class="bold" style="margin-right: 5px;" data-bind="text: $data.headerText"></span>
+            <!-- ko foreach: $data.filterLOV -->
+            <span style="margin-right: 5px;" data-bind="text: $data"></span>
+            <div class="ocaj-fs-clear-search" style="margin-right: 10px;"
+                 data-bind="click: function(){ $parents[1].clearHeaderSearch($parent.filterAttr, $parent.filterType) }"></div>
+            <!-- /ko -->
+            <!-- /ko -->
+        </div>
+    </form>
+    <div class="oj-offcanvas-outer-wrapper" 
+             style="border: 1px solid #d6dfe6; height:100vh;">
+
+          <!-- inner start offcanvas -->
+          <div id="filterPanel" style="width:320px"
+               class="oj-offcanvas-start">
+
+            <!-- filter section -->
+        <div id="filterPanel" style="min-width:320px;" class="ocaj-fs-filterPanel">
+            <div id="filterDrawer" style="width: 320px; margin: 0px; padding-bottom: 0px;" class="oj-panel oj-panel-alt1 oj-margin demo-panel-customizations">
+                <div class="oj-flex oj-sm-flex-items-initial">
+                    <div class="oj-flex" style="cursor: pointer;" data-bind="click: $parent.showHideCheckboxFacet">
+                        <h3 class="oj-header">Saved Search</h3>
+                    </div>
+                    <div class="oj-helper-margin-start-auto oj-flex-item">
+                        <a href="#" class="oj-link" data-bind="click: closeFilterPanelMobile" style="padding: 0px;">
+                            <div class="ocaj-fs-close-icon"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <select id="basicSelect" data-bind="ojComponent: {component: 'ojSelect',
+                        value: 'IE',
+                        rootAttributes: {style:'max-width:15em'}}">
+                        <option value="IE">Recently Hired</option>
+                        <option value="FF">All Managers</option>
+                    </select>
+                    <button id= "button"
+                            data-bind="ojComponent: { component: 'ojButton', label: 'Save' }">
+                    </button>
+                </div>
+                <div class="oj-flex oj-sm-flex-items-initial" style="margin-top: 10px;">
+                    <div class="oj-flex" style="cursor: pointer;" data-bind="click: $parent.showHideCheckboxFacet">
+                        <h5 class="oj-header">Filters</h5>
+                    </div>
+                    <div class="oj-helper-margin-start-auto oj-flex-item">
+                        <a class="oj-link" href="#" data-bind="click: clearAllHandler" style="padding: 0px;">Clear All</a>
+                        <div class="ocaj-fs-separator inline-block"></div>
+                        <button id= "button" style="margin-left: -5px; margin-top: 3px;"
+                                data-bind="
+                     ojComponent: { component: 'ojButton', chroming: 'half', display: 'icons',
+                     icons: {start:'ocaj-fs-setting-icon'}, label: 'Settings' }">
+                        </button>
+                    </div>
+                </div>
+                <div>
+                <a href="#" class="oj-link" data-bind="click: expandAllHandler" style="padding: 0px;">Expand All</a>
+               <div class="ocaj-fs-separator inline-block"></div>
+               <a href="#" class="oj-link" data-bind="click: collapseAllHandler" style="padding: 0px;">Collapse All</a>
+            </div>
+                <!-- ko foreach: facetData() -->    
+                <!-- ko if: $data.type == 'checkbox' -->
+                <div id="accordionPage" style="padding:10px;background-color: white;margin: 10px 0;">
+                    <div class="oj-flex oj-sm-flex-items-initial" style="margin-top: 5px;">
+                        <div class="oj-flex" style="cursor: pointer;" data-bind="click: $parent.showHideCheckboxFacet">
+                            <div class="oj-flex-item ocaj-fs-arrow-expanded"></div>
+                            <div class="oj-flex-item bold" data-bind="text: $data.headerText"></div>
+                        </div>
+                        <div class="oj-helper-margin-start-auto oj-flex-item">
+                            <a href="#" data-bind="click: function(){ $parents[0].clearCheckboxFacetSearch($data.filterAttribute) },
+                         style: {display: $data.clearFlag ? '' : 'none'}" style="padding: 0px;">Clear</a>
+                        </div>
+                    </div>
+                    <div class="content2" vis="show" style="height:140px; padding-left: 20px;">
+                        <!-- ko if: $data.jsonData.length > 5 --> 
+                        <input id="inputSearch" placeholder="Search..."
+                               data-bind="ojComponent: {
+                     component: 'ojInputSearch', options: $data.jsonData,
+                     rootAttributes: {style:'max-width: 95%; margin-top:10px;'}}">
+                        <!-- /ko -->
+                        <div id="checkboxSetId" aria-labelledby="mainlabelid" style="width:280px;height:130px;overflow:auto;"
+                             data-bind="ojComponent: {
+                     component: 'ojCheckboxset', value: $parents[0].selectedCheckboxValue, optionChange: function(data, event){ $parents[0].checkboxFacetOptionChange($data.filterAttribute, data, event) }}">
+                            <!-- ko foreach: $data.jsonData --> 
+                            <span class="oj-choice-row">
+                                <input type="checkbox" data-bind="value: $data.value, attr: { id: $index()}">
+                                <label for="blueopt" data-bind="text: $data.label, attr: {for: $index()}"></label>
+                            </span>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /ko -->
+                <!-- ko if: $data.type == 'date' -->
+                <!-- start of date facet -->
+                <div id="accordionPage" style="padding:10px;background-color: white;margin: 10px 0;">
+                    <div class="oj-flex oj-sm-flex-items-initial" style="margin-top: 5px;">
+                        <div class="oj-flex" style="cursor: pointer;" data-bind="click: $parent.showHideDateFacet">
+                            <div class="oj-flex-item ocaj-fs-arrow-expanded"></div>
+                            <div class="oj-flex-item bold" data-bind="text: $data.headerText"></div>
+                        </div>
+                        <div class="oj-helper-margin-start-auto oj-flex-item">
+                            <a href="#" class="oj-link" data-bind="click: $parent.toggleFilterHandler, style: {display: $data.clearFlag ? '' : 'none'}" style="padding: 0px;">Clear</a>
+                        </div>
+                    </div>
+                    <div class="content3" vis="show" style="height:160px; padding-left: 20px; margin-top: 5px;">
+                        <div>
+                            <!-- ko foreach: $data.jsonData -->  
+                            <div style="margin-bottom: 5px;"><a href="#" class="oj-link" data-bind="text: $data.label, click: $parent.toggleFilterHandler"></a></div>
+                            <!-- /ko -->
+                        </div>
+                        <br>
+                        <input id="date" data-bind="ojComponent: {component: 'ojInputDate', 
+                     rootAttributes: {style:'width: 70px;'} }"/> - 
+                        <input id="date" data-bind="ojComponent: {component: 'ojInputDate', 
+                     rootAttributes: {style:'width: 70px;'} }"/>
+                        <button id= "button"
+                                data-bind="click: $parent.toggleFilterHandler, 
+                     ojComponent: { component: 'ojButton', label: 'OK' }">
+                        </button>
+                    </div>
+                </div>
+                <!-- end of date facet -->
+                <!-- /ko -->
+                <!-- ko if: $data.type == 'number' -->
+                <!-- start of number facet -->
+                <div id="accordionPage" style="padding:10px;background-color: white;margin: 10px 0;">
+                    <div class="oj-flex oj-sm-flex-items-initial" style="margin-top: 5px;">
+                        <div class="oj-flex" style="cursor: pointer;" data-bind="click: $parent.showHideNumberFacet">
+                            <div class="oj-flex-item ocaj-fs-arrow-expanded"></div>
+                            <div class="oj-flex-item bold" data-bind="text: $data.headerText"></div>
+                        </div>
+                        <div class="oj-helper-margin-start-auto oj-flex-item">
+                            <a href="#" data-bind="style: {display: $data.clearFlag ? '' : 'none'}, click: function(){ $parents[0].clearAmountFacetSearch($data.filterAttribute) }" style="padding: 0px;">Clear</a>
+                        </div>
+                    </div>
+                    <div class="content4" vis="show" style="height:160px; padding-left: 20px; margin-top: 5px;">
+                        <div>
+                            <!-- ko foreach: $data.jsonData -->  
+                            <div style="margin-bottom: 5px;">
+                                <a href="#" class="oj-link" data-bind="text: $data.label, 
+                            click: function(data, event){ $parents[1].amountRangeFacetOptionChange($data.value, $parent.filterAttribute) }">
+                                </a>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                        <input id="text-input" aria-label="ojInputText component"
+                               type="text"
+                               data-bind="ojComponent: {component: 'ojInputText', value: $parent.numberStart,
+                     rootAttributes: {style:'width: 40px;'}}"/> - 
+                        <input id="text-input" aria-label="ojInputText component"
+                               type="text"
+                               data-bind="ojComponent: {component: 'ojInputText', value: $parent.numberEnd,
+                     rootAttributes: {style:'width: 40px;'}}"/>
+                        <button id= "button"
+                                data-bind="click: function(){ $parents[0].amountRangeFacetOptionChange($parent.numberStart()+'-'+$parent.numberEnd(), $data.filterAttribute) }, 
+                     ojComponent: { component: 'ojButton', label: 'OK' }">
+                        </button>
+                    </div>
+                </div>
+                <!-- end of number facet -->
+                <!-- /ko -->
+                <!-- ko if: $data.type == 'range' -->
+                <!-- start of range slider facet -->
+                <div id="accordionPage" style="padding:10px;background-color: white;margin: 10px 0;">
+                    <div class="oj-flex oj-sm-flex-items-initial" style="margin-top: 5px;">
+                        <div class="oj-flex" style="cursor: pointer;" data-bind="click: $parent.showHideRangeFacet">
+                            <div class="oj-flex-item ocaj-fs-arrow-expanded"></div>
+                            <div class="oj-flex-item bold" data-bind="text: $data.headerText"></div>
+                        </div>
+                        <div class="oj-helper-margin-start-auto oj-flex-item">
+                            <a href="#" data-bind="click: function(){ $parents[0].clearRangeFacetSearch($data.filterAttribute) }, style: {display: $data.clearFlag ? '' : 'none'}" style="padding: 0px;">Clear</a>
+                        </div>
+                    </div>
+                    <div class="content5" vis="show" style="height:50px; padding-left: 20px; margin-top: 5px;">
+                        <div id="flex-container" style="display:flex; align-items:center">
+                            <span id="value1" data-bind="text: $data.rangeArray[0]" style="margin-right: 4px"> </span>
+                            <input id="slider-id"
+                                   data-bind="ojComponent: {
+                        component: 'ojSlider', optionChange: function(data, event){ $parents[0].rangeSliderFacetOptionChange($data.rangeArray[0], $data.rangeArray[1], $data.filterAttribute, data, event) },
+                        type: 'range',
+                        max: $data.max,
+                        min: $data.min, 
+                        step: $data.step, 
+                        value: $data.rangeArray
+                        }"/>
+                            <span id="value2" data-bind="text: $data.rangeArray[1]" style="margin-left: 4px"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of range slider facet -->
+                <!-- /ko -->
+                <!-- ko if: $data.type == 'link' -->
+                <!-- link facet -->
+                <div id="accordionPage" style="padding:10px;background-color: white;margin: 10px 0;">
+                    <div class="oj-flex oj-sm-flex-items-initial" style="margin-top: 5px;">
+                        <div class="oj-flex" style="cursor: pointer;" data-bind="click: $parent.showHideLinksFacet">
+                            <div class="oj-flex-item ocaj-fs-arrow-expanded"></div>
+                            <div class="oj-flex-item bold" data-bind="text: $data.headerText"></div>
+                        </div>
+                        <div class="oj-helper-margin-start-auto oj-flex-item">
+                            <a href="#" data-bind="style: {display: $data.clearFlag ? '' : 'none'}, click: function(){ $parents[0].clearLinkFacetSearch($data.filterAttribute) }" style="padding: 0px;">Clear</a>
+                        </div>
+                    </div>
+                    <div class="content6" vis="show" style="height:160px; padding-left: 20px;">
+                        <!-- ko if: $data.jsonData.length > 5 --> 
+                        <input id="inputSearch" placeholder="Search..."
+                               data-bind="ojComponent: {
+                     component: 'ojInputSearch', options: $data.jsonData,
+                     rootAttributes: {style:'max-width: 95%; margin-top:10px;'}}">
+                        <!-- /ko -->
+                        <span data-bind="text: $data.selectedValue"></span> 
+                        <div style="margin-top: 5px; overflow-y: auto; height: 115px;">
+                            <!-- ko foreach: $data.jsonData -->  
+                            <div style="margin-bottom: 5px;">
+                                <a href="#" class="oj-link" data-bind="text: $data.label, 
+                            click: function(data, event){ $parents[1].linkFacetOptionChange($data.value, $parent.filterAttribute) }">
+                                </a>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end of link facet -->
+                <!-- /ko -->
+                <!-- /ko --> 
+                <!-- checkbox facet -->
+                <!-- end of checkbox facet -->
+            </div>
+        </div>
+            
+          </div>
+
+          <div id="resultSection" class="demo-main-content">
+            <!-- result section -->
+        <div id="resultSection">
+            <!--button data-bind="click: toggleInner,
+                               ojComponent: {component:'ojButton', 
+                               label: 'Filters', 
+                               chroming: 'full'}">
+            </button-->
+            <div id="FS_result" style="width: 100%;">
+                <oj-slot name="facetedSearchResult"></oj-slot>
+            </div>
+            <!--div id="FS_result" style="width: 100%;margin-left: 10px;">
+                <ul id="listview" aria-label="list using collection" style="height:100%" 
+                    data-bind="ojComponent: {component: 'ojListView', data: tableDataSource(), item: {template: 'list_template'}, 
+selectionMode: 'single', rootAttributes: {style: 'width:100%;height:600px;'}, 
+scrollPolicy: 'loadMoreOnScroll', scrollPolicyOptions: {fetchSize: 15}}">
+                </ul>
+                <script type="text/html" id="list_template">
+                    <li class="oj-flex" style="margin:0;border-style:none; display: block;">
+                        <div class="bold" data-bind="text: $data.dealNumber" style="margin-bottom: 5px;"/>
+                        <div data-bind="text: '$'+$data.dealSize" style="margin-bottom: 5px;"/>
+                        <div data-bind="text: $data.statusCode" style="margin-bottom: 5px;"/>
+                        <div data-bind="text: $data.partyName"/>
+                    </li>
+                </script>
+            </div-->    
+        </div>
+
+            
+
+          </div>
+        </div>
+
+    <!-- template for keyword search -->
+    <script type="text/html" id="optionTemplate">
+        <span data-bind="text: $data.groupName"></span>
+        <!-- ko if: !($data.groupId) -->
+        <span class="oj-listbox-highlighter-section">
+            <span data-bind="text: $data.label"></span>
+        </span>
+        <!-- /ko -->
+    </script>
+    <!-- end of keyword search template -->
+</div>

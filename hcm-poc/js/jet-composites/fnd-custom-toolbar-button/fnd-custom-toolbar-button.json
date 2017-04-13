@@ -1,0 +1,51 @@
+{
+    "properties": {
+        "splitButtonText": {
+            "type": "string",
+            "description": "Label for the custom button"
+        },
+
+        "splitButtonDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Disabled value"
+        },
+
+        "splitButtonAction": {
+            "type": "Object",
+            "description": "Action associated to the button"
+        },
+
+        "splitButtonAccessKey": {
+            "type": "string"
+        },
+
+        "splitButtonShortDesc": {
+            "type": "string"
+        },
+
+        "dropDownMode": {
+            "type": "string",
+            "value": "split",
+            "description":"Acceptable values: split / generic"
+        },
+
+        "dropButtonText": {
+            "type": "string"
+        },
+
+        "dropButtonAction": {
+            "type": "object"
+        },
+
+        "dropButtonDisabled": {
+            "type": "boolean",
+            "value": false,
+            "description": "Disabled value"
+        },
+
+        "dropButtonAccessKey": {
+            "type": "string"
+        }
+    }
+}

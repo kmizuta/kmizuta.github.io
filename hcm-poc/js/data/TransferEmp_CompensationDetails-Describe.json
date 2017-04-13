@@ -1,0 +1,17 @@
+{
+    "CurrentSalary": "String",
+    "CurrentSalaryBasis": "String",
+    "NewSalaryStartDate": "Date",
+    "NewSalary": "String",
+    "NewSalaryBasis": "String",
+    "AdjustmentAmount": "String",
+    "AdjustmentPercentage": "String",
+    "NextSalaryReviewDate": "Date",
+    "AnnualSalary": "String",
+    "AnnualizedFull -TimeSalary": "String",
+    "SalaryRange": "String",
+    "Compa -Ratio": "String",
+    "RangePosition": "String",
+    "Quartile": "String",
+    "Quintile": "String"
+}

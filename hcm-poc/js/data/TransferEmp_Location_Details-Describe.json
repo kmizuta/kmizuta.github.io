@@ -1,0 +1,18 @@
+{
+    "Location": {
+        "combobox": {
+            "chicago": "Chicago",
+            "washington": "Washington"
+        }
+    },
+    "WorkingAtHome": {
+        "lov": {
+            "NO": "No",
+            "YES": "Yes"
+        }
+    },
+    "Building": "String",
+    "Floor": "String",
+    "OfficeNumber" : "String",
+    "MailStop": "String"
+}

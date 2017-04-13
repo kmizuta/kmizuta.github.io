@@ -1,0 +1,126 @@
+
+<div class="ocaj-simplepanel-train">
+    <oj-slot name="ocaj-simplepanel-train-slot"></oj-slot>
+</div>
+
+<div class="ocaj-simplepanel-container">
+
+    <!-- ko if: window.matchMedia(oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY)).matches -->
+    <div class="ocaj-simplepanel-navigator">
+        <a id="contactsHeaderNav" title="Navigator" href="#" data-bind="click: launchNavigator">
+            <!-- ko if: ! $props.detailPage -->
+            <img id="contactsHeaderNav_icon" src="images/ugh_navigator_ena.png" title="Navigator" alt="Navigator">
+            <!-- /ko -->
+            <!-- ko if: $props.detailPage-->
+            <img id="contactsHeaderNav_icon" src="images/func_caretleft_24_ena.png" title="Navigator" alt="Navigator">
+            <!-- /ko -->
+        </a>        
+    </div>
+    <!-- /ko -->
+
+    <div class="ocaj-simplepanel-fullpageheader">
+
+        <!-- ko if: profileSlot() && ! (window.matchMedia(oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY)).matches)-->
+        <div class="ocaj-simplepanel-profileimg" data-bind="style: {width: $props.profileWidth, height: $props.profileHeight}">
+            <oj-slot name="ocaj-simplepanel-profile-slot"></oj-slot>
+        </div>
+        <!-- /ko -->
+
+        <!-- ko if: $props.titleTemplate == 'simple' -->
+        <h2 class="oj-header ocaj-simplepanel-header" data-bind="text: $props.header, style: {paddingTop: ($root.isMobileView() && $props.detailPage ? '10px' : '0px'),width: moveWidth, marginLeft: mobileMargin, marginTop: (! (window.matchMedia(oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY)).matches) && subHeaderSlot()) ? '7px' : (((parseInt($props.profileHeight) / 2) - 12)+'px'), display: (! (window.matchMedia(oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY)).matches) && subHeaderSlot()) ? 'block': $props.detailPage ? 'table-cell' : 'inline', height: (! (window.matchMedia(oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY)).matches) && subHeaderSlot()) ? 'calc('+$props.profileHeight + ' - 20px)': ''}">
+            
+        </h2>
+        <!-- /ko -->
+
+        <!-- ko if: $props.titleTemplate == 'objectTypeAndValue' -->
+        <h2 class="oj-header ocaj-simplepanel-header" data-bind="style: {maxWidth: $props.titleWidth ? $props.titleWidth : 'initial', marginTop: subHeaderSlot() ? '0px' : '15px'}">
+            <span data-bind="text: $props.titleObjType"></span> : <div class="ocaj-simplepanel-truncate" data-bind="text: $props.titleObjValue"></div> : <span data-bind="text: $props.titleName"></span>
+        </h2>
+        <!-- /ko -->
+
+        <!-- ko if: $props.titleTemplate == 'tabbedPage' -->
+        <h2 class="oj-header ocaj-simplepanel-header" data-bind="style: {maxWidth: $props.titleWidth ? $props.titleWidth : 'initial', marginTop: subHeaderSlot() ? '0px' : '15px'}">
+            <span data-bind="text: $props.titleObjType"></span> : <div class="ocaj-simplepanel-truncate" data-bind="text: $props.titleObjValue, attr: {title: $props.titleObjValue}"></div> : <span data-bind="text: $props.titleName"></span>
+        </h2>
+        <!-- /ko -->
+    </div>
+
+    <div class="ocaj-simplepanel-buttoncontainer ocaj-theme-button-bar" data-bind="style: {marginTop: subHeaderSlot() ? '0px' : '15px'}">
+
+        <!-- ko if: (window.matchMedia(oj.ResponsiveUtils.getFrameworkQuery(oj.ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY)).matches && enabledButtons().length > 2 ) -->
+        <div class="ocaj-simplepanel-buttonellipsis" data-bind="click: openButtonPopup">...</div>
+        <!-- /ko -->
+
+        <!-- ko if: commonActionSlot() -->
+        <div class="ocaj-simplepanel-notifiercontainer">
+            <oj-slot name="ocaj-simplepanel-common-actions"></oj-slot>
+        </div>
+        <!-- /ko -->
+
+        <!-- ko if: seededButtonSlot() -->
+        <div class="ocaj-simplepanel-seededbuttons">
+            <oj-slot name="ocaj-simplepanel-seeded-buttons"></oj-slot>
+        </div>
+        <!-- ko if: customButtonSlot() -->
+        <div class="ocaj-simplepanel-seperator">&nbsp;</div>
+        <!-- /ko -->
+        <!-- /ko -->
+
+        <div class="ocaj-simplepanel-custombuttons" data-bind="ojComponent: {component: 'ojConveyorBelt'}">
+            <oj-slot name="ocaj-simplepanel-custom-buttons"></oj-slot>
+        </div>
+
+        <!-- ko if: $props.saveAndCreateAnotherRendered -->
+        <button class="ocaj-simplepanel-pagebuttons  " data-bind="ojComponent : {component: 'ojButton', label : 'Save and Create Another', disabled: $props.saveAndCreateAnotherDisabled}, click:  $props.saveAndCreateAnotherButtonAction, attr: {accesskey: $props.saveAndCreateAnotherAccessKey, title: $props.saveAndCreateAnotherShortDesc, 'ocaj-button-rendered': $props.saveAndCreateAnotherRendered }"></button>
+        <!-- /ko -->
+
+        <!-- ko with: $props -->
+        <!-- ko if: ($props.saveRendered && $props.saveAndCloseRendered && $props.primarySave == 'saveAndClose') -->
+        <fnd-custom-toolbar-button class="ocaj-simplepanel-custom-buttons" split-button-text="Save and Close" drop-down-mode="split" split-button-action="{{ $data.saveAndCloseAction }}" split-button-disabled="{{ $data.saveAndCloseDisabled }}" split-button-short-desc="{{ $data.saveAndCloseShortDesc }}" split-button-access-key="{{ $data.saveAndCloseAccessKey }}" drop-button-text="Save" drop-button-action="{{ $data.saveAction }}">
+        </fnd-custom-toolbar-button>
+        <!-- /ko -->
+        <!-- ko if: ($data.saveRendered && $data.saveAndCloseRendered && $data.primarySave == 'save') -->
+        <fnd-custom-toolbar-button class="ocaj-simplepanel-custom-buttons" split-button-text="Save" drop-down-mode="split" split-button-action="{{ $data.saveAction }}" split-button-disabled="{{ $data.saveDisabled }}" split-button-short-desc="{{ $data.saveShortDesc }}" split-button-access-key="{{ $data.saveAccessKey }}" drop-button-text="Save and Close" drop-button-action="{{ $data.saveAndCloseAction }}">
+        </fnd-custom-toolbar-button>
+        <!-- /ko -->
+        <!-- /ko -->
+
+        <!-- ko if: ($props.saveRendered && !(($props.primarySave == 'saveAndClose' || $props.primarySave == 'save') && $props.saveAndCloseRendered)) -->
+        <button class="ocaj-simplepanel-pagebuttons " data-bind="ojComponent : {component: 'ojButton', label : 'Save', disabled: $props.saveDisabled}, click: $props.saveAction, attr: {accesskey: $props.saveAccessKey, title: $props.saveShortDesc, 'ocaj-button-rendered': $props.saveRendered }"></button>
+        <!-- /ko -->
+
+        <!-- ko if: ($props.saveAndCloseRendered && !(($props.primarySave == 'saveAndClose' || $props.primarySave == 'save') && $props.saveRendered)) -->
+        <button class="ocaj-simplepanel-pagebuttons  " data-bind="ojComponent : {component: 'ojButton', label : 'Save and Close', disabled: $props.saveAndCloseDisabled}, click: $props.saveandcloseAction, attr: {accesskey: $props.saveAndCloseAccessKey, title: $props.saveAndCloseShortDesc, 'ocaj-button-rendered': $props.saveAndCloseRendered }"></button>
+        <!-- /ko -->
+
+        <!-- ko if: $props.editRendered -->
+        <button class="ocaj-simplepanel-pagebuttons  " data-bind="ojComponent : {component: 'ojButton', label : 'Edit', disabled: $props.editDisabled}, click: $props.editAction, attr: {accesskey: $props.editAccessKey, title: $props.editShortDesc, 'ocaj-button-rendered': $props.editRendered }"></button>
+        <!-- /ko -->
+
+        <!-- ko if: $props.submitRendered -->
+        <button class="ocaj-simplepanel-pagebuttons  " data-bind="ojComponent : {component: 'ojButton', label : $props.submitText, disabled: $props.submitDisabled}, click: $props.submitAction, attr: {accesskey: $props.submitAccessKey, title: $props.submitShortDesc, 'ocaj-button-rendered': $props.submitRendered }"></button>
+        <!-- /ko -->
+
+        <!-- ko if: $props.doneRendered -->
+        <button class="ocaj-simplepanel-pagebuttons  " data-bind="ojComponent : {component: 'ojButton', label : 'Done', disabled: $props.doneDisabled}, click: $props.doneButtonAction, attr: {accesskey: $props.doneAccessKey, title: $props.doneShortDesc, 'ocaj-button-rendered': $props.doneRendered }"></button>
+        <!-- /ko -->
+
+        <!-- ko if: $props.cancelRendered -->
+        <button class="ocaj-simplepanel-pagebuttons  " data-bind="ojComponent : {component: 'ojButton', label : 'Cancel', disabled: $props.cancelDisabled}, click: $props.cancelAction, attr: {accesskey: $props.cancelAccessKey, title: $props.cancelShortDesc, 'ocaj-button-rendered': $props.cancelRendered }"> </button>
+        <!-- /ko -->
+
+    </div>
+
+    <div class="ocaj-simplepanel-sub-header">
+        <oj-slot name="ocaj-simplepanel-sub-header-slot"></oj-slot>
+    </div>
+
+</div>
+
+<div class="ocaj-simplepanel-sticky-padding" data-bind="visible: showPaddingDiv, style: {height: paddingDivHeight}"></div>
+
+<div class="ocaj-simplepanel-content">
+    <oj-slot name="ocaj-simplepanel-content-slot"></oj-slot>
+</div>
+
+<div class="ocaj-simplepanel-buttonpopup" id="popuo1" data-bind="ojComponent: {component: 'ojPopup', modality: 'modal', chrome: 'none', rootAttributes: {style: 'background-color: transparent'}}" style="display: none;"> </div>

@@ -1,0 +1,66 @@
+<div>
+    <ul id="LVL_listviewcard" 
+         data-bind="ojComponent: {component: 'ojListView', 
+         data: $props.dataSource, 
+         rootAttributes: {'style': style()}, scrollPolicy: 'loadMoreOnScroll',
+         scrollPolicyOptions: {fetchSize: 12, scroller: isDocElement() ? document.documentElement : document.body},
+         item: {template: 'media_listItem_template'}}">
+      </ul>
+    <script id="media_listItem_template" type="text/html">
+        <li class="oj-flex-item oj-sm-12" style="padding-right: 0px;">
+            <div>
+                <div class="oj-flex oj-flex-items-pad">
+                    <div class="oj-flex-item oj-xl-3 oj-lg-3 oj-md-5 oj-sm-10" style="padding:0px;">
+                        <div class="inline">
+                            <img class="user-image photo-round" id="LV_listHeader_icon" data-bind="attr:{src: $data[$props.userImagePath] ? $data[$props.userImagePath] : 'images/personImage.png'}" title="Image" alt="Image">
+                        </div>
+                        <div class="inline oj-flex-item oj-lg-7 oj-md-6 oj-sm-9" style="margin-left: 20px;">
+                            <table style="width: 100%; border-spacing: 0px; height: 22px; margin-left: -2px;">
+                            <tbody style="width: 100%;">
+                                <tr>
+                                    <td style="width: auto">
+                                        <div id="C_fTitle" class="text-normal-1 bold largeText" data-bind="visible: $props.titleClickable === false, text:$props.cardTitle"></div>
+                                        <a id="C_fTItleLink" href="#" class="oj-link linkColor bold largeText cl-ellipsis" 
+                                           data-bind="event: {mouseover: function(){$parent.showPCAHanlder($data[$props.keyAttribute])}, mouseout: function(){$parent.hidePCAHanlder($data[$props.keyAttribute])}}, click: function(data, event){$parent.cardTitleHandler($data[$props.keyAttribute])}, 
+                                            attr: { title: $data[$props.listItemTitle] }, visible: $props.titleClickable, text: $data[$props.listItemTitle]"></a>
+                                    </td>
+                                    <td style="width: 100%" data-bind="event: {mouseover: function(){$parent.showPCAHanlder($data[$props.keyAttribute])}, mouseout: function(){$parent.hidePCAHanlder($data[$props.keyAttribute])}}">
+                                        <a title="Card Contexual Actions" class="card-contexual-actions"
+                                           data-bind="attr: { id: 'LV_pcalink'+$data[$props.keyAttribute] }, style:{display: ( ($parent.isMobile()) || ($parent.pcaFlag() && ($parent.selectedItem() === $data[$props.keyAttribute]))) ? 'block' : 'none'}, click: function(){$parent.launchCardPCAHanlder('LV_pcalink'+$data[$props.keyAttribute], $data[$props.keyAttribute])}"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table> 
+                            <div class="text-normal-2 smallText cl-ellipsis" style="margin-top: 2px;" data-bind="text:$data[$props.subTitle]"></div>
+                        </div>
+                    </div>
+                    <div class="oj-flex-item oj-xl-8 oj-lg-9 oj-md-7 oj-sm-only-hide" style="padding-right: 0px;">
+                        <div class="oj-form-layout">
+                            <div class="oj-form oj-sm-odd-cols-12 oj-lg-odd-cols-4 oj-md-odd-cols-4 oj-lg-labels-inline oj-md-labels-inline oj-form-cols oj-form-cols-max2">
+                                <!-- ko foreach: $props.columnsList  --> 
+                                <div class="oj-flex">
+                                    <div class="oj-flex-item bold label-alignment">
+                                        <label for="input" style="margin-top: 0px; padding-right: 15px;" class="oj-label-inline" data-bind="text: $data.headerText"></label>
+                                    </div>
+                                    <div class='oj-flex-item'>
+                                        <div id="input" data-bind="text: $parent[$data.column]" 
+                                             class="cll-ellipsis" style="padding-bottom:10px;"></div>
+                                    </div>
+                                </div>
+                                <!-- /ko -->
+                            </div>
+                            <a title="Card Actions Menu" class="oj-sm-only-hide oj-xl-hide actions-menu actions-menu-position"
+                               data-bind=""data-bind="attr: { id: 'LV_ActionsMenu'+$unique }, click: function(){$parent.launchCardActionsMenuHanlder('LV_ActionsMenu'+$unique)}">
+                            </a>
+                        </div>
+                    </div> 
+                    <div class="oj-flex oj-xl-1 oj-sm-2 oj-lg-only-hide oj-md-only-hide oj-lg-float-end center-align" style="padding: 0px;">
+                       <a title="Card Actions Menu" class="actions-menu"
+                           data-bind="attr: { id: 'LV_ActionsMenu'+$unique }, click: function(){$parent.launchCardActionsMenuHanlder('LV_ActionsMenu'+$unique)}">
+                       </a>
+                    </div> 
+                </div>
+            </div>
+        </li>
+    </script>
+</div>

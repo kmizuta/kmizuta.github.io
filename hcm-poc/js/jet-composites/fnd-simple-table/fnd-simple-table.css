@@ -1,0 +1,14 @@
+.oj-table-data-cell.oj-form-control-inherit .oj-form-control .oj-inputtext-input{
+    padding: 0 6px !important;
+}
+
+.oj-table-column-header-text{
+    font-weight: bold;
+}
+
+.oj-form-control-inherit .oj-inputtext-input{
+    height: 90% !important;
+    width: none !important;
+    background-color: white !important;
+    border-width: 0.5px !important;
+}

@@ -1,0 +1,259 @@
+{
+    "items": [
+        {
+            "id": "tab_recentactions",
+            "label": "Recent Actions",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "true",
+            "actions": [
+                {
+                    "id": "action_transfer",
+                    "label": "Transfer",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_absencecase",
+                    "label": "Manage Absence Cases",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_absences",
+            "label": "Absences",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_absencecase",
+                    "label": "Manage Absence Cases",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_absencerecord",
+                    "label": "Manage Absence Records",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_workschedule",
+                    "label": "Manage Work Schedules",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_bestfit",
+            "label": "Best Fit",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_bestfitjob",
+                    "label": "Find Best Fit Job",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_bestfitperson",
+                    "label": "Find Best Fit Person",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_compensation",
+            "label": "Compensation",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_compensation",
+                    "label": "Manage Compensation",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_salary",
+                    "label": "Manage Salary",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_tolcompemsation",
+                    "label": "View Total Compensation Statement",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_payroll",
+            "label": "Payroll",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_payment",
+                    "label": "Manage Personal Payment Methods",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_taxwithold",
+                    "label": "Manage Tax Withholding",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_eoytaxform",
+                    "label": "View End-of-Year Tax Form",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_payslip",
+                    "label": "View Payslip",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_socialsecurity",
+                    "label": "View Social Security Account Information",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_personalemployment",
+            "label": "Personal and Employment",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_location",
+                    "label": "Change Location",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_manager",
+                    "label": "Change Manager",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_allocatedchecklist",
+                    "label": "Manage Allocated Checklists",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_dirrepo",
+                    "label": "Manage Direct Reports",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_person",
+                    "label": "Manage Person",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_extapp",
+                    "label": "Manage Person Identifiers for External Applications",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_useracc",
+                    "label": "Manage User Account",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_promote",
+                    "label": "Promote",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_terminate",
+                    "label": "Terminate",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_transfer",
+                    "label": "Transfer",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_vacancy",
+            "label": "Vacancy",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_vacancy",
+                    "label": "Create Vacancy",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_workforcemodeling",
+            "label": "Workforce Modeling",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_modeling",
+                    "label": "Workforce Modeling",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        },
+        {
+            "id": "tab_planning",
+            "label": "Succession Planning",
+            "visible": "true",
+            "disabled": "false",
+            "selected": "false",
+            "actions": [
+                {
+                    "id": "action_addsuccessionplan",
+                    "label": "Add to Succession Plan",
+                    "visible": "true",
+                    "disabled": "false"
+                },
+                {
+                    "id": "action_createsuccessionplan",
+                    "label": "Create Succession Plan",
+                    "visible": "true",
+                    "disabled": "false"
+                }
+            ]
+        }
+    ]
+}

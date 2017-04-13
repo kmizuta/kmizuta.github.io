@@ -1,0 +1,74 @@
+<div class="contextual-actions-container contextual-actions" data-bind="style: {width: $props.contentWidth+'px'}">
+   <div class="pca-close-icon">
+      <span data-bind="click: closePCAHandler"></span>
+   </div>
+   <div class="person-header-top">
+      <div class="person-header-top-content">
+         <div class="oj-col oj-sm-7 floatL">
+            <div class="person-name" data-bind="text: $props.headerTitle"></div>
+            <!-- ko if: $props.showHeader -->
+            <div class="header-slot">
+               <oj-slot name="contextualActionsHeaderSlot"></oj-slot>
+            </div>
+            <!-- /ko -->
+        </div>
+        <!-- ko if: $props.imageShape === "circle" -->
+        <div class="oj-col oj-sm-3 floatR"><img  data-bind="attr:{src: $props.imageSource !== undefined ? $props.imageSource : 'images/personImage.png'}" class="person-photo"></div>
+        <!-- /ko -->
+        <!-- ko if: $props.imageShape === "square" -->
+        <div class="oj-col oj-sm-3 floatR"><img data-bind="attr:{src: $props.imageSource !== undefined ? $props.imageSource : 'images/personImage.png'}" class="person-photo-square"></div>
+        <!-- /ko -->
+        <!-- ko if: $props.initials !== undefined -->
+        <div class="oj-col oj-sm-3 floatR person-photo-initials" data-bind="text: $props.initials"></div>
+        <!-- /ko -->
+        </div>
+    </div>
+
+    <div class="person-header-nav">
+        <!-- ko if: $props.showInformationTab -->
+       <a class="context-nav-item context-nav-info" data-bind="click:function(){ callTabSelection('info') }, css: tabSelected() === 'info' ? 'on' : '' "></a>
+        <!-- /ko -->
+        <!-- ko if: $props.showActionsTab -->
+       <a class="context-nav-item context-nav-actions" data-bind="click: function(){ callTabSelection('actions') },css: tabSelected() === 'actions' ? 'on' : '' "></a>
+        <!-- /ko -->
+        <!-- ko if: $props.showNavigationTab -->
+        <a href="#" class="context-nav-item context-nav-navigation" data-bind="click:function(){ callTabSelection('navigation') },css: tabSelected() === 'navigation' ? 'on' : '' "></a>
+        <!-- /ko -->
+        <!-- ko if: $props.customTabEnabled -->
+        <oj-slot name="contextualActionsCustomNavSlot"></oj-slot>
+        <!-- /ko -->
+    </div>
+
+ 
+    <div class="person-header-main" data-bind="style: {height: $props.contentHeight + 'px'}">
+        <!-- ko if: tabSelected() === 'info' -->
+        <div class="context-content context-info">
+            <oj-slot name="contextualActionsInfoContentSlot"></oj-slot>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: tabSelected() === 'actions' -->
+        <div class="context-content context-actions">
+            <oj-slot name="contextualActionsActionContentSlot"></oj-slot>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: tabSelected() === 'navigation' -->
+        <div class="context-content context-navigation">
+            <oj-slot name="contextualActionsNavigationContentSlot"></oj-slot>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: $props.customTabEnabled -->
+        <div class="context-content">
+            <oj-slot name="contextualActionsCustomNavContentSlot"></oj-slot>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: $props.customContentEnabled -->
+        <div class="context-content">
+            <oj-slot name="contextualActionsCustomContentSlot"></oj-slot>
+        </div>
+        <!-- /ko -->
+   </div>
+   <div class="person-header-bottom">
+      <oj-slot name="contextualActionsFooterStartContentSlot"></oj-slot>
+      <oj-slot name="contextualActionsFooterEndContentSlot"></oj-slot>
+   </div>
+</div>

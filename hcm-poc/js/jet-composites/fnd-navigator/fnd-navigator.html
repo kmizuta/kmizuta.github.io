@@ -1,0 +1,251 @@
+<div id="ocajNavigator" data-bind="attr:{class: 'ocaj-nav-theme-'+ themeColor}">
+    <!-- outer offcanvas wrapper -->
+    <div class="oj-offcanvas-outer-wrapper">
+        <!-- outer start offcanvas -->
+        <div id="drawer" class="bigscreen oj-offcanvas-start oj-panel oj-panel-alt5">
+            <div id="nav-offcanvas">
+                <!-- DESKTOP/TAB -->
+                <div class="ocaj-nav-big-view">
+                    <div class="ocaj-nav-moc-category-container ocaj-nav-moc-category-container-theme ocaj-nav-samelineelement" data-bind="
+               style: {height: windowHeight() + 'px'}
+                         ">
+                        <div id="ocajnavArrow" class="ocaj-nav-close-nav-icon" data-bind="click: closeDrawer "></div>
+                        <!--block for populating main menu list-->
+                        <ul class="ocaj-nav-moc-category-list">
+                            
+                            <li class="ocaj-nav-moc-category-item" id="Home" data-bind="click: function(){mainMenuEventHandler('Home')},
+                     css: {selected: category() === 'Home'},
+                     tap: category.bind(null, 'Home'),visible: homeAppears
+                                ">
+                                <span class="ocaj-nav-moc-category-icon suiicon" data-icon="navi_home"></span>
+                                <div class="ocaj-nav-moc-category-text">Home</div>
+                            </li>
+                            
+                            <li class="ocaj-nav-moc-category-item" id="navigator" data-bind="click: function(){mainMenuEventHandler('navigator')},
+                     css: {selected: category() === 'navigator'},
+                     tap: category.bind(null, 'navigator')
+                                ">
+                                <span class="ocaj-nav-moc-category-icon suiicon" data-icon="navi_compass"></span>
+                                <div class="ocaj-nav-moc-category-text">Navigator</div>
+                            </li>
+                            <li class="ocaj-nav-moc-category-item" id="recent" data-bind="click: function(){mainMenuEventHandler('recent')},
+                     css: {selected: category() === 'recent'},
+                     tap: category.bind(null, 'recent')
+                                ">
+                                <span class="ocaj-nav-moc-category-icon suiicon" data-icon="navi_arrowcurveback"></span>
+                                <div class="ocaj-nav-moc-category-text">Recent</div>
+                            </li>
+                            <li class="ocaj-nav-moc-category-item" id="favorites" data-bind="click: function(){mainMenuEventHandler('favorites')},
+                     css: {selected: category() === 'favorites'},
+                     tap: category.bind(null, 'favorites')
+                                ">
+                                <span class="ocaj-nav-moc-category-icon suiicon" data-icon="navi_star"></span>
+                                <div class="ocaj-nav-moc-category-text">Favorites</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--block for sub menu list-->
+                    <div class="ocaj-nav-moc-outer-container ocaj-nav-moc-outer-container-theme ocaj-nav-samelineelement nav_marginleft_offcanvas" 
+                         data-bind="style: {height: windowHeight() + 'px'}">
+                        <!--list view-->
+                        <!-- ko if: ocajNavListview -->
+                        <div id="ocajNavListDiv" class="ocajNavListDiv ocaj-nav-listview hidden-scrollbar" 
+                             data-bind="style: {height: (windowHeight()) + 'px'}">
+                            <div class="ocaj-nav-icon-loading" data-bind="style: {display: navIconStyleClass() ? 'none' : ''}"></div>
+                            <ul class="ocaj-nav-moc-outer-list" 
+                                data-bind="style: {display: navIconStyleClass() ? '' : 'none'}, foreach: {data: navData, as: 'item'}">
+                                <!-- ko if: item.type === 'toplevel'  -->
+                                <li class="ocaj-nav-moc-outer-item" data-bind="attr: {id: id},click: function(){$parent.mainMenuEventHandler(group, focusViewId, webapp, id, taskMenuSource)},
+                        visible: item.type === 'cluster' || item.type === 'toplevel',
+                        event : {mouseover: $parent.openInner.bind(item), click: $parent.closeInner},
+                        css: {'ocaj-nav-moc-category-selected': id === $parent.currentModule()}
+                                    ">
+                                    <a class="ocaj-nav-list-atag">
+                                        <div class="ocaj-nav-moc-outer-text ocaj-nav-list-text ocaj-nav-samelineelement" data-bind="text: item.label"></div>
+                                        <div id="nav_arrow" class="ocaj-nav-moc-outer-icon ocaj-nav-samelineelement" data-bind="visible: item.type === 'cluster'"></div>
+                                    </a>
+                                </li>
+                                <!-- /ko -->
+                                <!-- ko if: item.type === 'cluster'  -->
+                                <li class="ocaj-nav-moc-outer-item" data-bind="attr: {id: id},
+                        visible: item.type === 'cluster' || item.type === 'toplevel',
+                        event : {mouseover: $parent.openInner(item)},
+                        css: {'ocaj-nav-moc-category-selected': group === $parent.group()}
+                                    ">
+                                    <a class="ocaj-nav-list-atag">
+                                        <div class="ocaj-nav-moc-outer-text ocaj-nav-list-text ocaj-nav-samelineelement" data-bind="text: item.label"></div>
+                                        <div id="nav_arrow" class="ocaj-nav-moc-outer-icon ocaj-nav-samelineelement" data-bind="visible: item.type === 'cluster'"></div>
+                                    </a>
+                                </li>
+                                <!-- /ko -->
+                            </ul>
+                        </div>
+                        <!-- /ko -->
+                        <!--grid view-->
+                        <!-- ko if: ocajNavGridview -->
+                        <div class="ocaj-nav-grid-div">
+                            <div id="ocajNavGridDiv" class="ocaj-nav-gridview ocaj-nav-grid-col-sty" data-bind="style: {width: (windowWidth()-170) + 'px' , height: (windowHeight()-40) + 'px'}">
+                                <div data-bind="
+                        foreach: {data: navData, as: 'item'}
+                                     ">
+                                    <!-- ko if: item.type === 'cluster' || item.type === 'toplevel' -->
+                                    <div data-bind="
+                           visible: item.type === 'cluster' || item.type === 'toplevel'
+                                         ">
+                                        <!-- ko if: item.type === 'toplevel'  -->
+                                        <div class="ocaj-nav-moc-outer-text ocaj-nav-samelineelement ocaj-nav-grid-label ocaj-nav-pointer" data-bind="text: item.label, attr: {id: id},click: function(){$parent.mainMenuEventHandler(group, focusViewId, webapp, id, taskMenuSource)}, css: {'ocaj-nav-moc-category-selected': id === $parent.currentModule()}"></div>
+                                        <!-- /ko -->
+                                        <!-- ko if: item.type === 'cluster'  -->
+                                        <div class="ocaj-nav-moc-outer-text ocaj-nav-samelineelement ocaj-nav-grid-label" data-bind="text: item.label"></div>
+                                        <!-- /ko -->
+                                        <div>
+                                            <!-- ko foreach: $parent.subItems -->
+                                            <!-- ko if: item.group === group -->
+                                            <ul class="ocaj-nav-grid-ul" data-bind="
+                                 css: 'nav-list-' + group, foreach: {data: items, as: 'item'}
+                                                ">
+                                                <li class="ocaj-nav-moc-outer-item" data-bind="visible: visible,attr: {id: id},click: function(){$parents[2].mainMenuEventHandler(group, focusViewId, webapp, id, taskMenuSource)},
+                                    css: {'ocaj-nav-moc-subitem-selected': id === $parents[2].currentModule()}">
+                                                    <a class="ocaj-nav-grid-moc-grpitem-atag">
+                                                        <div class="ocaj-nav-moc-outer-text ocaj-nav-samelineelement" data-bind="text: label"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- /ko -->
+                                            <!-- /ko -->
+                                        </div>
+                                    </div>
+                                    <!-- /ko -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /ko -->
+                        <!--button set to toggle view, removed as per Ken's suggestion-->
+                        <!--div id="navBtnlayoutSet" class="oj-buttonset-width-auto ocaj-nav-buttonset-listlayout" aria-label="Choose layout type." data-bind="ojComponent: {component: 'ojButtonset', checked: navLayoutBtn, focusManagement:'none'}">
+                            <label for="ocajnavlistLayout"></label>
+                            <input id="ocajnavlistLayout" type="radio" name="layoutGroup" value="listLayoutCount" data-bind="click: navListView, ojComponent: {
+                     component:'ojButton',
+                     icons: {start:'ocaj-nav-icon-font ocaj-nav-list-icon-16'}, display: 'icons'
+                     }" />
+                            <label for="ocajnavcardLayout"></label>
+                            <input id="ocajnavcardLayout" type="radio" name="layoutGroup" value="gridLayoutCount" data-bind="click: navGridView, ojComponent: {
+                     component:'ojButton',
+                     icons: {start:'ocaj-nav-icon-font ocaj-nav-grid-icon-16'}, display: 'icons'
+                     }" />
+                        </div-->
+                    </div>
+                    <!--block for child sub mneu list-->
+                    <!-- ko foreach: subItems -->
+                    <div id="ocajNavPopupSubitem" class="nav-popup nav-popup-theme ocaj-nav-thirdlevel hidden-scrollbar" data-bind="css: 'nav-popup-' + group">
+                        <ul id="ocajNavSuitemsPop" class="ocaj-nav-moc-outer-list" data-bind="css: 'nav-list-' + group,
+                  foreach: {data: items, as: 'item'}">
+                            <li class="ocaj-nav-moc-outer-subitem" data-bind="visible: visible, click: function(){$parents[1].mainMenuEventHandler(group, focusViewId, webapp, id, taskMenuSource)}, 
+                    css: {'ocaj-nav-moc-subitem-selected': id === $parents[1].currentModule()}">
+                                <a class="ocaj-nav-moc-suitem-atag">
+                                    <!-- ko ifnot: cardIcon === 'null'-->
+                                    <div class="suiicon ocaj-nav-cardicon" data-bind="attr: {'data-icon': 'navi_'+cardIcon}"/>
+                                    <!-- /ko -->
+                                    <div class="ocaj-nav-moc-outer-text ocaj-nav-subitems-text ocaj-nav-samelineelement" data-bind="attr: {id: id},text: label"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /ko -->
+                </div>
+                <!-- MOBILE -->
+                <div class="ocaj-nav-side-panel-container ocaj-nav-side-panel-container-theme ocaj-nav-mobile-view">
+                    <div class="ocaj-nav-side-panel-header">
+                        <div class="ocaj-nav-side-panel-profile"></div>
+                        <div class="ocaj-nav-side-panel-name">Jamie Frost</div>
+                        <div class="ocaj-nav-side-panel-status" style="display: none;">
+                            In a meeting
+                        </div>
+                    </div>
+                    <div class="ocaj-nav-side-panel-nav" data-bind="style: {minHeight: windowHeight() - 210 + 'px'}">
+                        <ul>
+                            <!--block for populating main menu list-->
+                            <li class="ocaj-nav-side-panel-textcol ocaj-nav-side-panel-nav-li-atag" id="Home" data-bind="click: function(){mainMenuEventHandler('Home')},
+                        css: {selected: category() === 'Home'},
+                        tap: category.bind(null, 'Home'),visible: homeAppears
+                                ">
+                                <span class="ocaj-nav-cardicon-top suiicon" data-icon="navi_home"></span>
+                                <span class="ocaj-nav-side-panel-link">Home</span>
+                            </li>
+                            <li class="ocaj-nav-side-panel-textcol ocaj-nav-side-panel-nav-li-atag" id="navigator" data-bind="click: function(){mainMenuEventHandler('navigator')},
+                        css: {selected: category() === 'navigator'},
+                        tap: category.bind(null, 'navigator')
+                                ">
+                                <span class="ocaj-nav-cardicon-top suiicon" data-icon="navi_compass"></span>
+                                <span class="ocaj-nav-side-panel-link">Navigator</span>
+                            </li>
+                            <li class="ocaj-nav-side-panel-textcol ocaj-nav-side-panel-nav-li-atag" id="recent" data-bind="click: function(){mainMenuEventHandler('recent')},
+                        css: {selected: category() === 'recent'},
+                        tap: category.bind(null, 'recent')
+                                ">
+                                <span class="ocaj-nav-cardicon-top suiicon" data-icon="navi_arrowcurveback"></span>
+                                <span class="ocaj-nav-side-panel-link">Recent</span>
+                            </li>
+                            <li class="ocaj-nav-side-panel-textcol ocaj-nav-side-panel-nav-li-atag" id="favorites" data-bind="click: function(){mainMenuEventHandler('favorites')},
+                        css: {selected: category() === 'favorites'},
+                        tap: category.bind(null, 'favorites')
+                                ">
+                                <span class="ocaj-nav-cardicon-top suiicon" data-icon="navi_star"></span>
+                                <span class="ocaj-nav-side-panel-link">Favorites</span>
+                            </li>
+                            <div class="ocaj-nav-side-panel-divider"></div>
+                            <div class="ocaj-nav-icon-loading-mob" data-bind="style: {display: navIconStyleClass() ? 'none' : ''}"></div>
+                            <!--block for sub menu list-->
+                           <!-- ko if: navIconStyleClass --> 
+                            <!-- ko foreach: sortedItems -->
+                            <li class="ocaj-nav-sorteditem ocaj-nav-side-panel-textcol" data-bind="
+                                css: type === 'subcluster' ? 'ocaj-nav-side-panel-' + group + ' ocaj-nav-side-panel-sub ocaj-nav-side-panel-sub-theme ocaj-nav-side-panel-hidden' : 'ocaj-nav-side-panel-' + group + ' ocaj-nav-side-panel-top'">
+                                <!-- ko if: type === 'subcluster' || type === 'toplevel' -->
+                                <a class="ocaj-nav-side-panel-nav-li-atag" data-bind="visible: visible,
+                           click:function(){$parent.mainMenuEventHandler(group, focusViewId, webapp, id, taskMenuSource)},css :{selected: id === $parent.currentModule()}">
+                                     <!-- ko ifnot: cardIcon === 'null'-->
+                                        <div class="suiicon ocaj-nav-cardicon-top" data-bind="attr: {'data-icon': 'navi_'+cardIcon}"/>
+                                    <!-- /ko -->
+                                    <span class="ocaj-nav-side-panel-link" data-bind="
+                           text: label,
+                           css: type === 'subcluster' ? 'ocaj-nav-side-panel-' + group + ' ocaj-nav-side-panel-hidden' : 'ocaj-nav-side-panel-' + group
+                                          "></span>
+                                    <span class="ocaj-nav-side-panel-arrow" data-bind="
+                           visible: type === 'cluster',
+                           css: 'ocaj-nav-side-panel-' + group
+                                          "></span>
+                                </a>
+                                <!-- /ko -->
+                                <!-- ko if: type === 'cluster' -->
+                                <a class="ocaj-nav-side-panel-nav-li-atag" data-bind="
+                           click: $parent.mobileNavAction.bind(this,id, type),css :{selected: group === $parent.group()}">
+                                    <!-- ko ifnot: cardIcon === 'null'-->
+                                        <div class="suiicon ocaj-nav-cardicon-top" data-bind="attr: {'data-icon': 'navi_'+cardIcon}"/>
+                                    <!-- /ko -->
+                                    <span class="ocaj-nav-side-panel-link" data-bind="
+                           text: label,
+                           css: type === 'subcluster' ? 'ocaj-nav-side-panel-' + group + ' ocaj-nav-side-panel-hidden' : 'ocaj-nav-side-panel-' + group
+                                          "></span>
+                                    <span class="ocaj-nav-side-panel-arrow" data-bind="
+                           visible: type === 'cluster',
+                           css: 'ocaj-nav-side-panel-' + group
+                                          "></span>
+                                </a>
+                                <!-- /ko -->
+                            </li>
+                            <!-- /ko -->
+                           <!-- /ko --> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content -->
+        <div id="main">
+            <!-- outer offcanvas launch button -->
+            <!-- ko if: $props.navigatorIconRendered-->
+            <span id="glo_nav" role="img"  title="Navigator" class="oj-icon ocaj-nav-icon-ugh-navigator"
+                  data-bind="click: toggleDrawer"></span>
+            <!-- /ko -->
+        </div>
+    </div>
+</div>

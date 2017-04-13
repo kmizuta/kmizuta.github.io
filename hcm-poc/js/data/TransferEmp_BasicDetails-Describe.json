@@ -1,0 +1,18 @@
+{
+    "Date": "Date",
+    "Action": {
+        "lov":{
+            "Transfer" : "Transfer"
+        }
+    },
+    "Reason":  {
+        "lov":{
+            "careerProgression" : "Career Progression",
+            "internalRecruitment" : "Internal Recruitment",
+            "locationChange" : "Location Change",
+            "managerRequest" : "Manager Request",
+            "reorganization" : "Reorganization",
+            "workerRequest" : "Worker Request"
+        }
+    }
+}

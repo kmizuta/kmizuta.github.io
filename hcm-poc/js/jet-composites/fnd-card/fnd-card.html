@@ -1,0 +1,40 @@
+<div id="C_cardContainer" tabindex="0" role="group" class="ocaj-card-flipContainer" data-bind="css: $props.theme == 'dark' ? 'ocaj-card-box-darkgrey' : 'ocaj-card-box-lightgrey', style:{borderWidth: $props.type === 'borderless' ? '0px' : '', height: ($props.height)+'px', minWidth: ($props.width)+'px'}" title="">
+    <div id="C_front" class="ocaj-card-front-side">
+        <!-- header section of card front-->
+        <div style="height:32px;" class="ocaj-card-content-padding" data-bind="style:{display: $props.type === 'borderless' ? 'none' : ''}">
+            <div id="C_fTitle" class="text-normal-1 bold largeText" data-bind="style:{display: $props.titleClickable == false ? 'block' : 'none'},text:$props.cardTitle"></div>
+            <a id="C_fTItleLink" href="#" class="linkColor bold largeText cl-ellipsis" title='Title'
+               data-bind="click: function(data, event){cardTitleHandler($props.cardTitle)}, style:{display: $props.titleClickable == true ? 'block' : 'none'},text:$props.cardTitle"></a>
+            <div class="text-normal-2 smallText cl-ellipsis" data-bind="text:$props.subTitle"></div>
+        </div>
+        <!-- content section of card front-->
+        <div data-bind="css: $props.type === 'simple' ? '' : 'ocaj-card-content-style'">
+            <div data-bind="style:{height: ($props.type === 'borderless' ? $props.height+'px' : $props.height-72+'px')}" 
+                 class="ocaj-card-content-padding hidden-scrollbar">
+                <div id="C_frontSlot">
+                    <oj-slot name="frontSlot"></oj-slot>
+                </div>
+            </div>
+            <div id="C_frontFlip" tabindex="0" class="ocaj-flip-icon ocaj-flip-icon-background" title="Flip Card" data-bind="style:{display: cardFlipFlag() === 'front' ? '' : 'none'}, event: {click: cardFlipHandler}"/>
+        </div>    
+    </div>
+    <div id="C_back" class="ocaj-card-back-side">
+        <!-- header section of card back-->
+        <div style="height:32px;" class="ocaj-card-content-padding" data-bind="style:{display: $props.type === 'borderless' ? 'none' : ''}">
+            <div id="C_bTitle" class="text-normal-1 bold largeText" data-bind="style:{display: $props.titleClickable == false ? 'block' : 'none'},text:$props.cardTitle"></div>
+            <a id="C_bTitleLink" href="#" class="linkColor bold largeText cl-ellipsis" title='Sub Title'
+               data-bind="click: function(data, event){cardTitleHandler($props.cardTitle)}, style:{display: $props.titleClickable == true ? 'block' : 'none'},text:$props.cardTitle" aria-label="title"></a>
+            <div class="text-normal-2 smallText cl-ellipsis" data-bind="text:$props.subTitle"></div>
+        </div>
+        <!-- content section of card back-->
+        <div data-bind="css: $props.type === 'simple' ? '' : 'ocaj-card-content-style'">
+            <div data-bind="style:{height: ($props.type === 'borderless' ? $props.height+'px' : $props.height-72+'px')}" 
+                 class="ocaj-card-content-padding hidden-scrollbar">
+                <div id="C_backSlot" class="ocaj-card-inner-back-side">
+                    <oj-slot name="backSlot"></oj-slot>
+                </div>
+            </div> 
+            <div id="C_backFlip" class="ocaj-flip-icon ocaj-back-flip-icon-background" title="Flip Card" data-bind="style:{display: cardFlipFlag() === 'back' ? '' : 'none'}, event: {click: cardFlipHandler}"/>
+        </div>
+    </div>
+</div>

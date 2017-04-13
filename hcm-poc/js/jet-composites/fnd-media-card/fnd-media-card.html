@@ -1,0 +1,85 @@
+<div id="C_card" tabindex="0" role="group" class="ocaj-card-flipContainer" data-bind="style:{height: ($props.height)+'px'}">
+    <div id="C_front" class="ocaj-card-front-side">
+        <!-- header section of card front-->
+        <div style="height:35px; padding: 10px 0 10px 10px;" class="ocaj-card-header">
+            <table style="width: 100%; border-spacing: 0px; height: 22px; margin-left: -2px;">
+                <tbody style="width: 100%;">
+                    <tr>
+                        <td style="width: auto">
+                            <div id="C_fTitle" class="text-normal-1 bold largeText" data-bind="visible: $props.titleClickable === false, text:$props.cardTitle"></div>
+                            <a id="C_fTItleLink" class="oj-link linkColor bold largeText cl-ellipsis" aria-label="employee title"
+                               data-bind="event: {mouseover: function(){showPCAHanlder()}, mouseout: function(){hidePCAHanlder()}}, click: function(data, event){cardTitleHandler($props.keyAttribute)}, 
+                            attr: { title: $props.cardTitle }, visible: $props.titleClickable, text:$props.cardTitle, style: {maxWidth: cardWidth() + 'px'}"></a>
+                        </td>
+                        <td style="width: 100%" data-bind="event: {mouseover: function(){showPCAHanlder()}, mouseout: function(){hidePCAHanlder()}}">
+                            <div data-bind="attr: { id: 'CM_pcalink'+$unique }">
+                                <a id="CM_pcalink" title="Card Contexual Actions" aria-label="Card Contexual Actions" class="card-contexual-actions"
+                                   data-bind="style:{display: pcaFlagRendered() ? 'block' : 'none'}, click: function(){launchCardPCAHanlder('CM_pcalink'+$unique, $props.keyAttribute)}"></a>
+                            </div>
+                        </td>
+                        <td style="width:20px;">
+                            <div title="Card Actions Menu" class="flip-card-actions-menu" aria-label="Card Actions Menu"
+                                 data-bind="attr: { id: 'CM_frontActionsMenu'+$unique }, click: function(){launchCardActionsMenuHanlder('CM_frontActionsMenu'+$unique)}"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+            <div class="subTitle smallText cl-ellipsis" data-bind="text:$props.subTitle"></div>
+        </div>
+        <!-- content section of card front-->
+        <div class="ocaj-card-box-darkgrey" data-bind="css: $props.type === 'simple' ? '' : 'ocaj-card-content-style'">
+            <div class="hidden-scrollbar" data-bind="style:{height: $props.height-55+'px'}">
+                <div class="oj-flex">
+                    <div class="oj-flex-item" style="max-width: 120px;">
+                        <div class="cover-photo" data-bind="style: {backgroundImage:  'url(\''+ ($props.userImagePath ? $props.userImagePath : 'images/personImage.png') + '\')'}"></div>
+                    </div>
+                    <div class="oj-flex-item" style="width: 65%;">
+                        <div id="C_frontSlot" style="margin-top: 10px; padding: 0 15px;">
+                            <oj-slot name="frontSlot"></oj-slot>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="C_frontFlip" class="ocaj-flip-icon ocaj-flip-icon-background" title="Flip Card" 
+                     data-bind="style:{display: cardFlipFlag() === 'front' ? '' : 'none'}, event: {click: cardFlipHandler}"/>    
+        </div>    
+    </div>
+    <div id="C_back" class="ocaj-card-back-side">
+        <!-- header section of card back-->
+        <div style="height:35px; padding: 10px 0 10px 10px;" class="ocaj-card-header">
+            <table style="width: 100%; border-spacing: 0px; height: 22px; margin-left: -2px;">
+                <tbody style="width: 100%;">
+                    <tr>
+                        <td style="width: auto">
+                            <div id="C_fTitle" class="text-normal-1 bold largeText" data-bind="visible: $props.titleClickable === false, text:$props.cardTitle"></div>
+                            <a id="C_fTItleLink" class="oj-link linkColor bold largeText cl-ellipsis" aria-label="employee title"
+                               data-bind="event: {mouseover: function(){showPCAHanlder()}, mouseout: function(){hidePCAHanlder()}}, click: function(data, event){cardTitleHandler($props.keyAttribute)}, 
+                            attr: { title: $props.cardTitle }, visible: $props.titleClickable, text:$props.cardTitle, style: {maxWidth: cardWidth() + 'px'}"></a>
+                        </td>
+                        <td style="width: 100%" data-bind="event: {mouseover: function(){showPCAHanlder()}, mouseout: function(){hidePCAHanlder()}}">
+                            <div data-bind="attr: { id: 'CM_pcalink'+$unique }">
+                                <a id="CM_pcalink" title="Card Contexual Actions" aria-label="Card Contexual Actions" class="card-contexual-actions"
+                                   data-bind="style:{display: pcaFlagRendered() ? 'block' : 'none'}, click: function(){launchCardPCAHanlder('CM_pcalink'+$unique, $props.keyAttribute)}"></a>
+                            </div>
+                        </td>
+                        <td style="width:20px;">
+                            <div title="Card Actions Menu" class="flip-card-actions-menu" aria-label="Card Actions Menu"
+                                 data-bind="attr: { id: 'CM_frontActionsMenu'+$unique }, click: function(){launchCardActionsMenuHanlder('CM_frontActionsMenu'+$unique)}"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+            <div class="subTitle smallText cl-ellipsis" data-bind="text:$props.subTitle"></div>
+        </div>
+        <!-- content section of card back-->
+        <div class="ocaj-card-box-darkgrey" data-bind="css: $props.type === 'simple' ? '' : 'ocaj-card-content-style'">
+            <div data-bind="style:{height: $props.height-55+'px'}" 
+                 class="hidden-scrollbar" style="padding-left: 10px;">
+                <div id="C_backSlot" class="ocaj-card-inner-back-side" style="margin-top: 10px;">
+                    <oj-slot name="backSlot"></oj-slot>
+                </div>
+            </div> 
+            <div id="C_backFlip" class="ocaj-flip-icon ocaj-back-flip-icon-background" title="Flip Card" data-bind="style:{display: cardFlipFlag() === 'back' ? '' : 'none'}, event: {click: cardFlipHandler}"/>
+        </div>
+    </div>
+</div>

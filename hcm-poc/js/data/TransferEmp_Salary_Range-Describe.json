@@ -1,0 +1,10 @@
+{
+    "GradeName": "String",
+    "YearsInGrade" : "String",
+    "SalaryRange" : "String",
+    "Salary Range Midpoint" : "String",
+    "NewCompa -Ratio" : "String",
+    "CurrentCompa -Ratio" : "String",
+    "NewQuartile" : "String",
+    "CurrentQuartile" : "String"
+}

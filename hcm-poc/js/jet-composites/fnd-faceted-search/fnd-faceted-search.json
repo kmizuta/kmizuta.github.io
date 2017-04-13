@@ -1,0 +1,47 @@
+{
+ "name": "faceted-search",
+ "version": "1.0.0",
+ "properties": {
+     "serviceUrl" : {
+     "type": "string",
+     "description": "Rest service URL of the data source"
+   },
+     "keyAttribute" : {
+     "type": "string",
+     "description": "Primary key of the data collection returned by rest service"
+   },
+     "collectionDataSource" : {
+     "type": "object",
+     "writeback": "true",
+     "description": "CollectionTableDataSouce object which is data source of result table/list view" 
+   },
+     "collectionData" : {
+     "type": "object",
+     "writeback": "true",
+     "description": "oj.Collection object which is data source of result table/list view" 
+   },
+     "columnsList" :{
+      "type":"array",
+      "description": "List of columns to be shown in result section"
+    },
+     "facetList" :{
+      "type":"array",
+      "description": "List of filters <JsonData, filterType, keyAttribute>. user should pass json data, filter type i.e. checkbox, choicelist, link etc and keyAttribute",
+      "writeback": true
+    },
+     "keywordSearchAttribute" : {
+      "type": "string",
+      "description": "Attribute on which keyword search will be executed"
+    },
+    "suggestionGroupList" : {
+     "type": "array",
+     "description": "List of suggestion groups <GroupName, JsonData>"   
+   }
+ },
+ "methods":{
+    "toggleFilterHandler" : {
+     "description" :"Toggle filter panel of faceted search",
+     "return": "string"
+    }
+  }
+}

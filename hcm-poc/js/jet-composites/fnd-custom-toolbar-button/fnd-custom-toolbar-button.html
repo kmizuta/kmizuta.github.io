@@ -1,0 +1,13 @@
+<button class="ocaj-split-button ocaj-split-button-remove-border-radius" data-bind="ojComponent : {component: 'ojButton', label : $props.splitButtonText, disabled: $props.splitButtonDisabled}, click: $props.splitButtonAction, attr: {accesskey: $props.splitButtonAccessKey, title: $props.splitButtonShortDesc}"></button><button class="ocaj-split-button ocaj-split-button-drop-down" id="ocaj-split-button-dropdown" data-bind="ojComponent : {component: 'ojButton', label : '&#9660;', disabled: $props.dropButtonDisabled}, click: openSplitButtonPopup, attr: {accesskey: $props.dropButtonAccessKey, title: $props.splitButtonShortDesc }"></button>
+
+<!-- ko if: $props.dropDownMode == 'generic' -->
+<div style="display:none" class="ocaj-split-button-popup" id="ocaj-split-button-popup" data-bind="ojComponent:{component: 'ojPopup'}">
+	<oj-slot name="ocaj-split-button-dropdown-slot"> </oj-slot>
+</div>
+<!-- /ko -->
+
+<!-- ko if: $props.dropDownMode == 'split' -->
+<div style="display:none" class="ocaj-split-button-popup" id="ocaj-split-button-popup" data-bind="ojComponent:{component: 'ojPopup'}">
+	<div class="ocaj-split-button-clickable" data-bind="text: $props.dropButtonText, click: $props.dropButtonAction"></div>
+</div>
+<!-- /ko -->

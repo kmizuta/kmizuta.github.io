@@ -1,0 +1,29 @@
+{
+    "properties": {
+        "data": {
+            "type": "object"
+        },
+        "actionCallback": {
+            "type": "object"
+        },
+        "filmstripEnabled": {
+            "type": "boolean",
+            "value": "true"
+        },
+        "filmstripMode" : {
+            "type": "string",
+            "value": "grid"
+        }
+    },
+    "methods": {
+        "navigateExternal": {
+            "description": "Call this for navgation outside the grid cca",
+            "params": [
+                {
+                    "type": "string",
+                    "description": "pass the fimstrip data-object id as a param"
+                }
+            ]
+        }
+    }
+}

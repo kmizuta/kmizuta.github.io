@@ -1,0 +1,69 @@
+fnd-card-list-layout:not(.oj-complete){
+    visibility: hidden;
+}
+
+fnd-card-list-layout :focus{
+    outline: none;
+}
+
+fnd-card-list-layout .ocaj-cl-align-right{
+  text-align: end;
+}
+
+fnd-card-list-layout .ocaj-cl-align-center{
+  align-items: center;
+  justify-content: center;
+}
+
+fnd-card-list-layout .cll-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+@font-face {
+    font-family: 'AppFont';
+    src: url("fonts/App_iconfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-selected.oj-button-half-chrome .ocaj-card-icon.oj-button-icon, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-selected.oj-button-half-chrome .ocaj-card-icon.oj-button-icon:after{
+    content: url(images/func_card_16_onb.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-card-icon.oj-button-icon, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-card-icon.oj-button-icon:after{
+    content: url(images/func_card_16_ena.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-card-icon.oj-button-icon:hover, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-card-icon.oj-button-icon:hover:after{
+    content: url(images/func_card_16_hov.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-selected.oj-button-half-chrome .ocaj-list-icon.oj-button-icon, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-selected.oj-button-half-chrome .ocaj-list-icon.oj-button-icon:after{
+    content: url(images/func_list_16_onb.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-list-icon.oj-button-icon, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-list-icon.oj-button-icon:after{
+    content: url(images/func_list_16_ena.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-list-icon.oj-button-icon:hover, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-list-icon.oj-button-icon:hover:after{
+    content: url(images/func_list_16_hov.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-selected.oj-button-half-chrome .ocaj-table-icon.oj-button-icon, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-selected.oj-button-half-chrome .ocaj-table-icon.oj-button-icon:after{
+    content: url(images/func_table_16_onb.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-table-icon.oj-button-icon, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-table-icon.oj-button-icon:after{
+    content: url(images/func_table_16_ena.png);
+}
+
+fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-table-icon.oj-button-icon:hover, fnd-card-list-layout .oj-buttonset-multi .oj-button.oj-button-half-chrome .ocaj-table-icon.oj-button-icon:hover:after{
+    content: url(images/func_table_16_hov.png);
+}
+
+fnd-card-list-layout .hide{
+    display: none;
+}

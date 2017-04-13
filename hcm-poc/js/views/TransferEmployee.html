@@ -1,0 +1,667 @@
+<fnd-simple-panel profile-width="62px" profile-height="62px" 
+                  save-rendered="true" id="contactsHeader" cancel-rendered="true" cancel-action="{{cancelTransferEmployee}}" submit-action="{{cancelTransferEmployee}}"
+                  save-and-close-rendered="true" primary-save="save" submit-rendered="true" detail-page="true"
+                  data-bind="attr: {'header': getEmployeeTitle($parents[0].detailParams) + ': ' + currentStepLabel()}">
+    <div slot="ocaj-simplepanel-profile-slot">
+        <img id="contactsHeaderNav_icon" data-bind="attr:{src: userPhoto() ? userPhoto() : 'images/personImage.png'}" style="width: 60px; border-radius: 50%; border: 1px solid #D1D1D1; height: 60px;">
+    </div>
+    <div slot="ocaj-simplepanel-common-actions">
+        <!-- ko if: ! $root.isMobileView()-->
+        <button id= "Back"
+                data-bind="click: previousStep, ojComponent: {component: 'ojButton', label: 'Back', 
+                            disabled: stepArray()[0].id == currentStepValue()}">
+        </button>
+        <button id= "Next"
+                data-bind="click: nextStep, ojComponent: {component: 'ojButton', label: 'Next', 
+                        disabled: stepArray()[stepArray().length - 1].id == currentStepValue()}">
+        </button>
+        <!-- /ko -->
+    </div>
+    <div slot="ocaj-simplepanel-train-slot" data-bind="attr: {'style': $root.isMobileView ? 'margin-bottom: 20px;' : ''}">
+        <div id="train-container" style="margin-top: 20px;">
+            <div id="transferEmplyeeTrain" class="oj-train-stretch" style="max-width:700px;margin-left:auto;margin-right:auto;"
+                 data-bind="ojComponent:{
+		component: 'ojTrain', 
+		selected: currentStepValue, 
+		steps: stepArray}"></div>
+        </div>
+    </div>
+    <div slot="ocaj-simplepanel-content-slot">
+        <!-- ko if: currentStepValue() === 'stp1' -->
+        <div>
+
+            <h4 id="h5"  class="ocaj-form-subheaders oj-collapsible-header">Details</h4>
+            <div>
+                <fnd-panel-form id="myform4" data-url="http://mockrest/applcore/rest/employee/managerDetails" 
+                                describe-data-url="js/data/TransferEmp_Manager_Details-Describe.json" read-only="false" />
+                <fnd-panel-form id="myform1" data-url="http://mockrest/applcore/rest/employee/basic" 
+                                describe-data-url="js/data/TransferEmp_BasicDetails-Describe.json" read-only="false" >
+                </fnd-panel-form>
+            </div>
+
+
+            <h4 id="h5"  class="ocaj-form-subheaders oj-collapsible-header">Location</h4>
+            <fnd-panel-form id="myform2" data-url="http://mockrest/applcore/rest/employee/locationDetails" 
+                            describe-data-url="js/data/TransferEmp_Location_Details-Describe.json" read-only="false" />
+
+        </div>
+        <!-- /ko -->
+
+        <!-- ko if: currentStepValue() === 'stp2' -->
+
+        <h4 id="h5"  class="ocaj-form-subheaders oj-collapsible-header">Compensation</h4>
+        <div>
+            <fnd-panel-form id="myform2" data-url="http://mockrest/applcore/rest/employee/compensationDetails" 
+                            describe-data-url="js/data/TransferEmp_CompensationDetails-Describe.json" read-only="false" >
+            </fnd-panel-form>
+            <div id="salary-tabs" data-bind="ojComponent:{
+                    component: 'ojTabs', disabledTabs: [],
+                    selected: salaryTab
+                    }">
+                <!-- tab bar -->
+                <ul>
+                    <li><span>Salary Range</span></li>
+                    <li><span>History</span></li>
+                    <li><span>Percentage Change</span></li>
+                    <li><span>Compa - Ratio</span></li>
+                    <li><span>Growth Rate</span></li>
+                </ul>
+
+                <!-- tab contents -->
+                <div id="tabs-1">
+                    <div id='chart-container' data-bind="
+                        if: salaryTab() == 0
+                         ">
+                        <div id="barChart" data-bind="ojComponent: {
+                                component: 'ojChart', 
+                                type: 'bar', 
+                                orientation: orientationValue,
+                                stack: stackValue,
+                                series: barSeriesValueSalary, 
+                                groups: barGroupsValueSalary, 
+                                animationOnDisplay: 'auto',
+                                animationOnDataChange: 'auto',
+                                yAxis: yAxisData
+                            }"
+                             style="margin: 0 auto;
+                             max-width:500px;width:100%;height:350px;">
+                        </div>
+                    </div>
+                    <fnd-panel-form id="myform2" data-url="http://mockrest/applcore/rest/employee/salaryRange" 
+                                    describe-data-url="js/data/TransferEmp_Salary_Range-Describe.json" read-only="true" >
+                    </fnd-panel-form>
+                </div>
+                <div id="tabs-2">
+                    <!--                    <table id="table" summary="Salary History" aria-label="Salary History"
+                                               data-bind="ojComponent: {component: 'ojTable', 
+                                                                             data: datasource,
+                                                                             rootAttributes: {style: 'width: 100%'},
+                                                                             columnsDefault: {sortable: 'none'}, 
+                                                                             columns: [{headerText: 'Start Date',  
+                                                                                        field: 'StartDate'},
+                                                                                       {headerText: 'Action Reason', 
+                                                                                        field: 'ActionReason'},
+                                                                                       {headerText: 'Currency', 
+                                                                                        field: 'Currency'},
+                                                                                       {headerText: 'Salary Amount', 
+                                                                                        field: 'SalaryAmount'},
+                                                                                       {headerText: 'Frequency', 
+                                                                                        field: 'Frequency'},
+                                                                                       {headerText: 'Annual Salary', 
+                                                                                        field: 'AnnualSalary'},
+                                                                                       {headerText: 'Amount', 
+                                                                                        field: 'Amount'},
+                                                                                       {headerText: 'Percentage', 
+                                                                                        field: 'Percentage'}]}">
+                                        </table>-->
+                    <div id='chart-container-salaryHistory' data-bind="
+                        if: salaryTab() == 1
+                         ">
+                        <div id="lineChart" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'line',
+                                    series: lineSeriesValue, 
+                                    groups: lineGroupsValue,
+                                    animationOnDisplay: 'auto',
+                                    animationOnDataChange: 'auto',
+                                    styleDefaults: {lineType: ko.toJS(lineTypeValue), markerDisplayed: 'on'},
+                                    orientation: orientationValue
+                                }"
+                             style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <div id='chart-container-percentageChange' data-bind="
+                        if: salaryTab() == 2
+                         ">
+                        <div id="barChart1" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'bar', 
+                                    orientation: orientationValue,
+                                    stack: stackValue,
+                                    series: barSeriesValueHistory, 
+                                    groups: barGroupsValueHistory,
+                                    animationOnDataChange: 'auto',
+                                    animationOnDisplay: 'auto',
+                                    legend: {rendered: 'off'},
+                                    yAxis: {title: '% Adjusment Percentage'},
+                                    styleDefaults: {barGapRatio: 0.5, seriesTooltipType: 'none'},
+                                    valueFormats: {
+                                      z: {converter: currencyConverter, scaling: 'none'}, 
+                                      y: {converter: percentConverter}
+                                    }
+                                }"
+                             style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-4">
+                    <div id='chart-container-compa-ratio' data-bind="
+                        if: salaryTab() == 3
+                         ">
+                        <div id="lineChart2" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'line',
+                                    series: lineSeriesDualValue, 
+                                    groups: lineGroupsDualValue, 
+                                    animationOnDisplay: 'auto',
+                                    animationOnDataChange: 'auto',
+                                    styleDefaults: {lineType: ko.toJS(lineTypeValue), markerDisplayed: 'on'},
+                                    orientation: orientationValue,
+                                    splitDualY: dualY,
+                                    splitterPosition: splitterValue,
+                                    legend: {position: 'top'},
+                                    yAxis: {title: 'Annualized Salary'},
+                                    y2Axis: {title: 'Compa-Ratio'}
+                                }"
+                             style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-5">
+                    <div id='chart-container-growthrate' data-bind="
+                        if: salaryTab() == 4
+                         ">
+                        <div id="barChart5" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'bar', 
+                                    orientation: orientationValue,
+                                    stack: stackValue,
+                                    series: barSeriesValueGrowthRate, 
+                                    groups: barGroupsValueGrowthRate,
+                                    animationOnDataChange: 'auto',
+                                    animationOnDisplay: 'auto',
+                                    legend: {rendered: 'off'},
+                                    yAxis: {title: '% Growth Rate'},
+                                    styleDefaults: {barGapRatio: 0.5, seriesTooltipType: 'none'},
+                                    valueFormats: {
+                                      z: {converter: currencyConverter, scaling: 'none'}, 
+                                      y: {converter: percentConverter}
+                                    }
+                                }"
+                             style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h4 id="h5"  class="ocaj-form-subheaders oj-collapsible-header">Other Compensation</h4>
+        <!--
+        <div id="containerSelect">
+            <span>
+                <p style="display: inline-block">Currency</p>
+                <select id="basicSelect" data-bind="ojComponent: {component: 'ojSelect',
+                                                rootAttributes: {style:'max-width:20em'}}">
+                    <option value="WC">Worker local currency</option>
+                    <option value="USD">USD - US Dollar</option>
+                </select>
+            </span>
+        </div>
+        -->
+        <div id="menuSetContainer">
+            <div id="menuSet2" data-bind="ojComponent: {component: 'ojButtonset', chroming: 'half'}">
+                <button id="menuButton3"
+                        data-bind="ojComponent: {component: 'ojButton', label: 'View', 
+                             menu: '#myMenu'}">
+                </button>
+                <button id="menuButton4"
+                        data-bind="ojComponent: {component: 'ojButton', label: 'Format', 
+                             menu: '#myMenu'}">
+                </button>
+                <button id= "button"
+                        data-bind="ojComponent: { component: 'ojButton', label: 'Award Compensation' }">
+                </button>
+
+            </div>
+            <ul id="myMenu" style="display:none"
+                data-bind="ojComponent: {component: 'ojMenu'}">
+                <li id="columns2">
+                    <a href="#">Columns</a>
+                    <ul>
+                        <li>
+                            <a href="#"><span></span>Show All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="Freeze">
+                    <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-bookmark-icon-16 oj-disabled"></span>Freeze</a>
+                </li>
+                <li id="divider"></li>
+                <li id="Sort">
+                    <a href="#"><span class="oj-menu-item-icon oj-fwk-icon"></span>Sort</a>
+                </li>
+                <li id="Reorder" class="">
+                    <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-chat-icon-24"></span>Reorder Columns</a>
+                </li>
+            </ul>
+        </div>
+        <table id="table" summary="Compensation" aria-label="Compensation" style="border: 1px solid #dfe4e7"
+               data-bind="ojComponent: {component: 'ojTable', 
+                                             data: datasource1, 
+                                             rootAttributes: {style: 'width: 100%'},
+                                             columnsDefault: {sortable: 'none'}, 
+                                             columns: [{headerText: 'Plan',  
+                                                        field: 'Plan'},
+                                                       {headerText: 'Option', 
+                                                        field: 'Option'},
+                                                       {headerText: 'Start Date', 
+                                                        field: 'StartDate'},
+                                                       {headerText: 'End Date', 
+                                                        field: 'EndDate'},
+                                                       {headerText: 'Value', 
+                                                        field: 'Value'},
+                                                       {headerText: 'Units', 
+                                                        field: 'Units'},
+                                                       {headerText: 'Award Frequency', 
+                                                        field: 'AwardFrequency'},
+                                                       {headerText: 'Status', 
+                                                        field: 'Status'}]}">
+        </table>
+
+        <!-- /ko -->
+
+        <!-- ko if: currentStepValue() === 'stp3' -->
+        <div id="Roles_Provisioning" >
+
+            <h4 id="h5" class="ocaj-form-subheaders oj-collapsible-header">Requests
+                <a>
+                    <img src="images/func_plus_24_ena.png" style="" data-bind="attr: {style: $root.isMobileView() ? 'margin-top: -6px;vertical-align: bottom; float: right;' : 'vertical-align: bottom; float: right;'}"/>
+                </a>
+            </h4>
+            <div id='menuset-container'>
+                <div id="menuSet" data-bind="ojComponent: {component: 'ojButtonset', chroming: 'half'}">
+                    <!--                        <button id="menuButton1"
+                                                    data-bind="ojComponent: {component: 'ojButton', label: 'View', 
+                                                         menu: '#myMenu'}">
+                                            </button>
+                                            <button id="menuButton2"
+                                                    data-bind="ojComponent: {component: 'ojButton', label: 'Format', 
+                                                         menu: '#myMenu'}">
+                                            </button>
+                                            <button id="menuButton3"
+                                                    data-bind="ojComponent: {component: 'ojButton', label: 'Add'}">
+                                            </button>-->
+                </div>
+                <ul id="myMenu" style="display:none"
+                    data-bind="ojComponent: {component: 'ojMenu'}">
+                    <li id="columns">
+                        <a href="#">Columns</a>
+                        <ul>
+                            <li>
+                                <a href="#"><span></span>Show All</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="zoomout">
+                        <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-bookmark-icon-16 oj-disabled"></span>Freeze</a>
+                    </li>
+                    <li id="divider"></li>
+                    <li id="save">
+                        <a href="#"><span class="oj-menu-item-icon oj-fwk-icon"></span>Sort</a>
+                    </li>
+                    <li id="print" class="">
+                        <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-chat-icon-24"></span>Reorder Columns</a>
+                    </li>
+                </ul>
+                <table style="border: 1px solid #dfe4e7;border-bottom: none;" id="table" summary="Department List" aria-label="Departments Table"
+                       data-bind="ojComponent: {component: 'ojTable', 
+                                 data: requestDatasource,
+                                 columnsDefault: {sortable: 'enabled'},
+                                columns: [
+                            {headerText: 'Role Name',style: 'width: 70%',field:'RoleName'},
+                                          {headerText: 'Status',style: 'width: 10%',field:'Status'},
+                                          {headerText: 'From Date',style: 'width: 10%',field:'Date'},
+                                          {headerText: 'Provisioning Method',style: 'width: 10%',field:'Provision'}],
+                                          rootAttributes: {'style':'width: 100%; height:100%;'}}">
+                </table> 
+            </div>
+
+
+            <h4 id="h5" class="ocaj-form-subheaders oj-collapsible-header" style="padding-top: 20px;">Current Roles</h4>
+            <div id='menuset-container2'>
+                <div id="menuSet2" data-bind="ojComponent: {component: 'ojButtonset', chroming: 'half'}">
+                    <!--                        <button id="menuButton3"
+                                                    data-bind="ojComponent: {component: 'ojButton', label: 'View', 
+                                                         menu: '#myMenu'}">
+                                            </button>
+                                            <button id="menuButton4"
+                                                    data-bind="ojComponent: {component: 'ojButton', label: 'Format', 
+                                                         menu: '#myMenu'}">
+                                            </button>-->
+
+                </div>
+                <ul id="myMenu2" style="display:none"
+                    data-bind="ojComponent: {component: 'ojMenu'}">
+                    <li id="columns2">
+                        <a href="#">Columns</a>
+                        <ul>
+                            <li>
+                                <a href="#"><span></span>Show All</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="Freeze">
+                        <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-bookmark-icon-16 oj-disabled"></span>Freeze</a>
+                    </li>
+                    <li id="divider"></li>
+                    <li id="Sort">
+                        <a href="#"><span class="oj-menu-item-icon oj-fwk-icon"></span>Sort</a>
+                    </li>
+                    <li id="Reorder" class="">
+                        <a href="#"><span class="oj-menu-item-icon demo-icon-font demo-chat-icon-24"></span>Reorder Columns</a>
+                    </li>
+                </ul>
+
+                <table style="border: 1px solid #dfe4e7;border-bottom: none;" id="table" summary="Department List" aria-label="Departments Table"
+                       data-bind="ojComponent: {component: 'ojTable', 
+                                 data: datasource,
+                                 columnsDefault: {sortable: 'enabled'},
+                                columns: [
+                            {headerText: 'Role Name',style: 'width: 70%',field:'RoleName'},
+                                          
+                                          {headerText: 'From Date',style: 'width: 20%',field:'Date'},
+                                          {headerText: 'Provisioning Method',style: 'width: 10%',field:'Provision'}],
+                                          rootAttributes: {'style':'width: 100%; height:100%;'}}">
+                </table>      
+
+            </div>
+
+        </div>
+
+        <!-- /ko -->
+
+        <!-- ko if: currentStepValue() === 'stp4' -->
+        <div>
+            <div>
+                <div id="manager_Details" data-bind="ojComponent: {component: 'ojCollapsible', expanded: true, beforeCollapse: beforeCollapse}">
+                    <h4 id="h5"  class="ocaj-form-subheaders">Transfer</h4>
+                    <div>
+                        <fnd-panel-form id="myform4" data-url="http://mockrest/applcore/rest/employee/managerDetails" 
+                                        describe-data-url="js/data/TransferEmp_Manager_Details-Describe.json" read-only="false" />
+                        <fnd-panel-form id="myform1" data-url="http://mockrest/applcore/rest/employee/basic" 
+                                        describe-data-url="js/data/TransferEmp_BasicDetails-Describe.json" read-only="false" >
+                        </fnd-panel-form>
+                    </div>
+                </div>
+                <div id="Location_Measure" data-bind="ojComponent: {component: 'ojCollapsible', expanded: true, beforeCollapse: beforeCollapse}">
+                    <h4 id="h5"  class="ocaj-form-subheaders">Location</h4>
+                    <fnd-panel-form id="myform2" data-url="http://mockrest/applcore/rest/employee/locationDetails" 
+                                    describe-data-url="js/data/TransferEmp_Location_Details-Describe.json" read-only="false" />
+                </div>
+            </div>
+            <div id="Compensation_Details" 
+                 data-bind="ojComponent: {component: 'ojCollapsible',  expanded: true, 
+             beforeCollapse: beforeCollapse}">
+                <h4 id="h5"  class="ocaj-form-subheaders">Compensation</h4>
+                <div>
+                    <fnd-panel-form id="myform2" data-url="http://mockrest/applcore/rest/employee/compensationDetails" 
+                                    describe-data-url="js/data/TransferEmp_CompensationDetails-Describe.json" read-only="false" >
+                    </fnd-panel-form>
+                    <div id="salary-tabs" data-bind="ojComponent:{
+                    component: 'ojTabs', disabledTabs: [],
+                    selected: salaryTab
+                    }">
+                        <!-- tab bar -->
+                        <ul>
+                            <li><span>Salary Range</span></li>
+                            <li><span>History</span></li>
+                            <li><span>Percentage Change</span></li>
+                            <li><span>Compa - Ratio</span></li>
+                            <li><span>Growth Rate</span></li>
+                        </ul>
+
+                        <!-- tab contents -->
+                        <div id="tabs-1">
+                            <div id='chart-container' data-bind="
+                        if: salaryTab() == 0
+                                 ">
+                                <div id="barChart" data-bind="ojComponent: {
+                                component: 'ojChart', 
+                                type: 'bar', 
+                                orientation: orientationValue,
+                                stack: stackValue,
+                                series: barSeriesValueSalary, 
+                                groups: barGroupsValueSalary, 
+                                animationOnDisplay: 'auto',
+                                animationOnDataChange: 'auto',
+                                yAxis: yAxisData
+                            }"
+                                     style="margin: 0 auto;
+                                     max-width:500px;width:100%;height:350px;">
+                                </div>
+                            </div>
+                            <fnd-panel-form id="myform2" data-url="http://mockrest/applcore/rest/employee/salaryRange" 
+                                            describe-data-url="js/data/TransferEmp_Salary_Range-Describe.json" read-only="true" >
+                            </fnd-panel-form>
+                        </div>
+                        <div id="tabs-2">
+                            <!--                            <table id="table" summary="Salary History" aria-label="Salary History"
+                                                               data-bind="ojComponent: {component: 'ojTable', 
+                                                                                     data: datasource,
+                                                                                     rootAttributes: {style: 'width: 100%'},
+                                                                                     columnsDefault: {sortable: 'none'}, 
+                                                                                     columns: [{headerText: 'Start Date',  
+                                                                                                field: 'StartDate'},
+                                                                                               {headerText: 'Action Reason', 
+                                                                                                field: 'ActionReason'},
+                                                                                               {headerText: 'Currency', 
+                                                                                                field: 'Currency'},
+                                                                                               {headerText: 'Salary Amount', 
+                                                                                                field: 'SalaryAmount'},
+                                                                                               {headerText: 'Frequency', 
+                                                                                                field: 'Frequency'},
+                                                                                               {headerText: 'Annual Salary', 
+                                                                                                field: 'AnnualSalary'},
+                                                                                               {headerText: 'Amount', 
+                                                                                                field: 'Amount'},
+                                                                                               {headerText: 'Percentage', 
+                                                                                                field: 'Percentage'}]}">
+                                                        </table>-->
+                            <div id='chart-container-salaryHistory' data-bind="
+                        if: salaryTab() == 1
+                                 ">
+                                <div id="lineChart" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'line',
+                                    series: lineSeriesValue, 
+                                    groups: lineGroupsValue,
+                                    animationOnDisplay: 'auto',
+                                    animationOnDataChange: 'auto',
+                                    styleDefaults: {lineType: ko.toJS(lineTypeValue), markerDisplayed: 'on'},
+                                    orientation: orientationValue
+                                }"
+                                     style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-3">
+                            <div id='chart-container-percentageChange' data-bind="
+                        if: salaryTab() == 2
+                                 ">
+                                <div id="barChart1" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'bar', 
+                                    orientation: orientationValue,
+                                    stack: stackValue,
+                                    series: barSeriesValueHistory, 
+                                    groups: barGroupsValueHistory,
+                                    animationOnDataChange: 'auto',
+                                    animationOnDisplay: 'auto',
+                                    legend: {rendered: 'off'},
+                                    yAxis: {title: '% Adjusment Percentage'},
+                                    styleDefaults: {barGapRatio: 0.5, seriesTooltipType: 'none'},
+                                    valueFormats: {
+                                      z: {converter: currencyConverter, scaling: 'none'}, 
+                                      y: {converter: percentConverter}
+                                    }
+                                }"
+                                     style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-4">
+                            <div id='chart-container-compa-ratio' data-bind="
+                        if: salaryTab() == 3
+                                 ">
+                                <div id="lineChart2" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'line',
+                                    series: lineSeriesDualValue, 
+                                    groups: lineGroupsDualValue, 
+                                    animationOnDisplay: 'auto',
+                                    animationOnDataChange: 'auto',
+                                    styleDefaults: {lineType: ko.toJS(lineTypeValue), markerDisplayed: 'on'},
+                                    orientation: orientationValue,
+                                    splitDualY: dualY,
+                                    splitterPosition: splitterValue,
+                                    legend: {position: 'top'},
+                                    yAxis: {title: 'Annualized Salary'},
+                                    y2Axis: {title: 'Compa-Ratio'}
+                                }"
+                                     style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-5">
+                            <div id='chart-container-growthrate' data-bind="
+                        if: salaryTab() == 4
+                                 ">
+                                <div id="barChart5" data-bind="ojComponent: {
+                                    component: 'ojChart', 
+                                    type: 'bar', 
+                                    orientation: orientationValue,
+                                    stack: stackValue,
+                                    series: barSeriesValueGrowthRate, 
+                                    groups: barGroupsValueGrowthRate,
+                                    animationOnDataChange: 'auto',
+                                    animationOnDisplay: 'auto',
+                                    legend: {rendered: 'off'},
+                                    yAxis: {title: '% Growth Rate'},
+                                    styleDefaults: {barGapRatio: 0.5, seriesTooltipType: 'none'},
+                                    valueFormats: {
+                                      z: {converter: currencyConverter, scaling: 'none'}, 
+                                      y: {converter: percentConverter}
+                                    }
+                                }"
+                                     style="margin:0 auto;max-width:700px;width:100%;height:250px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Comments" data-bind=" ojComponent: {component: 'ojCollapsible', expanded: true, beforeCollapse: beforeCollapse}">
+                <h4 id="h5"  class="ocaj-form-subheaders">Comments</h4>
+                <textarea id="resizeBoth" 
+                          style="resize: both;"
+                          data-bind="ojComponent: {component: 'ojTextArea', placeholder: $root.isMobileView() ? 'Tap to enter.' : 'Click to enter.', value: ''}">
+
+                </textarea>
+            </div>
+           
+            <div id="Approvers" 
+                 data-bind="ojComponent: {component: 'ojCollapsible', expanded: true, beforeCollapse: beforeCollapse}">
+                <h4 id="h5"  class="ocaj-form-subheaders">Approvers 
+                    <a>
+                        <img src="images/func_plus_24_ena.png" style="" data-bind="attr: {style: $root.isMobileView() ? 'margin-top: -6px;vertical-align: bottom; float: right;' : 'vertical-align: bottom; float: right;'}"/>
+                    </a>
+                </h4>
+                <div>
+                    <table width="100%">
+                        <tr>
+                            <td style="width: 80px;text-align: right;border-right:1px solid #d6dfe6;border-bottom:1px solid #d6dfe6">
+                                <span style="white-space: nowrap">1</span>
+                            </td>
+                            <td style="border-bottom:1px solid #d6dfe6">
+
+                                <span style="white-space: nowrap">
+                                    <div id="Approvers" style="margin: 0px;" 
+                                         data-bind="ojComponent: {component: 'ojCollapsible', expanded: true, beforeCollapse: closeDetail, beforeExpand: expanDetail}">
+                                        <h5 id="h5" style="padding: 0px;"  class="ocaj-form-subheaders">Transfer approval stage</h5>
+                                    </div>
+                                </span>
+
+
+                            </td>
+                        </tr>
+
+                    </table>
+                    <!-- ko if: render() -->
+                    <table style="border-bottom:1px solid #d6dfe6" width="100%">
+                        <tr>
+                            <td style="width: 80px;text-align: right;border-right:1px solid #d6dfe6;">
+                                <span style="white-space: nowrap">1.1
+
+                                </span>
+
+                            </td>
+                            <td>
+                                <div style="padding-left: 25px;white-space: nowrap">
+                                    <span>
+
+
+                                        <img src="images/qual_arrowperson_16.png" alt=""/>
+                                        <span style="font-weight: bold;font-size: 12px;">SENIOR VP (Henry Jones)</span>
+                                        <span style="color: #a9a9a9"> - Transfer approvers</span>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <table style="border-bottom:1px solid #d6dfe6" width="100%">
+                        <tr>
+                            <td style="width: 80px;text-align: right;border-right:1px solid #d6dfe6;">
+                                <span style="white-space: nowrap">1.2
+
+                                </span>
+
+                            </td>
+                            <td>
+                                <div style="padding-left: 24px;white-space: nowrap">
+                                    <span>
+
+
+                                        <img src="images/qual_arrowperson_16.png" alt=""/>
+                                        <span style="font-weight: bold;font-size: 12px;">CHRO (Michelle Shannon)</span>
+                                        <span style="color: #a9a9a9"> - Transfer approvers</span>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- /ko -->
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+
+</fnd-simple-panel>

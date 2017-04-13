@@ -1,0 +1,35 @@
+<fnd-card-list-layout id="clcca" service-url = "{{$props.serviceURL}}" page-size="{{$props.pageSize}}" 
+   default-view="{{$props.defaultView}}" key-attribute="{{$props.keyAttribute}}">
+   <div slot="cardList-cardView-slot" style="width:100%;">
+      <fnd-card-view-layout card-template="card_template"></fnd-card-view-layout>
+   </div>
+   <div slot="cardList-start-slot">
+      <button id= "toggleCardFltr"
+         data-bind="ojComponent: { component: 'ojButton', label: 'Show Filters' }">
+      </button>
+   </div>
+   <div slot="cardList-end-slot" class="oj-flex">
+      <div class="oj-flex-item oj-sm-only-12 oj-md-12 ocaj-sortby">
+         <span>Sort By</span> 
+         <select id="basicSelect" data-bind="ojComponent: {component: 'ojSelect',
+            rootAttributes: {style:'max-width:4em'}}">
+            <option value="IE">Name</option>
+            <option value="FF">Account</option>
+         </select>
+      </div>
+   </div>
+   <div slot="cardList-listView-slot">
+      <fnd-simple-table id="resTable" data-source = "{{tableDataSource}}" service-url = "{{$props.serviceURL}}" columns-list="{{$props.listViewAttributes}}" sortable="{{ 'enabled' }}" 
+         key-attribute="{{$props.keyAttribute}}" row-selection = "single"></fnd-simple-table>
+   </div>
+</fnd-card-list-layout>
+<script id="card_template" type="text/html">
+   <li class="oj-flex-item oj-sm-12 oj-md-6 oj-lg-4 oj-xl-3" style="margin:0;border-style:none;">
+   <fnd-card height="{{$parents[1].cardHeight()}}" width="{{$parents[1].cardWidth()}}" 
+              theme="{{$parents[1].cardTheme()}}" type="{{$parents[1].cardType()}}" 
+              card-title="{{$data[$parents[1].cardTitle()]}}" sub-title="{{$data[$parents[1].cardSubTitle()]}}" title-clickable="{{$parents[1].cardTitleClickable()}}">
+       <fnd-form-card slot="frontSlot" form-card-attributes = "{{$parents[1].frontColumnList}}" row-data="{{$data}}"/>
+       <fnd-form-card slot="backSlot" form-card-attributes = "{{$parents[1].backColumnList}}" row-data="{{$data}}"/>
+   </fnd-card>
+   </li>               
+</script>

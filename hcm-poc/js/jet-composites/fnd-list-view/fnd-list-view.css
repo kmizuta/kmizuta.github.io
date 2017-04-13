@@ -1,0 +1,246 @@
+fnd-list-view .ocaj-card-box-lightgrey .text-normal-1{
+    color: #333333;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .text-normal-2{
+    color: #505050;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .linkColor{
+    color: #145c9e;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .ocaj-card-content-style{
+    background-color: #FFFFFF;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .ocaj-flip-icon{
+    position: absolute;
+    text-align: end;
+    bottom: 5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .ocaj-flip-icon-background{
+    background-image: url(images/func_cardfliplight_28_ena.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .ocaj-flip-icon-background:hover{
+    background-image: url(images/func_cardfliplight_28_hov.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .ocaj-back-flip-icon-background{
+    background-image: url(images/func_cardflipbacklight_28_ena.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .ocaj-card-box-lightgrey .ocaj-back-flip-icon-background:hover{
+    background-image: url(images/func_cardflipbacklight_28_hov.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .text-normal-1{
+    color: #FFFFFF;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .text-normal-2{
+    color: #FFFFFF;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .linkColor{
+    color: #96c0ff;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .ocaj-card-content-style{
+    background-color: #4d4d4d;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .ocaj-flip-icon{
+    position: absolute;
+    text-align: end;
+    bottom: -1px;
+    right: -1px;
+    cursor: pointer;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .ocaj-flip-icon-background{
+    background-image: url(images/func_cardflipdark_28_ena.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .ocaj-flip-icon-background:hover{
+    background-image: url(images/func_cardflipdark_28_hov.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .ocaj-back-flip-icon-background{
+    background-image: url(images/func_cardflipbackdark_28_ena.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .ocaj-card-box-darkgrey .ocaj-back-flip-icon-background:hover{
+    background-image: url(images/func_cardflipbackdark_28_hov.png);
+    width: 28px;
+    height: 28px;
+}
+
+fnd-list-view .whiteBackground{
+    background-color: #FFFFFF;
+}
+
+fnd-list-view .grayBackground{
+    background-color: #f4f4f4;
+}
+
+fnd-list-view .blackBackground{
+    background-color: #333333;
+}
+
+fnd-list-view .ocaj-card-content-padding{
+    padding: 0px 0px 10px 10px;
+}
+
+fnd-list-view .bold{
+    font-weight: bold;
+}
+
+fnd-list-view .text-normal-2{
+    color: #505050;
+}
+
+fnd-list-view .largeText{
+    font-size: 16px;
+}
+
+fnd-list-view .smallText{
+    font-size: 13px;
+}
+
+fnd-list-view .cl-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  display: block;
+}
+
+/*Scrollbar on hover */
+fnd-list-view .hidden-scrollbar{
+   overflow: hidden !important;
+   min-height: 0px !important;
+}
+
+fnd-list-view .hidden-scrollbar:hover {
+   overflow-y: auto !important;
+}
+
+fnd-list-view .hidden-scrollbar p {
+   padding-right: 16px !important;
+}
+
+fnd-list-view .hidden-scrollbar:hover p {
+   padding-right: 0px !important;
+}
+
+fnd-list-view .photo-round{
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+}
+
+fnd-list-view .inline{
+    float: left;
+}
+
+fnd-list-view .inline-end{
+    float: right;
+}
+
+fnd-list-view .label-alignment{
+    text-align: end;
+}
+
+fnd-list-view .user-image{
+    height: 64px;
+    width: 64px;
+}
+
+@media screen and (max-width: 767px) {
+ fnd-list-view .user-image{
+   height: 48px;
+    width: 48px;
+ }
+ fnd-list-view .actions-menu-position{
+     display: none !important;
+ }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+ fnd-list-view .actions-menu-position{
+    position: relative;
+    left: 640px;
+    top: -105px;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ fnd-list-view .actions-menu-position{
+    position: relative;
+    left: 335px;
+    bottom: 200px;
+ }
+}
+
+@media screen and (min-width: 1280px) {
+ fnd-list-view .actions-menu-position{
+     display: none !important;
+ }
+}
+
+fnd-list-view .actions-menu{
+    background-image: url(images/fuse-icon-drop-menu-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px #f4921f solid;
+    background-color: #f4921f;
+    border-radius: 5px;
+    width: 31px;
+    height: 15px;
+    padding: 0px;
+    min-height: 0px;
+    box-shadow: 0px 0px 0px 0px;
+    display: inline-block;
+}
+
+fnd-list-view .center-align{
+    align-items: center;
+}
+
+fnd-list-view .card-contexual-actions{
+    background-image: url(images/func_contextpop_orange_20_ena.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* prevent blue border during list item selection */
+fnd-list-view .oj-listview-item.oj-focus-highlight::after, .oj-listview-group-item.oj-focus-highlight::after{
+    outline: none;
+}
+

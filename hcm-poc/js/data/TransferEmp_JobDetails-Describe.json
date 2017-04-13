@@ -1,0 +1,74 @@
+{
+    "BusinessUnit": {
+        "combobox": {
+            "VisionCorporationEnterprise": "Vision Corporation Enterprise",
+            "internalRecruitment": "Internal Recruitment",
+            "locationChange": "Location Change",
+            "managerRequest": "Manager Request",
+            "reorganization": "Reorganization",
+            "workerRequest": "Worker Request"
+        }
+    },
+    "Position": {
+        "combobox": {
+            "POSCD2976": "VP360.Regional Sales VP",
+            "POSCD2976": "MGR361.Sales Manager",
+            "POSCD598": "MGR545.Manager US Sales Central",
+            "POSCD2980": "MGR360.Sales Manager",
+            "SP_EMP_Telemarketing": "SP_EMP_Telemarketing",
+            "POSCD596": "MGR525.Manager US Sales East"
+        }
+    },
+    "Job": {
+        "combobox": {
+            "10720": "10720.Applications Developer 2"
+        }
+    },
+    "GradeLadder": {
+        "combobox": {
+            "10720": "Test CDRM Grade Ladder 28J ul0 9"
+        }
+    },
+    "Grade": {
+        "combobox": {
+            "IT3": "IT3"
+        },
+        "details": {
+            "icon": "ocaj-func-pencil-16",
+            "title": "Grade Details"
+        }
+    },
+    "GradeProgressionIncluded": {
+        "checkbox": {
+            "text": "Include in grade step progression",
+            "value": "Include",
+            "label": "FND_NO_LABEL"
+        }
+    },
+    "Department": {
+        "combobox": {
+            "VisionOperations": "Vision Operations"
+        }
+    },
+    "WorkingAsAManager":  {
+        "lov":{
+            "yes" : "Yes",
+            "no" : "No"
+        }
+    },
+    "WorkingHours": "number",
+    "Frequency": {
+        "lov":{
+            "weekly" : "Weekly",
+            "hourly" : "Hourly"
+        }
+    },
+    "LimitedNonAssesmentPeriod" : "Date",
+    "MeasurementPeriodStartDate": "Date",
+    "MeasurementPeriodEndDate": "Date",
+    "AdministrationPeriodStartDate": "Date",
+    "AdministrationPeriodEndDate": "Date",
+    "StabilityPeriodStartDate": "Date",
+    "StabilityPeriodEndDate": "Date"
+    
+}

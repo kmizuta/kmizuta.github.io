@@ -1,0 +1,317 @@
+/***********/
+/* SVG CSS */
+/***********/
+
+/* Icon colors */
+fnd-springboard .svg-icon01 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon02 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon03 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon04 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon05 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon06 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon07 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon08 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon09 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon10 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon11 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon12 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon13 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon14 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon15 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon16 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon17 {
+    fill: #ffffff;
+}
+fnd-springboard .svg-icon18 {
+    fill: #ffffff;
+}
+
+/* Icon backgrounds */
+fnd-springboard .svg-bkgd01 {
+    background-color: #309fdb;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd02 {
+    background-color: #f8bb48;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd03 {
+    background-color: #e85c63;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd04 {
+    background-color: #67b460;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd05 {
+    background-color: #13b6cf;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd06 {
+    background-color: #e85d88;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd07 {
+    background-color: #aa529b;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd08 {
+    background-color: #5277b8;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd09 {
+    background-color: #2db3ac;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd10 {
+    background-color: #ed813e;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd11 {
+    background-color: #e95a38;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+fnd-springboard .svg-bkgd12 {
+    background-color: #c8d657;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    box-shadow: none;
+}
+
+/* Icon Halo on hover */
+/* Note that these are the same colors than svg-bkgd-xx with an alpha */
+fnd-springboard .svg-bkgd01:hover {
+    box-shadow: 0px 0px 0px 10px rgba(48, 159, 219, 0.25) !important;
+}
+fnd-springboard .svg-bkgd02:hover {
+    box-shadow: 0px 0px 0px 10px rgba(248, 187, 72, 0.25) !important;
+}
+fnd-springboard .svg-bkgd03:hover {
+    box-shadow: 0px 0px 0px 10px rgba(232, 92, 99, 0.25) !important;
+}
+fnd-springboard .svg-bkgd04:hover {
+    box-shadow: 0px 0px 0px 10px rgba(103, 180, 96, 0.25) !important;
+}
+fnd-springboard .svg-bkgd05:hover {
+    box-shadow: 0px 0px 0px 10px rgba(19, 182, 207, 0.25) !important;
+}
+fnd-springboard .svg-bkgd06:hover {
+    box-shadow: 0px 0px 0px 10px rgba(232, 93, 136, 0.25) !important;
+}
+fnd-springboard .svg-bkgd07:hover {
+    box-shadow: 0px 0px 0px 10px rgba(170, 82, 155, 0.25) !important;
+}
+fnd-springboard .svg-bkgd08:hover {
+    box-shadow: 0px 0px 0px 10px rgba(82, 119, 184, 0.25) !important;
+}
+fnd-springboard .svg-bkgd09:hover {
+    box-shadow: 0px 0px 0px 10px rgba(45, 179, 172, 0.25) !important;
+}
+fnd-springboard .svg-bkgd10:hover {
+    box-shadow: 0px 0px 0px 10px rgba(237, 129, 62, 0.25) !important;
+}
+fnd-springboard .svg-bkgd11:hover {
+    box-shadow: 0px 0px 0px 10px rgba(233, 90, 56, 0.25) !important;
+}
+fnd-springboard .svg-bkgd12:hover {
+    box-shadow: 0px 0px 0px 10px rgba(200, 214, 87, 0.25) !important;
+}
+
+/* Cluster and Shortcut colors */
+fnd-springboard .svg-cluster,
+fnd-springboard .svg-shortcut {
+    fill: transparent;
+}
+
+fnd-springboard .svg-shortcut {
+    display: none;
+}
+
+fnd-springboard .svg-cluster-show .svg-cluster,
+fnd-springboard .svg-shortcut-show .svg-shortcut {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+fnd-springboard .svg-cluster-visible,
+fnd-springboard .svg-shortcut-visible {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+/* Default size and border-radius */
+fnd-springboard .SVGNavIconSize:alias {
+    size: 96px;
+}
+
+fnd-springboard .SVGNavIconBorderRadius:alias {
+    border-radius: 50%;
+}
+
+fnd-springboard .svg-nav-cluster {
+    width: 48px;
+    height: 48px;
+}
+
+fnd-springboard .grid-container {
+    min-height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+fnd-springboard .app-nav-item {
+    display: inline-block;
+    position: relative;
+    width: 115px;
+    height: 102px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-transform: translateZ(0);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+fnd-springboard .app-nav-item .app-nav-label {
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    bottom: 12px;
+    z-index: 1;
+    display: block;
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 115px;
+    height: 30px;
+    overflow: hidden;
+    color: var(--GLOBAL_REGION_LABEL_COLOR, #2e444c);
+    text-decoration: none;
+
+
+}
+
+fnd-springboard .app-nav-item .top-nav-label {
+    top:100px;
+    text-decoration: none;
+}
+
+fnd-springboard .cluster-container {
+    display: none;
+    height: 330px;
+    left: 40px;
+    position: absolute;
+    top: 180px;
+    width: 550px;
+    z-index: 99;
+}
+
+fnd-springboard .cluster-inner-container {
+    margin-left: 20px;
+    margin-top: -10px;
+    position: relative;
+    width: 0;
+}
+
+fnd-springboard .svg-nav {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+
+    /* To fix halo effect in Safari */
+    margin: 10px 0px;
+}
+
+fnd-springboard .svg-nav-cluster {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    /* To fix halo effect in Safari */
+    margin: 10px 0px;
+}
+
+fnd-springboard .ocaj-half-opaque {
+    opacity: 0.7 !important;
+    transition: all 0.5s ease;
+}
+
+fnd-springboard .ocaj-half-opaque:hover {
+    opacity: 1 !important;
+    transition: all 0.5s ease;
+}
+
+fnd-springboard .ocaj-svg-selected svg{
+    width: 58px;
+    height: 58px;
+    transition: all 0.5s ease;  
+}
+
+fnd-springboard .ocaj-springboard-main-container {
+    margin: 0 auto;
+}
+/******************/
+/* END OF SVG CSS */
+/******************/
