@@ -1,9 +1,0 @@
-fnd-card-view-layout .oj-listview.oj-focus-ancestor .oj-listview-item.oj-focus{
-    outline: none;
-    background-color: white;
-    border: none;
-}
-
-fnd-card-view-layout .oj-listview-item.oj-hover{
-    background: #FFFFFF;
-}
