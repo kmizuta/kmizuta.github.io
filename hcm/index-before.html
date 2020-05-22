@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <style>
+    /** Loader css -Begin **/
+    .lds-ellipsis {
+      display: inline-block;
+      position: relative;
+      width: 64px;
+      height: 64px;
+    }
+    .lds-ellipsis div {
+      position: absolute;
+      top: 27px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #fff;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+
+    .darktheme .lds-ellipsis div {
+      position: absolute;
+      top: 27px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #000000;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+    
+    .darktheme.lds-ellipsis div {
+      position: absolute;
+      top: 27px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #000000;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+    
+    .lds-ellipsis div:nth-child(1) {
+      left: 6px;
+      animation: lds-ellipsis1 0.6s infinite;
+    }
+    .lds-ellipsis div:nth-child(2) {
+      left: 6px;
+      animation: lds-ellipsis2 0.6s infinite;
+    }
+    .lds-ellipsis div:nth-child(3) {
+      left: 26px;
+      animation: lds-ellipsis2 0.6s infinite;
+    }
+    .lds-ellipsis div:nth-child(4) {
+      left: 45px;
+      animation: lds-ellipsis3 0.6s infinite;
+    }
+    @keyframes lds-ellipsis1 {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes lds-ellipsis3 {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0);
+      }
+    }
+    @keyframes lds-ellipsis2 {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(19px, 0);
+      }
+    }
+    /** Loader css - Enf **/
+  </style>
+
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.5/cropper.min.css" rel="stylesheet" type="text/css">
+  
+ 
+  <!-- userPrefs -->
+  <!-- vb:inject id="headContent" theme="resources/css/dt.theme.redwood" -->
+  <!-- visualBuilderApplcoreHeadContent -->
+  <script type="text/javascript">
+    window.faConfig = window.faConfig || {};
+    window.faConfig['FND_VERSION'] = '2004.2.0';
+
+    window.FAEndPoints = window.FAEndPoints || {};
+    window.FAEndPoints['CDN_LOCATION'] = 'https://static.oracle.com/cdn/';
+  </script>
+
+</head>
+
+<body class="oj-web-applayout-body">
+
+<div id="loader" style="opacity:1;transition: opacity 100ms;" class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+
+<oj-vb-content id="ui" style="position:relative;top:0; transition:top 100ms;" config="[[vbApplication]]"></oj-vb-content>
+
+<!-- visualBuilderScripts -->
+<!-- CSRFToken -->
+  
+</body>
+
+</html>
