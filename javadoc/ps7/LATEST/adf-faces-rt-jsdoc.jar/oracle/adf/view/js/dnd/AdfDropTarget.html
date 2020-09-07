@@ -1,0 +1,886 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfDropTarget</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfDropTarget";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfDropEvent.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/base/AdfFacesMessage.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/dnd/AdfDropTarget.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfDropTarget.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">oracle.adf.view.js.dnd</span><br>
+Class AdfDropTarget</h1>
+<pre>
+<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">oracle.adf.view.js.base.AdfObject</a>
+         |
+         +--<strong>oracle.adf.view.js.dnd.AdfDropTarget</strong>
+</pre>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><span><a href="../../../../../oracle/adf/view/js/dnd/AdfAttributeDropTarget.html" title="class in oracle.adf.view.js.dnd">AdfAttributeDropTarget</a></span><span>, <a href="../../../../../oracle/adf/view/js/dnd/AdfBasicDropTarget.html" title="class in oracle.adf.view.js.dnd">AdfBasicDropTarget</a></span></dd>
+</dl>
+<hr>
+<pre>
+public class <strong>AdfDropTarget</strong>
+extends <a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>
+</pre>
+<div>Superclass of Objects that accept Drops from Drag and Drop</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_component" title="field in this class">_component</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#constructor" title="field in oracle.adf.view.js.base.AdfObject">constructor</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#superclass" title="field in oracle.adf.view.js.base.AdfObject">superclass</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AdfDropTarget__" title="constructor in this class">AdfDropTarget</a></strong>()</code></dt>
+<dd>
+<div>Superclass of Objects that accept Drops from Drag and Drop</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AcceptDrag_Object__Object__Object__Object__Object_" title="method in this class">AcceptDrag</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> possibleActions, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd>
+<div>Returns the action to use for this combination of possible and proposed actions.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_acceptDrag_Object__Object__Object__Object_" title="method in this class">_acceptDrag</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#acceptDragEnter_Object__Object__Object__Object_" title="method in this class">acceptDragEnter</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd>
+<div>Called while a drag operation is ongoing, when the mouse pointer enters the operable part of the drop site for the AdfDropTarget.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#acceptDragOver_Object__Object__Object__Object_" title="method in this class">acceptDragOver</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd>
+<div>Called when a drag operation is ongoing, while the mouse pointer is still over the operable part of the drop site for the AdfDropTarget registered with this listener.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#acceptDropActionChanged_Object__Object__Object__Object_" title="method in this class">acceptDropActionChanged</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd>
+<div>Called if the user has modified the current drop gesture</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AcceptedDragEnter_Object__Object__Object__Object_" title="method in this class">AcceptedDragEnter</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> userAction, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#CalculateFlavorAcceptance_Object_" title="method in this class">CalculateFlavorAcceptance</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd>
+<div>Returns true if the drag supports one of the flavors we want</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#dragExit_Object_" title="method in this class">dragExit</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd>
+<div>Called while a drag operation is ongoing, when the mouse pointer has exited the operable part of the drop site for the AdfDropTarget.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#drop_AdfDnDContext__Object__Number__Number_" title="method in this class">drop</a></strong>(<a href="../../../../../oracle/adf/view/js/dnd/AdfDnDContext.html" title="class in oracle.adf.view.js.dnd">AdfDnDContext</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction, <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> pageX, <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> pageY)</code></dt>
+<dd>
+<div>Called when the drag operation has terminated with a drop on the operable part of the drop site for the AdfDropTarget</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#GetAllowedActions_Object_" title="method in this class">GetAllowedActions</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd>
+<div>Subclasses can override to control the set of actions they allow</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/datatransfer/AdfDataFlavor.html" title="class in oracle.adf.view.js.datatransfer">AdfDataFlavor</a>&gt;</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#GetAllowedFlavors_Object_" title="method in this class">GetAllowedFlavors</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd>
+<div>Returns the Array of allowed AdfDataFlavors.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getComponent__" title="method in this class">getComponent</a></strong>()</code></dt>
+<dd>
+<div>Returns the Component that this AdfDropTarget is attached to</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#Init__" title="method in this class">Init</a></strong>()</code></dt>
+<dd>
+<div>Initializes the instance.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O__setComponent_Object_" title="method in this class">__setComponent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Set by the AdfUIComponent when the drag source is attacjed</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toDebugString__" title="method in this class">toDebugString</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#adopt_Object_" title="method in oracle.adf.view.js.base.AdfObject">adopt</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#clone__" title="method in oracle.adf.view.js.base.AdfObject">clone</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createCallback_Object_" title="method in oracle.adf.view.js.base.AdfObject">createCallback</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createInitializedObject__" title="method in oracle.adf.view.js.base.AdfObject">createInitializedObject</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createSubclass_Function__Function__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">createSubclass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#ensureClassInitialization_Function_" title="method in oracle.adf.view.js.base.AdfObject">ensureClassInitialization</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#equals_Object_" title="method in oracle.adf.view.js.base.AdfObject">equals</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getClass_Object_" title="method in oracle.adf.view.js.base.AdfObject">getClass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyArrayProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyArrayProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyMapProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyMapProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getTypeName__" title="method in oracle.adf.view.js.base.AdfObject">getTypeName</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#toString__" title="method in oracle.adf.view.js.base.AdfObject">toString</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="O_component" id="O_component"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_component</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_component</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AdfDropTarget__" id="AdfDropTarget__"><!-- --></a></p>
+<h3 class="DetailHeader">AdfDropTarget</h3>
+<dl>
+<dt><code>public <strong>AdfDropTarget</strong>()</code></dt>
+<dd><br>
+<div>Superclass of Objects that accept Drops from Drag and Drop</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AcceptDrag_Object__Object__Object__Object__Object_" id="AcceptDrag_Object__Object__Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">AcceptDrag</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> AcceptDrag</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> possibleActions,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd><br>
+<div>Returns the action to use for this combination of possible and proposed actions. The default implementation calls GetAllowedFlavors to retrieve the list of AdfDataFlavors this AdfDropTarget supports. Subclasses that want more involved acceptance criteria should override this method.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>possibleActions</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>proposedAction</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageX</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageY</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the current support AdfDnDContext.ACTION, or DndContext.ACTION_NONE if a drop isn't supported.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="O_acceptDrag_Object__Object__Object__Object_" id="O_acceptDrag_Object__Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_acceptDrag</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> _acceptDrag</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>proposedAction</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageX</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageY</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the current support AdfDnDContext.ACTION, or DndContext.ACTION_NONE if a drop isn't supported.</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="acceptDragEnter_Object__Object__Object__Object_" id="acceptDragEnter_Object__Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">acceptDragEnter</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> acceptDragEnter</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd><br>
+<div>Called while a drag operation is ongoing, when the mouse pointer enters the operable part of the drop site for the AdfDropTarget.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>proposedAction</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageX</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageY</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the current support AdfDnDContext.ACTION, or DndContext.ACTION_NONE if a drop isn't supported.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="acceptDragOver_Object__Object__Object__Object_" id="acceptDragOver_Object__Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">acceptDragOver</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> acceptDragOver</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd><br>
+<div>Called when a drag operation is ongoing, while the mouse pointer is still over the operable part of the drop site for the AdfDropTarget registered with this listener.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>proposedAction</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageX</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageY</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the current support AdfDnDContext.ACTION, or DndContext.ACTION_NONE if a drop isn't supported.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="acceptDropActionChanged_Object__Object__Object__Object_" id="acceptDropActionChanged_Object__Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">acceptDropActionChanged</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> acceptDropActionChanged</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd><br>
+<div>Called if the user has modified the current drop gesture</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>proposedAction</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageX</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageY</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the current support AdfDnDContext.ACTION, or DndContext.ACTION_NONE if a drop isn't supported.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="AcceptedDragEnter_Object__Object__Object__Object_" id="AcceptedDragEnter_Object__Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">AcceptedDragEnter</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> AcceptedDragEnter</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> userAction,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageX,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> pageY)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>userAction</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageX</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageY</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="CalculateFlavorAcceptance_Object_" id="CalculateFlavorAcceptance_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">CalculateFlavorAcceptance</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> CalculateFlavorAcceptance</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd><br>
+<div>Returns true if the drag supports one of the flavors we want</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - null <code>true</code> if the transferable contains an AdfDataFlavor that this AdfDropTarget can consume</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="dragExit_Object_" id="dragExit_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">dragExit</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dragExit</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd><br>
+<div>Called while a drag operation is ongoing, when the mouse pointer has exited the operable part of the drop site for the AdfDropTarget.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="drop_AdfDnDContext__Object__Number__Number_" id="drop_AdfDnDContext__Object__Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">drop</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> drop</strong>(<a href="../../../../../oracle/adf/view/js/dnd/AdfDnDContext.html" title="class in oracle.adf.view.js.dnd">AdfDnDContext</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> proposedAction,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> pageX,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> pageY)</code></dt>
+<dd><br>
+<div>Called when the drag operation has terminated with a drop on the operable part of the drop site for the AdfDropTarget</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Drag and drop context</td>
+</tr>
+<tr>
+<td valign="top"><code>proposedAction</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageX</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>pageY</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the chosen AdfDnDContext.ACTION, or DndContext.ACTION_NONE if no drop actually occurred. Sunclasses should override this method to actually perform the drop</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="GetAllowedActions_Object_" id="GetAllowedActions_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">GetAllowedActions</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> GetAllowedActions</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd><br>
+<div>Subclasses can override to control the set of actions they allow</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - Bitmask of allowed actions</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="GetAllowedFlavors_Object_" id="GetAllowedFlavors_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">GetAllowedFlavors</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/datatransfer/AdfDataFlavor.html" title="class in oracle.adf.view.js.datatransfer">AdfDataFlavor</a>&gt; GetAllowedFlavors</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext)</code></dt>
+<dd><br>
+<div>Returns the Array of allowed AdfDataFlavors. If subclasses plan to use the default implementation of AcceptDrag, they must override this method to return thier support AdfDataFlavors.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/datatransfer/AdfDataFlavor.html" title="class in oracle.adf.view.js.datatransfer">AdfDataFlavor</a>&gt;</code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getComponent__" id="getComponent__"><!-- --></a></p>
+<h3 class="DetailHeader">getComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> getComponent</strong>()</code></dt>
+<dd><br>
+<div>Returns the Component that this AdfDropTarget is attached to</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="Init__" id="Init__"><!-- --></a></p>
+<h3 class="DetailHeader">Init</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> Init</strong>()</code></dt>
+<dd><br>
+<div>Initializes the instance. Subclasses of AdfObject must call their superclass' Init</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html#Init__" title="method in oracle.adf.view.js.base.AdfObject">Init()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="O__setComponent_Object_" id="O__setComponent_Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">__setComponent</h3>
+<dl class="HiddenPrivate">
+<dt><code><strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> __setComponent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Set by the AdfUIComponent when the drag source is attacjed</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="toDebugString__" id="toDebugString__"><!-- --></a></p>
+<h3 class="DetailHeader">toDebugString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> toDebugString</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html#toDebugString__" title="method in oracle.adf.view.js.base.AdfObject">toDebugString()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfDropEvent.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/base/AdfFacesMessage.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/dnd/AdfDropTarget.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfDropTarget.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

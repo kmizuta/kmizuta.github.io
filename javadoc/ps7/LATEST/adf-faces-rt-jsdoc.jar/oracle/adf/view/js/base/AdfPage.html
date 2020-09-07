@@ -1,0 +1,3056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfPage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfPage";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/datatransfer/AdfObjectTransferable.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/base/AdfPage.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfPage.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">oracle.adf.view.js.base</span><br>
+Class AdfPage</h1>
+<pre>
+<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">oracle.adf.view.js.base.AdfObject</a>
+         |
+         +--<strong>oracle.adf.view.js.base.AdfPage</strong>
+</pre>
+<hr>
+<pre>
+public class <strong>AdfPage</strong>
+extends <a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>
+</pre>
+<div>Abstract base Page Management class. Instances of this class are created by calling AdfLookAndFeel.createRichPage() on the appropriate AdfLookAndFeel subclass.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#ACTIVE_COMPONENT_PROPERTY" title="field in this class">ACTIVE_COMPONENT_PROPERTY</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_changedComponentCount" title="field in this class">_changedComponentCount</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_changedComponents" title="field in this class">_changedComponents</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#CREATE_VIEW_PHASE" title="field in this class">CREATE_VIEW_PHASE</a></strong></code></dt>
+<dd>
+<div>Phase when initially creating the client view.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#DELIVER_EVENTS_PHASE" title="field in this class">DELIVER_EVENTS_PHASE</a></strong></code></dt>
+<dd>
+<div>Phase during event delivery</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#EDITABLE_SUBTREE_PROPERTY" title="field in this class">EDITABLE_SUBTREE_PROPERTY</a></strong></code></dt>
+<dd>
+<div>Property name for the editable subtree property</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#EDITED_COMPONENT_PROPERTY" title="field in this class">EDITED_COMPONENT_PROPERTY</a></strong></code></dt>
+<dd>
+<div>Property name for the current inline-edited component property</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_FOR_CONTAINER_PREFIX" title="field in this class">_FOR_CONTAINER_PREFIX</a></strong></code></dt>
+<dd>
+<div>ID prefix that is also used on the server to identify a container for future message DOM.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_localeContext" title="field in this class">_localeContext</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_lookAndFeel" title="field in this class">_lookAndFeel</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_NEW_WINDOW_NAME" title="field in this class">_NEW_WINDOW_NAME</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#PAGE" title="field in this class">PAGE</a></strong></code></dt>
+<dd>
+<div>Static reference to the page context Object for theis Rich Client Page.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_phase" title="field in this class">_phase</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#SELECTED_EDITING_COMPONENTS_PROPERTY" title="field in this class">SELECTED_EDITING_COMPONENTS_PROPERTY</a></strong></code></dt>
+<dd>
+<div>Property name for the array of inline-selected editable components property</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#UPDATE_VIEW_PHASE" title="field in this class">UPDATE_VIEW_PHASE</a></strong></code></dt>
+<dd>
+<div>DEPRECATED:</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#WAITING_FOR_USER_INPUT_PHASE" title="field in this class">WAITING_FOR_USER_INPUT_PHASE</a></strong></code></dt>
+<dd>
+<div>Phase when waiting for user input</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#constructor" title="field in oracle.adf.view.js.base.AdfObject">constructor</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#superclass" title="field in oracle.adf.view.js.base.AdfObject">superclass</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AdfPage__" title="constructor in this class">AdfPage</a></strong>()</code></dt>
+<dd>
+<div>Abstract base Page Management class.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#addBusyStateListener_Object__Function_" title="method in this class">addBusyStateListener</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance, <a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd>
+<div>Adds a listener to be invoked whenever there is a busy state event.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#addChangedComponent_Object_" title="method in this class">addChangedComponent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Marks a component as having attribute changes that need to be synched to the server</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#addComponents_Object_" title="method in this class">addComponents</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> components)</code></dt>
+<dd>
+<div>Add the list of components as varargs to be managed by the Page</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#addMessage_String__AdfFacesMessage__Object_" title="method in this class">addMessage</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId, <a href="../../../../../oracle/adf/view/js/base/AdfFacesMessage.html" title="class in oracle.adf.view.js.base">AdfFacesMessage</a> facesMessage, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> toBeRemoved)</code></dt>
+<dd>
+<div>Adds a Message to AdfPage's message queue.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#addPartialTargets_Object_" title="method in this class">addPartialTargets</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> components)</code></dt>
+<dd>
+<div>Adds the components to the set of components that will be redrawn on the next communication with the server.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#addPropertyChangeListener_Object__Function_" title="method in this class">addPropertyChangeListener</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance, <a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd>
+<div>Adds a PropertyChangeListener with the specified instance and listener function</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#announceToAssistiveTechnology_Object__Object_" title="method in this class">announceToAssistiveTechnology</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> message, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> onlyIfChanged)</code></dt>
+<dd>
+<div>Issues an announcement for AT users using our "status" WAI-ARIA live region.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#areCssSelectorsUncompressed__" title="method in this class">areCssSelectorsUncompressed</a></strong>()</code></dt>
+<dd>
+<div>Tests if css selector compression are disabled for the page.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#checkUncommittedData__" title="method in this class">checkUncommittedData</a></strong>()</code></dt>
+<dd>
+<div>Displays uncommitted data warning if &lt;af:document&gt; has uncommittedDataWarning="on", and the page contains uncommitted data (either on the client or on the server).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#clearAllMessages__" title="method in this class">clearAllMessages</a></strong>()</code></dt>
+<dd>
+<div>Clears all of the messages for a particular page.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#ClearChangesList__" title="method in this class">ClearChangesList</a></strong>()</code></dt>
+<dd>
+<div>Clears the list of components with changes that need to be synched to the server</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#clearMessages_String_" title="method in this class">clearMessages</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId)</code></dt>
+<dd>
+<div>Clears a messages for a particular component id.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#Dispose__" title="method in this class">Dispose</a></strong>()</code></dt>
+<dd>
+<div>Called to tear down the AdfPage instance</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#doResizeNotify_Object_" title="method in this class">doResizeNotify</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Performs the resize notify traversal on the subtree rooted at the specified component.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#findComponent_String_" title="method in this class">findComponent</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> clientId)</code></dt>
+<dd>
+<div>Retrieves a component by its clientID.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#findComponentByAbsoluteId_String_" title="method in this class">findComponentByAbsoluteId</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> absoluteId)</code></dt>
+<dd>
+<div>Search for and return the AdfUIComponent with an id that matches the specified absolute id expression.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#findComponentByAbsoluteLocator_String_" title="method in this class">findComponentByAbsoluteLocator</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> absoluteLocator)</code></dt>
+<dd>
+<div>Search for and return the AdfUIComponent with an id that matches the specified absolute locator expression.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getActiveComponent__" title="method in this class">getActiveComponent</a></strong>()</code></dt>
+<dd>
+<div>Returns the AdfUIComponent with the current keyboard focus</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getActiveComponentId__" title="method in this class">getActiveComponentId</a></strong>()</code></dt>
+<dd>
+<div>Returns the id of the currently active component on the page.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getAllMessages__" title="method in this class">getAllMessages</a></strong>()</code></dt>
+<dd>
+<div>Return an object containing all messages keyed by componentID and containing an array of FacesMessages.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getAsynchronousUpdatesState__" title="method in this class">getAsynchronousUpdatesState</a></strong>()</code></dt>
+<dd>
+<div>Gets the state of Asynchronous updates for the page.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getBaseResourceUrl__" title="method in this class">getBaseResourceUrl</a></strong>()</code></dt>
+<dd>
+<div><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">this relies on client-side url manipulation which will not work in a portal environment. This should not be used. Instead, url's should be created and encoded on the server.</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#GetChangedComponents__" title="method in this class">GetChangedComponents</a></strong>()</code></dt>
+<dd>
+<div>Returns an Object containing keys mapping from the clientIds of the changed components to their instances</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getClientIdsWithMessages_String_" title="method in this class">getClientIdsWithMessages</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> rootId)</code></dt>
+<dd>
+<div>Return an array of the client identifiers for which at least one FacesMessage has been queued.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getComponentsByType_Object_" title="method in this class">getComponentsByType</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentType)</code></dt>
+<dd>
+<div>Returns an array of component instances, whose component type matches the argument.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDefaultMessageHandlerComponentId__" title="method in this class">getDefaultMessageHandlerComponentId</a></strong>()</code></dt>
+<dd>
+<div>Retrieves the component ID that is the default message handler (for global messages).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDnDContext__" title="method in this class">getDnDContext</a></strong>()</code></dt>
+<dd>
+<div>Returns the current Drag and Drop context, associated with the page, or null if no Drag and Drop context is available.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getEditableSubtree__" title="method in this class">getEditableSubtree</a></strong>()</code></dt>
+<dd>
+<div>Returns the root of the component subtree that inline-editing is allowed on</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getEditedComponent__" title="method in this class">getEditedComponent</a></strong>()</code></dt>
+<dd>
+<div>Returns the current component being edited.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getFailedConnectionText__" title="method in this class">getFailedConnectionText</a></strong>()</code></dt>
+<dd>
+<div>Gets the text to display in an alert if the XMLHttpRequest fails.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getLocaleContext__" title="method in this class">getLocaleContext</a></strong>()</code></dt>
+<dd>
+<div>Retrieves the locale context associated with this AdfPage.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getLookAndFeel__" title="method in this class">getLookAndFeel</a></strong>()</code></dt>
+<dd>
+<div>Returns the LookAndFeel that this page is displaying</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getMessageHandlerSlaveComponentId__" title="method in this class">getMessageHandlerSlaveComponentId</a></strong>()</code></dt>
+<dd>
+<div>Retrieves the component ID that is the slave to the default message handler (provides configuration attributes that the default handler can consume).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getMessages_Object_" title="method in this class">getMessages</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentId)</code></dt>
+<dd>
+<div>Get FacesMessage objects associated with a particular component.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getPageProperty_Object_" title="method in this class">getPageProperty</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyName)</code></dt>
+<dd>
+<div>Gets the value of a page property.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getPhase__" title="method in this class">getPhase</a></strong>()</code></dt>
+<dd>
+<div>Returns the current phase of the AdfPage lifecycle.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getResourceURL_Object_" title="method in this class">getResourceURL</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> path)</code></dt>
+<dd>
+<div>Returns the resource URL for the given path.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getResponseIdentifier__" title="method in this class">getResponseIdentifier</a></strong>()</code></dt>
+<dd>
+<div>Returns an identifier for the previous response if one is available.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt;</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getSelectedEditingComponents__" title="method in this class">getSelectedEditingComponents</a></strong>()</code></dt>
+<dd>
+<div>Returns the array of AdfUIComponents currently selected for inline editing, or <code>null</code> if no AdfUIComponents are selected.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getSessionIdentifier__" title="method in this class">getSessionIdentifier</a></strong>()</code></dt>
+<dd>
+<div>Returns an identifier for the current middle-tier session if one is available.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getTwoDigitYearStart__" title="method in this class">getTwoDigitYearStart</a></strong>()</code></dt>
+<dd>
+<div>Returns the year offset for parsing years with only two digits.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getTzOffsetMinutes__" title="method in this class">getTzOffsetMinutes</a></strong>()</code></dt>
+<dd>
+<div>get the tzOffset in minutes for the current date on the server.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getViewId__" title="method in this class">getViewId</a></strong>()</code></dt>
+<dd>
+<div>Returns an identifier for the current view being displayed in the page.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#hasMessages_String_" title="method in this class">hasMessages</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId)</code></dt>
+<dd>
+<div>Returns true if this particular component has messages or false if it does not.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#Init_Object_" title="method in this class">Init</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> lookAndFeel)</code></dt>
+<dd>
+<div>Initializes the instance.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isAnimationEnabled__" title="method in this class">isAnimationEnabled</a></strong>()</code></dt>
+<dd>
+<div>Tests if animation is enabled for the page.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isAutomationEnabled__" title="method in this class">isAutomationEnabled</a></strong>()</code></dt>
+<dd>
+<div>This method returns a message string that will explain why the client is not synchronized with the server.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isPortlet__" title="method in this class">isPortlet</a></strong>()</code></dt>
+<dd>
+<div>Returns whether or not this Page is in a Portlet context based on an internal flag.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isScreenReaderMode__" title="method in this class">isScreenReaderMode</a></strong>()</code></dt>
+<dd>
+<div>Tests whether the page is running in screen reader mode.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isSynchronizedWithServer__" title="method in this class">isSynchronizedWithServer</a></strong>()</code></dt>
+<dd>
+<div>The logic for checking for completion of a full page postback has been combining with the logic to check for a partial page postback.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#launchHelpWindow_String_" title="method in this class">launchHelpWindow</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> url)</code></dt>
+<dd>
+<div>Method that will launch the help window given a url.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#localNavigate_String_" title="method in this class">localNavigate</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> uri)</code></dt>
+<dd>
+<div>Issue a GET request for a local page and perform a page transition.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#queueEventToServer_Object_" title="method in this class">queueEventToServer</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> event)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#registerLoadingComponent_AdfUIComponent_" title="method in this class">registerLoadingComponent</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Registers a component that isn't fully loaded on creation with the framework.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#registerResizeNotifyComponent_Object_" title="method in this class">registerResizeNotifyComponent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Register a component to recieve resize notification when the browser window is resized.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#removeBusyStateListener_Object__Function_" title="method in this class">removeBusyStateListener</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance, <a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd>
+<div>Removes a listener so that it will no longer be invoked whenever there is a busy state event.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#removeChangedComponent_Object_" title="method in this class">removeChangedComponent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Removes a component from the list of components with attribute changes needing to be synched to the server</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#removePropertyChangeListener_Object__Function_" title="method in this class">removePropertyChangeListener</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance, <a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd>
+<div>Removes a PropertyChangeListener with the specified instance and listener function</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setBaseResourceUrl_Object_" title="method in this class">setBaseResourceUrl</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> baseResourceUrl)</code></dt>
+<dd>
+<div>Sets the base URL for resources.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setDefaultMessageHandlerComponentId_String__String_" title="method in this class">setDefaultMessageHandlerComponentId</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> id, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> slaveId)</code></dt>
+<dd>
+<div>Sets the component id for global messages.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setEditableSubtree_AdfUIComponent_" title="method in this class">setEditableSubtree</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> newEditableSubtree)</code></dt>
+<dd>
+<div>Sets the root of the component subtree that inline-editing is allowed on.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setEditableSubtreeFilter_Function__Object_" title="method in this class">setEditableSubtreeFilter</a></strong>(<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> callback, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> context)</code></dt>
+<dd>
+<div>Sets the filter applied to all components in the editable subtree.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setEditedComponent_AdfUIComponent__Event_" title="method in this class">setEditedComponent</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> newEditedComponent, <a href="../../../../../org/w3c/dom/events/Event.html" title="class in org.w3c.dom.events">Event</a> event)</code></dt>
+<dd>
+<div>Attempts to start editing on the specified component with an option DOM event as the editing trigger.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setFailedConnectionText_Object_" title="method in this class">setFailedConnectionText</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> text)</code></dt>
+<dd>
+<div>Sets the text to display in an alert if the XMLHttpRequest data transfer fails.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setHelpWindowName_String_" title="method in this class">setHelpWindowName</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> windowName)</code></dt>
+<dd>
+<div>Method that will set the help window name.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setPageProperty_Object__Object_" title="method in this class">setPageProperty</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyName, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyValue)</code></dt>
+<dd>
+<div>Sets the value of a page property.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#SetPhase_Object_" title="method in this class">SetPhase</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> phase)</code></dt>
+<dd>
+<div>Called by subclasses to change the current lifecycle phase</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setSelectedEditingComponents_Array_AdfUIComponent__" title="method in this class">setSelectedEditingComponents</a></strong>(<a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt; newSelection)</code></dt>
+<dd>
+<div>Sets the array of AdfUIComponents for inline selection.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setTwoDigitYearStart_Object_" title="method in this class">setTwoDigitYearStart</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> twoDigitYearStart)</code></dt>
+<dd>
+<div>Sets the year offset for parsing years with only two digits.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setTzOffsetMinutes_Object_" title="method in this class">setTzOffsetMinutes</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> tzOffsetMinutes)</code></dt>
+<dd>
+<div>set the tzOffset in minutes for the current date on the server.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#shouldTracePPRRequestId__" title="method in this class">shouldTracePPRRequestId</a></strong>()</code></dt>
+<dd>
+<div>Checks whether we should trace request id on PPR request or not.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#showMessages_String_" title="method in this class">showMessages</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId)</code></dt>
+<dd>
+<div>Displays the messages to the user.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#showPageProcessingIndicator_Object_" title="method in this class">showPageProcessingIndicator</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> show)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#unregisterLoadingComponent_AdfUIComponent_" title="method in this class">unregisterLoadingComponent</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Unregisters a component registered with registerLoadingComponent.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#unregisterResizeNotifyComponent_Object_" title="method in this class">unregisterResizeNotifyComponent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Unregister a component so that it will no longer receive resize notifications.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#adopt_Object_" title="method in oracle.adf.view.js.base.AdfObject">adopt</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#clone__" title="method in oracle.adf.view.js.base.AdfObject">clone</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createCallback_Object_" title="method in oracle.adf.view.js.base.AdfObject">createCallback</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createInitializedObject__" title="method in oracle.adf.view.js.base.AdfObject">createInitializedObject</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createSubclass_Function__Function__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">createSubclass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#ensureClassInitialization_Function_" title="method in oracle.adf.view.js.base.AdfObject">ensureClassInitialization</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#equals_Object_" title="method in oracle.adf.view.js.base.AdfObject">equals</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getClass_Object_" title="method in oracle.adf.view.js.base.AdfObject">getClass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyArrayProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyArrayProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyMapProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyMapProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getTypeName__" title="method in oracle.adf.view.js.base.AdfObject">getTypeName</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#toDebugString__" title="method in oracle.adf.view.js.base.AdfObject">toDebugString</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#toString__" title="method in oracle.adf.view.js.base.AdfObject">toString</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="ACTIVE_COMPONENT_PROPERTY" id="ACTIVE_COMPONENT_PROPERTY"><!-- --></a></p>
+<h3 class="DetailHeader">ACTIVE_COMPONENT_PROPERTY</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>ACTIVE_COMPONENT_PROPERTY</strong></code></dt>
+</dl>
+<hr>
+<p><a name="O_changedComponentCount" id="O_changedComponentCount"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_changedComponentCount</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_changedComponentCount</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_changedComponents" id="O_changedComponents"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_changedComponents</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_changedComponents</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="CREATE_VIEW_PHASE" id="CREATE_VIEW_PHASE"><!-- --></a></p>
+<h3 class="DetailHeader">CREATE_VIEW_PHASE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>CREATE_VIEW_PHASE</strong></code></dt>
+<dd><br>
+<div>Phase when initially creating the client view.</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="#getPhase__" title="method in this class">getPhase()</a></code></dd>
+</dl>
+<hr>
+<p><a name="DELIVER_EVENTS_PHASE" id="DELIVER_EVENTS_PHASE"><!-- --></a></p>
+<h3 class="DetailHeader">DELIVER_EVENTS_PHASE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>DELIVER_EVENTS_PHASE</strong></code></dt>
+<dd><br>
+<div>Phase during event delivery</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="#getPhase__" title="method in this class">getPhase()</a></code></dd>
+</dl>
+<hr>
+<p><a name="EDITABLE_SUBTREE_PROPERTY" id="EDITABLE_SUBTREE_PROPERTY"><!-- --></a></p>
+<h3 class="DetailHeader">EDITABLE_SUBTREE_PROPERTY</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>EDITABLE_SUBTREE_PROPERTY</strong></code></dt>
+<dd><br>
+<div>Property name for the editable subtree property</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="#getEditableSubtree__" title="method in this class">getEditableSubtree()</a></code></dd>
+<dd><code><a href="#setEditableSubtree_AdfUIComponent_" title="method in this class">setEditableSubtree(AdfUIComponent)</a></code></dd>
+<dd><code><a href="#addPropertyChangeListener_Object__Function_" title="method in this class">addPropertyChangeListener(Object, Function)</a></code></dd>
+<dd><code><a href="#removePropertyChangeListener_Object__Function_" title="method in this class">removePropertyChangeListener(Object, Function)</a></code></dd>
+</dl>
+<hr>
+<p><a name="EDITED_COMPONENT_PROPERTY" id="EDITED_COMPONENT_PROPERTY"><!-- --></a></p>
+<h3 class="DetailHeader">EDITED_COMPONENT_PROPERTY</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>EDITED_COMPONENT_PROPERTY</strong></code></dt>
+<dd><br>
+<div>Property name for the current inline-edited component property</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="#getEditedComponent__" title="method in this class">getEditedComponent()</a></code></dd>
+<dd><code><a href="#setEditedComponent_AdfUIComponent__Event_" title="method in this class">setEditedComponent(AdfUIComponent, Event)</a></code></dd>
+<dd><code><a href="#addPropertyChangeListener_Object__Function_" title="method in this class">addPropertyChangeListener(Object, Function)</a></code></dd>
+<dd><code><a href="#removePropertyChangeListener_Object__Function_" title="method in this class">removePropertyChangeListener(Object, Function)</a></code></dd>
+</dl>
+<hr>
+<p><a name="O_FOR_CONTAINER_PREFIX" id="O_FOR_CONTAINER_PREFIX"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_FOR_CONTAINER_PREFIX</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_FOR_CONTAINER_PREFIX</strong></code></dt>
+<dd><br>
+<div>ID prefix that is also used on the server to identify a container for future message DOM.</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_localeContext" id="O_localeContext"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_localeContext</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_localeContext</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_lookAndFeel" id="O_lookAndFeel"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_lookAndFeel</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_lookAndFeel</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_NEW_WINDOW_NAME" id="O_NEW_WINDOW_NAME"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_NEW_WINDOW_NAME</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_NEW_WINDOW_NAME</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="PAGE" id="PAGE"><!-- --></a></p>
+<h3 class="DetailHeader">PAGE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>PAGE</strong></code></dt>
+<dd><br>
+<div>Static reference to the page context Object for theis Rich Client Page. This variable is initialized in the Adfbootstrap process by calling</div>
+</dd>
+</dl>
+<hr>
+<p><a name="O_phase" id="O_phase"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_phase</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_phase</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="SELECTED_EDITING_COMPONENTS_PROPERTY" id="SELECTED_EDITING_COMPONENTS_PROPERTY"><!-- --></a></p>
+<h3 class="DetailHeader">SELECTED_EDITING_COMPONENTS_PROPERTY</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>SELECTED_EDITING_COMPONENTS_PROPERTY</strong></code></dt>
+<dd><br>
+<div>Property name for the array of inline-selected editable components property</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="#getSelectedEditingComponents__" title="method in this class">getSelectedEditingComponents()</a></code></dd>
+<dd><code><a href="#setSelectedEditingComponents_Array_AdfUIComponent__" title="method in this class">setSelectedEditingComponents(Array&lt;AdfUIComponent&gt;)</a></code></dd>
+<dd><code><a href="#addPropertyChangeListener_Object__Function_" title="method in this class">addPropertyChangeListener(Object, Function)</a></code></dd>
+<dd><code><a href="#removePropertyChangeListener_Object__Function_" title="method in this class">removePropertyChangeListener(Object, Function)</a></code></dd>
+</dl>
+<hr>
+<p><a name="UPDATE_VIEW_PHASE" id="UPDATE_VIEW_PHASE"><!-- --></a></p>
+<h3 class="DetailHeader">UPDATE_VIEW_PHASE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>UPDATE_VIEW_PHASE</strong></code></dt>
+<dd><br>
+<div>DEPRECATED: this phase is not currently used or set.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="WAITING_FOR_USER_INPUT_PHASE" id="WAITING_FOR_USER_INPUT_PHASE"><!-- --></a></p>
+<h3 class="DetailHeader">WAITING_FOR_USER_INPUT_PHASE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>WAITING_FOR_USER_INPUT_PHASE</strong></code></dt>
+<dd><br>
+<div>Phase when waiting for user input</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="#getPhase__" title="method in this class">getPhase()</a></code></dd>
+</dl>
+<hr>
+<p><a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AdfPage__" id="AdfPage__"><!-- --></a></p>
+<h3 class="DetailHeader">AdfPage</h3>
+<dl>
+<dt><code>public <strong>AdfPage</strong>()</code></dt>
+<dd><br>
+<div>Abstract base Page Management class. Instances of this class are created by calling AdfLookAndFeel.createRichPage() on the appropriate AdfLookAndFeel subclass.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="addBusyStateListener_Object__Function_" id="addBusyStateListener_Object__Function_"><!-- --></a></p>
+<h3 class="DetailHeader">addBusyStateListener</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> addBusyStateListener</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd><br>
+<div>Adds a listener to be invoked whenever there is a busy state event. For example a component might be implemented with native machine code instead of web standards and would not be able to automatically convey to the user that the page is currently busy. Such a component would require special code for this purpose. Application developers should not need to call this method explicitly. Components which are interested in busy state events will automatically register themselves, typically in their InitDomElement peer implementation.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>instance</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object to use as 'this' when invoking the handler</td>
+</tr>
+<tr>
+<td valign="top"><code>listener</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the listener to be invoked if there is a busy state event, the first parameter will be an AdfBusyStateEvent object</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#removeBusyStateListener_Object__Function_" title="method in this class">removeBusyStateListener(Object, Function)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="addChangedComponent_Object_" id="addChangedComponent_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">addChangedComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> addChangedComponent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Marks a component as having attribute changes that need to be synched to the server</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="addComponents_Object_" id="addComponents_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">addComponents</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> addComponents</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> components)</code></dt>
+<dd><br>
+<div>Add the list of components as varargs to be managed by the Page</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>components</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="addMessage_String__AdfFacesMessage__Object_" id="addMessage_String__AdfFacesMessage__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">addMessage</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> addMessage</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../oracle/adf/view/js/base/AdfFacesMessage.html" title="class in oracle.adf.view.js.base">AdfFacesMessage</a> facesMessage,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> toBeRemoved)</code></dt>
+<dd><br>
+<div>Adds a Message to AdfPage's message queue.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the id of the component to add this message to or null for a global message</td>
+</tr>
+<tr>
+<td valign="top"><code>facesMessage</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the message</td>
+</tr>
+<tr>
+<td valign="top"><code>toBeRemoved</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="addPartialTargets_Object_" id="addPartialTargets_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">addPartialTargets</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> addPartialTargets</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> components)</code></dt>
+<dd><br>
+<div>Adds the components to the set of components that will be redrawn on the next communication with the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>components</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="addPropertyChangeListener_Object__Function_" id="addPropertyChangeListener_Object__Function_"><!-- --></a></p>
+<h3 class="DetailHeader">addPropertyChangeListener</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> addPropertyChangeListener</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd><br>
+<div>Adds a PropertyChangeListener with the specified instance and listener function</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>instance</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Object to use as "this" when calling the listener</td>
+</tr>
+<tr>
+<td valign="top"><code>listener</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Function to call when an AdfDhtmlPage property changes</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#EDITABLE_SUBTREE_PROPERTY" title="field in this class">EDITABLE_SUBTREE_PROPERTY</a></code></dd>
+<dd><code><a href="#SELECTED_EDITING_COMPONENTS_PROPERTY" title="field in this class">SELECTED_EDITING_COMPONENTS_PROPERTY</a></code></dd>
+<dd><code><a href="#EDITED_COMPONENT_PROPERTY" title="field in this class">EDITED_COMPONENT_PROPERTY</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="announceToAssistiveTechnology_Object__Object_" id="announceToAssistiveTechnology_Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">announceToAssistiveTechnology</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> announceToAssistiveTechnology</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> message,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> onlyIfChanged)</code></dt>
+<dd><br>
+<div>Issues an announcement for AT users using our "status" WAI-ARIA live region.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>message</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the message to announce</td>
+</tr>
+<tr>
+<td valign="top"><code>onlyIfChanged</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">an optional parameter that if true, causes the message to be announced only if the message is different from the previous status message. This provides a simple way to prune out duplicate messages (eg. a progressIndicator that has not progressed since the last update).</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="areCssSelectorsUncompressed__" id="areCssSelectorsUncompressed__"><!-- --></a></p>
+<h3 class="DetailHeader">areCssSelectorsUncompressed</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> areCssSelectorsUncompressed</strong>()</code></dt>
+<dd><br>
+<div>Tests if css selector compression are disabled for the page.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - true if compression is disabled, false if not.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="checkUncommittedData__" id="checkUncommittedData__"><!-- --></a></p>
+<h3 class="DetailHeader">checkUncommittedData</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> checkUncommittedData</strong>()</code></dt>
+<dd><br>
+<div>Displays uncommitted data warning if &lt;af:document&gt; has uncommittedDataWarning="on", and the page contains uncommitted data (either on the client or on the server).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - true if the navigation should proceed, false otherwise</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="clearAllMessages__" id="clearAllMessages__"><!-- --></a></p>
+<h3 class="DetailHeader">clearAllMessages</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> clearAllMessages</strong>()</code></dt>
+<dd><br>
+<div>Clears all of the messages for a particular page.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="ClearChangesList__" id="ClearChangesList__"><!-- --></a></p>
+<h3 class="DetailHeader">ClearChangesList</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> ClearChangesList</strong>()</code></dt>
+<dd><br>
+<div>Clears the list of components with changes that need to be synched to the server</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="clearMessages_String_" id="clearMessages_String_"><!-- --></a></p>
+<h3 class="DetailHeader">clearMessages</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> clearMessages</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId)</code></dt>
+<dd><br>
+<div>Clears a messages for a particular component id. If component Id is null then the Global messages are cleared.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">a componentId or null for global messages</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="Dispose__" id="Dispose__"><!-- --></a></p>
+<h3 class="DetailHeader">Dispose</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> Dispose</strong>()</code></dt>
+<dd><br>
+<div>Called to tear down the AdfPage instance</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="doResizeNotify_Object_" id="doResizeNotify_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">doResizeNotify</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> doResizeNotify</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Performs the resize notify traversal on the subtree rooted at the specified component.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="findComponent_String_" id="findComponent_String_"><!-- --></a></p>
+<h3 class="DetailHeader">findComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> findComponent</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> clientId)</code></dt>
+<dd><br>
+<div>Retrieves a component by its clientID. <em>Page authors should rarely need to call this function and should usually call <code>AdfPage.findComponentByAbsoluteId</code> instead.</em>
+<p>Because this function uses the clientId, which isn't guaranteed to be stable across runs, to locate the component, it should never be passed a hard-coded String. Rather, it is typically passed the clientId retrieved from a component instance.</p>
+<p>The structure of the clientId passed to this function is identical to the structure passed to <code>UIViewRoot.invokeOnComponent</code> on the server.</p>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>clientId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Id of component instance to find on the page</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - returns the component with the specified id, if any</dd>
+<dt>See also:</dt>
+<dd><code><a href="#findComponentByAbsoluteId_String_" title="method in this class">findComponentByAbsoluteId(String)</a></code></dd>
+<dd><code><a href="#findComponent_String_" title="method in this class">findComponent(String)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="findComponentByAbsoluteId_String_" id="findComponentByAbsoluteId_String_"><!-- --></a></p>
+<h3 class="DetailHeader">findComponentByAbsoluteId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> findComponentByAbsoluteId</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> absoluteId)</code></dt>
+<dd><br>
+<div>Search for and return the AdfUIComponent with an id that matches the specified absolute id expression. Since this function only accepts absolute expressions (scoped id expressions that contain the ids of all of the NamingContainers between the document root and the targeted component, separated by NamingContainer.SEPARATOR_CHAR), a leading colon is not used to identify the expression as an absolute expression.
+<p>This function should be used by page authors rather than AdfPage.findComponent since AdfPage.findComponent uses the clientId to identify the component. The clientId is implementation-dependent and could change if the component implementations change.</p>
+<p>The structure of the absoluteId passed to this function is identical to the structure passed to <code>UIViewRoot.findComponent</code> on the server.</p>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>absoluteId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">A non-null absolute search expression identifying the AdfUIComponent to be returned. The expression should contain the ids of all of the NamingContainers between the root of the page and the targeted component, separated by colons and ending with the id of the targeted component.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - the matching component instance, or <code>undefined</code> if no component matching that search expression exists</dd>
+<dt>See also:</dt>
+<dd><code><a href="#findComponent_String_" title="method in this class">findComponent(String)</a></code></dd>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html#findComponent_String__Boolean_" title="method in oracle.adf.view.js.component.AdfUIComponent">AdfUIComponent.findComponent(String, Boolean)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="findComponentByAbsoluteLocator_String_" id="findComponentByAbsoluteLocator_String_"><!-- --></a></p>
+<h3 class="DetailHeader">findComponentByAbsoluteLocator</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> findComponentByAbsoluteLocator</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> absoluteLocator)</code></dt>
+<dd><br>
+<div>Search for and return the AdfUIComponent with an id that matches the specified absolute locator expression.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>absoluteLocator</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">an implementation-agnostic String identifier. Provided primarily for test automation users. For most components, absoluteLocator will be same as absoluteId, except in the case of stamping components like table. For stamped components the syntax of the locator will be containing stamp key in square brackets([]). For example if a component in the table row has client Id as NC1:C2:tableId:6:componentId then absolute locator will be NC1:C2:tableId[stampKey]:componentId and absolute id will be NC1:C2:tableId:componentId .</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - the matching component instance, or <code>undefined</code> if no component matching that absolute locator exists</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getActiveComponent__" id="getActiveComponent__"><!-- --></a></p>
+<h3 class="DetailHeader">getActiveComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> getActiveComponent</strong>()</code></dt>
+<dd><br>
+<div>Returns the AdfUIComponent with the current keyboard focus</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - The focused AdfUIComponent, if any</dd>
+<dt>See also:</dt>
+<dd><code><a href="#ACTIVE_COMPONENT_PROPERTY" title="field in this class">ACTIVE_COMPONENT_PROPERTY</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getActiveComponentId__" id="getActiveComponentId__"><!-- --></a></p>
+<h3 class="DetailHeader">getActiveComponentId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getActiveComponentId</strong>()</code></dt>
+<dd><br>
+<div>Returns the id of the currently active component on the page.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getAllMessages__" id="getAllMessages__"><!-- --></a></p>
+<h3 class="DetailHeader">getAllMessages</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getAllMessages</strong>()</code></dt>
+<dd><br>
+<div>Return an object containing all messages keyed by componentID and containing an array of FacesMessages. Messages for non-visible and non-existing components will not be returned</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - an object containing arrays of FacesMessages which are keyed by componentId.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getAsynchronousUpdatesState__" id="getAsynchronousUpdatesState__"><!-- --></a></p>
+<h3 class="DetailHeader">getAsynchronousUpdatesState</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getAsynchronousUpdatesState</strong>()</code></dt>
+<dd><br>
+<div>Gets the state of Asynchronous updates for the page. Asynchronous updates can be in "on" state or in "onDemand" state in automation mode In non-automation mode, this property is not set.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - state of asynchronous updates</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getBaseResourceUrl__" id="getBaseResourceUrl__"><!-- --></a></p>
+<h3 class="DetailHeader">getBaseResourceUrl</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getBaseResourceUrl</strong>()</code></dt>
+<dd><br>
+<div>Gets the base URL for resources.</div>
+</dd>
+<dd><br>
+<dl>
+<dt><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">this relies on client-side url manipulation which will not work in a portal environment. This should not be used. Instead, url's should be created and encoded on the server.</span></dt>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="GetChangedComponents__" id="GetChangedComponents__"><!-- --></a></p>
+<h3 class="DetailHeader">GetChangedComponents</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> GetChangedComponents</strong>()</code></dt>
+<dd><br>
+<div>Returns an Object containing keys mapping from the clientIds of the changed components to their instances</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getClientIdsWithMessages_String_" id="getClientIdsWithMessages_String_"><!-- --></a></p>
+<h3 class="DetailHeader">getClientIdsWithMessages</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a> getClientIdsWithMessages</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> rootId)</code></dt>
+<dd><br>
+<div>Return an array of the client identifiers for which at least one FacesMessage has been queued. If there are no such client identifiers, an empty array is returned. If any messages have been queued that were not associated with any specific client identifier, a null value will be included in the array of values.
+<p>ids for non-visible and non-existing components will not be returned</p>
+<p>It is possible to only search for client ids with messages within a subtree by passing in a rootId. When a rootId is passed in a null value will not be included for messages not associated with any specific client identifier.</p>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>rootId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">a componentId for the root of a subtree under which to search. If no rootId is passed in then all client id's with messages will be returned.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a></code> - array of client identifiers for which at least one FacesMessage has been queued</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getComponentsByType_Object_" id="getComponentsByType_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">getComponentsByType</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getComponentsByType</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentType)</code></dt>
+<dd><br>
+<div>Returns an array of component instances, whose component type matches the argument.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentType</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">String type of the component.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getDefaultMessageHandlerComponentId__" id="getDefaultMessageHandlerComponentId__"><!-- --></a></p>
+<h3 class="DetailHeader">getDefaultMessageHandlerComponentId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getDefaultMessageHandlerComponentId</strong>()</code></dt>
+<dd><br>
+<div>Retrieves the component ID that is the default message handler (for global messages).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - the ID of the component that handles the global messages</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getDnDContext__" id="getDnDContext__"><!-- --></a></p>
+<h3 class="DetailHeader">getDnDContext</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getDnDContext</strong>()</code></dt>
+<dd><br>
+<div>Returns the current Drag and Drop context, associated with the page, or null if no Drag and Drop context is available.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getEditableSubtree__" id="getEditableSubtree__"><!-- --></a></p>
+<h3 class="DetailHeader">getEditableSubtree</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> getEditableSubtree</strong>()</code></dt>
+<dd><br>
+<div>Returns the root of the component subtree that inline-editing is allowed on</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getEditedComponent__" id="getEditedComponent__"><!-- --></a></p>
+<h3 class="DetailHeader">getEditedComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> getEditedComponent</strong>()</code></dt>
+<dd><br>
+<div>Returns the current component being edited.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - null</dd>
+<dt>See also:</dt>
+<dd><code><a href="#setEditedComponent_AdfUIComponent__Event_" title="method in this class">setEditedComponent(AdfUIComponent, Event)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getFailedConnectionText__" id="getFailedConnectionText__"><!-- --></a></p>
+<h3 class="DetailHeader">getFailedConnectionText</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getFailedConnectionText</strong>()</code></dt>
+<dd><br>
+<div>Gets the text to display in an alert if the XMLHttpRequest fails.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getLocaleContext__" id="getLocaleContext__"><!-- --></a></p>
+<h3 class="DetailHeader">getLocaleContext</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getLocaleContext</strong>()</code></dt>
+<dd><br>
+<div>Retrieves the locale context associated with this AdfPage. Provides utilities such as bi-directional management and other i18n support.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getLookAndFeel__" id="getLookAndFeel__"><!-- --></a></p>
+<h3 class="DetailHeader">getLookAndFeel</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getLookAndFeel</strong>()</code></dt>
+<dd><br>
+<div>Returns the LookAndFeel that this page is displaying</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getMessageHandlerSlaveComponentId__" id="getMessageHandlerSlaveComponentId__"><!-- --></a></p>
+<h3 class="DetailHeader">getMessageHandlerSlaveComponentId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getMessageHandlerSlaveComponentId</strong>()</code></dt>
+<dd><br>
+<div>Retrieves the component ID that is the slave to the default message handler (provides configuration attributes that the default handler can consume).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - the ID of the component that provides attributes to the messages handler</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getMessages_Object_" id="getMessages_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">getMessages</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a> getMessages</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentId)</code></dt>
+<dd><br>
+<div>Get FacesMessage objects associated with a particular component. If componentId is null then the system-wide messages will be returned.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentId</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a></code> - an array of FacesMessages for the particular component or undefinied if there are no messages.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getPageProperty_Object_" id="getPageProperty_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">getPageProperty</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getPageProperty</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyName)</code></dt>
+<dd><br>
+<div>Gets the value of a page property. These properties are scoped to the page for the application's use. For almost all uses, this api should be use in preference to using native host objects as the relationship between and lifetimes of AdfPages and native host objects such as a browser's DOM window object aren't guaranteed.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>propertyName</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - The value of this property or <code>undefined</code> if this property isn't set</dd>
+<dt>See also:</dt>
+<dd><code><a href="#setPageProperty_Object__Object_" title="method in this class">setPageProperty(Object, Object)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getPhase__" id="getPhase__"><!-- --></a></p>
+<h3 class="DetailHeader">getPhase</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getPhase</strong>()</code></dt>
+<dd><br>
+<div>Returns the current phase of the AdfPage lifecycle. Either
+<ol>
+<li><code>AdfPage.CREATE_VIEW_PHASE</code> when initially creating the client view</li>
+<li><code>AdfPage.DELIVER_EVENTS_PHASE</code> during event devlivery</li>
+<li><code>AdfPage.WAITING_FOR_USER_INPUT_PHASE</code> when waiting for user interaction</li>
+</ol>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - the current phase</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getResourceURL_Object_" id="getResourceURL_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">getResourceURL</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getResourceURL</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> path)</code></dt>
+<dd><br>
+<div>Returns the resource URL for the given path. Note: Resource paths starting with "/" are relative to the base resource url, resource paths starting with "//" are absolute and all other resource paths are not changed.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>path</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getResponseIdentifier__" id="getResponseIdentifier__"><!-- --></a></p>
+<h3 class="DetailHeader">getResponseIdentifier</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getResponseIdentifier</strong>()</code></dt>
+<dd><br>
+<div>Returns an identifier for the previous response if one is available. Depending on how the system is configured, this may return <code>null</code> or an identifier that doesn't exactly match the identifier used by the middle tier.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - An identifier for the previous response, if available</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getSelectedEditingComponents__" id="getSelectedEditingComponents__"><!-- --></a></p>
+<h3 class="DetailHeader">getSelectedEditingComponents</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt; getSelectedEditingComponents</strong>()</code></dt>
+<dd><br>
+<div>Returns the array of AdfUIComponents currently selected for inline editing, or <code>null</code> if no AdfUIComponents are selected.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt;</code> - null</dd>
+<dt>See also:</dt>
+<dd><code><a href="#setSelectedEditingComponents_Array_AdfUIComponent__" title="method in this class">setSelectedEditingComponents(Array&lt;AdfUIComponent&gt;)</a></code></dd>
+<dd><code><a href="#getEditableSubtree__" title="method in this class">getEditableSubtree()</a></code></dd>
+<dd><code><a href="#setEditableSubtree_AdfUIComponent_" title="method in this class">setEditableSubtree(AdfUIComponent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getSessionIdentifier__" id="getSessionIdentifier__"><!-- --></a></p>
+<h3 class="DetailHeader">getSessionIdentifier</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getSessionIdentifier</strong>()</code></dt>
+<dd><br>
+<div>Returns an identifier for the current middle-tier session if one is available. Depending on how the system is configured, this may return <code>null</code> or an identifier that doesn't exactly match the identifier used by the middle tier.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - An identifier for this user session, if available</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getTwoDigitYearStart__" id="getTwoDigitYearStart__"><!-- --></a></p>
+<h3 class="DetailHeader">getTwoDigitYearStart</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getTwoDigitYearStart</strong>()</code></dt>
+<dd><br>
+<div>Returns the year offset for parsing years with only two digits. while converting strings to Date object.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getTzOffsetMinutes__" id="getTzOffsetMinutes__"><!-- --></a></p>
+<h3 class="DetailHeader">getTzOffsetMinutes</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getTzOffsetMinutes</strong>()</code></dt>
+<dd><br>
+<div>get the tzOffset in minutes for the current date on the server. This is needed to show the timeZone set on the server, and not the time zone on the browser.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getViewId__" id="getViewId__"><!-- --></a></p>
+<h3 class="DetailHeader">getViewId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getViewId</strong>()</code></dt>
+<dd><br>
+<div>Returns an identifier for the current view being displayed in the page. The viewId is typically set when either a full page render or a PPR Navigation occurs.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - the current logical view identifier for the page.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="hasMessages_String_" id="hasMessages_String_"><!-- --></a></p>
+<h3 class="DetailHeader">hasMessages</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> hasMessages</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId)</code></dt>
+<dd><br>
+<div>Returns true if this particular component has messages or false if it does not.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">a componentId or null for global messages</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - true if messages are present and false if not</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="Init_Object_" id="Init_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">Init</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> Init</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> lookAndFeel)</code></dt>
+<dd><br>
+<div>Initializes the instance. Subclasses of AdfObject must call their superclass' Init</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>lookAndFeel</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html#Init__" title="method in oracle.adf.view.js.base.AdfObject">Init()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="isAnimationEnabled__" id="isAnimationEnabled__"><!-- --></a></p>
+<h3 class="DetailHeader">isAnimationEnabled</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> isAnimationEnabled</strong>()</code></dt>
+<dd><br>
+<div>Tests if animation is enabled for the page.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - true if animation is enabled, false if not.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="isAutomationEnabled__" id="isAutomationEnabled__"><!-- --></a></p>
+<h3 class="DetailHeader">isAutomationEnabled</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> isAutomationEnabled</strong>()</code></dt>
+<dd><br>
+<div>This method returns a message string that will explain why the client is not synchronized with the server. This is very helpful in debugging test failures. This should be called by isSynchronizedWithServer() so that the synchronization logic only exists in one place.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - true if automation is enabled, false if not.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="isPortlet__" id="isPortlet__"><!-- --></a></p>
+<h3 class="DetailHeader">isPortlet</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> isPortlet</strong>()</code></dt>
+<dd><br>
+<div>Returns whether or not this Page is in a Portlet context based on an internal flag.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - true if we are within a portlet context</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="isScreenReaderMode__" id="isScreenReaderMode__"><!-- --></a></p>
+<h3 class="DetailHeader">isScreenReaderMode</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> isScreenReaderMode</strong>()</code></dt>
+<dd><br>
+<div>Tests whether the page is running in screen reader mode.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - true if running in screen reader mode, false if not.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="isSynchronizedWithServer__" id="isSynchronizedWithServer__"><!-- --></a></p>
+<h3 class="DetailHeader">isSynchronizedWithServer</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> isSynchronizedWithServer</strong>()</code></dt>
+<dd><br>
+<div>The logic for checking for completion of a full page postback has been combining with the logic to check for a partial page postback. The following conditions indicate the page has completed a request to the server:
+<ol>
+<li>Make sure we are not in the critical section of redistributing native events to component events.</li>
+<li>Checks the pre-server queue (initial queue) to make sure it is empty. In some cases, client only events queue events that propagates to the server.</li>
+<li>Make sure that the data transfer server is in a ready state and that we are not waiting on a data streaming request that would occur on the initial page load of a full submit or during ppr navigation.</li>
+<li>Checking to see that the page was fully loaded. This check only applies to a full page postback when it is called from isPageFullyLoaded. For a pure PPR request, this flag will be set during the initial page load. Full page postback also toggle off this flag to indicate we are waiting on a new document.</li>
+<li>Checking to make sure that our event queues are empty and that all pending requests have been processed including the active data service channel.</li>
+<li>Check to see if we are actively processing the event queue. The _inDeliverQueuedServerEvents flag indicates when we are folding together a PPR request or processing the response.</li>
+<li>If a full-page postback that expects a response has been issued, make sure that we are not waiting for the document to unload.</li>
+</ol>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - null <code>true</code> if the client has no outstanding state to synchronize with the server. This function is used by automated testing tools in order to wait until the client has been appropriately updated.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="launchHelpWindow_String_" id="launchHelpWindow_String_"><!-- --></a></p>
+<h3 class="DetailHeader">launchHelpWindow</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> launchHelpWindow</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> url)</code></dt>
+<dd><br>
+<div>Method that will launch the help window given a url.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>url</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">to display in the help window</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="localNavigate_String_" id="localNavigate_String_"><!-- --></a></p>
+<h3 class="DetailHeader">localNavigate</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> localNavigate</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> uri)</code></dt>
+<dd><br>
+<div>Issue a GET request for a local page and perform a page transition. This method is supported only for pages within the same web application. If PPR Navigation is enabled, this method loads the page via PPR.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>uri</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">for the new page</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="queueEventToServer_Object_" id="queueEventToServer_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">queueEventToServer</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> queueEventToServer</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> event)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>event</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="registerLoadingComponent_AdfUIComponent_" id="registerLoadingComponent_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">registerLoadingComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> registerLoadingComponent</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Registers a component that isn't fully loaded on creation with the framework. This allows automated testing tools to wait until the component is ready before interacting with it. AdfUIComponent instances may only be registered once.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">AdfUIComponent instance to register.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#unregisterLoadingComponent_AdfUIComponent_" title="method in this class">unregisterLoadingComponent(AdfUIComponent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="registerResizeNotifyComponent_Object_" id="registerResizeNotifyComponent_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">registerResizeNotifyComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> registerResizeNotifyComponent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Register a component to recieve resize notification when the browser window is resized. The component's resizeNotify() method will be called when the resize occurs. Application developers should not need to call this method explicitly. Components which are interested in resize events will automatically register themselves.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="removeBusyStateListener_Object__Function_" id="removeBusyStateListener_Object__Function_"><!-- --></a></p>
+<h3 class="DetailHeader">removeBusyStateListener</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> removeBusyStateListener</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd><br>
+<div>Removes a listener so that it will no longer be invoked whenever there is a busy state event. Application developers should not need to call this method explicitly. Components which are interested in busy state events will automatically unregister themselves, typically in their ComponentRemoved peer implementation.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>instance</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object registered to be used as 'this' when invoking the listener</td>
+</tr>
+<tr>
+<td valign="top"><code>listener</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the previously-registered listener to no longer invoke when there is a busy state event</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#addBusyStateListener_Object__Function_" title="method in this class">addBusyStateListener(Object, Function)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="removeChangedComponent_Object_" id="removeChangedComponent_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">removeChangedComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> removeChangedComponent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Removes a component from the list of components with attribute changes needing to be synched to the server</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="removePropertyChangeListener_Object__Function_" id="removePropertyChangeListener_Object__Function_"><!-- --></a></p>
+<h3 class="DetailHeader">removePropertyChangeListener</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> removePropertyChangeListener</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> instance,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> listener)</code></dt>
+<dd><br>
+<div>Removes a PropertyChangeListener with the specified instance and listener function</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>instance</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Object used as "this" when calling the listener</td>
+</tr>
+<tr>
+<td valign="top"><code>listener</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Function to call when an AdfDhtmlPage property changes</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setBaseResourceUrl_Object_" id="setBaseResourceUrl_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">setBaseResourceUrl</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setBaseResourceUrl</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> baseResourceUrl)</code></dt>
+<dd><br>
+<div>Sets the base URL for resources.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>baseResourceUrl</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setDefaultMessageHandlerComponentId_String__String_" id="setDefaultMessageHandlerComponentId_String__String_"><!-- --></a></p>
+<h3 class="DetailHeader">setDefaultMessageHandlerComponentId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setDefaultMessageHandlerComponentId</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> id,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> slaveId)</code></dt>
+<dd><br>
+<div>Sets the component id for global messages. Whenever page-level messages are added to the queue the component corresponding to this component id will be notified.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>id</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the ID of the component that handles the global messages</td>
+</tr>
+<tr>
+<td valign="top"><code>slaveId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the ID of the component that serves attributes to the handler</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setEditableSubtree_AdfUIComponent_" id="setEditableSubtree_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">setEditableSubtree</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setEditableSubtree</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> newEditableSubtree)</code></dt>
+<dd><br>
+<div>Sets the root of the component subtree that inline-editing is allowed on. When the inline editing root is changed, all selected elements no longer included in the subtree will be removed from the selection.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newEditableSubtree</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#getSelectedEditingComponents__" title="method in this class">getSelectedEditingComponents()</a></code></dd>
+<dd><code><a href="#setSelectedEditingComponents_Array_AdfUIComponent__" title="method in this class">setSelectedEditingComponents(Array&lt;AdfUIComponent&gt;)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setEditableSubtreeFilter_Function__Object_" id="setEditableSubtreeFilter_Function__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">setEditableSubtreeFilter</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setEditableSubtreeFilter</strong>(<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> callback,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> context)</code></dt>
+<dd><br>
+<div>Sets the filter applied to all components in the editable subtree. The subtree component and each of its component children will be passed to the callback function, if any, to determine whether the component is
+<ul>
+<li>AdfRichInlineEditor.FILTER_UNSELECTABLE</li>
+<li>AdfRichInlineEditor.FILTER_SELECTABLE</li>
+<li>AdfRichInlineEditor.FILTER_EDITABLE</li>
+</ul>
+If no callback is provided, all components are considered editable.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>callback</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Callback function of the form int(component), returning the <code>AdfRichInlineEditor.FILTER_</code> constant determining the editability of the component.</td>
+</tr>
+<tr>
+<td valign="top"><code>context</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#setEditableSubtree_AdfUIComponent_" title="method in this class">setEditableSubtree(AdfUIComponent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setEditedComponent_AdfUIComponent__Event_" id="setEditedComponent_AdfUIComponent__Event_"><!-- --></a></p>
+<h3 class="DetailHeader">setEditedComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setEditedComponent</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> newEditedComponent,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/w3c/dom/events/Event.html" title="class in org.w3c.dom.events">Event</a> event)</code></dt>
+<dd><br>
+<div>Attempts to start editing on the specified component with an option DOM event as the editing trigger. Calling this method has the following effects:
+<ol>
+<li>If component is not part of the editable subtree, nothing will happen</li>
+<li>If the component is not part of the current selection, it will be added to the selection</li>
+<li>If the component allows inline editing, the inline editor for the property of the component indicated by the DOM event will be initiated.</li>
+</ol>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newEditedComponent</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Component to start editing</td>
+</tr>
+<tr>
+<td valign="top"><code>event</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">DOM Event used to start editing on this component</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#getEditableSubtree__" title="method in this class">getEditableSubtree()</a></code></dd>
+<dd><code><a href="#setEditableSubtree_AdfUIComponent_" title="method in this class">setEditableSubtree(AdfUIComponent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setFailedConnectionText_Object_" id="setFailedConnectionText_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">setFailedConnectionText</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setFailedConnectionText</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> text)</code></dt>
+<dd><br>
+<div>Sets the text to display in an alert if the XMLHttpRequest data transfer fails.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>text</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setHelpWindowName_String_" id="setHelpWindowName_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setHelpWindowName</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setHelpWindowName</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> windowName)</code></dt>
+<dd><br>
+<div>Method that will set the help window name. This is used when the help icon is pressed to determine the window name so that if there is already a help window that window is used (and a new one isn't created).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>windowName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The name of the help window</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setPageProperty_Object__Object_" id="setPageProperty_Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">setPageProperty</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setPageProperty</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyName,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyValue)</code></dt>
+<dd><br>
+<div>Sets the value of a page property. These properties are scoped to the page for the application's use. For almost all uses, this api should be use in preference to using native host objects as the relationship between and lifetimes of AdfPages and native host objects such as a browser's DOM window object aren't guaranteed.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>propertyName</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>propertyValue</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#getPageProperty_Object_" title="method in this class">getPageProperty(Object)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="SetPhase_Object_" id="SetPhase_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">SetPhase</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> SetPhase</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> phase)</code></dt>
+<dd><br>
+<div>Called by subclasses to change the current lifecycle phase</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>phase</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setSelectedEditingComponents_Array_AdfUIComponent__" id="setSelectedEditingComponents_Array_AdfUIComponent__"><!-- --></a></p>
+<h3 class="DetailHeader">setSelectedEditingComponents</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setSelectedEditingComponents</strong>(<a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt; newSelection)</code></dt>
+<dd><br>
+<div>Sets the array of AdfUIComponents for inline selection. Only components within the editable subtree will actually be selected. When the selection is changed, editing will be stopped on the current edited component if it is no longer part of the selection.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newSelection</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#getEditableSubtree__" title="method in this class">getEditableSubtree()</a></code></dd>
+<dd><code><a href="#setEditableSubtree_AdfUIComponent_" title="method in this class">setEditableSubtree(AdfUIComponent)</a></code></dd>
+<dd><code><a href="#getEditedComponent__" title="method in this class">getEditedComponent()</a></code></dd>
+<dd><code><a href="#setEditedComponent_AdfUIComponent__Event_" title="method in this class">setEditedComponent(AdfUIComponent, Event)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setTwoDigitYearStart_Object_" id="setTwoDigitYearStart_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">setTwoDigitYearStart</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setTwoDigitYearStart</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> twoDigitYearStart)</code></dt>
+<dd><br>
+<div>Sets the year offset for parsing years with only two digits.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>twoDigitYearStart</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setTzOffsetMinutes_Object_" id="setTzOffsetMinutes_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">setTzOffsetMinutes</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setTzOffsetMinutes</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> tzOffsetMinutes)</code></dt>
+<dd><br>
+<div>set the tzOffset in minutes for the current date on the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>tzOffsetMinutes</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="shouldTracePPRRequestId__" id="shouldTracePPRRequestId__"><!-- --></a></p>
+<h3 class="DetailHeader">shouldTracePPRRequestId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> shouldTracePPRRequestId</strong>()</code></dt>
+<dd><br>
+<div>Checks whether we should trace request id on PPR request or not. Default is false. It is controlled by parameter oracle.adf.view.rich.REQUEST_ID_TRACING.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - a flag indicating whether or not to trace request id on PPR request.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="showMessages_String_" id="showMessages_String_"><!-- --></a></p>
+<h3 class="DetailHeader">showMessages</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> showMessages</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> componentId)</code></dt>
+<dd><br>
+<div>Displays the messages to the user.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">a specific component client ID whose message should be shown or null if all messages should be shown</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="showPageProcessingIndicator_Object_" id="showPageProcessingIndicator_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">showPageProcessingIndicator</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> showPageProcessingIndicator</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> show)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>show</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="unregisterLoadingComponent_AdfUIComponent_" id="unregisterLoadingComponent_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">unregisterLoadingComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> unregisterLoadingComponent</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Unregisters a component registered with <code>registerLoadingComponent</code>. Components should be unregistered when fully loaded and must be unregistered when removed. For coding convenience, it is not an error to unregister a component that was never registered.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">AdfUIComponent instance to unregister.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#registerLoadingComponent_AdfUIComponent_" title="method in this class">registerLoadingComponent(AdfUIComponent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="unregisterResizeNotifyComponent_Object_" id="unregisterResizeNotifyComponent_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">unregisterResizeNotifyComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> unregisterResizeNotifyComponent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Unregister a component so that it will no longer receive resize notifications. Application developers should not need to call this method explicitly. Components which are interested in resize events will automatically unregister themselves as necessary.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/datatransfer/AdfObjectTransferable.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/base/AdfPage.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfPage.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

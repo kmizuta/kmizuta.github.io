@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfUIEditableValue</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfUIEditableValue";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/component/fragment/AdfUIDynamicDeclarativeComponent.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIForm.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?org/apache/myjs/trinidad/component/AdfUIEditableValue.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfUIEditableValue.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">org.apache.myjs.trinidad.component</span><br>
+Class AdfUIEditableValue</h1>
+<pre>
+<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html" title="class in org.apache.myjs.trinidad.component">org.apache.myjs.trinidad.component.AdfUIValue</a>
+         |
+         +--<strong>org.apache.myjs.trinidad.component.AdfUIEditableValue</strong>
+</pre>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><span><a href="../../../../../org/apache/myjs/trinidad/component/AdfUIInput.html" title="class in org.apache.myjs.trinidad.component">AdfUIInput</a></span><span>, <a href="../../../../../org/apache/myjs/trinidad/component/AdfUISelectBoolean.html" title="class in org.apache.myjs.trinidad.component">AdfUISelectBoolean</a></span><span>, <a href="../../../../../org/apache/myjs/trinidad/component/AdfUISelectInput.html" title="class in org.apache.myjs.trinidad.component">AdfUISelectInput</a></span><span>, <a href="../../../../../org/apache/myjs/trinidad/component/AdfUISelectMany.html" title="class in org.apache.myjs.trinidad.component">AdfUISelectMany</a></span><span>, <a href="../../../../../org/apache/myjs/trinidad/component/AdfUISelectOne.html" title="class in org.apache.myjs.trinidad.component">AdfUISelectOne</a></span></dd>
+</dl>
+<hr>
+<pre>
+public class <strong>AdfUIEditableValue</strong>
+extends <a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html" title="class in org.apache.myjs.trinidad.component">AdfUIValue</a>
+</pre>
+<div>The editableValue web element contains all the shared attributes supported by all Apache Trinidad components that support the JSF EditableValueHolder interface.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AdfUIEditableValue__" title="constructor in this class">AdfUIEditableValue</a></strong>()</code></dt>
+<dd>
+<div>The editableValue web element contains all the shared attributes supported by all Apache Trinidad components that support the JSF EditableValueHolder interface.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_addFacesMessage_Object__Object_" title="method in this class">_addFacesMessage</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> message, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> label)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_addRequiredFacesMessage__" title="method in this class">_addRequiredFacesMessage</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#addValidator_Object_" title="method in this class">addValidator</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> validator)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#DeliverDerivedPropertyEvents_Object__Object__Object_" title="method in this class">DeliverDerivedPropertyEvents</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propName, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldValue, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newValue)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getImmediate__" title="method in this class">getImmediate</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'immediate'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getLocalValueSet__" title="method in this class">getLocalValueSet</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'localValueSet'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getRequired__" title="method in this class">getRequired</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'required'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#GetRequiredKey__" title="method in this class">GetRequiredKey</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getRequiredMessageDetail__" title="method in this class">getRequiredMessageDetail</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'requiredMessageDetail'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getSubmittedValue__" title="method in this class">getSubmittedValue</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'submittedValue'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getValid__" title="method in this class">getValid</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'valid'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getValidators__" title="method in this class">getValidators</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getValue__" title="method in this class">getValue</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'value'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#InitSubclass__" title="method in this class">InitSubclass</a></strong>()</code></dt>
+<dd>
+<div>Component for inputting content Note:</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#IsEmpty_Object_" title="method in this class">IsEmpty</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> value)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isEventRoot__" title="method in this class">isEventRoot</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#resetValue__" title="method in this class">resetValue</a></strong>()</code></dt>
+<dd>
+<div>Convenience method to reset this component's value to an uninitialized state, by setting - the value to null, - the submittedValue to undefined, - valid to true, - clears any messages.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#SetPropertyImpl_Object__Object__Object_" title="method in this class">SetPropertyImpl</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propName, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldValue, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newValue)</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setValue_Object_" title="method in this class">setValue</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> value)</code></dt>
+<dd>
+<div>Set function for attribute 'Value'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#validate_Object_" title="method in this class">validate</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> submittedValue)</code></dt>
+<dd>
+<div>Perform the following algorithm to validate the local value.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#ValidateValue_Object_" title="method in this class">ValidateValue</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> value)</code></dt>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_org_apache_myjs_trinidad_component_AdfUIValue" id="methods_inherited_from_class_org_apache_myjs_trinidad_component_AdfUIValue"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from org.apache.myjs.trinidad.component.<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html" title="class in org.apache.myjs.trinidad.component">AdfUIValue</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html#GetChanges__" title="method in org.apache.myjs.trinidad.component.AdfUIValue">GetChanges</a>, <a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html#GetConvertedValue_Object_" title="method in org.apache.myjs.trinidad.component.AdfUIValue">GetConvertedValue</a>, <a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html#getConverter__" title="method in org.apache.myjs.trinidad.component.AdfUIValue">getConverter</a>, <a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html#isConvertible__" title="method in org.apache.myjs.trinidad.component.AdfUIValue">isConvertible</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AdfUIEditableValue__" id="AdfUIEditableValue__"><!-- --></a></p>
+<h3 class="DetailHeader">AdfUIEditableValue</h3>
+<dl>
+<dt><code>public <strong>AdfUIEditableValue</strong>()</code></dt>
+<dd><br>
+<div>The editableValue web element contains all the shared attributes supported by all Apache Trinidad components that support the JSF EditableValueHolder interface.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="O_addFacesMessage_Object__Object_" id="O_addFacesMessage_Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_addFacesMessage</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _addFacesMessage</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> message,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> label)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>message</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>label</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_addRequiredFacesMessage__" id="O_addRequiredFacesMessage__"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_addRequiredFacesMessage</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _addRequiredFacesMessage</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="addValidator_Object_" id="addValidator_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">addValidator</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> addValidator</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> validator)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>validator</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="DeliverDerivedPropertyEvents_Object__Object__Object_" id="DeliverDerivedPropertyEvents_Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">DeliverDerivedPropertyEvents</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> DeliverDerivedPropertyEvents</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propName,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldValue,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newValue)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>propName</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>oldValue</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>newValue</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getImmediate__" id="getImmediate__"><!-- --></a></p>
+<h3 class="DetailHeader">getImmediate</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getImmediate</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'immediate'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - Immediate</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getLocalValueSet__" id="getLocalValueSet__"><!-- --></a></p>
+<h3 class="DetailHeader">getLocalValueSet</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getLocalValueSet</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'localValueSet'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - LocalValueSet</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getRequired__" id="getRequired__"><!-- --></a></p>
+<h3 class="DetailHeader">getRequired</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getRequired</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'required'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - Required</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="GetRequiredKey__" id="GetRequiredKey__"><!-- --></a></p>
+<h3 class="DetailHeader">GetRequiredKey</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> GetRequiredKey</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getRequiredMessageDetail__" id="getRequiredMessageDetail__"><!-- --></a></p>
+<h3 class="DetailHeader">getRequiredMessageDetail</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getRequiredMessageDetail</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'requiredMessageDetail'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - RequiredMessageDetail</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getSubmittedValue__" id="getSubmittedValue__"><!-- --></a></p>
+<h3 class="DetailHeader">getSubmittedValue</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getSubmittedValue</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'submittedValue'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - SubmittedValue</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getValid__" id="getValid__"><!-- --></a></p>
+<h3 class="DetailHeader">getValid</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getValid</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'valid'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - Valid</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getValidators__" id="getValidators__"><!-- --></a></p>
+<h3 class="DetailHeader">getValidators</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getValidators</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getValue__" id="getValue__"><!-- --></a></p>
+<h3 class="DetailHeader">getValue</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getValue</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'value'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html" title="class in org.apache.myjs.trinidad.component">AdfUIValue</a>.<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html#getValue__" title="method in org.apache.myjs.trinidad.component.AdfUIValue">getValue()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="InitSubclass__" id="InitSubclass__"><!-- --></a></p>
+<h3 class="DetailHeader">InitSubclass</h3>
+<dl>
+<dt><code>protected static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> InitSubclass</strong>()</code></dt>
+<dd><br>
+<div>Component for inputting content Note: This is a "partial" class, the majority of this class is generated.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="IsEmpty_Object_" id="IsEmpty_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">IsEmpty</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> IsEmpty</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> value)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="isEventRoot__" id="isEventRoot__"><!-- --></a></p>
+<h3 class="DetailHeader">isEventRoot</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> isEventRoot</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="resetValue__" id="resetValue__"><!-- --></a></p>
+<h3 class="DetailHeader">resetValue</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> resetValue</strong>()</code></dt>
+<dd><br>
+<div>Convenience method to reset this component's value to an uninitialized state, by setting - the value to null, - the submittedValue to undefined, - valid to true, - clears any messages.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="SetPropertyImpl_Object__Object__Object_" id="SetPropertyImpl_Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">SetPropertyImpl</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> SetPropertyImpl</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propName,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldValue,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newValue)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>propName</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>oldValue</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>newValue</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html" title="class in org.apache.myjs.trinidad.component">AdfUIValue</a>.<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html#SetPropertyImpl_Object__Object__Object_" title="method in org.apache.myjs.trinidad.component.AdfUIValue">SetPropertyImpl(Object, Object, Object)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setValue_Object_" id="setValue_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">setValue</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setValue</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> value)</code></dt>
+<dd><br>
+<div>Set function for attribute 'Value'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html" title="class in org.apache.myjs.trinidad.component">AdfUIValue</a>.<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIValue.html#setValue_Object_" title="method in org.apache.myjs.trinidad.component.AdfUIValue">setValue(Object)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="validate_Object_" id="validate_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">validate</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> validate</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> submittedValue)</code></dt>
+<dd><br>
+<div>Perform the following algorithm to validate the local value.
+<ul>
+<li>If a submittedValue not passed in, retrieve the submitted value with getSubmittedValue(). If this returns null, exit without further processing.</li>
+<li>Convert the submitted value into a "local value" of the appropriate data type</li>
+<li>Validate the local value</li>
+<li>If the valid property of this component is still true, retrieve the previous value of the component (with getValue()), store the new local value using setProperty("value", ). A call to setValue will queue a ValueChangeEvent if the value is new.</li>
+</ul>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>submittedValue</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">if not passed in this.getSubmittedValue will be called</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="ValidateValue_Object_" id="ValidateValue_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">ValidateValue</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> ValidateValue</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> value)</code></dt>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/component/fragment/AdfUIDynamicDeclarativeComponent.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIForm.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?org/apache/myjs/trinidad/component/AdfUIEditableValue.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfUIEditableValue.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

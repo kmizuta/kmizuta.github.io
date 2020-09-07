@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>Event</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="Event";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../org/ecmascript/object/error/EvalError.html">PREV</a>&nbsp; &nbsp;<a href="../../../../org/w3c/dom/events/EventException.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../index.html?org/w3c/dom/events/Event.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Event.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | CONSTR | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | CONSTR | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">org.w3c.dom.events</span><br>
+Class Event</h1>
+<pre>
+<a href="../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<strong>org.w3c.dom.events.Event</strong>
+</pre>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><span><a href="../../../../org/w3c/dom/events/UIEvent.html" title="class in org.w3c.dom.events">UIEvent</a></span></dd>
+</dl>
+<hr>
+<pre>
+public abstract class <strong>Event</strong>
+extends <a href="../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a>
+</pre>
+<div>The Event interface is used to provide contextual information about an event to the handler processing the event. An object which implements the Event interface is generally passed as the first parameter to an event handler. More specific context information is passed to event handlers by deriving additional interfaces from Event which contain information directly relating to the type of event they accompany. These derived interfaces are also implemented by the object passed to the event listener.<br>
+<br>
+<strong>Introduced in DOM Level 2.</strong><br>
+<br>
+<strong><span>Note that this object is implemented and supported by the web browser and results of its use may vary.</span></strong></div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AT_TARGET" title="field in this class">AT_TARGET</a></strong></code></dt>
+<dd>
+<div>The event is currently being evaluated at the target EventTarget.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#bubbles" title="field in this class">bubbles</a></strong></code></dt>
+<dd>
+<div>Used to indicate whether or not an event is a bubbling event.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#BUBBLING_PHASE" title="field in this class">BUBBLING_PHASE</a></strong></code></dt>
+<dd>
+<div>The current event phase is the bubbling phase.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#cancelable" title="field in this class">cancelable</a></strong></code></dt>
+<dd>
+<div>Used to indicate whether or not an event can have its default action prevented.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#CAPTURING_PHASE" title="field in this class">CAPTURING_PHASE</a></strong></code></dt>
+<dd>
+<div>The current event phase is the capturing phase.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../../org/w3c/dom/events/EventTarget.html" title="class in org.w3c.dom.events">EventTarget</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#currentTarget" title="field in this class">currentTarget</a></strong></code></dt>
+<dd>
+<div>Used to indicate the EventTarget whose EventListeners are currently being processed.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#eventPhase" title="field in this class">eventPhase</a></strong></code></dt>
+<dd>
+<div>Used to indicate which phase of event flow is currently being evaluated.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../../org/w3c/dom/events/EventTarget.html" title="class in org.w3c.dom.events">EventTarget</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#target" title="field in this class">target</a></strong></code></dt>
+<dd>
+<div>Used to indicate the EventTarget to which the event was originally dispatched.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;DOMTimeStamp</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#timeStamp" title="field in this class">timeStamp</a></strong></code></dt>
+<dd>
+<div>Used to specify the time (in milliseconds relative to the epoch) at which the event was created.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#type" title="field in this class">type</a></strong></code></dt>
+<dd>
+<div>The name of the event (case-insensitive).</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#initEvent_String__Boolean__Boolean_" title="method in this class">initEvent</a></strong>(<a href="../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> eventTypeArg, <a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> canBubbleArg, <a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> cancelableArg)</code></dt>
+<dd>
+<div>The initEvent method is used to initialize the value of an Event created through the DocumentEvent interface.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#preventDefault__" title="method in this class">preventDefault</a></strong>()</code></dt>
+<dd>
+<div>If an event is cancelable, the preventDefault method is used to signify that the event is to be canceled, meaning any default action normally taken by the implementation as a result of the event will not occur.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#stopPropagation__" title="method in this class">stopPropagation</a></strong>()</code></dt>
+<dd>
+<div>The stopPropagation method is used prevent further propagation of an event during event flow.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AT_TARGET" id="AT_TARGET"><!-- --></a></p>
+<h3 class="DetailHeader">AT_TARGET</h3>
+<dl>
+<dt><code>public static <a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>AT_TARGET</strong></code></dt>
+<dd><br>
+<div>The event is currently being evaluated at the target EventTarget.<br>
+<br>
+<strong>This is a readonly constant.</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="bubbles" id="bubbles"><!-- --></a></p>
+<h3 class="DetailHeader">bubbles</h3>
+<dl>
+<dt><code>public <a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> <strong>bubbles</strong></code></dt>
+<dd><br>
+<div>Used to indicate whether or not an event is a bubbling event. If the event can bubble the value is true, else the value is false.<br>
+<br>
+<strong>This is a readonly attribute</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="BUBBLING_PHASE" id="BUBBLING_PHASE"><!-- --></a></p>
+<h3 class="DetailHeader">BUBBLING_PHASE</h3>
+<dl>
+<dt><code>public static <a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>BUBBLING_PHASE</strong></code></dt>
+<dd><br>
+<div>The current event phase is the bubbling phase.<br>
+<br>
+<strong>This is a readonly constant.</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="cancelable" id="cancelable"><!-- --></a></p>
+<h3 class="DetailHeader">cancelable</h3>
+<dl>
+<dt><code>public <a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> <strong>cancelable</strong></code></dt>
+<dd><br>
+<div>Used to indicate whether or not an event can have its default action prevented. If the default action can be prevented the value is true, else the value is false.<br>
+<br>
+<strong>This is a readonly attribute</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="CAPTURING_PHASE" id="CAPTURING_PHASE"><!-- --></a></p>
+<h3 class="DetailHeader">CAPTURING_PHASE</h3>
+<dl>
+<dt><code>public static <a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>CAPTURING_PHASE</strong></code></dt>
+<dd><br>
+<div>The current event phase is the capturing phase.<br>
+<br>
+<strong>This is a readonly constant.</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="currentTarget" id="currentTarget"><!-- --></a></p>
+<h3 class="DetailHeader">currentTarget</h3>
+<dl>
+<dt><code>public <a href="../../../../org/w3c/dom/events/EventTarget.html" title="class in org.w3c.dom.events">EventTarget</a> <strong>currentTarget</strong></code></dt>
+<dd><br>
+<div>Used to indicate the EventTarget whose EventListeners are currently being processed. This is particularly useful during capturing and bubbling.<br>
+<br>
+<strong>This is a readonly attribute</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="eventPhase" id="eventPhase"><!-- --></a></p>
+<h3 class="DetailHeader">eventPhase</h3>
+<dl>
+<dt><code>public <a href="../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>eventPhase</strong></code></dt>
+<dd><br>
+<div>Used to indicate which phase of event flow is currently being evaluated.<br>
+<br>
+<strong>This is a readonly attribute</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="target" id="target"><!-- --></a></p>
+<h3 class="DetailHeader">target</h3>
+<dl>
+<dt><code>public <a href="../../../../org/w3c/dom/events/EventTarget.html" title="class in org.w3c.dom.events">EventTarget</a> <strong>target</strong></code></dt>
+<dd><br>
+<div>Used to indicate the EventTarget to which the event was originally dispatched.<br>
+<br>
+<strong>This is a readonly attribute</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="timeStamp" id="timeStamp"><!-- --></a></p>
+<h3 class="DetailHeader">timeStamp</h3>
+<dl>
+<dt><code>public DOMTimeStamp <strong>timeStamp</strong></code></dt>
+<dd><br>
+<div>Used to specify the time (in milliseconds relative to the epoch) at which the event was created. Due to the fact that some systems may not provide this information the value of timeStamp may be not available for all events. When not available, a value of 0 will be returned. Examples of epoch time are the time of the system start or 0:0:0 UTC 1st January 1970.<br>
+<br>
+<strong>This is a readonly attribute</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="type" id="type"><!-- --></a></p>
+<h3 class="DetailHeader">type</h3>
+<dl>
+<dt><code>public <a href="../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>type</strong></code></dt>
+<dd><br>
+<div>The name of the event (case-insensitive). The name must be an XML name.<br>
+<br>
+<strong>This is a readonly attribute</strong></div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="initEvent_String__Boolean__Boolean_" id="initEvent_String__Boolean__Boolean_"><!-- --></a></p>
+<h3 class="DetailHeader">initEvent</h3>
+<dl>
+<dt><code>public <strong>void initEvent</strong>(<a href="../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> eventTypeArg,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> canBubbleArg,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> cancelableArg)</code></dt>
+<dd><br>
+<div>The initEvent method is used to initialize the value of an Event created through the DocumentEvent interface. This method may only be called before the Event has been dispatched via the dispatchEvent method, though it may be called multiple times during that phase if necessary. If called multiple times the final invocation takes precedence. If called from a subclass of Event interface only the values specified in the initEvent method are modified, all other attributes are left unchanged.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>eventTypeArg</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Specifies the event type. This type may be any event type currently defined in this specification or a new event type.. The string must be an XML name. Any new event type must not begin with any upper, lower, or mixed case version of the string "DOM". This prefix is reserved for future DOM event sets. It is also strongly recommended that third parties adding their own events use their own prefix to avoid confusion and lessen the probability of conflicts with other new events.</td>
+</tr>
+<tr>
+<td valign="top"><code>canBubbleArg</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Specifies whether or not the event can bubble.</td>
+</tr>
+<tr>
+<td valign="top"><code>cancelableArg</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Specifies whether or not the event's default action can be prevented.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="preventDefault__" id="preventDefault__"><!-- --></a></p>
+<h3 class="DetailHeader">preventDefault</h3>
+<dl>
+<dt><code>public <strong>void preventDefault</strong>()</code></dt>
+<dd><br>
+<div>If an event is cancelable, the preventDefault method is used to signify that the event is to be canceled, meaning any default action normally taken by the implementation as a result of the event will not occur. If, during any stage of event flow, the preventDefault method is called the event is canceled. Any default action associated with the event will not occur. Calling this method for a non-cancelable event has no effect. Once preventDefault has been called it will remain in effect throughout the remainder of the event's propagation. This method may be used during any stage of event flow.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code>void</code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="stopPropagation__" id="stopPropagation__"><!-- --></a></p>
+<h3 class="DetailHeader">stopPropagation</h3>
+<dl>
+<dt><code>public <strong>void stopPropagation</strong>()</code></dt>
+<dd><br>
+<div>The stopPropagation method is used prevent further propagation of an event during event flow. If this method is called by any <code><a href="../../../../org/w3c/dom/events/EventListener.html" title="class in org.w3c.dom.events">EventListener</a></code> the event will cease propagating through the tree. The event will complete dispatch to all listeners on the current <code><a href="../../../../org/w3c/dom/events/EventTarget.html" title="class in org.w3c.dom.events">EventTarget</a></code> before event flow stops. This method may be used during any stage of event flow.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code>void</code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | CONSTR | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | CONSTR | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../org/ecmascript/object/error/EvalError.html">PREV</a>&nbsp; &nbsp;<a href="../../../../org/w3c/dom/events/EventException.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../index.html?org/w3c/dom/events/Event.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Event.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

@@ -1,0 +1,1396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfRichDialog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfRichDialog";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/layout/AdfRichDecorativeBox.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/AdfRichDocument.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../../index.html?oracle/adf/view/js/component/rich/AdfRichDialog.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfRichDialog.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">oracle.adf.view.js.component.rich</span><br>
+Class AdfRichDialog</h1>
+<pre>
+<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<a href="../../../../../../oracle/adf/view/js/component/AdfUIDialog.html" title="class in oracle.adf.view.js.component">oracle.adf.view.js.component.AdfUIDialog</a>
+         |
+         +--<strong>oracle.adf.view.js.component.rich.AdfRichDialog</strong>
+</pre>
+<hr>
+<pre>
+public class <strong>AdfRichDialog</strong>
+extends <a href="../../../../../../oracle/adf/view/js/component/AdfUIDialog.html" title="class in oracle.adf.view.js.component">AdfUIDialog</a>
+</pre>
+<div>A dialog component that displays its children in a window and delivers DialogEvents when OK, Yes, No and Cancel buttons are activated.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AdfRichDialog__" title="constructor in this class">AdfRichDialog</a></strong>()</code></dt>
+<dd>
+<div>A dialog component that displays its children in a window and delivers DialogEvents when OK, Yes, No and Cancel buttons are activated.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getAffirmativeTextAndAccessKey__" title="method in this class">getAffirmativeTextAndAccessKey</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'affirmativeTextAndAccessKey'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getCancelTextAndAccessKey__" title="method in this class">getCancelTextAndAccessKey</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'cancelTextAndAccessKey'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getCancelVisible__" title="method in this class">getCancelVisible</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'cancelVisible'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getCloseIconVisible__" title="method in this class">getCloseIconVisible</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'closeIconVisible'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getContentHeight__" title="method in this class">getContentHeight</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'contentHeight'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getContentWidth__" title="method in this class">getContentWidth</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'contentWidth'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getHelpTopicId__" title="method in this class">getHelpTopicId</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'helpTopicId'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getInlineStyle__" title="method in this class">getInlineStyle</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'inlineStyle'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getModal__" title="method in this class">getModal</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'modal'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getNoTextAndAccessKey__" title="method in this class">getNoTextAndAccessKey</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'noTextAndAccessKey'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getOkVisible__" title="method in this class">getOkVisible</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'okVisible'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getResize__" title="method in this class">getResize</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'resize'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getShortDesc__" title="method in this class">getShortDesc</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'shortDesc'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getStretchChildren__" title="method in this class">getStretchChildren</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'stretchChildren'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getStyleClass__" title="method in this class">getStyleClass</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'styleClass'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getTitle__" title="method in this class">getTitle</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'title'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getTitleIconSource__" title="method in this class">getTitleIconSource</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'titleIconSource'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getType__" title="method in this class">getType</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'type'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUnsecure__" title="method in this class">getUnsecure</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'unsecure'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getVisible__" title="method in this class">getVisible</a></strong>()</code></dt>
+<dd>
+<div>Get function for attribute for 'visible'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setAffirmativeTextAndAccessKey_String_" title="method in this class">setAffirmativeTextAndAccessKey</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newAffirmativeTextAndAccessKey)</code></dt>
+<dd>
+<div>Set function for attribute 'AffirmativeTextAndAccessKey'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setCancelTextAndAccessKey_String_" title="method in this class">setCancelTextAndAccessKey</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newCancelTextAndAccessKey)</code></dt>
+<dd>
+<div>Set function for attribute 'CancelTextAndAccessKey'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setCancelVisible_Boolean_" title="method in this class">setCancelVisible</a></strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newCancelVisible)</code></dt>
+<dd>
+<div>Set function for attribute 'CancelVisible'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setCloseIconVisible_Boolean_" title="method in this class">setCloseIconVisible</a></strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newCloseIconVisible)</code></dt>
+<dd>
+<div>Set function for attribute 'CloseIconVisible'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setContentHeight_Number_" title="method in this class">setContentHeight</a></strong>(<a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> newContentHeight)</code></dt>
+<dd>
+<div>Set function for attribute 'ContentHeight'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setContentWidth_Number_" title="method in this class">setContentWidth</a></strong>(<a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> newContentWidth)</code></dt>
+<dd>
+<div>Set function for attribute 'ContentWidth'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setHelpTopicId_String_" title="method in this class">setHelpTopicId</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newHelpTopicId)</code></dt>
+<dd>
+<div>Set function for attribute 'HelpTopicId'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setInlineStyle_String_" title="method in this class">setInlineStyle</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newInlineStyle)</code></dt>
+<dd>
+<div>Set function for attribute 'InlineStyle'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setModal_Boolean_" title="method in this class">setModal</a></strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newModal)</code></dt>
+<dd>
+<div>Set function for attribute 'Modal'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setNoTextAndAccessKey_String_" title="method in this class">setNoTextAndAccessKey</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newNoTextAndAccessKey)</code></dt>
+<dd>
+<div>Set function for attribute 'NoTextAndAccessKey'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setOkVisible_Boolean_" title="method in this class">setOkVisible</a></strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newOkVisible)</code></dt>
+<dd>
+<div>Set function for attribute 'OkVisible'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setResize_String_" title="method in this class">setResize</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newResize)</code></dt>
+<dd>
+<div>Set function for attribute 'Resize'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setShortDesc_String_" title="method in this class">setShortDesc</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newShortDesc)</code></dt>
+<dd>
+<div>Set function for attribute 'ShortDesc'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setStretchChildren_String_" title="method in this class">setStretchChildren</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newStretchChildren)</code></dt>
+<dd>
+<div>Set function for attribute 'StretchChildren'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setStyleClass_String_" title="method in this class">setStyleClass</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newStyleClass)</code></dt>
+<dd>
+<div>Set function for attribute 'StyleClass'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setTitle_String_" title="method in this class">setTitle</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newTitle)</code></dt>
+<dd>
+<div>Set function for attribute 'Title'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setTitleIconSource_String_" title="method in this class">setTitleIconSource</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newTitleIconSource)</code></dt>
+<dd>
+<div>Set function for attribute 'TitleIconSource'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public void</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setType_String_" title="method in this class">setType</a></strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newType)</code></dt>
+<dd>
+<div>Set function for attribute 'Type'.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_component_AdfUIDialog" id="methods_inherited_from_class_oracle_adf_view_js_component_AdfUIDialog"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.component.<a href="../../../../../../oracle/adf/view/js/component/AdfUIDialog.html" title="class in oracle.adf.view.js.component">AdfUIDialog</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../../oracle/adf/view/js/component/AdfUIDialog.html#getDialogListener__" title="method in oracle.adf.view.js.component.AdfUIDialog">getDialogListener</a>, <a href="../../../../../../oracle/adf/view/js/component/AdfUIDialog.html#HandleEvent_Object_" title="method in oracle.adf.view.js.component.AdfUIDialog">HandleEvent</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AdfRichDialog__" id="AdfRichDialog__"><!-- --></a></p>
+<h3 class="DetailHeader">AdfRichDialog</h3>
+<dl>
+<dt><code>public <strong>AdfRichDialog</strong>()</code></dt>
+<dd><br>
+<div>A dialog component that displays its children in a window and delivers DialogEvents when OK, Yes, No and Cancel buttons are activated.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="getAffirmativeTextAndAccessKey__" id="getAffirmativeTextAndAccessKey__"><!-- --></a></p>
+<h3 class="DetailHeader">getAffirmativeTextAndAccessKey</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getAffirmativeTextAndAccessKey</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'affirmativeTextAndAccessKey'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - AffirmativeTextAndAccessKey</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getCancelTextAndAccessKey__" id="getCancelTextAndAccessKey__"><!-- --></a></p>
+<h3 class="DetailHeader">getCancelTextAndAccessKey</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getCancelTextAndAccessKey</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'cancelTextAndAccessKey'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - CancelTextAndAccessKey</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getCancelVisible__" id="getCancelVisible__"><!-- --></a></p>
+<h3 class="DetailHeader">getCancelVisible</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getCancelVisible</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'cancelVisible'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - CancelVisible</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getCloseIconVisible__" id="getCloseIconVisible__"><!-- --></a></p>
+<h3 class="DetailHeader">getCloseIconVisible</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getCloseIconVisible</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'closeIconVisible'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - CloseIconVisible</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getContentHeight__" id="getContentHeight__"><!-- --></a></p>
+<h3 class="DetailHeader">getContentHeight</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getContentHeight</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'contentHeight'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - ContentHeight</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getContentWidth__" id="getContentWidth__"><!-- --></a></p>
+<h3 class="DetailHeader">getContentWidth</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getContentWidth</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'contentWidth'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - ContentWidth</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getHelpTopicId__" id="getHelpTopicId__"><!-- --></a></p>
+<h3 class="DetailHeader">getHelpTopicId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getHelpTopicId</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'helpTopicId'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HelpTopicId</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getInlineStyle__" id="getInlineStyle__"><!-- --></a></p>
+<h3 class="DetailHeader">getInlineStyle</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getInlineStyle</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'inlineStyle'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - InlineStyle</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getModal__" id="getModal__"><!-- --></a></p>
+<h3 class="DetailHeader">getModal</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getModal</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'modal'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - Modal</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getNoTextAndAccessKey__" id="getNoTextAndAccessKey__"><!-- --></a></p>
+<h3 class="DetailHeader">getNoTextAndAccessKey</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getNoTextAndAccessKey</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'noTextAndAccessKey'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - NoTextAndAccessKey</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getOkVisible__" id="getOkVisible__"><!-- --></a></p>
+<h3 class="DetailHeader">getOkVisible</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getOkVisible</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'okVisible'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - OkVisible</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getResize__" id="getResize__"><!-- --></a></p>
+<h3 class="DetailHeader">getResize</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getResize</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'resize'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - Resize</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getShortDesc__" id="getShortDesc__"><!-- --></a></p>
+<h3 class="DetailHeader">getShortDesc</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getShortDesc</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'shortDesc'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - ShortDesc</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getStretchChildren__" id="getStretchChildren__"><!-- --></a></p>
+<h3 class="DetailHeader">getStretchChildren</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getStretchChildren</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'stretchChildren'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - StretchChildren</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getStyleClass__" id="getStyleClass__"><!-- --></a></p>
+<h3 class="DetailHeader">getStyleClass</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getStyleClass</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'styleClass'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - StyleClass</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getTitle__" id="getTitle__"><!-- --></a></p>
+<h3 class="DetailHeader">getTitle</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getTitle</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'title'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - Title</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getTitleIconSource__" id="getTitleIconSource__"><!-- --></a></p>
+<h3 class="DetailHeader">getTitleIconSource</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getTitleIconSource</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'titleIconSource'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - TitleIconSource</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getType__" id="getType__"><!-- --></a></p>
+<h3 class="DetailHeader">getType</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getType</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'type'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - Type</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUnsecure__" id="getUnsecure__"><!-- --></a></p>
+<h3 class="DetailHeader">getUnsecure</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getUnsecure</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'unsecure'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - Unsecure</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getVisible__" id="getVisible__"><!-- --></a></p>
+<h3 class="DetailHeader">getVisible</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> getVisible</strong>()</code></dt>
+<dd><br>
+<div>Get function for attribute for 'visible'. This attribute is secured. You may get it, but you may not set it. Any changes to this attribute will not be transmitted to the server.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - Visible</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setAffirmativeTextAndAccessKey_String_" id="setAffirmativeTextAndAccessKey_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setAffirmativeTextAndAccessKey</h3>
+<dl>
+<dt><code>public <strong>void setAffirmativeTextAndAccessKey</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newAffirmativeTextAndAccessKey)</code></dt>
+<dd><br>
+<div>Set function for attribute 'AffirmativeTextAndAccessKey'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newAffirmativeTextAndAccessKey</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setCancelTextAndAccessKey_String_" id="setCancelTextAndAccessKey_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setCancelTextAndAccessKey</h3>
+<dl>
+<dt><code>public <strong>void setCancelTextAndAccessKey</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newCancelTextAndAccessKey)</code></dt>
+<dd><br>
+<div>Set function for attribute 'CancelTextAndAccessKey'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newCancelTextAndAccessKey</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setCancelVisible_Boolean_" id="setCancelVisible_Boolean_"><!-- --></a></p>
+<h3 class="DetailHeader">setCancelVisible</h3>
+<dl>
+<dt><code>public <strong>void setCancelVisible</strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newCancelVisible)</code></dt>
+<dd><br>
+<div>Set function for attribute 'CancelVisible'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newCancelVisible</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setCloseIconVisible_Boolean_" id="setCloseIconVisible_Boolean_"><!-- --></a></p>
+<h3 class="DetailHeader">setCloseIconVisible</h3>
+<dl>
+<dt><code>public <strong>void setCloseIconVisible</strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newCloseIconVisible)</code></dt>
+<dd><br>
+<div>Set function for attribute 'CloseIconVisible'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newCloseIconVisible</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setContentHeight_Number_" id="setContentHeight_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setContentHeight</h3>
+<dl>
+<dt><code>public <strong>void setContentHeight</strong>(<a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> newContentHeight)</code></dt>
+<dd><br>
+<div>Set function for attribute 'ContentHeight'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newContentHeight</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setContentWidth_Number_" id="setContentWidth_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setContentWidth</h3>
+<dl>
+<dt><code>public <strong>void setContentWidth</strong>(<a href="../../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> newContentWidth)</code></dt>
+<dd><br>
+<div>Set function for attribute 'ContentWidth'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newContentWidth</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setHelpTopicId_String_" id="setHelpTopicId_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setHelpTopicId</h3>
+<dl>
+<dt><code>public <strong>void setHelpTopicId</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newHelpTopicId)</code></dt>
+<dd><br>
+<div>Set function for attribute 'HelpTopicId'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newHelpTopicId</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setInlineStyle_String_" id="setInlineStyle_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setInlineStyle</h3>
+<dl>
+<dt><code>public <strong>void setInlineStyle</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newInlineStyle)</code></dt>
+<dd><br>
+<div>Set function for attribute 'InlineStyle'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newInlineStyle</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setModal_Boolean_" id="setModal_Boolean_"><!-- --></a></p>
+<h3 class="DetailHeader">setModal</h3>
+<dl>
+<dt><code>public <strong>void setModal</strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newModal)</code></dt>
+<dd><br>
+<div>Set function for attribute 'Modal'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newModal</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setNoTextAndAccessKey_String_" id="setNoTextAndAccessKey_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setNoTextAndAccessKey</h3>
+<dl>
+<dt><code>public <strong>void setNoTextAndAccessKey</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newNoTextAndAccessKey)</code></dt>
+<dd><br>
+<div>Set function for attribute 'NoTextAndAccessKey'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newNoTextAndAccessKey</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setOkVisible_Boolean_" id="setOkVisible_Boolean_"><!-- --></a></p>
+<h3 class="DetailHeader">setOkVisible</h3>
+<dl>
+<dt><code>public <strong>void setOkVisible</strong>(<a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> newOkVisible)</code></dt>
+<dd><br>
+<div>Set function for attribute 'OkVisible'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newOkVisible</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setResize_String_" id="setResize_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setResize</h3>
+<dl>
+<dt><code>public <strong>void setResize</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newResize)</code></dt>
+<dd><br>
+<div>Set function for attribute 'Resize'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newResize</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setShortDesc_String_" id="setShortDesc_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setShortDesc</h3>
+<dl>
+<dt><code>public <strong>void setShortDesc</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newShortDesc)</code></dt>
+<dd><br>
+<div>Set function for attribute 'ShortDesc'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newShortDesc</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setStretchChildren_String_" id="setStretchChildren_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setStretchChildren</h3>
+<dl>
+<dt><code>public <strong>void setStretchChildren</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newStretchChildren)</code></dt>
+<dd><br>
+<div>Set function for attribute 'StretchChildren'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newStretchChildren</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setStyleClass_String_" id="setStyleClass_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setStyleClass</h3>
+<dl>
+<dt><code>public <strong>void setStyleClass</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newStyleClass)</code></dt>
+<dd><br>
+<div>Set function for attribute 'StyleClass'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newStyleClass</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setTitle_String_" id="setTitle_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setTitle</h3>
+<dl>
+<dt><code>public <strong>void setTitle</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newTitle)</code></dt>
+<dd><br>
+<div>Set function for attribute 'Title'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newTitle</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setTitleIconSource_String_" id="setTitleIconSource_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setTitleIconSource</h3>
+<dl>
+<dt><code>public <strong>void setTitleIconSource</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newTitleIconSource)</code></dt>
+<dd><br>
+<div>Set function for attribute 'TitleIconSource'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newTitleIconSource</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setType_String_" id="setType_String_"><!-- --></a></p>
+<h3 class="DetailHeader">setType</h3>
+<dl>
+<dt><code>public <strong>void setType</strong>(<a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> newType)</code></dt>
+<dd><br>
+<div>Set function for attribute 'Type'.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>newType</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code>void</code> - No Value returned</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/layout/AdfRichDecorativeBox.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/AdfRichDocument.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../../index.html?oracle/adf/view/js/component/rich/AdfRichDialog.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfRichDialog.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

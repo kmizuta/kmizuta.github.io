@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "some-fa-css-rule": {
+      "severity": "warning",
+      "message": "I am an issue reported by FA. Selector h6 should not be altered. This rule is coming from audit metadata",
+      "actions": {
+        "transform": [{
+          "id": "fixFaCssRuleSetH3"
+        }]
+      }
+    }
+  },
+  "actions": {
+    "fixFaCssRuleSetH3": {
+      "description": "Fix the FA audit rule to change h6 to h3",
+      "modulePath": "oracle/fa/auditconfig/FixH6toH3",
+      "runFunction": "fixH6",
+      "isEnabledFunction": "shouldFixH6"
+    }
+  }
+}

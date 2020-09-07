@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfTouchShowContextMenuEvent</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfTouchShowContextMenuEvent";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/agent/AdfTouchMoveManager.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/datatransfer/AdfTransferable.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/event/AdfTouchShowContextMenuEvent.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfTouchShowContextMenuEvent.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">oracle.adf.view.js.event</span><br>
+Class AdfTouchShowContextMenuEvent</h1>
+<pre>
+<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">oracle.adf.view.js.base.AdfObject</a>
+         |
+         +--<a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html" title="class in oracle.adf.view.js.event">oracle.adf.view.js.event.AdfBaseEvent</a>
+               |
+               +--<a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html" title="class in oracle.adf.view.js.event">oracle.adf.view.js.event.AdfPhasedEvent</a>
+                     |
+                     +--<a href="../../../../../oracle/adf/view/js/event/AdfComponentEvent.html" title="class in oracle.adf.view.js.event">oracle.adf.view.js.event.AdfComponentEvent</a>
+                           |
+                           +--<a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">oracle.adf.view.js.event.AdfUIInputEvent</a>
+                                 |
+                                 +--<a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html" title="class in oracle.adf.view.js.event">oracle.adf.view.js.event.AdfDomUIInputEvent</a>
+                                       |
+                                       +--<a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html" title="class in oracle.adf.view.js.event">oracle.adf.view.js.event.AdfComponentTouchEvent</a>
+                                             |
+                                             +--<strong>oracle.adf.view.js.event.AdfTouchShowContextMenuEvent</strong>
+</pre>
+<hr>
+<pre>
+public class <strong>AdfTouchShowContextMenuEvent</strong>
+extends <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html" title="class in oracle.adf.view.js.event">AdfComponentTouchEvent</a>
+</pre>
+<div>A request to a component to show a context menu in a touch (or touch-aware) context.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_event_AdfComponentTouchEvent" id="fields_inherited_from_class_oracle_adf_view_js_event_AdfComponentTouchEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html" title="class in oracle.adf.view.js.event">AdfComponentTouchEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#TOUCH_CANCEL_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfComponentTouchEvent">TOUCH_CANCEL_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#TOUCH_END_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfComponentTouchEvent">TOUCH_END_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#TOUCH_MOVE_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfComponentTouchEvent">TOUCH_MOVE_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#TOUCH_START_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfComponentTouchEvent">TOUCH_START_EVENT_TYPE</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_event_AdfDomUIInputEvent" id="fields_inherited_from_class_oracle_adf_view_js_event_AdfDomUIInputEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfDomUIInputEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#Event" title="field in oracle.adf.view.js.event.AdfDomUIInputEvent">Event</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_event_AdfUIInputEvent" id="fields_inherited_from_class_oracle_adf_view_js_event_AdfUIInputEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#BLUR_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">BLUR_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#CLICK_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">CLICK_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#CONTEXT_MENU_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">CONTEXT_MENU_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#DOUBLE_CLICK_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">DOUBLE_CLICK_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#FOCUS_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">FOCUS_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#KEY_DOWN_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">KEY_DOWN_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#KEY_PRESS_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">KEY_PRESS_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#KEY_UP_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">KEY_UP_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#LEFT_BUTTON_FLAG" title="field in oracle.adf.view.js.event.AdfUIInputEvent">LEFT_BUTTON_FLAG</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#MIDDLE_BUTTON_FLAG" title="field in oracle.adf.view.js.event.AdfUIInputEvent">MIDDLE_BUTTON_FLAG</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#MOUSE_DOWN_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">MOUSE_DOWN_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#MOUSE_IN_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">MOUSE_IN_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#MOUSE_MOVE_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">MOUSE_MOVE_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#MOUSE_OUT_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">MOUSE_OUT_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#MOUSE_UP_EVENT_TYPE" title="field in oracle.adf.view.js.event.AdfUIInputEvent">MOUSE_UP_EVENT_TYPE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#RIGHT_BUTTON_FLAG" title="field in oracle.adf.view.js.event.AdfUIInputEvent">RIGHT_BUTTON_FLAG</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_event_AdfBaseEvent" id="fields_inherited_from_class_oracle_adf_view_js_event_AdfBaseEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html" title="class in oracle.adf.view.js.event">AdfBaseEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#AT_TARGET_PHASE" title="field in oracle.adf.view.js.event.AdfBaseEvent">AT_TARGET_PHASE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#BUBBLING_PHASE" title="field in oracle.adf.view.js.event.AdfBaseEvent">BUBBLING_PHASE</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#CAPTURING_PHASE" title="field in oracle.adf.view.js.event.AdfBaseEvent">CAPTURING_PHASE</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#constructor" title="field in oracle.adf.view.js.base.AdfObject">constructor</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#superclass" title="field in oracle.adf.view.js.base.AdfObject">superclass</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AdfTouchShowContextMenuEvent_Object__Object__Object_" title="constructor in this class">AdfTouchShowContextMenuEvent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> sourceComponent, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> type, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> event)</code></dt>
+<dd>
+<div>A request to a component to show a context menu in a touch (or touch-aware) context.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isPositionalRequest__" title="method in this class">isPositionalRequest</a></strong>()</code></dt>
+<dd>
+<div>Touches *always* occur in GUI space.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_event_AdfComponentTouchEvent" id="methods_inherited_from_class_oracle_adf_view_js_event_AdfComponentTouchEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html" title="class in oracle.adf.view.js.event">AdfComponentTouchEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#cancel__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">cancel</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#deriveContextMenuEvent_Object_" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">deriveContextMenuEvent</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getButtons__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getButtons</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getClientX__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getClientX</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getClientY__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getClientY</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getCurrentTarget__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getCurrentTarget</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getDoesBubbles__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getDoesBubbles</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#O__getFirstTouch_TouchEvent_" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">__getFirstTouch</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getKeyCode__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getKeyCode</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getPageX__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getPageX</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getPageY__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getPageY</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getScreenX__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getScreenX</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getScreenY__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getScreenY</a>, <a href="../../../../../oracle/adf/view/js/event/AdfComponentTouchEvent.html#getTouchCount__" title="method in oracle.adf.view.js.event.AdfComponentTouchEvent">getTouchCount</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_event_AdfDomUIInputEvent" id="methods_inherited_from_class_oracle_adf_view_js_event_AdfDomUIInputEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfDomUIInputEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#clone__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">clone</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#getKeyModifiers__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">getKeyModifiers</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#getNativeEvent__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">getNativeEvent</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#getNativeEventTarget__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">getNativeEventTarget</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#getOffsetX__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">getOffsetX</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#getOffsetY__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">getOffsetY</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#GetSourceDomElement__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">GetSourceDomElement</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#Init_Object__Object__Object_" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">Init</a>, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html#toDebugString__" title="method in oracle.adf.view.js.event.AdfDomUIInputEvent">toDebugString</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_event_AdfUIInputEvent" id="methods_inherited_from_class_oracle_adf_view_js_event_AdfUIInputEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#getKeyStroke__" title="method in oracle.adf.view.js.event.AdfUIInputEvent">getKeyStroke</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#isLeftButtonPressed__" title="method in oracle.adf.view.js.event.AdfUIInputEvent">isLeftButtonPressed</a>, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html#isRightButtonPressed__" title="method in oracle.adf.view.js.event.AdfUIInputEvent">isRightButtonPressed</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_event_AdfComponentEvent" id="methods_inherited_from_class_oracle_adf_view_js_event_AdfComponentEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfComponentEvent.html" title="class in oracle.adf.view.js.event">AdfComponentEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfComponentEvent.html#queue_Boolean_" title="method in oracle.adf.view.js.event.AdfComponentEvent">queue</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_event_AdfPhasedEvent" id="methods_inherited_from_class_oracle_adf_view_js_event_AdfPhasedEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html" title="class in oracle.adf.view.js.event">AdfPhasedEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html#getEventPhase__" title="method in oracle.adf.view.js.event.AdfPhasedEvent">getEventPhase</a>, <a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html#isCancelable__" title="method in oracle.adf.view.js.event.AdfPhasedEvent">isCancelable</a>, <a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html#nextEventPhase__" title="method in oracle.adf.view.js.event.AdfPhasedEvent">nextEventPhase</a>, <a href="../../../../../oracle/adf/view/js/event/AdfPhasedEvent.html#setCurrentTarget_Object_" title="method in oracle.adf.view.js.event.AdfPhasedEvent">setCurrentTarget</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_event_AdfBaseEvent" id="methods_inherited_from_class_oracle_adf_view_js_event_AdfBaseEvent"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.event.<a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html" title="class in oracle.adf.view.js.event">AdfBaseEvent</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#AddMarshalledProperties_Object_" title="method in oracle.adf.view.js.event.AdfBaseEvent">AddMarshalledProperties</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#forceFullSubmit__" title="method in oracle.adf.view.js.event.AdfBaseEvent">forceFullSubmit</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#getClearMessages__" title="method in oracle.adf.view.js.event.AdfBaseEvent">getClearMessages</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#getMaxTimeBeforePropagation__" title="method in oracle.adf.view.js.event.AdfBaseEvent">getMaxTimeBeforePropagation</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#getProperties__" title="method in oracle.adf.view.js.event.AdfBaseEvent">getProperties</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#getRoot__" title="method in oracle.adf.view.js.event.AdfBaseEvent">getRoot</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#getShowMessages__" title="method in oracle.adf.view.js.event.AdfBaseEvent">getShowMessages</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#getSource__" title="method in oracle.adf.view.js.event.AdfBaseEvent">getSource</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#getType__" title="method in oracle.adf.view.js.event.AdfBaseEvent">getType</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isBubblingStopped__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isBubblingStopped</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isCanceled__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isCanceled</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#IsDeleveryDiscrete__" title="method in oracle.adf.view.js.event.AdfBaseEvent">IsDeleveryDiscrete</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isDeliveryDiscrete__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isDeliveryDiscrete</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isFullSubmitForced__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isFullSubmitForced</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isImmediate__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isImmediate</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isPartial__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isPartial</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isResponseAnnounced__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isResponseAnnounced</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isResponseExpected__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isResponseExpected</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#IsUserInputPrevented__" title="method in oracle.adf.view.js.event.AdfBaseEvent">IsUserInputPrevented</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#isValidationNeeded__" title="method in oracle.adf.view.js.event.AdfBaseEvent">isValidationNeeded</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#noResponseExpected__" title="method in oracle.adf.view.js.event.AdfBaseEvent">noResponseExpected</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#preventUserInput__" title="method in oracle.adf.view.js.event.AdfBaseEvent">preventUserInput</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#propagatesToServer__" title="method in oracle.adf.view.js.event.AdfBaseEvent">propagatesToServer</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#setPartial_Object_" title="method in oracle.adf.view.js.event.AdfBaseEvent">setPartial</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#setRoot_Object_" title="method in oracle.adf.view.js.event.AdfBaseEvent">setRoot</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#setSource_Object_" title="method in oracle.adf.view.js.event.AdfBaseEvent">setSource</a>, <a href="../../../../../oracle/adf/view/js/event/AdfBaseEvent.html#stopBubbling__" title="method in oracle.adf.view.js.event.AdfBaseEvent">stopBubbling</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#adopt_Object_" title="method in oracle.adf.view.js.base.AdfObject">adopt</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createCallback_Object_" title="method in oracle.adf.view.js.base.AdfObject">createCallback</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createInitializedObject__" title="method in oracle.adf.view.js.base.AdfObject">createInitializedObject</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createSubclass_Function__Function__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">createSubclass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#ensureClassInitialization_Function_" title="method in oracle.adf.view.js.base.AdfObject">ensureClassInitialization</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#equals_Object_" title="method in oracle.adf.view.js.base.AdfObject">equals</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getClass_Object_" title="method in oracle.adf.view.js.base.AdfObject">getClass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyArrayProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyArrayProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyMapProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyMapProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getTypeName__" title="method in oracle.adf.view.js.base.AdfObject">getTypeName</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#toString__" title="method in oracle.adf.view.js.base.AdfObject">toString</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AdfTouchShowContextMenuEvent_Object__Object__Object_" id="AdfTouchShowContextMenuEvent_Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">AdfTouchShowContextMenuEvent</h3>
+<dl>
+<dt><code>public <strong>AdfTouchShowContextMenuEvent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> sourceComponent,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> type,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> event)</code></dt>
+<dd><br>
+<div>A request to a component to show a context menu in a touch (or touch-aware) context.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>sourceComponent</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>type</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>event</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="isPositionalRequest__" id="isPositionalRequest__"><!-- --></a></p>
+<h3 class="DetailHeader">isPositionalRequest</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> isPositionalRequest</strong>()</code></dt>
+<dd><br>
+<div>Touches *always* occur in GUI space.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/agent/AdfTouchMoveManager.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/datatransfer/AdfTransferable.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/event/AdfTouchShowContextMenuEvent.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfTouchShowContextMenuEvent.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<?xml version = '1.0'?>
+<index version="1.0">
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="bigDecimalValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_bigDecimalValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="bigDecimalValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_bigDecimalValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="bigIntegerValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_bigIntegerValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="bigIntegerValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_bigIntegerValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="booleanValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_booleanValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="booleanValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_booleanValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="byteValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_byteValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.jbo.domain">
+         <indexentry text="Char" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="Char()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_Char()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="Char(Char)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_Char(oracle_jbo_domain_Char)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="Char(String)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_Char(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="Char(Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_Char(java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="compareTo(Date)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_compareTo(oracle_jbo_domain_Date)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="compareTo(double)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_compareTo(double)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="compareTo(Number)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_compareTo(oracle_jbo_domain_Number)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.jbo.domain">
+         <indexentry text="Date" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="Date()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_Date()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="Date(Date)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_Date(oracle_jbo_domain_Date)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="Date(long)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_Date(long)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="Date(Date)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_Date(java_sql_Date)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="Date(String)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_Date(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="Date(Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_Date(java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="dateValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_dateValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="doubleValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_doubleValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="doubleValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_doubleValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="equals(Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_equals(java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="equals(Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_equals(java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="equals(Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_equals(java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="floatValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_floatValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="floatValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_floatValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="getBigDecimalValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_getBigDecimalValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="getBytes()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_getBytes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="getBytes()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_getBytes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="getData()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_getData()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="getData()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_getData()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="getData()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_getData()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="getDataAsJavaNumber()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_getDataAsJavaNumber()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="getPrecision()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_getPrecision()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="getTime()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_getTime()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="getValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_getValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="getValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_getValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="getValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_getValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="hashCode()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_hashCode()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="hashCode()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_hashCode()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="hashCode()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_hashCode()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="intValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_intValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="intValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_intValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="longValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_longValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="longValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_longValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="multiply(Number)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_multiply(oracle_jbo_domain_Number)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.jbo.domain">
+         <indexentry text="Number" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(int)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(int)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(Long)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(java_lang_Long)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(long)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(long)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(short)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(short)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(float)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(float)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(Double)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(java_lang_Double)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(double)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(double)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(BigDecimal)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(java_math_BigDecimal)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(BigInteger)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(java_math_BigInteger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(String, int)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(java_lang_String, int)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(String)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(boolean)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="Number(Number)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_Number(oracle_jbo_domain_Number)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="setBytes(byte[])" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_setBytes(byte[])"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="setBytes(byte[])" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_setBytes(byte[])"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="setContext(DomainOwnerInterface, Transaction, Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_setContext(oracle_jbo_domain_DomainOwnerInterface, oracle_jbo_Transaction, java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="setContext(DomainOwnerInterface, Transaction, Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_setContext(oracle_jbo_domain_DomainOwnerInterface, oracle_jbo_Transaction, java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="setContext(DomainOwnerInterface, Transaction, Object)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_setContext(oracle_jbo_domain_DomainOwnerInterface, oracle_jbo_Transaction, java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="shortValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_shortValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="stringValue()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_stringValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="toJdbc()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_toJdbc()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Char">
+         <indexentry text="toString()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Char_html_toString()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Date">
+         <indexentry text="toString()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Date_html_toString()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="toString()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_toString()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="trimStr(String)" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_trimStr(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Number">
+         <indexentry text="validate()" target="bc4jdomgnrcdoc__oracle__jbo__domain__Number_html_validate()"/>
+      </indexitem>
+   </indexitem>
+</index>

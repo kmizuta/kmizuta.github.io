@@ -1,0 +1,10 @@
+oracle.apps.saf.ta.jaudit.core
+oracle.apps.saf.ta.jaudit.core.annotations
+oracle.apps.saf.ta.jaudit.impl
+oracle.apps.saf.ta.jaudit.impl.facades
+oracle.apps.saf.ta.jaudit.impl.injection
+oracle.apps.saf.ta.jaudit.impl.metadata
+oracle.apps.saf.ta.jaudit.model
+oracle.apps.saf.ta.jaudit.model.facades
+oracle.apps.saf.ta.jaudit.model.metadata
+oracle.apps.saf.ta.test

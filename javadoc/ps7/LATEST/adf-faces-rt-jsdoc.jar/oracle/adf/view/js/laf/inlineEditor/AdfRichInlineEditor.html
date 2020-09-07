@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfRichInlineEditor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfRichInlineEditor";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/output/AdfRichImage.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/output/AdfRichInlineFrame.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../../index.html?oracle/adf/view/js/laf/inlineEditor/AdfRichInlineEditor.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfRichInlineEditor.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | CONSTR | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | CONSTR | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">oracle.adf.view.js.laf.inlineEditor</span><br>
+Class AdfRichInlineEditor</h1>
+<pre>
+<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<a href="../../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">oracle.adf.view.js.base.AdfObject</a>
+         |
+         +--<strong>oracle.adf.view.js.laf.inlineEditor.AdfRichInlineEditor</strong>
+</pre>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><span><a href="../../../../../../oracle/adf/view/js/laf/inlineEditor/AdfRichPlainTextEditor.html" title="class in oracle.adf.view.js.laf.inlineEditor">AdfRichPlainTextEditor</a></span></dd>
+</dl>
+<hr>
+<pre>
+public abstract class <strong>AdfRichInlineEditor</strong>
+extends <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>
+</pre>
+<div>Abstract superclass for all inline editors used by peers. The inline editors support reusing the same instance across edits on the same component.
+<p>The lifecyle of an inline editor is:</p>
+<ol>
+<li><code>startEdit</code></li>
+<li>0..N calls to <code>handleEvent</code>. The editor commits the changes as they occur</li>
+<li><code>stopEdit</code></li>
+</ol>
+Instances of this class are created by overrides of <code>AdfRichUIPeer.GetInlineEditor</code>. None of the functions in this class are called with bound peers. As a result, sunclasses should always retrieve their peer using the convenience function GetEditedPeer() on this class to ensure that their peer is bound.</div>
+<p><br></p>
+<dl>
+<dt>See also:</dt>
+<dd><code><a href="../../../../../../oracle/adf/view/js/laf/rich/AdfRichUIPeer.html#GetInlineEditor_Object_" title="method in oracle.adf.view.js.laf.rich.AdfRichUIPeer">AdfRichUIPeer.GetInlineEditor(Object)</a></code></dd>
+<dd><code><a href="#GetEditedPeer__" title="method in this class">GetEditedPeer()</a></code></dd>
+</dl>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_component" title="field in this class">_component</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#FILTER_EDITABLE" title="field in this class">FILTER_EDITABLE</a></strong></code></dt>
+<dd>
+<div>Constant for filter function indicating that the component is selectable and editable</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#FILTER_SELECTABLE" title="field in this class">FILTER_SELECTABLE</a></strong></code></dt>
+<dd>
+<div>Constant for filter function indicating that the component is selectable but not editable</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#FILTER_UNSELECTABLE" title="field in this class">FILTER_UNSELECTABLE</a></strong></code></dt>
+<dd>
+<div>Constant for filter function indicating that the component is neither selectable nor editable</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.base.<a href="../../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#constructor" title="field in oracle.adf.view.js.base.AdfObject">constructor</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#superclass" title="field in oracle.adf.view.js.base.AdfObject">superclass</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getEditedComponent__" title="method in this class">getEditedComponent</a></strong>()</code></dt>
+<dd>
+<div>Returns the component currently being edited.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../../oracle/adf/view/js/laf/rich/AdfRichUIPeer.html" title="class in oracle.adf.view.js.laf.rich">AdfRichUIPeer</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#GetEditedPeer__" title="method in this class">GetEditedPeer</a></strong>()</code></dt>
+<dd>
+<div>Convenience, Returning the bound peer for the component being edited.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getEditedProperty__" title="method in this class">getEditedProperty</a></strong>()</code></dt>
+<dd>
+<div>Returns the name of the property edited by this instance.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#handleEvent_Event_" title="method in this class">handleEvent</a></strong>(<a href="../../../../../../org/w3c/dom/events/Event.html" title="class in org.w3c.dom.events">Event</a> event)</code></dt>
+<dd>
+<div>Called to deliver a DOM event to the inline editor.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#Init__" title="method in this class">Init</a></strong>()</code></dt>
+<dd>
+<div>Initializes the AdfRichInlineEditor</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#preEdit_AdfUIComponent_" title="method in this class">preEdit</a></strong>(<a href="../../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Returns true if this inline editor is capable of editing the specified component.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#PreEdit__" title="method in this class">PreEdit</a></strong>()</code></dt>
+<dd>
+<div>Called by preEdit to determine whether the component returned by getEditedComponent can be edited by this inlineEditor.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#startEdit_AdfUIComponent__Object_" title="method in this class">startEdit</a></strong>(<a href="../../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> event)</code></dt>
+<dd>
+<div>Start editing the specified component at the location indicated by the optional DOM event.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#stopEdit__" title="method in this class">stopEdit</a></strong>()</code></dt>
+<dd>
+<div>Called to stop editing the current component.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.base.<a href="../../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#adopt_Object_" title="method in oracle.adf.view.js.base.AdfObject">adopt</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#clone__" title="method in oracle.adf.view.js.base.AdfObject">clone</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#createCallback_Object_" title="method in oracle.adf.view.js.base.AdfObject">createCallback</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#createInitializedObject__" title="method in oracle.adf.view.js.base.AdfObject">createInitializedObject</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#createSubclass_Function__Function__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">createSubclass</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#ensureClassInitialization_Function_" title="method in oracle.adf.view.js.base.AdfObject">ensureClassInitialization</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#equals_Object_" title="method in oracle.adf.view.js.base.AdfObject">equals</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#getClass_Object_" title="method in oracle.adf.view.js.base.AdfObject">getClass</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyArrayProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyArrayProperty</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyMapProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyMapProperty</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#getTypeName__" title="method in oracle.adf.view.js.base.AdfObject">getTypeName</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#toDebugString__" title="method in oracle.adf.view.js.base.AdfObject">toDebugString</a>, <a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#toString__" title="method in oracle.adf.view.js.base.AdfObject">toString</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="O_component" id="O_component"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_component</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_component</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="FILTER_EDITABLE" id="FILTER_EDITABLE"><!-- --></a></p>
+<h3 class="DetailHeader">FILTER_EDITABLE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>FILTER_EDITABLE</strong></code></dt>
+<dd><br>
+<div>Constant for filter function indicating that the component is selectable and editable</div>
+</dd>
+</dl>
+<hr>
+<p><a name="FILTER_SELECTABLE" id="FILTER_SELECTABLE"><!-- --></a></p>
+<h3 class="DetailHeader">FILTER_SELECTABLE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>FILTER_SELECTABLE</strong></code></dt>
+<dd><br>
+<div>Constant for filter function indicating that the component is selectable but not editable</div>
+</dd>
+</dl>
+<hr>
+<p><a name="FILTER_UNSELECTABLE" id="FILTER_UNSELECTABLE"><!-- --></a></p>
+<h3 class="DetailHeader">FILTER_UNSELECTABLE</h3>
+<dl>
+<dt><code>public static <a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>FILTER_UNSELECTABLE</strong></code></dt>
+<dd><br>
+<div>Constant for filter function indicating that the component is neither selectable nor editable</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="getEditedComponent__" id="getEditedComponent__"><!-- --></a></p>
+<h3 class="DetailHeader">getEditedComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> getEditedComponent</strong>()</code></dt>
+<dd><br>
+<div>Returns the component currently being edited.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="GetEditedPeer__" id="GetEditedPeer__"><!-- --></a></p>
+<h3 class="DetailHeader">GetEditedPeer</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../../oracle/adf/view/js/laf/rich/AdfRichUIPeer.html" title="class in oracle.adf.view.js.laf.rich">AdfRichUIPeer</a> GetEditedPeer</strong>()</code></dt>
+<dd><br>
+<div>Convenience, Returning the bound peer for the component being edited.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../oracle/adf/view/js/laf/rich/AdfRichUIPeer.html" title="class in oracle.adf.view.js.laf.rich">AdfRichUIPeer</a></code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getEditedProperty__" id="getEditedProperty__"><!-- --></a></p>
+<h3 class="DetailHeader">getEditedProperty</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getEditedProperty</strong>()</code></dt>
+<dd><br>
+<div>Returns the name of the property edited by this instance. This will return <code>null</code> if the inline editor doesn't edit properties,</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="handleEvent_Event_" id="handleEvent_Event_"><!-- --></a></p>
+<h3 class="DetailHeader">handleEvent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> handleEvent</strong>(<a href="../../../../../../org/w3c/dom/events/Event.html" title="class in org.w3c.dom.events">Event</a> event)</code></dt>
+<dd><br>
+<div>Called to deliver a DOM event to the inline editor.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>event</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">DOM event to handle</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="Init__" id="Init__"><!-- --></a></p>
+<h3 class="DetailHeader">Init</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> Init</strong>()</code></dt>
+<dd><br>
+<div>Initializes the AdfRichInlineEditor</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>.<a href="../../../../../../oracle/adf/view/js/base/AdfObject.html#Init__" title="method in oracle.adf.view.js.base.AdfObject">Init()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="preEdit_AdfUIComponent_" id="preEdit_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">preEdit</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> preEdit</strong>(<a href="../../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Returns true if this inline editor is capable of editing the specified component. Subclassers should implement the abstract method <code>CanEdit()</code> to provide this implementation</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">to consider editing</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - null <code>true</code> if this component can be inline edited</dd>
+<dt>See also:</dt>
+<dd><code><a href="#PreEdit__" title="method in this class">PreEdit()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="PreEdit__" id="PreEdit__"><!-- --></a></p>
+<h3 class="DetailHeader">PreEdit</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> PreEdit</strong>()</code></dt>
+<dd><br>
+<div>Called by <code>preEdit</code> to determine whether the component returned by <code>getEditedComponent</code> can be edited by this inlineEditor.
+<p>During this call, <code>GetEditedPeer</code> will return the component's peer properly bound.</p>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - null <code>true</code> if this component can be inline edited</dd>
+<dt>See also:</dt>
+<dd><code><a href="#preEdit_AdfUIComponent_" title="method in this class">preEdit(AdfUIComponent)</a></code></dd>
+<dd><code><a href="#getEditedComponent__" title="method in this class">getEditedComponent()</a></code></dd>
+<dd><code><a href="#GetEditedPeer__" title="method in this class">GetEditedPeer()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="startEdit_AdfUIComponent__Object_" id="startEdit_AdfUIComponent__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">startEdit</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> startEdit</strong>(<a href="../../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> event)</code></dt>
+<dd><br>
+<div>Start editing the specified component at the location indicated by the optional DOM event. Overriders should call this method as the first thing that they do in their override</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Component to start editing</td>
+</tr>
+<tr>
+<td valign="top"><code>event</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="stopEdit__" id="stopEdit__"><!-- --></a></p>
+<h3 class="DetailHeader">stopEdit</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> stopEdit</strong>()</code></dt>
+<dd><br>
+<div>Called to stop editing the current component. Overriders should call this method as the last thing that they do in their override</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | CONSTR | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | CONSTR | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/output/AdfRichImage.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../../oracle/adf/view/js/component/rich/output/AdfRichInlineFrame.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../../index.html?oracle/adf/view/js/laf/inlineEditor/AdfRichInlineEditor.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfRichInlineEditor.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>Number</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="Number";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/w3c/dom/core/Notation.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/ecmascript/object/Object.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/primitive/Number.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Number.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">org.ecmascript.primitive</span><br>
+Class Number</h1>
+<pre>
+<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<strong>org.ecmascript.primitive.Number</strong>
+</pre>
+<hr>
+<pre>
+public class <strong>Number</strong>
+extends <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a>
+</pre>
+<div>The native browser JavaScript object used to wrap primitive numeric values.<br>
+<br>
+Note that this object is implemented and supported by the web browser and results of its use may vary.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#MAX_VALUE" title="field in this class">MAX_VALUE</a></strong></code></dt>
+<dd>
+<div>The largest possible value in JavaScript.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#MIN_VALUE" title="field in this class">MIN_VALUE</a></strong></code></dt>
+<dd>
+<div>The smallest possible value in JavaScript.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#NaN" title="field in this class">NaN</a></strong></code></dt>
+<dd>
+<div>An identifier for values that are not numbers.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#NEGATIVE_INFINITY" title="field in this class">NEGATIVE_INFINITY</a></strong></code></dt>
+<dd>
+<div>An identifier for values that are less than <code>MIN_VALUE</code>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#POSITIVE_INFINITY" title="field in this class">POSITIVE_INFINITY</a></strong></code></dt>
+<dd>
+<div>An identifier for values that are greater than <code>MAX_VALUE</code>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#Number_Number_" title="constructor in this class">Number</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>The native browser JavaScript object used to wrap primitive numeric values.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toExponential_Number_" title="method in this class">toExponential</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> numberOfDecimalPlaces)</code></dt>
+<dd>
+<div>Creates a String representation of the number in exponential notation using the specified number of decimal places.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toFixed_Number_" title="method in this class">toFixed</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> numberOfDecimalPlaces)</code></dt>
+<dd>
+<div>Creates a String representation of the number that is rounded to the specified number of decimal places.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toPrecision_Number_" title="method in this class">toPrecision</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> numberOfDigits)</code></dt>
+<dd>
+<div>Creates a String representation of the number that uses only the specified number of digits.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toString_Number_" title="method in this class">toString</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> radix)</code></dt>
+<dd>
+<div>Creates a String representation of the number using the specified radix.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="MAX_VALUE" id="MAX_VALUE"><!-- --></a></p>
+<h3 class="DetailHeader">MAX_VALUE</h3>
+<dl>
+<dt><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>MAX_VALUE</strong></code></dt>
+<dd><br>
+<div>The largest possible value in JavaScript.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="MIN_VALUE" id="MIN_VALUE"><!-- --></a></p>
+<h3 class="DetailHeader">MIN_VALUE</h3>
+<dl>
+<dt><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>MIN_VALUE</strong></code></dt>
+<dd><br>
+<div>The smallest possible value in JavaScript.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="NaN" id="NaN"><!-- --></a></p>
+<h3 class="DetailHeader">NaN</h3>
+<dl>
+<dt><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>NaN</strong></code></dt>
+<dd><br>
+<div>An identifier for values that are not numbers. For example, <code>NaN</code> would result from someone trying to parse a <code>String</code> that cannot be converted into a <code>Number</code>.<br>
+<br>
+Notice the subtlety with <code>Number.NaN</code>, <code>Global.NaN</code>, and <code>Global.isNaN()</code>:
+<ul>
+<li><code>NaN == Number.NaN</code> has a result of <strong><code>false</code></strong>.</li>
+<li><code>NaN === Number.NaN</code> has a result of <strong><code>false</code></strong>.</li>
+<li><code>NaN == NaN</code> has a result of <strong><code>false</code></strong>.</li>
+<li><code>NaN === NaN</code> has a result of <strong><code>false</code></strong>.</li>
+<li><code>Number.NaN == Number.NaN</code> has a result of <strong><code>false</code></strong>.</li>
+<li><code>Number.NaN === Number.NaN</code> has a result of <strong><code>false</code></strong>.</li>
+<li><code>isNaN(NaN)</code> has a result of <code>true</code>.</li>
+<li><code>isNaN(Number.NaN)</code> has a result of <code>true</code>.</li>
+</ul>
+</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Global.html#isNaN_String_" title="method in org.ecmascript.object.Global">Global.isNaN(String)</a></code></dd>
+<dd><code><a href="../../../org/ecmascript/object/Global.html#NaN" title="field in org.ecmascript.object.Global">Global.NaN</a></code></dd>
+</dl>
+<hr>
+<p><a name="NEGATIVE_INFINITY" id="NEGATIVE_INFINITY"><!-- --></a></p>
+<h3 class="DetailHeader">NEGATIVE_INFINITY</h3>
+<dl>
+<dt><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>NEGATIVE_INFINITY</strong></code></dt>
+<dd><br>
+<div>An identifier for values that are less than <code>MIN_VALUE</code>.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="POSITIVE_INFINITY" id="POSITIVE_INFINITY"><!-- --></a></p>
+<h3 class="DetailHeader">POSITIVE_INFINITY</h3>
+<dl>
+<dt><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>POSITIVE_INFINITY</strong></code></dt>
+<dd><br>
+<div>An identifier for values that are greater than <code>MAX_VALUE</code>.</div>
+</dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Global.html#Infinity" title="field in org.ecmascript.object.Global">Global.Infinity</a></code></dd>
+</dl>
+<hr>
+<p><a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="Number_Number_" id="Number_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">Number</h3>
+<dl>
+<dt><code>public <strong>Number</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>The native browser JavaScript object used to wrap primitive numeric values.<br>
+<br>
+Note that this object is implemented and supported by the web browser and results of its use may vary.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the numeric value to convert into a number; if conversion fails, <code>Number.NaN</code> will be used instead</td>
+</tr>
+</table>
+</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="toExponential_Number_" id="toExponential_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">toExponential</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toExponential</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> numberOfDecimalPlaces)</code></dt>
+<dd><br>
+<div>Creates a String representation of the number in exponential notation using the specified number of decimal places.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>numberOfDecimalPlaces</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the number of decimal places to use</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a String representation of the number in exponential notation using the specified number of decimal places</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toFixed_Number_" id="toFixed_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">toFixed</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toFixed</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> numberOfDecimalPlaces)</code></dt>
+<dd><br>
+<div>Creates a String representation of the number that is rounded to the specified number of decimal places.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>numberOfDecimalPlaces</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the number of decimal places to use</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a String representation of the number in rounded to the specified number of decimal places</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toPrecision_Number_" id="toPrecision_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">toPrecision</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toPrecision</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> numberOfDigits)</code></dt>
+<dd><br>
+<div>Creates a String representation of the number that uses only the specified number of digits.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>numberOfDigits</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the number of digits to use</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a String representation of the number that uses only the specified number of digits</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toString_Number_" id="toString_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">toString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toString</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> radix)</code></dt>
+<dd><br>
+<div>Creates a String representation of the number using the specified radix.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>radix</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">optional base radix used to represent the number, e.g. 2 for binary, 8 for octal, 10 for decimal, and 16 for hexadecimal
+<div class="DefaultValue">Default value = 10</div>
+</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a String representation of the number using the specified radix</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/w3c/dom/core/Notation.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/ecmascript/object/Object.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/primitive/Number.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Number.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

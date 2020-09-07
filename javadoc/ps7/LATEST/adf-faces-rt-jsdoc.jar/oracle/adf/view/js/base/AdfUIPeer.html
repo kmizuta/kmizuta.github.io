@@ -1,0 +1,1796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfUIPeer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfUIPeer";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIPanel.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIPoll.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/base/AdfUIPeer.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfUIPeer.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">oracle.adf.view.js.base</span><br>
+Class AdfUIPeer</h1>
+<pre>
+<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">oracle.adf.view.js.base.AdfObject</a>
+         |
+         +--<strong>oracle.adf.view.js.base.AdfUIPeer</strong>
+</pre>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><span><a href="../../../../../oracle/adf/view/js/laf/rich/AdfRichUIPeer.html" title="class in oracle.adf.view.js.laf.rich">AdfRichUIPeer</a></span></dd>
+</dl>
+<hr>
+<pre>
+public class <strong>AdfUIPeer</strong>
+extends <a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>
+</pre>
+<div>Base class for peer object mapping native implementations to the component model. THis class contains all of the generic peer apis regardless of rendering model.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_DRAG_RECOGNIZER" title="field in this class">_DRAG_RECOGNIZER</a></strong></code></dt>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="fields_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#constructor" title="field in oracle.adf.view.js.base.AdfObject">constructor</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#superclass" title="field in oracle.adf.view.js.base.AdfObject">superclass</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AdfUIPeer__" title="constructor in this class">AdfUIPeer</a></strong>()</code></dt>
+<dd>
+<div>Base class for peer object mapping native implementations to the component model.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#applyDragReadyState_AdfUIComponent__AdfUIInputEvent_" title="method in this class">applyDragReadyState</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a> inputEvent)</code></dt>
+<dd>
+<div>Called by the framework when the drag is ready to be initiated.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#applyDragSourceState_AdfUIComponent__AdfDomUIInputEvent_" title="method in this class">applyDragSourceState</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfDomUIInputEvent</a> inputEvent)</code></dt>
+<dd>
+<div>Called by the framework when a drag has been initiated on the component for this peer.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#ApplyDragSourceState_AdfDomUIInputEvent_" title="method in this class">ApplyDragSourceState</a></strong>(<a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfDomUIInputEvent</a> inputEvent)</code></dt>
+<dd>
+<div>Called by the framework when a drag has been initiated on the component for this peer.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#clearDragReadyState_AdfUIComponent__Object_" title="method in this class">clearDragReadyState</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dragReadyObj)</code></dt>
+<dd>
+<div>Called by the framework to clear the drag ready state.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#clearDragSourceState_AdfUIComponent__Object_" title="method in this class">clearDragSourceState</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dragSourceObj)</code></dt>
+<dd>
+<div>Called by the framework to clear the drag source state</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#ClearDragSourceState_Object_" title="method in this class">ClearDragSourceState</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dragSourceObj)</code></dt>
+<dd>
+<div>Called by the framework to clear the drag source state.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#ComponentPropertyChanged_Object_" title="method in this class">ComponentPropertyChanged</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyChangeEvent)</code></dt>
+<dd>
+<div>Called whenever a property changes on the component this peer is attached to.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#componentRemoved_AdfUIComponent_" title="method in this class">componentRemoved</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Clean up the peer because it's component is being removed.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#convertLocatorToClientId_Object__Object_" title="method in this class">convertLocatorToClientId</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> stampKey)</code></dt>
+<dd>
+<div>Function to replace client id fragments when converting an absolute locator to clientId.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#createPeerClass_Function__String__Object_" title="method in this class">createPeerClass</a></strong>(<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> theSuperclass, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> peerName, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> classInitializationState)</code></dt>
+<dd>
+<div>Factory method for creating a subclass of the specified peer class</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#DispatchComponentEvent_Object_" title="method in this class">DispatchComponentEvent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentEvent)</code></dt>
+<dd>
+<div>Dispatch a component event to the peer</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#DispatchUncanceledComponentEvent_Object_" title="method in this class">DispatchUncanceledComponentEvent</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentEvent)</code></dt>
+<dd>
+<div>Called when an event has bubbled all the way to the top without being canceled, but before the AdfComponent's HandleEvent is called.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#focus_Object_" title="method in this class">focus</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Ask the peer to move focus to this component</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getAbsoluteId_AdfUIComponent__String_" title="method in this class">getAbsoluteId</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> clientId)</code></dt>
+<dd>
+<div>Implemented by peer to return the absolute scoped id for this component without the leading ":".</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getAbsoluteLocator_AdfUIComponent__String_" title="method in this class">getAbsoluteLocator</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> clientId)</code></dt>
+<dd>
+<div>Implemented by peer to return the absolute locator, an implementation agnostic String identifier for a given clientId, that is a 'rendered instance-specific' version of the absolute scoped id.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getComponent__" title="method in this class">getComponent</a></strong>()</code></dt>
+<dd>
+<div>Returns the AdfUIComponent that this is the peer for.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getComponentParent_AdfUIComponent_" title="method in this class">getComponentParent</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Returns the parent component of the specified component.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getComponentProperty_AdfUIComponent__String_" title="method in this class">getComponentProperty</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propertyName)</code></dt>
+<dd>
+<div>Returns the value of the property for the component, or <code>undefined</code> if the peer does not know how to derive the property</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../oracle/adf/view/js/dnd/desktop/AdfDragRecognizer.html" title="class in oracle.adf.view.js.dnd.desktop">AdfDragRecognizer</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDefaultDragRecognizer_AdfUIComponent_" title="method in this class">getDefaultDragRecognizer</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Returns the default AdfDragReconizer to use if the AdfDragSource does not provide its own drag recognition scheme.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt;</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDescendantComponents_AdfUIComponent__Array_AdfUIComponent__" title="method in this class">getDescendantComponents</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt; children)</code></dt>
+<dd>
+<div>Get components descended from this peer's component.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDragOverFeedback_AdfUIComponent__AdfUIInputEvent_" title="method in this class">getDragOverFeedback</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a> inputEvent)</code></dt>
+<dd>
+<div>Returns the appropriate default drag over feedback for this peer</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDragTransferable_AdfUIComponent__AdfUIInputEvent_" title="method in this class">getDragTransferable</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a> inputEvent)</code></dt>
+<dd>
+<div>Returns the appropriate default transferable for this drag location, or <code>null</code> if this peer has no default Transferable.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getInlineStyleProperty_Object__String_" title="method in this class">getInlineStyleProperty</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propName)</code></dt>
+<dd>
+<div>returns the style values corresponding to the CSS propertyName.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getPagePosition_AdfUIComponent_" title="method in this class">getPagePosition</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Returns the coordinates of the component's upper left corner in Page coordinates.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getParentPeer__" title="method in this class">getParentPeer</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getReadyState_Object_" title="method in this class">getReadyState</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Returns whether the content of the component is available are:</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#Init_AdfUIComponent_" title="method in this class">Init</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Initializes the peer</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>protected static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#InitClass__" title="method in this class">InitClass</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#initialize_AdfUIComponent_" title="method in this class">initialize</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd>
+<div>Initializes a peer instance about to be returned by AdfLookAndFeel.getPeer().</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#initiateDrag_Object__Object_" title="method in this class">initiateDrag</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> triggerEvent)</code></dt>
+<dd>
+<div>Inform the peer that a drag has been initiated</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#isVisible__" title="method in this class">isVisible</a></strong>()</code></dt>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#messageNotify_Object__Number__Array_" title="method in this class">messageNotify</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component, <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> maxtype, <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a> messages)</code></dt>
+<dd>
+<div>Called to notify the peer that its messages have changed.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#messageShow_Object__Number__Array_" title="method in this class">messageShow</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component, <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> maxtype, <a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a> messages)</code></dt>
+<dd>
+<div>Called to notify the peer that its messages should be shown.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#needsResizeNotify_Object_" title="method in this class">needsResizeNotify</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd>
+<div>Tests whether the peer requires resize notification.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#processPushData_AdfUIComponent__Object__Boolean_" title="method in this class">processPushData</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> payload, <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> isLate)</code></dt>
+<dd>
+<div>Called by the Active Data Service to deliver push data to the peer.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#resizeNotify_Object__Object__Object__Object__Object_" title="method in this class">resizeNotify</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldWidth, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldHeight, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newWidth, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newHeight)</code></dt>
+<dd>
+<div>Called to notify the peer of resize activity.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setInlineStyleProperty_Object__String__String_" title="method in this class">setInlineStyleProperty</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propName, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propValue)</code></dt>
+<dd>
+<div>Sets the value for a given css style property.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#visitChildren_AdfUIComponent__Function__Object__Boolean_" title="method in this class">visitChildren</a></strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component, <a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> callback, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> context, <a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> ignoreHidden)</code></dt>
+<dd>
+<div>Visits all of the children components of the component.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject" id="methods_inherited_from_class_oracle_adf_view_js_base_AdfObject"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Methods inherited from oracle.adf.view.js.base.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html#adopt_Object_" title="method in oracle.adf.view.js.base.AdfObject">adopt</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#clone__" title="method in oracle.adf.view.js.base.AdfObject">clone</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createCallback_Object_" title="method in oracle.adf.view.js.base.AdfObject">createCallback</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createInitializedObject__" title="method in oracle.adf.view.js.base.AdfObject">createInitializedObject</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#createSubclass_Function__Function__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">createSubclass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#ensureClassInitialization_Function_" title="method in oracle.adf.view.js.base.AdfObject">ensureClassInitialization</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#equals_Object_" title="method in oracle.adf.view.js.base.AdfObject">equals</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getClass_Object_" title="method in oracle.adf.view.js.base.AdfObject">getClass</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyArrayProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyArrayProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#GetLazyMapProperty_Object__Object__Object_" title="method in oracle.adf.view.js.base.AdfObject">GetLazyMapProperty</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#getTypeName__" title="method in oracle.adf.view.js.base.AdfObject">getTypeName</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#toDebugString__" title="method in oracle.adf.view.js.base.AdfObject">toDebugString</a>, <a href="../../../../../oracle/adf/view/js/base/AdfObject.html#toString__" title="method in oracle.adf.view.js.base.AdfObject">toString</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="O_DRAG_RECOGNIZER" id="O_DRAG_RECOGNIZER"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_DRAG_RECOGNIZER</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> <strong>_DRAG_RECOGNIZER</strong></code></dt>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AdfUIPeer__" id="AdfUIPeer__"><!-- --></a></p>
+<h3 class="DetailHeader">AdfUIPeer</h3>
+<dl>
+<dt><code>public <strong>AdfUIPeer</strong>()</code></dt>
+<dd><br>
+<div>Base class for peer object mapping native implementations to the component model. THis class contains all of the generic peer apis regardless of rendering model.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="applyDragReadyState_AdfUIComponent__AdfUIInputEvent_" id="applyDragReadyState_AdfUIComponent__AdfUIInputEvent_"><!-- --></a></p>
+<h3 class="DetailHeader">applyDragReadyState</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> applyDragReadyState</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a> inputEvent)</code></dt>
+<dd><br>
+<div>Called by the framework when the drag is ready to be initiated. This method should display a change in the UI to indicate to the user that it is now possible to initiate a drag operation on the target of the event. This method is used in instances where a gesture must be executed before an item may be dragged.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>inputEvent</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the event that triggered the drag</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - An object that will be passed back to the drag source in order to clear the drag ready state</dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/dnd/AdfDragSource.html#applyDragReadyState_AdfUIInputEvent_" title="method in oracle.adf.view.js.dnd.AdfDragSource">AdfDragSource.applyDragReadyState(AdfUIInputEvent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="applyDragSourceState_AdfUIComponent__AdfDomUIInputEvent_" id="applyDragSourceState_AdfUIComponent__AdfDomUIInputEvent_"><!-- --></a></p>
+<h3 class="DetailHeader">applyDragSourceState</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> applyDragSourceState</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfDomUIInputEvent</a> inputEvent)</code></dt>
+<dd><br>
+<div>Called by the framework when a drag has been initiated on the component for this peer. This method should display a change in the UI to indicate to the user what node is being dragged.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>inputEvent</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the event that triggered the drag</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - An object that will be passed back to the clear method</dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/dnd/AdfDragSource.html#applyDragSourceState_AdfDomUIInputEvent_" title="method in oracle.adf.view.js.dnd.AdfDragSource">AdfDragSource.applyDragSourceState(AdfDomUIInputEvent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="ApplyDragSourceState_AdfDomUIInputEvent_" id="ApplyDragSourceState_AdfDomUIInputEvent_"><!-- --></a></p>
+<h3 class="DetailHeader">ApplyDragSourceState</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> ApplyDragSourceState</strong>(<a href="../../../../../oracle/adf/view/js/event/AdfDomUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfDomUIInputEvent</a> inputEvent)</code></dt>
+<dd><br>
+<div>Called by the framework when a drag has been initiated on the component for this peer. This method should display a change in the UI to indicate to the user what node is being dragged. This method is called after the peer is bound to the component.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>inputEvent</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the event that triggered the drag</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - An object that will be passed back to the clear method</dd>
+<dt>See also:</dt>
+<dd><code><a href="#applyDragSourceState_AdfUIComponent__AdfDomUIInputEvent_" title="method in this class">applyDragSourceState(AdfUIComponent, AdfDomUIInputEvent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="clearDragReadyState_AdfUIComponent__Object_" id="clearDragReadyState_AdfUIComponent__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">clearDragReadyState</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> clearDragReadyState</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dragReadyObj)</code></dt>
+<dd><br>
+<div>Called by the framework to clear the drag ready state.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>dragReadyObj</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object returned from the apply method</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/dnd/AdfDragSource.html#clearDragReadyState_Object_" title="method in oracle.adf.view.js.dnd.AdfDragSource">AdfDragSource.clearDragReadyState(Object)</a></code></dd>
+<dd><code><a href="#applyDragReadyState_AdfUIComponent__AdfUIInputEvent_" title="method in this class">applyDragReadyState(AdfUIComponent, AdfUIInputEvent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="clearDragSourceState_AdfUIComponent__Object_" id="clearDragSourceState_AdfUIComponent__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">clearDragSourceState</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> clearDragSourceState</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dragSourceObj)</code></dt>
+<dd><br>
+<div>Called by the framework to clear the drag source state</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>dragSourceObj</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object returned from the apply method</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/dnd/AdfDragSource.html#clearDragSourceState_Object_" title="method in oracle.adf.view.js.dnd.AdfDragSource">AdfDragSource.clearDragSourceState(Object)</a></code></dd>
+<dd><code><a href="#applyDragSourceState_AdfUIComponent__AdfDomUIInputEvent_" title="method in this class">applyDragSourceState(AdfUIComponent, AdfDomUIInputEvent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="ClearDragSourceState_Object_" id="ClearDragSourceState_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">ClearDragSourceState</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> ClearDragSourceState</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dragSourceObj)</code></dt>
+<dd><br>
+<div>Called by the framework to clear the drag source state. This method is called after the peer is bound to the component.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dragSourceObj</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object returned from the apply method</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#clearDragSourceState_AdfUIComponent__Object_" title="method in this class">clearDragSourceState(AdfUIComponent, Object)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="ComponentPropertyChanged_Object_" id="ComponentPropertyChanged_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">ComponentPropertyChanged</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> ComponentPropertyChanged</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> propertyChangeEvent)</code></dt>
+<dd><br>
+<div>Called whenever a property changes on the component this peer is attached to. Subclasses should override this method to optimize for updating properties without invalidating the entire peer.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>propertyChangeEvent</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="componentRemoved_AdfUIComponent_" id="componentRemoved_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">componentRemoved</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentRemoved</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Clean up the peer because it's component is being removed.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The UIComponent that is being removed</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#initialize_AdfUIComponent_" title="method in this class">initialize(AdfUIComponent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="convertLocatorToClientId_Object__Object_" id="convertLocatorToClientId_Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">convertLocatorToClientId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> convertLocatorToClientId</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> stampKey)</code></dt>
+<dd><br>
+<div>Function to replace client id fragments when converting an absolute locator to clientId.
+<p><em>The peer is not bound when this method is called</em></p>
+Peers that need to replace and skip extra fragments when converting from clientIds to absolute locators such as Tables and Regions should override this method to add the index of the fragment to be replaced and skipped.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>stampKey</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the stamp key which need to be replaced</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - the client id fragment in the below format clientId + ":" + stamped index of client Id fragment related to stampKey</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="createPeerClass_Function__String__Object_" id="createPeerClass_Function__String__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">createPeerClass</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> createPeerClass</strong>(<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> theSuperclass,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> peerName,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> classInitializationState)</code></dt>
+<dd><br>
+<div>Factory method for creating a subclass of the specified peer class</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>theSuperclass</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">constructor of superclass</td>
+</tr>
+<tr>
+<td valign="top"><code>peerName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">name of constructor to create for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>classInitializationState</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Class initialization parameter to pass to class initializer
+<div class="DefaultValue">Default value = undefined</div>
+</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="DispatchComponentEvent_Object_" id="DispatchComponentEvent_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">DispatchComponentEvent</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> DispatchComponentEvent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentEvent)</code></dt>
+<dd><br>
+<div>Dispatch a component event to the peer</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentEvent</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="DispatchUncanceledComponentEvent_Object_" id="DispatchUncanceledComponentEvent_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">DispatchUncanceledComponentEvent</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> DispatchUncanceledComponentEvent</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> componentEvent)</code></dt>
+<dd><br>
+<div>Called when an event has bubbled all the way to the top without being canceled, but before the AdfComponent's HandleEvent is called. The peer can return <code>true</code> to postpone calling HandleEvent rather than simply canceling the event. In this case, it becomes the peer's responsibility to call HandleEvent, if desired, at some future point in time.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>componentEvent</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">componentEvent that is about to be dispatched</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - null <code>true</code> if the event should be postponed</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="focus_Object_" id="focus_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">focus</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> focus</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Ask the peer to move focus to this component</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getAbsoluteId_AdfUIComponent__String_" id="getAbsoluteId_AdfUIComponent__String_"><!-- --></a></p>
+<h3 class="DetailHeader">getAbsoluteId</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getAbsoluteId</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> clientId)</code></dt>
+<dd><br>
+<div>Implemented by peer to return the absolute scoped id for this component without the leading ":". The result of this call may be passed either directly to <code>AdfPage.findComponentByAbsoluteId</code> or by prepending a ":", to <code>AdfUIComponent.findComponent</code> on any AdfUIComponent instance. to find this component instance as long as the component instance isn't stamped.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The component for which absolute id need to be retrieved.</td>
+</tr>
+<tr>
+<td valign="top"><code>clientId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the implementation-specific client id of the component</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - The absolute scoped id for the component</dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html#getAbsoluteId__" title="method in oracle.adf.view.js.component.AdfUIComponent">AdfUIComponent.getAbsoluteId()</a></code></dd>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html#findComponent_String__Boolean_" title="method in oracle.adf.view.js.component.AdfUIComponent">AdfUIComponent.findComponent(String, Boolean)</a></code></dd>
+<dd><code><a href="../../../../../oracle/adf/view/js/base/AdfPage.html#findComponentByAbsoluteId_String_" title="method in oracle.adf.view.js.base.AdfPage">AdfPage.findComponentByAbsoluteId(String)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getAbsoluteLocator_AdfUIComponent__String_" id="getAbsoluteLocator_AdfUIComponent__String_"><!-- --></a></p>
+<h3 class="DetailHeader">getAbsoluteLocator</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getAbsoluteLocator</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> clientId)</code></dt>
+<dd><br>
+<div>Implemented by peer to return the absolute locator, an implementation agnostic String identifier for a given clientId, that is a 'rendered instance-specific' version of the absolute scoped id. Provided primarily for test automation users. For most components, absoluteLocator will be same as absoluteId, except in the case of stamping components like table.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The component for which absolute locator need to be retrieved.</td>
+</tr>
+<tr>
+<td valign="top"><code>clientId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the implementation-specific client id of the component</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - The absolute locator for the component</dd>
+<dt>See also:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html#getAbsoluteId__" title="method in oracle.adf.view.js.component.AdfUIComponent">AdfUIComponent.getAbsoluteId()</a></code></dd>
+<dd><code><a href="../../../../../oracle/adf/view/js/base/AdfPage.html#findComponentByAbsoluteLocator_String_" title="method in oracle.adf.view.js.base.AdfPage">AdfPage.findComponentByAbsoluteLocator(String)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getComponent__" id="getComponent__"><!-- --></a></p>
+<h3 class="DetailHeader">getComponent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> getComponent</strong>()</code></dt>
+<dd><br>
+<div>Returns the AdfUIComponent that this is the peer for.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - The associated component</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getComponentParent_AdfUIComponent_" id="getComponentParent_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">getComponentParent</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> getComponentParent</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Returns the parent component of the specified component. By delegating to the peer, we allow subclasses to implement sparse component schemes.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Component to determine the parent component of.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a></code> - The parent component, if any.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getComponentProperty_AdfUIComponent__String_" id="getComponentProperty_AdfUIComponent__String_"><!-- --></a></p>
+<h3 class="DetailHeader">getComponentProperty</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getComponentProperty</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propertyName)</code></dt>
+<dd><br>
+<div>Returns the value of the property for the component, or <code>undefined</code> if the peer does not know how to derive the property</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Component to retrieve the property for</td>
+</tr>
+<tr>
+<td valign="top"><code>propertyName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Name of component property to retrieve the value of</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - Value of the property</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getDefaultDragRecognizer_AdfUIComponent_" id="getDefaultDragRecognizer_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">getDefaultDragRecognizer</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../oracle/adf/view/js/dnd/desktop/AdfDragRecognizer.html" title="class in oracle.adf.view.js.dnd.desktop">AdfDragRecognizer</a> getDefaultDragRecognizer</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>
+<p>Returns the default AdfDragReconizer to use if the AdfDragSource does not provide its own drag recognition scheme.</p>
+<p>The default implementation will start a drag anywhere in the component. Override with a different AdfDragRecognizer strategy if the peer wants to restrict the portion of the component that can initiate drags.</p>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/dnd/desktop/AdfDragRecognizer.html" title="class in oracle.adf.view.js.dnd.desktop">AdfDragRecognizer</a></code> - The default drag recognizer to use</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getDescendantComponents_AdfUIComponent__Array_AdfUIComponent__" id="getDescendantComponents_AdfUIComponent__Array_AdfUIComponent__"><!-- --></a></p>
+<h3 class="DetailHeader">getDescendantComponents</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt; getDescendantComponents</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt; children)</code></dt>
+<dd><br>
+<div>Get components descended from this peer's component. This method should only be called if this component returns a value from AdfRichUIPeer.getDomElementForComponent(rootComponent); This base implementation can be overwritten in child peers to handle special cases (popups and overflow).
+<p>There is no guarantee about the order of the children returned. If visiting the children in a known order is required please use AdfUIComponent.visitChildren.</p>
+<p>All descendent children are returned, visible or not. If ignoring hidden children is required please use AdfUIComponent.visitChildren.</p>
+<p>This method is faster than AdfUIComponent.visitChildren, if the limitations above are acceptable it is preferable to use this method.</p>
+Returns an array of descendant (child) components for this component.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">this component</td>
+</tr>
+<tr>
+<td valign="top"><code>children</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">array to store child components in. Descendent components will be added to the end of the array. This param is optional, if not passed in an array will be created.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a>&gt;</code> - array of child components, may be empty</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getDragOverFeedback_AdfUIComponent__AdfUIInputEvent_" id="getDragOverFeedback_AdfUIComponent__AdfUIInputEvent_"><!-- --></a></p>
+<h3 class="DetailHeader">getDragOverFeedback</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getDragOverFeedback</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a> inputEvent)</code></dt>
+<dd><br>
+<div>Returns the appropriate default drag over feedback for this peer</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>inputEvent</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the inputEvent that triggered the drag</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - Appropriate feedback object. For HTML, this is an HTML Node</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getDragTransferable_AdfUIComponent__AdfUIInputEvent_" id="getDragTransferable_AdfUIComponent__AdfUIInputEvent_"><!-- --></a></p>
+<h3 class="DetailHeader">getDragTransferable</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getDragTransferable</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfUIInputEvent.html" title="class in oracle.adf.view.js.event">AdfUIInputEvent</a> inputEvent)</code></dt>
+<dd><br>
+<div>Returns the appropriate default transferable for this drag location, or <code>null</code> if this peer has no default Transferable.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>inputEvent</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the inputEvent that triggered the drag</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - null (AdfTransferable} Default transferable object, or <code>null</code> if no default transferable</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getInlineStyleProperty_Object__String_" id="getInlineStyleProperty_Object__String_"><!-- --></a></p>
+<h3 class="DetailHeader">getInlineStyleProperty</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> getInlineStyleProperty</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propName)</code></dt>
+<dd><br>
+<div>returns the style values corresponding to the CSS propertyName.
+<p>The supplied parameter (propName) value should conform to CSS format and should be in lower case. for example, the method call to get the background color would be <code>getInlineStyleProperty('background-color')</code>. Note that 'backgroundColor' (DOM property) should not be passed as property name.</p>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>propName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The name of the css property to set</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - Returns the value corresponding to the CSS property</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getPagePosition_AdfUIComponent_" id="getPagePosition_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">getPagePosition</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getPagePosition</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Returns the coordinates of the component's upper left corner in Page coordinates.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - an object with two properties (x for the left coordinate and y for the top coordinate)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getParentPeer__" id="getParentPeer__"><!-- --></a></p>
+<h3 class="DetailHeader">getParentPeer</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getParentPeer</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getReadyState_Object_" id="getReadyState_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">getReadyState</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getReadyState</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Returns whether the content of the component is available are:
+<ul>
+<li><code>AdfUIComponent.STATE_LOADING</code> The UIComponent is still loading state or content</li>
+<li><code>AdfUIComponent.STATE_COMPLETE</code> The UIComponent is fully loaded</li>
+</ul>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="Init_AdfUIComponent_" id="Init_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">Init</h3>
+<dl>
+<dt><code>protected <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> Init</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Initializes the peer</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Component to associate with this peer</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Overrides:</dt>
+<dd><code><a href="../../../../../oracle/adf/view/js/base/AdfObject.html" title="class in oracle.adf.view.js.base">AdfObject</a>.<a href="../../../../../oracle/adf/view/js/base/AdfObject.html#Init__" title="method in oracle.adf.view.js.base.AdfObject">Init()</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="InitClass__" id="InitClass__"><!-- --></a></p>
+<h3 class="DetailHeader">InitClass</h3>
+<dl>
+<dt><code>protected static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> InitClass</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="initialize_AdfUIComponent_" id="initialize_AdfUIComponent_"><!-- --></a></p>
+<h3 class="DetailHeader">initialize</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> initialize</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component)</code></dt>
+<dd><br>
+<div>Initializes a peer instance about to be returned by AdfLookAndFeel.getPeer(). Non-framework code should never need to call this method</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">to associate with this peer instance</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>See also:</dt>
+<dd><code><a href="#componentRemoved_AdfUIComponent_" title="method in this class">componentRemoved(AdfUIComponent)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="initiateDrag_Object__Object_" id="initiateDrag_Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">initiateDrag</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> initiateDrag</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> dndContext,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> triggerEvent)</code></dt>
+<dd><br>
+<div>Inform the peer that a drag has been initiated</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dndContext</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>triggerEvent</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="isVisible__" id="isVisible__"><!-- --></a></p>
+<h3 class="DetailHeader">isVisible</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> isVisible</strong>()</code></dt>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="messageNotify_Object__Number__Array_" id="messageNotify_Object__Number__Array_"><!-- --></a></p>
+<h3 class="DetailHeader">messageNotify</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> messageNotify</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> maxtype,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a> messages)</code></dt>
+<dd><br>
+<div>Called to notify the peer that its messages have changed. The messages provided will be an array of FacesMessage or AdfFacesMessage objects. If this array is <code>null</code> then all the messages have been cleared from this component.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component that these messages are for</td>
+</tr>
+<tr>
+<td valign="top"><code>maxtype</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the maximum message type. Starts with INFO and works it's way up. The message type constants are defined in AdfFacesMessage object and may be retrieved from any javascript faces message by running AdfFacesMessage.getTypeFromMessage();</td>
+</tr>
+<tr>
+<td valign="top"><code>messages</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the messages for this component</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="messageShow_Object__Number__Array_" id="messageShow_Object__Number__Array_"><!-- --></a></p>
+<h3 class="DetailHeader">messageShow</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> messageShow</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> maxtype,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a> messages)</code></dt>
+<dd><br>
+<div>Called to notify the peer that its messages should be shown. The messages provided will be an array of FacesMessage or AdfFacesMessage objects. If this array is <code>null</code> then all the messages have been cleared from this component.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component that these messages are for</td>
+</tr>
+<tr>
+<td valign="top"><code>maxtype</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the maximum message type. Starts with INFO and works it's way up. The message type constants are defined in AdfFacesMessage object and may be retrieved from any javascript faces message by running AdfFacesMessage.getTypeFromMessage();</td>
+</tr>
+<tr>
+<td valign="top"><code>messages</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the messages for this component</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="needsResizeNotify_Object_" id="needsResizeNotify_Object_"><!-- --></a></p>
+<h3 class="DetailHeader">needsResizeNotify</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> needsResizeNotify</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component)</code></dt>
+<dd><br>
+<div>Tests whether the peer requires resize notification. Peers which perform geometry management should override this to return true. When true, resizeNotify() will be called when browser window is resized.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="processPushData_AdfUIComponent__Object__Boolean_" id="processPushData_AdfUIComponent__Object__Boolean_"><!-- --></a></p>
+<h3 class="DetailHeader">processPushData</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> processPushData</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> payload,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> isLate)</code></dt>
+<dd><br>
+<div>Called by the Active Data Service to deliver push data to the peer.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Component to associate with this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>payload</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">Peer-specific payload for the component</td>
+</tr>
+<tr>
+<td valign="top"><code>isLate</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">True if the data is later than it is supposed to be</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a></code> - Returns <code>true</code> if the component should continue to receive active data events.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="resizeNotify_Object__Object__Object__Object__Object_" id="resizeNotify_Object__Object__Object__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader">resizeNotify</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> resizeNotify</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldWidth,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> oldHeight,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newWidth,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> newHeight)</code></dt>
+<dd><br>
+<div>Called to notify the peer of resize activity. Only called if peer overrides needsResizeNotify() to return true.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>oldWidth</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>oldHeight</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>newWidth</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>newHeight</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setInlineStyleProperty_Object__String__String_" id="setInlineStyleProperty_Object__String__String_"><!-- --></a></p>
+<h3 class="DetailHeader">setInlineStyleProperty</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setInlineStyleProperty</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propName,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> propValue)</code></dt>
+<dd><br>
+<div>Sets the value for a given css style property.
+<p>The supplied parameter (propName) value should conform to CSS format and should be in lower case. for example, the method call to set the background color to blue would be <code>setInlineStyleProperty('background-color','blue')</code>. Note that 'backgroundColor' (DOM property) should not be passed as property name.</p>
+<p>The property value set via <code>setInlineStyleProperty</code> will not be synchronized with the server-side property.</p>
+</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><code>propName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The name of the css property to set</td>
+</tr>
+<tr>
+<td valign="top"><code>propValue</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">The value for this css property</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="visitChildren_AdfUIComponent__Function__Object__Boolean_" id="visitChildren_AdfUIComponent__Function__Object__Boolean_"><!-- --></a></p>
+<h3 class="DetailHeader">visitChildren</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> visitChildren</strong>(<a href="../../../../../oracle/adf/view/js/component/AdfUIComponent.html" title="class in oracle.adf.view.js.component">AdfUIComponent</a> component,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Function.html" title="class in org.ecmascript.object">Function</a> callback,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> context,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/Boolean.html" title="class in org.ecmascript.primitive">Boolean</a> ignoreHidden)</code></dt>
+<dd><br>
+<div>Visits all of the children components of the component. A callback function will be invoked with one argument - a component - and must return one of three values. If it returns the number zero (or false), iteration will continue. If it returns the number one (or true), iteration will not continue into the children. If it returns the number two, iteration will entirely halt. Iteration proceeds depth first, but calling the parents before the children</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>component</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the component for this peer</td>
+</tr>
+<tr>
+<td valign="top"><code>callback</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">a function that will be called on each child</td>
+</tr>
+<tr>
+<td valign="top"><code>context</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">an object that will be set as "this" when the callback is invoked; can be null if no context is required.</td>
+</tr>
+<tr>
+<td valign="top"><code>ignoreHidden</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">if true, hidden DOM nodes will be skipped</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIPanel.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../org/apache/myjs/trinidad/component/AdfUIPoll.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/base/AdfUIPeer.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfUIPeer.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

@@ -1,0 +1,1636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>Date</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="Date";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/w3c/dom/core/Comment.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/w3c/dom/core/Document.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/object/Date.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Date.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">org.ecmascript.object</span><br>
+Class Date</h1>
+<pre>
+<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<strong>org.ecmascript.object.Date</strong>
+</pre>
+<hr>
+<pre>
+public class <strong>Date</strong>
+extends <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a>
+</pre>
+<div>The native browser JavaScript object used to work with dates and times.<br>
+When constructed, a new Date will be populated with the current date and time.<br>
+<br>
+Note that this object is implemented and supported by the web browser and results of its use may vary.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#Date__" title="constructor in this class">Date</a></strong>()</code></dt>
+<dd>
+<div>The native browser JavaScript object used to work with dates and times.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDate__" title="method in this class">getDate</a></strong>()</code></dt>
+<dd>
+<div>Gets the day of the month (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getDay__" title="method in this class">getDay</a></strong>()</code></dt>
+<dd>
+<div>Gets the day of the week (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getFullYear__" title="method in this class">getFullYear</a></strong>()</code></dt>
+<dd>
+<div>Gets the 4-digit number representing the year.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getHours__" title="method in this class">getHours</a></strong>()</code></dt>
+<dd>
+<div>Gets the hour of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getMilliseconds__" title="method in this class">getMilliseconds</a></strong>()</code></dt>
+<dd>
+<div>Gets the milliseconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getMinutes__" title="method in this class">getMinutes</a></strong>()</code></dt>
+<dd>
+<div>Gets the minutes division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getMonth__" title="method in this class">getMonth</a></strong>()</code></dt>
+<dd>
+<div>Gets the month of the year (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getSeconds__" title="method in this class">getSeconds</a></strong>()</code></dt>
+<dd>
+<div>Gets the seconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getTime__" title="method in this class">getTime</a></strong>()</code></dt>
+<dd>
+<div>Gets the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getTimezoneOffset__" title="method in this class">getTimezoneOffset</a></strong>()</code></dt>
+<dd>
+<div>Gets the number of minutes between the associated time zone and Greenwich Mean Time (GMT).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCDate__" title="method in this class">getUTCDate</a></strong>()</code></dt>
+<dd>
+<div>Gets the day of the month (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCDay__" title="method in this class">getUTCDay</a></strong>()</code></dt>
+<dd>
+<div>Gets the day of the week (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCFullYear__" title="method in this class">getUTCFullYear</a></strong>()</code></dt>
+<dd>
+<div>Gets the 4-digit number representing the year according to Coordinated Universal Time (UTC).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCHours__" title="method in this class">getUTCHours</a></strong>()</code></dt>
+<dd>
+<div>Gets the hour of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCMilliseconds__" title="method in this class">getUTCMilliseconds</a></strong>()</code></dt>
+<dd>
+<div>Gets the milliseconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCMinutes__" title="method in this class">getUTCMinutes</a></strong>()</code></dt>
+<dd>
+<div>Gets the minutes division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCMonth__" title="method in this class">getUTCMonth</a></strong>()</code></dt>
+<dd>
+<div>Gets the month of the year (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getUTCSeconds__" title="method in this class">getUTCSeconds</a></strong>()</code></dt>
+<dd>
+<div>Gets the seconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getYear__" title="method in this class">getYear</a></strong>()</code></dt>
+<dd>
+<div><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#getFullYear__" title="method in this class">getFullYear()</a></code> instead</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#parse_String_" title="method in this class">parse</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> dateString)</code></dt>
+<dd>
+<div>Gets the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT) represented by <code>dateString</code>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setDate_Number_" title="method in this class">setDate</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> dayOfTheMonth)</code></dt>
+<dd>
+<div>Sets the day of the month (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setFullYear_Number_" title="method in this class">setFullYear</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year)</code></dt>
+<dd>
+<div>Sets the 4-digit number representing the year.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setHours_Number_" title="method in this class">setHours</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> hours)</code></dt>
+<dd>
+<div>Sets the hour of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setMilliseconds_Number_" title="method in this class">setMilliseconds</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd>
+<div>Sets the milliseconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setMinutes_Number_" title="method in this class">setMinutes</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> minutes)</code></dt>
+<dd>
+<div>Sets the minutes division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setMonth_Number_" title="method in this class">setMonth</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> month)</code></dt>
+<dd>
+<div>Sets the month of the year (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setSeconds_Number_" title="method in this class">setSeconds</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> seconds)</code></dt>
+<dd>
+<div>Sets the seconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setTime_Number_" title="method in this class">setTime</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd>
+<div>Sets the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setUTCDate_Number_" title="method in this class">setUTCDate</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> dayOfTheMonth)</code></dt>
+<dd>
+<div>Sets the day of the month (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setUTCFullYear_Number_" title="method in this class">setUTCFullYear</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year)</code></dt>
+<dd>
+<div>Sets the 4-digit number representing the year according to Coordinated Universal Time (UTC).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setUTCHours_Number_" title="method in this class">setUTCHours</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> hours)</code></dt>
+<dd>
+<div>Sets the hour of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setUTCMilliseconds_Number_" title="method in this class">setUTCMilliseconds</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd>
+<div>Sets the milliseconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setUTCMinutes_Number_" title="method in this class">setUTCMinutes</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> minutes)</code></dt>
+<dd>
+<div>Sets the minutes division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setUTCMonth_Number_" title="method in this class">setUTCMonth</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> month)</code></dt>
+<dd>
+<div>Sets the month of the year (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setUTCSeconds_Number_" title="method in this class">setUTCSeconds</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> seconds)</code></dt>
+<dd>
+<div>Sets the seconds division of the day (e.g.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#setYear_Number_" title="method in this class">setYear</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year)</code></dt>
+<dd>
+<div><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#setFullYear_Number_" title="method in this class">setFullYear(Number)</a></code> instead</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toDateString__" title="method in this class">toDateString</a></strong>()</code></dt>
+<dd>
+<div>Gets a human-readable String representation of the date (non-time) portion of the <code>Date</code>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toGMTString__" title="method in this class">toGMTString</a></strong>()</code></dt>
+<dd>
+<div><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#toUTCString__" title="method in this class">toUTCString()</a></code> instead</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toLocaleDateString__" title="method in this class">toLocaleDateString</a></strong>()</code></dt>
+<dd>
+<div>Gets a human-readable String representation of the date (non-time) portion of the <code>Date</code> using a format indicated by the browser's Locale.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toLocaleString__" title="method in this class">toLocaleString</a></strong>()</code></dt>
+<dd>
+<div>Gets a human-readable String representation of the <code>Date</code> using a format indicated by the browser's Locale.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toLocaleTimeString__" title="method in this class">toLocaleTimeString</a></strong>()</code></dt>
+<dd>
+<div>Gets a human-readable String representation of the time (non-date) portion of the <code>Date</code> using a format indicated by the browser's Locale.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toSource__" title="method in this class">toSource</a></strong>()</code></dt>
+<dd>
+<div>Gets a source code String representation of the <code>Date</code>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toString__" title="method in this class">toString</a></strong>()</code></dt>
+<dd>
+<div>Gets a human-readable String representation of the <code>Date</code>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toTimeString__" title="method in this class">toTimeString</a></strong>()</code></dt>
+<dd>
+<div>Gets a human-readable String representation of the time (non-date) portion of the <code>Date</code>.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toUTCString__" title="method in this class">toUTCString</a></strong>()</code></dt>
+<dd>
+<div><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#toUTCString__" title="method in this class">toUTCString()</a></code> instead</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#UTC_Number__Number__Number__Number__Number__Number__Number_" title="method in this class">UTC</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> month, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> dayOfTheMonth, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> hours, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> minutes, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> seconds, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd>
+<div>Gets the number of milliseconds between the specified point in time since midnight of January 1st, 1970 according to Coordinated Universal Time (UTC).</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="Date__" id="Date__"><!-- --></a></p>
+<h3 class="DetailHeader">Date</h3>
+<dl>
+<dt><code>public <strong>Date</strong>()</code></dt>
+<dd><br>
+<div>The native browser JavaScript object used to work with dates and times.<br>
+When constructed, a new Date will be populated with the current date and time.<br>
+<br>
+Note that this object is implemented and supported by the web browser and results of its use may vary.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="getDate__" id="getDate__"><!-- --></a></p>
+<h3 class="DetailHeader">getDate</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getDate</strong>()</code></dt>
+<dd><br>
+<div>Gets the day of the month (e.g. a number, 1-31).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the day of the month</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getDay__" id="getDay__"><!-- --></a></p>
+<h3 class="DetailHeader">getDay</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getDay</strong>()</code></dt>
+<dd><br>
+<div>Gets the day of the week (e.g. a number, 0-6) represented by the number of days after Sunday.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the day of the week represented by the number of days after Sunday, e.g. 0 = Sunday, 1 = Monday, etc.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getFullYear__" id="getFullYear__"><!-- --></a></p>
+<h3 class="DetailHeader">getFullYear</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getFullYear</strong>()</code></dt>
+<dd><br>
+<div>Gets the 4-digit number representing the year.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the 4-digit number representing the year</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getHours__" id="getHours__"><!-- --></a></p>
+<h3 class="DetailHeader">getHours</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getHours</strong>()</code></dt>
+<dd><br>
+<div>Gets the hour of the day (e.g. a number, 0-23).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the hour of the day</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getMilliseconds__" id="getMilliseconds__"><!-- --></a></p>
+<h3 class="DetailHeader">getMilliseconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getMilliseconds</strong>()</code></dt>
+<dd><br>
+<div>Gets the milliseconds division of the day (e.g. a number, 0-999).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the milliseconds division of the day</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getMinutes__" id="getMinutes__"><!-- --></a></p>
+<h3 class="DetailHeader">getMinutes</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getMinutes</strong>()</code></dt>
+<dd><br>
+<div>Gets the minutes division of the day (e.g. a number, 0-59).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the minutes division of the day</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getMonth__" id="getMonth__"><!-- --></a></p>
+<h3 class="DetailHeader">getMonth</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getMonth</strong>()</code></dt>
+<dd><br>
+<div>Gets the month of the year (e.g. a number, 0-11) represented by the number of months after January.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the month of the year represented by the number of months after January, e.g. 0 = January, 1 = February, etc.</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getSeconds__" id="getSeconds__"><!-- --></a></p>
+<h3 class="DetailHeader">getSeconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getSeconds</strong>()</code></dt>
+<dd><br>
+<div>Gets the seconds division of the day (e.g. a number, 0-59).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the seconds division of the day</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getTime__" id="getTime__"><!-- --></a></p>
+<h3 class="DetailHeader">getTime</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getTime</strong>()</code></dt>
+<dd><br>
+<div>Gets the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getTimezoneOffset__" id="getTimezoneOffset__"><!-- --></a></p>
+<h3 class="DetailHeader">getTimezoneOffset</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getTimezoneOffset</strong>()</code></dt>
+<dd><br>
+<div>Gets the number of minutes between the associated time zone and Greenwich Mean Time (GMT).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the number of minutes between the associated time zone and Greenwich Mean Time (GMT)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCDate__" id="getUTCDate__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCDate</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCDate</strong>()</code></dt>
+<dd><br>
+<div>Gets the day of the month (e.g. a number, 1-31) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the day of the month according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCDay__" id="getUTCDay__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCDay</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCDay</strong>()</code></dt>
+<dd><br>
+<div>Gets the day of the week (e.g. a number, 0-6) represented by the number of days after Sunday according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the day of the week represented by the number of days after Sunday, e.g. 0 = Sunday, 1 = Monday, etc. according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCFullYear__" id="getUTCFullYear__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCFullYear</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCFullYear</strong>()</code></dt>
+<dd><br>
+<div>Gets the 4-digit number representing the year according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the 4-digit number representing the year according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCHours__" id="getUTCHours__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCHours</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCHours</strong>()</code></dt>
+<dd><br>
+<div>Gets the hour of the day (e.g. a number, 0-23) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the hour of the day according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCMilliseconds__" id="getUTCMilliseconds__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCMilliseconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCMilliseconds</strong>()</code></dt>
+<dd><br>
+<div>Gets the milliseconds division of the day (e.g. a number, 0-999) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the milliseconds division of the day according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCMinutes__" id="getUTCMinutes__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCMinutes</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCMinutes</strong>()</code></dt>
+<dd><br>
+<div>Gets the minutes division of the day (e.g. a number, 0-59) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the minutes division of the day according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCMonth__" id="getUTCMonth__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCMonth</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCMonth</strong>()</code></dt>
+<dd><br>
+<div>Gets the month of the year (e.g. a number, 0-11) represented by the number of months after January according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the month of the year represented by the number of months after January, e.g. 0 = January, 1 = February, etc. according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getUTCSeconds__" id="getUTCSeconds__"><!-- --></a></p>
+<h3 class="DetailHeader">getUTCSeconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getUTCSeconds</strong>()</code></dt>
+<dd><br>
+<div>Gets the seconds division of the day (e.g. a number, 0-59) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the seconds division of the day according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="getYear__" id="getYear__"><!-- --></a></p>
+<h3 class="DetailHeader">getYear</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> getYear</strong>()</code></dt>
+<dd><br>
+<div>Gets the 2-, 3-, or maybe 4-digit number representing the year depending on the browser. This method is unreliable because some browsers will use a 4-digit number if the year is before 1900 or after 1999. Other browsers will return a value less than zero if the year is before 1900 or greater than 100 if greater than 2000.</div>
+</dd>
+<dd><br>
+<dl>
+<dt><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#getFullYear__" title="method in this class">getFullYear()</a></code> instead</span></dt>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the 2-, 3-, or maybe 4-digit number representing the year depending on the browser</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="parse_String_" id="parse_String_"><!-- --></a></p>
+<h3 class="DetailHeader">parse</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> parse</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> dateString)</code></dt>
+<dd><br>
+<div>Gets the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT) represented by <code>dateString</code>.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dateString</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">a String representing the date</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT) represented by <code>dateString</code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setDate_Number_" id="setDate_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setDate</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setDate</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> dayOfTheMonth)</code></dt>
+<dd><br>
+<div>Sets the day of the month (e.g. a number, 1-31).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dayOfTheMonth</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the day of the month</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setFullYear_Number_" id="setFullYear_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setFullYear</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setFullYear</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year)</code></dt>
+<dd><br>
+<div>Sets the 4-digit number representing the year.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>year</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the 4-digit number representing the year</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setHours_Number_" id="setHours_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setHours</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setHours</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> hours)</code></dt>
+<dd><br>
+<div>Sets the hour of the day (e.g. a number, 0-23).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>hours</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the hour of the day</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setMilliseconds_Number_" id="setMilliseconds_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setMilliseconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setMilliseconds</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd><br>
+<div>Sets the milliseconds division of the day (e.g. a number, 0-999).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>milliseconds</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the milliseconds division of the day</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setMinutes_Number_" id="setMinutes_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setMinutes</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setMinutes</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> minutes)</code></dt>
+<dd><br>
+<div>Sets the minutes division of the day (e.g. a number, 0-59).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>minutes</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the minutes division of the day</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setMonth_Number_" id="setMonth_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setMonth</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setMonth</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> month)</code></dt>
+<dd><br>
+<div>Sets the month of the year (e.g. a number, 0-11) represented by the number of months after January.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>month</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the month of the year represented by the number of months after January, e.g. 0 = January, 1 = February, etc.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setSeconds_Number_" id="setSeconds_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setSeconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setSeconds</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> seconds)</code></dt>
+<dd><br>
+<div>Sets the seconds division of the day (e.g. a number, 0-59).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>seconds</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the seconds division of the day</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setTime_Number_" id="setTime_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setTime</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setTime</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd><br>
+<div>Sets the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>milliseconds</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the number of milliseconds since midnight of January 1st, 1970 Greenwich Mean Time (GMT)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setUTCDate_Number_" id="setUTCDate_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setUTCDate</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setUTCDate</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> dayOfTheMonth)</code></dt>
+<dd><br>
+<div>Sets the day of the month (e.g. a number, 1-31) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>dayOfTheMonth</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the day of the month according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setUTCFullYear_Number_" id="setUTCFullYear_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setUTCFullYear</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setUTCFullYear</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year)</code></dt>
+<dd><br>
+<div>Sets the 4-digit number representing the year according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>year</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the 4-digit number representing the year according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setUTCHours_Number_" id="setUTCHours_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setUTCHours</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setUTCHours</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> hours)</code></dt>
+<dd><br>
+<div>Sets the hour of the day (e.g. a number, 0-23) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>hours</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the hour of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setUTCMilliseconds_Number_" id="setUTCMilliseconds_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setUTCMilliseconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setUTCMilliseconds</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd><br>
+<div>Sets the milliseconds division of the day (e.g. a number, 0-999) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>milliseconds</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the milliseconds division of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setUTCMinutes_Number_" id="setUTCMinutes_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setUTCMinutes</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setUTCMinutes</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> minutes)</code></dt>
+<dd><br>
+<div>Sets the minutes division of the day (e.g. a number, 0-59) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>minutes</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the minutes division of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setUTCMonth_Number_" id="setUTCMonth_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setUTCMonth</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setUTCMonth</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> month)</code></dt>
+<dd><br>
+<div>Sets the month of the year (e.g. a number, 0-11) represented by the number of months after January according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>month</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the month of the year represented by the number of months after January, e.g. 0 = January, 1 = February, etc. according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setUTCSeconds_Number_" id="setUTCSeconds_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setUTCSeconds</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setUTCSeconds</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> seconds)</code></dt>
+<dd><br>
+<div>Sets the seconds division of the day (e.g. a number, 0-59) according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>seconds</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the seconds division of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="setYear_Number_" id="setYear_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">setYear</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> setYear</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year)</code></dt>
+<dd><br>
+<div>Sets the 2-, 3-, or maybe 4-digit number representing the year depending on the browser. This method is unreliable because some browsers will use a 4-digit number if the year is before 1900 or after 1999. Other browsers will use a value less than zero if the year is before 1900 or greater than 100 if greater than 2000.</div>
+</dd>
+<dd><br>
+<dl>
+<dt><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#setFullYear_Number_" title="method in this class">setFullYear(Number)</a></code> instead</span></dt>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>year</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the 2-, 3-, or maybe 4-digit number representing the year depending on the browser</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toDateString__" id="toDateString__"><!-- --></a></p>
+<h3 class="DetailHeader">toDateString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toDateString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the date (non-time) portion of the <code>Date</code>.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the date (non-time) portion of the <code>Date</code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toGMTString__" id="toGMTString__"><!-- --></a></p>
+<h3 class="DetailHeader">toGMTString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toGMTString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the <code>Date</code> according to Greenwich Mean Time (GMT).</div>
+</dd>
+<dd><br>
+<dl>
+<dt><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#toUTCString__" title="method in this class">toUTCString()</a></code> instead</span></dt>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the <code>Date</code> according to Greenwich Mean Time (GMT)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toLocaleDateString__" id="toLocaleDateString__"><!-- --></a></p>
+<h3 class="DetailHeader">toLocaleDateString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toLocaleDateString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the date (non-time) portion of the <code>Date</code> using a format indicated by the browser's Locale.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the date (non-time) portion of the <code>Date</code> using a format indicated by the browser's Locale</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toLocaleString__" id="toLocaleString__"><!-- --></a></p>
+<h3 class="DetailHeader">toLocaleString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toLocaleString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the <code>Date</code> using a format indicated by the browser's Locale.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the <code>Date</code> using a format indicated by the browser's Locale</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toLocaleTimeString__" id="toLocaleTimeString__"><!-- --></a></p>
+<h3 class="DetailHeader">toLocaleTimeString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toLocaleTimeString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the time (non-date) portion of the <code>Date</code> using a format indicated by the browser's Locale.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the time (non-date) portion of the <code>Date</code> using a format indicated by the browser's Locale</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toSource__" id="toSource__"><!-- --></a></p>
+<h3 class="DetailHeader">toSource</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toSource</strong>()</code></dt>
+<dd><br>
+<div>Gets a source code String representation of the <code>Date</code>.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a source code String representation of the <code>Date</code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toString__" id="toString__"><!-- --></a></p>
+<h3 class="DetailHeader">toString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the <code>Date</code>.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the <code>Date</code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toTimeString__" id="toTimeString__"><!-- --></a></p>
+<h3 class="DetailHeader">toTimeString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toTimeString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the time (non-date) portion of the <code>Date</code>.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the time (non-date) portion of the <code>Date</code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toUTCString__" id="toUTCString__"><!-- --></a></p>
+<h3 class="DetailHeader">toUTCString</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toUTCString</strong>()</code></dt>
+<dd><br>
+<div>Gets a human-readable String representation of the <code>Date</code> according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use <code><a href="#toUTCString__" title="method in this class">toUTCString()</a></code> instead</span></dt>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a human-readable String representation of the <code>Date</code> according to Coordinated Universal Time (UTC)</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="UTC_Number__Number__Number__Number__Number__Number__Number_" id="UTC_Number__Number__Number__Number__Number__Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">UTC</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> UTC</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> year,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> month,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> dayOfTheMonth,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> hours,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> minutes,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> seconds,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> milliseconds)</code></dt>
+<dd><br>
+<div>Gets the number of milliseconds between the specified point in time since midnight of January 1st, 1970 according to Coordinated Universal Time (UTC).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>year</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the 4-digit number representing the year according to Coordinated Universal Time (UTC)</td>
+</tr>
+<tr>
+<td valign="top"><code>month</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the month of the year represented by the number of months after January, e.g. 0 = January, 1 = February, etc. according to Coordinated Universal Time (UTC)</td>
+</tr>
+<tr>
+<td valign="top"><code>dayOfTheMonth</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the day of the month according to Coordinated Universal Time (UTC)</td>
+</tr>
+<tr>
+<td valign="top"><code>hours</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional hours division of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+<tr>
+<td valign="top"><code>minutes</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional minutes division of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+<tr>
+<td valign="top"><code>seconds</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional seconds division of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+<tr>
+<td valign="top"><code>milliseconds</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional milliseconds division of the day according to Coordinated Universal Time (UTC)</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the number of milliseconds between the specified point in time since midnight of January 1st, 1970 according to Coordinated Universal Time (UTC).</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/w3c/dom/core/Comment.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/w3c/dom/core/Document.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/object/Date.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Date.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

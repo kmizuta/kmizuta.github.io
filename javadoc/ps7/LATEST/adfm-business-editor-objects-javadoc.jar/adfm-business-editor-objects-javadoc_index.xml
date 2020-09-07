@@ -1,0 +1,2173 @@
+<?xml version = '1.0'?>
+<index version="1.0">
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="accept(ObjectVisitor)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_accept(oracle_adf_businesseditor_objects_ObjectVisitor)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="accept(ObjectVisitor)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_accept(oracle_adf_businesseditor_objects_ObjectVisitor)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="activate()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_activate()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="activate()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_activate()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="addAttrToList(String, AttributeImpl)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_addAttrToList(java_lang_String, oracle_adfinternal_businesseditor_objects_AttributeImpl)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="addDataFilter(Attribute, String, Object...)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_addDataFilter(oracle_adf_businesseditor_objects_Attribute, java_lang_String, java_lang_Object___)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="addDataFilter(Attribute, ComparisonOperator, Object...)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_addDataFilter(oracle_adf_businesseditor_objects_Attribute, oracle_adf_businesseditor_objects_ComparisonOperator, java_lang_Object___)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="addDependencyAttr(Attribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_addDependencyAttr(oracle_adf_businesseditor_objects_Attribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="addDisplayAttribute(Attribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_addDisplayAttribute(oracle_adf_businesseditor_objects_Attribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupType">
+         <indexentry text="addLookup(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html_addLookup(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTriggerTypeHelper">
+         <indexentry text="addMapping(AttributeTriggerType, TriggerType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__AttributeTriggerTypeHelper_html_addMapping(oracle_adf_businesseditor_objects_AttributeTriggerType, oracle_jbo_server_TriggerType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTriggerTypeHelper">
+         <indexentry text="addMapping(BusinessObjectTriggerType, TriggerType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessObjectTriggerTypeHelper_html_addMapping(oracle_adf_businesseditor_objects_BusinessObjectTriggerType, oracle_jbo_server_TriggerType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="addParameter(String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_addParameter(java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="addParameter(String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_addParameter(java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="addSearchAttribute(Attribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_addSearchAttribute(oracle_adf_businesseditor_objects_Attribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="Attribute" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="AttributeTrigger" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="AttributeTriggerType" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTriggerType_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="AttributeTriggerTypeHelper" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__AttributeTriggerTypeHelper_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="AttributeType" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeType_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="AttributeValidator" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="BaseObjectVisitor" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="BaseObjectVisitor()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_BaseObjectVisitor()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="BusinessEditorManager" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="BusinessEditorManager()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_BusinessEditorManager()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="BusinessEditorManagerImpl" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="BusinessEditorManagerImpl(BusinessEditorManager)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_BusinessEditorManagerImpl(oracle_adf_businesseditor_objects_BusinessEditorManager)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="BusinessObject" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="BusinessObjectFunction" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="BusinessObjectTrigger" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="BusinessObjectTriggerType" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTriggerType_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="BusinessObjectTriggerTypeHelper" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessObjectTriggerTypeHelper_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="BusinessObjectValidator" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="cancelFlowForExistingObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_cancelFlowForExistingObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="cancelFlowForExistingObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_cancelFlowForExistingObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="cancelFlowForNewObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_cancelFlowForNewObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="cancelFlowForNewObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_cancelFlowForNewObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="commit()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_commit()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManager">
+         <indexentry text="commit()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupManager_html_commit()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="commit()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_commit()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="commit()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_commit()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="ComparisonOperator" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ComparisonOperator_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="createAttribute(String, AttributeType)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_createAttribute(java_lang_String, oracle_adf_businesseditor_objects_AttributeType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="createAttribute(String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_createAttribute(java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="createBusinessObject(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_createBusinessObject(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="createBusinessObject(String, CustomObjectInfo)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_createBusinessObject(java_lang_String, oracle_adf_businesseditor_objects_CustomObjectInfo)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="createBusinessObject(BusinessObject, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_createBusinessObject(oracle_adf_businesseditor_objects_BusinessObject, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="createBusinessObject(BusinessObject, String, CustomObjectInfo)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_createBusinessObject(oracle_adf_businesseditor_objects_BusinessObject, java_lang_String, oracle_adf_businesseditor_objects_CustomObjectInfo)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="createBusinessObject(String, CustomObjectInfo)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_createBusinessObject(java_lang_String, oracle_adf_businesseditor_objects_CustomObjectInfo)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="createBusinessObject(BusinessObject, String, CustomObjectInfo)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_createBusinessObject(oracle_adf_businesseditor_objects_BusinessObject, java_lang_String, oracle_adf_businesseditor_objects_CustomObjectInfo)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="createFunction(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_createFunction(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="createFunctionParamElement(FunctionParameter)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_createFunctionParamElement(oracle_adf_businesseditor_objects_FunctionParameter)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="createGlobalFunction(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_createGlobalFunction(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="createGlobalFunction(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_createGlobalFunction(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManager">
+         <indexentry text="createLookupType(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupManager_html_createLookupType(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="createLookupType(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_createLookupType(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="createTrigger(String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_createTrigger(java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="createTrigger(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_createTrigger(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="createTrigger(BusinessObjectTriggerType, String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_createTrigger(oracle_adf_businesseditor_objects_BusinessObjectTriggerType, java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="createValidator(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_createValidator(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="createValidator(String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_createValidator(java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectReportGenerator">
+         <indexentry text="createXMLDocument(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectReportGenerator_html_createXMLDocument(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="CustomAttribute" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="CustomObjectInfo" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomObjectInfo_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomObjectInfo">
+         <indexentry text="CustomObjectInfo()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomObjectInfo_html_CustomObjectInfo()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="DataFilter" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="DatetimeDisplayType" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DatetimeDisplayType_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="deleteAttribute(CustomAttribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_deleteAttribute(oracle_adf_businesseditor_objects_CustomAttribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="deleteBusinessObject(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_deleteBusinessObject(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="deleteBusinessObject(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_deleteBusinessObject(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="deleteFunction(BusinessObjectFunction)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_deleteFunction(oracle_adf_businesseditor_objects_BusinessObjectFunction)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="deleteGlobalFunction(GlobalFunction)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_deleteGlobalFunction(oracle_adf_businesseditor_objects_GlobalFunction)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="deleteGlobalFunction(GlobalFunction)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_deleteGlobalFunction(oracle_adf_businesseditor_objects_GlobalFunction)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="deleteLookupType(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_deleteLookupType(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="deleteParameter(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_deleteParameter(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="deleteParameter(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_deleteParameter(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="deleteTrigger(AttributeTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_deleteTrigger(oracle_adf_businesseditor_objects_AttributeTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="deleteTrigger(BusinessObjectTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_deleteTrigger(oracle_adf_businesseditor_objects_BusinessObjectTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="deleteValidator(AttributeValidator)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_deleteValidator(oracle_adf_businesseditor_objects_AttributeValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="deleteValidator(BusinessObjectValidator)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_deleteValidator(oracle_adf_businesseditor_objects_BusinessObjectValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="deprecate()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_deprecate()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="deprecate()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_deprecate()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="depublishRESTWebService()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_depublishRESTWebService()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="doCommit()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_doCommit()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="doCommit()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_doCommit()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="doRollback()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_doRollback()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="doRollback()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_doRollback()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="findAttribute(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_findAttribute(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="findBusinessObject(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_findBusinessObject(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="findBusinessObject(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_findBusinessObject(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="findFunction(String, String...)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_findFunction(java_lang_String, java_lang_String___)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="findFunctions(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_findFunctions(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="findGlobalFunction(String, String...)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_findGlobalFunction(java_lang_String, java_lang_String___)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="findGlobalFunction(String, String...)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_findGlobalFunction(java_lang_String, java_lang_String___)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="findGlobalFunctions(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_findGlobalFunctions(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="findGlobalFunctions(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_findGlobalFunctions(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManager">
+         <indexentry text="findLookupType(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupManager_html_findLookupType(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="findLookupType(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_findLookupType(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="findTrigger(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_findTrigger(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="findTrigger(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_findTrigger(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="findTrigger(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_findTrigger(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="findValidator(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_findValidator(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="findValidator(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_findValidator(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="findValidator(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_findValidator(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="finishFlowForExistingObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_finishFlowForExistingObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="finishFlowForExistingObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_finishFlowForExistingObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="finishFlowForNewObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_finishFlowForNewObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="finishFlowForNewObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_finishFlowForNewObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="FormulaType" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FormulaType_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator.AttrProperty">
+         <indexentry text="fromProperty(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_AttrProperty_html_fromProperty(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeType">
+         <indexentry text="fromString(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeType_html_fromString(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ComparisonOperator">
+         <indexentry text="fromString(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ComparisonOperator_html_fromString(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DatetimeDisplayType">
+         <indexentry text="fromString(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DatetimeDisplayType_html_fromString(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FormulaType">
+         <indexentry text="fromString(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FormulaType_html_fromString(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="FunctionParameter" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FunctionParameter_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="generateDocument(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_generateDocument(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getAPIName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getAPIName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getApiName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getApiName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getApiName()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getApiName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="getAttribute()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_getAttribute()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getAttributes()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getAttributes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getAutoNumberPattern()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getAutoNumberPattern()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getBody()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getBody()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getBody()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getBody()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="getBusinessEditor()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_getBusinessEditor()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="getBusinessEditorLogic()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_getBusinessEditorLogic()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="getBusinessEditorLookups()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_getBusinessEditorLookups()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getBusinessObject()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getBusinessObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="getBusinessObjects()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_getBusinessObjects()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="getBusinessObjects()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_getBusinessObjects()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getChildCollectionName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getChildCollectionName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="getCode()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_getCode()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupType">
+         <indexentry text="getCode()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html_getCode()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getCustomAttributes()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getCustomAttributes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomObjectInfo">
+         <indexentry text="getCustomObjectTableType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomObjectInfo_html_getCustomObjectTableType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDataFilters()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDataFilters()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDatetimeDisplayType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDatetimeDisplayType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDecimalPlace()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDecimalPlace()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDefaultValue()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDefaultValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="getDefintion()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_getDefintion()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="getDefintion()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_getDefintion()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="getDefintion()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_getDefintion()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="getDefintion()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_getDefintion()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getDependencyAttributes()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getDependencyAttributes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getDependencyAttrs()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getDependencyAttrs()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupType">
+         <indexentry text="getDescription()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html_getDescription()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDisplayAttributes()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDisplayAttributes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDisplayAttrs()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDisplayAttrs()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDisplayHeight()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDisplayHeight()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getDisplayLabel()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getDisplayLabel()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getDisplayLabel()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getDisplayLabel()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getDisplayNamePlural()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getDisplayNamePlural()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="getDisplaySequence()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_getDisplaySequence()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getDisplayWidth()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getDisplayWidth()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="getErrorMessage()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_getErrorMessage()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="getErrorMessage()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_getErrorMessage()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="getErrorMessage()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_getErrorMessage()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="getErrorMessage()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_getErrorMessage()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getExample()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getExample()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getExample()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getExample()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomObjectInfo">
+         <indexentry text="getExpectedDataVolume()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomObjectInfo_html_getExpectedDataVolume()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getExpression()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getExpression()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getFixedChoiceListLookupType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getFixedChoiceListLookupType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getFixedChoiceListLookupType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getFixedChoiceListLookupType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="getFixedChoiceListLookupType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_getFixedChoiceListLookupType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getFixedChoiceListValueMap()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getFixedChoiceListValueMap()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="getFixedChoiceListValueMap(Number)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_getFixedChoiceListValueMap(oracle_jbo_domain_Number)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getFormulaType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getFormulaType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getFullName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getFullName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getFunctions()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getFunctions()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="getGlobalFunctions()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_getGlobalFunctions()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="getGlobalFunctions()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_getGlobalFunctions()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="getGroupHelper(ObjectType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_getGroupHelper(oracle_adfinternal_businesseditor_objects_ObjectType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="getGroupHelper(ObjectType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_getGroupHelper(oracle_adfinternal_businesseditor_objects_ObjectType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getHelpText()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getHelpText()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getId()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getId()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getId()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getId()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getIsCascadingPicklistEnabled()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getIsCascadingPicklistEnabled()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="getIsCascadingPicklistEnabled()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_getIsCascadingPicklistEnabled()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getListDisplayAttribute()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getListDisplayAttribute()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getLogicalType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getLogicalType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="getLogicalType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_getLogicalType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupType">
+         <indexentry text="getLookupCodes()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html_getLookupCodes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="getLookupManager()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_getLookupManager()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="getLookupTypes()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_getLookupTypes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getMaxLength()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getMaxLength()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getMaxValue()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getMaxValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="getMeaning()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_getMeaning()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupType">
+         <indexentry text="getMeaning()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html_getMeaning()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getMinLength()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getMinLength()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getMinValue()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getMinValue()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FunctionParameter">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FunctionParameter_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getName()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getObjectType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getObjectType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="getObjectType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_getObjectType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="getOperator()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_getOperator()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getParameters()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getParameters()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getParameters()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getParameters()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getParent()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getParent()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getParentChoiceList()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getParentChoiceList()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getParentChoiceListAttributeVAName()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getParentChoiceListAttributeVAName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="getParentChoiceListAttributeVAName()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_getParentChoiceListAttributeVAName()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getPrivileged()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getPrivileged()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getPrivileged()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getPrivileged()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getProperty(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getProperty(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getRecordNameLabel()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getRecordNameLabel()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getRequiredExpression()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getRequiredExpression()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="getReturnType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_getReturnType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="getReturnType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_getReturnType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getSearchAttributes()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getSearchAttributes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="getSearchAttrs()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_getSearchAttrs()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getSortByAttribute()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getSortByAttribute()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getStandardAttributes()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getStandardAttributes()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getTriggers()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getTriggers()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getTriggers()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getTriggers()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getTriggers()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getTriggers()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="getTriggerType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_getTriggerType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="getTriggerType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_getTriggerType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FunctionParameter">
+         <indexentry text="getType()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FunctionParameter_html_getType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="getType()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_getType()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getUpdateableExpression()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getUpdateableExpression()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="getValidators()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_getValidators()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="getValidators()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_getValidators()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getValidators()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getValidators()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="getValues()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_getValues()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="getViewObjectBeingEdited()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_getViewObjectBeingEdited()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="getViewObjectBeingEdited()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_getViewObjectBeingEdited()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="GlobalFunction" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="hasChild(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_hasChild(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="initFlowForExistingObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_initFlowForExistingObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="initFlowForExistingObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_initFlowForExistingObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="initFlowForNewObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_initFlowForNewObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="initFlowForNewObject()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_initFlowForNewObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="initialize()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_initialize()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="initialize()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_initialize()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isCustomizable()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isCustomizable()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isCustomObject()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isCustomObject()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="isDefaultValueExpression()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_isDefaultValueExpression()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isDeprecated()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isDeprecated()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="isDeprecated()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_isDeprecated()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="isEnabled()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_isEnabled()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="isIncludedInServicePayload()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_isIncludedInServicePayload()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="isIndexed()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_isIndexed()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="isMatchCase()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_isMatchCase()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="isMultiselectFixedChoiceList()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_isMultiselectFixedChoiceList()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="isPersistent()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_isPersistent()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="isPicklist()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_isPicklist()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="isPicklist()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_isPicklist()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="isRemovable()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_isRemovable()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isRemovable()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isRemovable()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="isRequired()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_isRequired()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="isRequired()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_isRequired()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isRESTEnabledForDELETE()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isRESTEnabledForDELETE()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isRESTEnabledForGET()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isRESTEnabledForGET()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isRESTEnabledForPOST()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isRESTEnabledForPOST()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isRESTEnabledForPUT()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isRESTEnabledForPUT()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isRESTWebServicePublished()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isRESTWebServicePublished()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="isSearchable()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_isSearchable()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="isSortByAscending()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_isSortByAscending()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="isUpdateable()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_isUpdateable()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="LookupCode" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="LookupManager" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupManager_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManager">
+         <indexentry text="LookupManager()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupManager_html_LookupManager()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="LookupManagerImpl" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="LookupManagerImpl(LookupManager)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_LookupManagerImpl(oracle_adf_businesseditor_objects_LookupManager)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="LookupType" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="NonCustomizableAttributeImpl" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="ObjectReportGenerator" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectReportGenerator_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectReportGenerator">
+         <indexentry text="ObjectReportGenerator()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectReportGenerator_html_ObjectReportGenerator()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="ObjectVisitor" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="publishRESTWebService()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_publishRESTWebService()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="release()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_release()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="release()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_release()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="removeDataFilter(DataFilter)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_removeDataFilter(oracle_adf_businesseditor_objects_DataFilter)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="removeDependencyAttr(Attribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_removeDependencyAttr(oracle_adf_businesseditor_objects_Attribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="removeDisplayAttr(Attribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_removeDisplayAttr(oracle_adf_businesseditor_objects_Attribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="removeSearchAttr(Attribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_removeSearchAttr(oracle_adf_businesseditor_objects_Attribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManager">
+         <indexentry text="rollback()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessEditorManager_html_rollback()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManager">
+         <indexentry text="rollback()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupManager_html_rollback()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="rollback()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_rollback()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setAutoNumberPattern(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setAutoNumberPattern(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="setBody(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_setBody(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="setBody(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_setBody(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setChildCollectionName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setChildCollectionName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setDatetimeDisplayType(DatetimeDisplayType)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setDatetimeDisplayType(oracle_adf_businesseditor_objects_DatetimeDisplayType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setDecimalPlace(int)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setDecimalPlace(int)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setDefaultValue(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setDefaultValue(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="setDefintion(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_setDefintion(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="setDefintion(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_setDefintion(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="setDefintion(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_setDefintion(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="setDefintion(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_setDefintion(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupType">
+         <indexentry text="setDescription(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html_setDescription(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setDisplayHeight(int)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setDisplayHeight(int)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="setDisplayLabel(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_setDisplayLabel(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setDisplayLabel(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setDisplayLabel(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setDisplayNamePlural(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setDisplayNamePlural(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="setDisplaySequence(Number)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_setDisplaySequence(java_lang_Number)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setDisplayWidth(int)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setDisplayWidth(int)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="setEnabled(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_setEnabled(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="setErrorMessage(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_setErrorMessage(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="setErrorMessage(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_setErrorMessage(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="setErrorMessage(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_setErrorMessage(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="setErrorMessage(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_setErrorMessage(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="setExample(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_setExample(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="setExample(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_setExample(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setExpression(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setExpression(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setFixedChoiceListLookupType(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setFixedChoiceListLookupType(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupManagerImpl">
+         <indexentry text="setFixedChoiceListValueMap(Number, String, String, Map&lt;String, List>)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__LookupManagerImpl_html_setFixedChoiceListValueMap(oracle_jbo_domain_Number, java_lang_String, java_lang_String, java_util_Map)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setFormulaType(FormulaType)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setFormulaType(oracle_adf_businesseditor_objects_FormulaType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="setHelpText(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_setHelpText(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setIncludedInServicePayload(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setIncludedInServicePayload(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setIndexed(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setIndexed(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setListDisplayAttribute(Attribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setListDisplayAttribute(oracle_adf_businesseditor_objects_Attribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="setMatchCase(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_setMatchCase(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setMaxLength(int)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setMaxLength(int)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setMaxValue(BigDecimal)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setMaxValue(java_math_BigDecimal)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupCode">
+         <indexentry text="setMeaning(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupCode_html_setMeaning(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="LookupType">
+         <indexentry text="setMeaning(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__LookupType_html_setMeaning(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setMinLength(int)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setMinLength(int)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setMinValue(BigDecimal)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setMinValue(java_math_BigDecimal)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setMultiselectFixedChoiceList(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setMultiselectFixedChoiceList(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTrigger">
+         <indexentry text="setName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTrigger_html_setName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeValidator">
+         <indexentry text="setName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeValidator_html_setName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="setName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_setName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTrigger">
+         <indexentry text="setName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTrigger_html_setName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectValidator">
+         <indexentry text="setName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectValidator_html_setName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FunctionParameter">
+         <indexentry text="setName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FunctionParameter_html_setName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="setName(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_setName(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="setOperator(ComparisonOperator)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_setOperator(oracle_adf_businesseditor_objects_ComparisonOperator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="setOperator(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_setOperator(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="setParentChoiceList(Attribute, Map&lt;String, List>)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_setParentChoiceList(oracle_adf_businesseditor_objects_Attribute, java_util_Map)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="setParentChoiceList(Attribute, Map&lt;String, List>)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_setParentChoiceList(oracle_adf_businesseditor_objects_Attribute, java_util_Map)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="setParentChoiceList(Attribute, Map&lt;String, List>)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_setParentChoiceList(oracle_adf_businesseditor_objects_Attribute, java_util_Map)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="setPrivileged(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_setPrivileged(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="setPrivileged(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_setPrivileged(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setProperty(String, Object)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setProperty(java_lang_String, java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="NonCustomizableAttributeImpl">
+         <indexentry text="setProperty(String, Object)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__NonCustomizableAttributeImpl_html_setProperty(java_lang_String, java_lang_Object)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setRecordNameLabel(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setRecordNameLabel(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="setRequired(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_setRequired(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="setRequired(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_setRequired(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setRequiredExpression(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setRequiredExpression(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setRESTEnabledForDELETE(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setRESTEnabledForDELETE(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setRESTEnabledForGET(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setRESTEnabledForGET(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setRESTEnabledForPOST(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setRESTEnabledForPOST(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setRESTEnabledForPUT(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setRESTEnabledForPUT(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectFunction">
+         <indexentry text="setReturnType(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectFunction_html_setReturnType(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="GlobalFunction">
+         <indexentry text="setReturnType(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__GlobalFunction_html_setReturnType(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="setSearchable(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_setSearchable(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="setSearchable(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_setSearchable(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObject">
+         <indexentry text="setSortBy(Attribute, boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObject_html_setSortBy(oracle_adf_businesseditor_objects_Attribute, boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FunctionParameter">
+         <indexentry text="setType(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FunctionParameter_html_setType(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="CustomAttribute">
+         <indexentry text="setUpdateable(boolean)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__CustomAttribute_html_setUpdateable(boolean)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="Attribute">
+         <indexentry text="setUpdateableExpression(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__Attribute_html_setUpdateableExpression(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DataFilter">
+         <indexentry text="setValues(Object...)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DataFilter_html_setValues(java_lang_Object___)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adf.businesseditor.objects">
+         <indexentry text="StandardAttribute" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__StandardAttribute_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="StandardAttributeImpl" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="StandardAttributeImpl">
+         <indexentry text="StandardAttributeImpl(BusinessObjectImpl, String, String, String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__StandardAttributeImpl_html_StandardAttributeImpl(oracle_adfinternal_businesseditor_objects_BusinessObjectImpl, java_lang_String, java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTriggerTypeHelper">
+         <indexentry text="toJBOTriggerType(AttributeTriggerType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__AttributeTriggerTypeHelper_html_toJBOTriggerType(oracle_adf_businesseditor_objects_AttributeTriggerType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTriggerTypeHelper">
+         <indexentry text="toJBOTriggerType(BusinessObjectTriggerType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessObjectTriggerTypeHelper_html_toJBOTriggerType(oracle_adf_businesseditor_objects_BusinessObjectTriggerType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTriggerTypeHelper">
+         <indexentry text="toLogicalTriggerType(TriggerType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__AttributeTriggerTypeHelper_html_toLogicalTriggerType(oracle_jbo_server_TriggerType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTriggerTypeHelper">
+         <indexentry text="toLogicalTriggerType(TriggerType)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessObjectTriggerTypeHelper_html_toLogicalTriggerType(oracle_jbo_server_TriggerType)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeType">
+         <indexentry text="toString()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeType_html_toString()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ComparisonOperator">
+         <indexentry text="toString()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ComparisonOperator_html_toString()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DatetimeDisplayType">
+         <indexentry text="toString()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DatetimeDisplayType_html_toString()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FormulaType">
+         <indexentry text="toString()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FormulaType_html_toString()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessEditorManagerImpl">
+         <indexentry text="updateGlobalFunctionId(String, String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__BusinessEditorManagerImpl_html_updateGlobalFunctionId(java_lang_String, java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTriggerType">
+         <indexentry text="valueOf(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTriggerType_html_valueOf(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeType">
+         <indexentry text="valueOf(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeType_html_valueOf(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTriggerType">
+         <indexentry text="valueOf(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTriggerType_html_valueOf(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ComparisonOperator">
+         <indexentry text="valueOf(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ComparisonOperator_html_valueOf(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DatetimeDisplayType">
+         <indexentry text="valueOf(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DatetimeDisplayType_html_valueOf(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FormulaType">
+         <indexentry text="valueOf(String)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FormulaType_html_valueOf(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator.AttrProperty">
+         <indexentry text="valueOf(String)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_AttrProperty_html_valueOf(java_lang_String)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeTriggerType">
+         <indexentry text="values()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeTriggerType_html_values()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="AttributeType">
+         <indexentry text="values()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__AttributeType_html_values()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BusinessObjectTriggerType">
+         <indexentry text="values()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BusinessObjectTriggerType_html_values()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ComparisonOperator">
+         <indexentry text="values()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ComparisonOperator_html_values()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="DatetimeDisplayType">
+         <indexentry text="values()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__DatetimeDisplayType_html_values()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="FormulaType">
+         <indexentry text="values()" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__FormulaType_html_values()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator.AttrProperty">
+         <indexentry text="values()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_AttrProperty_html_values()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(BusinessObjectFunction)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObjectFunction)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(BusinessObjectTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObjectTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(BusinessObjectValidator)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObjectValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(StandardAttribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_StandardAttribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(CustomAttribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_CustomAttribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(AttributeTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_AttributeTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="BaseObjectVisitor">
+         <indexentry text="visit(AttributeValidator)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__BaseObjectVisitor_html_visit(oracle_adf_businesseditor_objects_AttributeValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(BusinessObjectFunction)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObjectFunction)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(BusinessObjectTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObjectTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(BusinessObjectValidator)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_BusinessObjectValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(StandardAttribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_StandardAttribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(CustomAttribute)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_CustomAttribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(AttributeTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_AttributeTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="ObjectVisitor">
+         <indexentry text="visit(AttributeValidator)" target="adfm-business-editor-objects-javadoc__oracle__adf__businesseditor__objects__ObjectVisitor_html_visit(oracle_adf_businesseditor_objects_AttributeValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(BusinessObject)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_BusinessObject)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(BusinessObjectTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_BusinessObjectTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(AttributeTrigger)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_AttributeTrigger)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(BusinessObjectValidator)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_BusinessObjectValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(AttributeValidator)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_AttributeValidator)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(BusinessObjectFunction)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_BusinessObjectFunction)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(StandardAttribute)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_StandardAttribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="visit(CustomAttribute)" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_visit(oracle_adf_businesseditor_objects_CustomAttribute)"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="XMLDocumentGenerator" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="XMLDocumentGenerator">
+         <indexentry text="XMLDocumentGenerator()" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_html_XMLDocumentGenerator()"/>
+      </indexitem>
+   </indexitem>
+   <indexitem text="API Reference">
+      <indexitem text="oracle.adfinternal.businesseditor.objects">
+         <indexentry text="XMLDocumentGenerator.AttrProperty" target="adfm-business-editor-objects-javadoc__oracle__adfinternal__businesseditor__objects__XMLDocumentGenerator_AttrProperty_html"/>
+      </indexitem>
+   </indexitem>
+</index>

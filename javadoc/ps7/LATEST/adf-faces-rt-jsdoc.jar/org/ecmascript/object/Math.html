@@ -1,0 +1,1009 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>Math</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="Math";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/ecmascript/object/Global.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/w3c/dom/events/MouseEvent.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/object/Math.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Math.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | CONSTR | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | CONSTR | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">org.ecmascript.object</span><br>
+Class Math</h1>
+<pre>
+<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<strong>org.ecmascript.object.Math</strong>
+</pre>
+<hr>
+<pre>
+public abstract class <strong>Math</strong>
+extends <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a>
+</pre>
+<div>The native browser JavaScript object used to work with mathematical operations.<br>
+All methods in this class should be invoked statically.<br>
+<br>
+Note that this object is implemented and supported by the web browser and results of its use may vary.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#E" title="field in this class">E</a></strong></code></dt>
+<dd>
+<div>Euler's constant (approximately 2.718).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#LN10" title="field in this class">LN10</a></strong></code></dt>
+<dd>
+<div>The result of <code>ln(10)</code> (natural logarithm of 10; approximately 2.303).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#LN2" title="field in this class">LN2</a></strong></code></dt>
+<dd>
+<div>The result of <code>ln(2)</code> (natural logarithm of 2; approximately 0.693).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#LOG10E" title="field in this class">LOG10E</a></strong></code></dt>
+<dd>
+<div>The result of <code>log10(E)</code> (base 10 logarithm of Euler's constant; approximately 0.434).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#LOG2E" title="field in this class">LOG2E</a></strong></code></dt>
+<dd>
+<div>The result of <code>log2(E)</code> (base 2 logarithm of Euler's constant; approximately 1.443).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#PI" title="field in this class">PI</a></strong></code></dt>
+<dd>
+<div>The value of &pi; (pi; approximately 3.14159).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#SQRT1_2" title="field in this class">SQRT1_2</a></strong></code></dt>
+<dd>
+<div>The result of the square root of 0.5 (approximately 0.707).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;static&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#SQRT2" title="field in this class">SQRT2</a></strong></code></dt>
+<dd>
+<div>The result of the square root of 2 (approximately 1.414).</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#abs_Number_" title="method in this class">abs</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the absolute value of the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#acos_Number_" title="method in this class">acos</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the arccosine of the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#asin_Number_" title="method in this class">asin</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the arcsine of the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#atan_Number_" title="method in this class">atan</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the arctangent of the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#atan2_Number__Number_" title="method in this class">atan2</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> x, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> y)</code></dt>
+<dd>
+<div>Computes the angle theta between the positive x-axis of a plane and the specified coordinate in the plane.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#ceil_Number_" title="method in this class">ceil</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the rounded-up value of the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#cos_Number_" title="method in this class">cos</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> theta)</code></dt>
+<dd>
+<div>Computes the cosine of the specified angle.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#exp_Number_" title="method in this class">exp</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the value of <code>E^value</code> (Euler's constant raised to the specified power).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#floor_Number_" title="method in this class">floor</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the rounded-down value of the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#log_Number_" title="method in this class">log</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Computes the value of <code>ln(value)</code> (natural logarithm of the specified number).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#max_Number__Number_" title="method in this class">max</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> first, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> second)</code></dt>
+<dd>
+<div>Retrieves the largest of the given values.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#min_Number__Number_" title="method in this class">min</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> first, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> second)</code></dt>
+<dd>
+<div>Retrieves the smallest of the given values.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#pow_Number__Number_" title="method in this class">pow</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> power)</code></dt>
+<dd>
+<div>Computes the value of <code>value^power</code> (the specified value raised to the specified power).</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#random__" title="method in this class">random</a></strong>()</code></dt>
+<dd>
+<div>Retrieves a value that is greater than or equal to 0 and less than 1.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#round_Number_" title="method in this class">round</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Retrieves the nearest integer to the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#sin_Number_" title="method in this class">sin</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> theta)</code></dt>
+<dd>
+<div>Computes the sine of the specified angle.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#sqrt_Number_" title="method in this class">sqrt</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd>
+<div>Retrieves the square root of the specified number.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#tan_Number_" title="method in this class">tan</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> theta)</code></dt>
+<dd>
+<div>Computes the tangent of the specified angle.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="E" id="E"><!-- --></a></p>
+<h3 class="DetailHeader">E</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>E</strong></code></dt>
+<dd><br>
+<div>Euler's constant (approximately 2.718).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="LN10" id="LN10"><!-- --></a></p>
+<h3 class="DetailHeader">LN10</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>LN10</strong></code></dt>
+<dd><br>
+<div>The result of <code>ln(10)</code> (natural logarithm of 10; approximately 2.303).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="LN2" id="LN2"><!-- --></a></p>
+<h3 class="DetailHeader">LN2</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>LN2</strong></code></dt>
+<dd><br>
+<div>The result of <code>ln(2)</code> (natural logarithm of 2; approximately 0.693).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="LOG10E" id="LOG10E"><!-- --></a></p>
+<h3 class="DetailHeader">LOG10E</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>LOG10E</strong></code></dt>
+<dd><br>
+<div>The result of <code>log10(E)</code> (base 10 logarithm of Euler's constant; approximately 0.434).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="LOG2E" id="LOG2E"><!-- --></a></p>
+<h3 class="DetailHeader">LOG2E</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>LOG2E</strong></code></dt>
+<dd><br>
+<div>The result of <code>log2(E)</code> (base 2 logarithm of Euler's constant; approximately 1.443).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="PI" id="PI"><!-- --></a></p>
+<h3 class="DetailHeader">PI</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>PI</strong></code></dt>
+<dd><br>
+<div>The value of &pi; (pi; approximately 3.14159).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="SQRT1_2" id="SQRT1_2"><!-- --></a></p>
+<h3 class="DetailHeader">SQRT1_2</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>SQRT1_2</strong></code></dt>
+<dd><br>
+<div>The result of the square root of 0.5 (approximately 0.707).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="SQRT2" id="SQRT2"><!-- --></a></p>
+<h3 class="DetailHeader">SQRT2</h3>
+<dl>
+<dt><code>public static <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>SQRT2</strong></code></dt>
+<dd><br>
+<div>The result of the square root of 2 (approximately 1.414).</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="abs_Number_" id="abs_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">abs</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> abs</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the absolute value of the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the absolute value of the specified number</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="acos_Number_" id="acos_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">acos</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> acos</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the arccosine of the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result between zero and &pi; radians or <code>Number.NaN</code> if the specified number is not in the range -1 through 1</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="asin_Number_" id="asin_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">asin</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> asin</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the arcsine of the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result between -&pi;/2 and &pi;/2 radians or <code>Number.NaN</code> if the specified number is not in the range -1 through 1</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="atan_Number_" id="atan_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">atan</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> atan</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the arctangent of the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result between -&pi;/2 and &pi;/2 radians</dd>
+<dt>See also:</dt>
+<dd><code><a href="#atan2_Number__Number_" title="method in this class">atan2(Number, Number)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="atan2_Number__Number_" id="atan2_Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">atan2</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> atan2</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> x,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> y)</code></dt>
+<dd><br>
+<div>Computes the angle theta between the positive x-axis of a plane and the specified coordinate in the plane.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>x</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified x coordinate</td>
+</tr>
+<tr>
+<td valign="top"><code>y</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified y coordinate</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result between -&pi; and &pi; radians</dd>
+<dt>See also:</dt>
+<dd><code><a href="#atan_Number_" title="method in this class">atan(Number)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="ceil_Number_" id="ceil_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">ceil</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> ceil</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the rounded-up value of the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the nearest integer that is equal to or greater than the specified number</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="cos_Number_" id="cos_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">cos</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> cos</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> theta)</code></dt>
+<dd><br>
+<div>Computes the cosine of the specified angle.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>theta</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified angle</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result in the range -1 through 1</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="exp_Number_" id="exp_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">exp</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> exp</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the value of <code>E^value</code> (Euler's constant raised to the specified power).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="floor_Number_" id="floor_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">floor</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> floor</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the rounded-down value of the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the nearest integer that is equal to or less than the specified number</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="log_Number_" id="log_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">log</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> log</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Computes the value of <code>ln(value)</code> (natural logarithm of the specified number).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result or <code>Number.NaN</code> if the specified number is negative</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="max_Number__Number_" id="max_Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">max</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> max</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> first,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> second)</code></dt>
+<dd><br>
+<div>Retrieves the largest of the given values.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>first</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the first number</td>
+</tr>
+<tr>
+<td valign="top"><code>second</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the second number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the largest of the given values</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="min_Number__Number_" id="min_Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">min</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> min</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> first,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> second)</code></dt>
+<dd><br>
+<div>Retrieves the smallest of the given values.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>first</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the first number</td>
+</tr>
+<tr>
+<td valign="top"><code>second</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the second number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the smallest of the given values</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="pow_Number__Number_" id="pow_Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">pow</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> pow</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> power)</code></dt>
+<dd><br>
+<div>Computes the value of <code>value^power</code> (the specified value raised to the specified power).</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the value number</td>
+</tr>
+<tr>
+<td valign="top"><code>power</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the power number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="random__" id="random__"><!-- --></a></p>
+<h3 class="DetailHeader">random</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> random</strong>()</code></dt>
+<dd><br>
+<div>Retrieves a value that is greater than or equal to 0 and less than 1.
+<p>For a floating point number that is greater than or equal to <code>min</code> and less than <code>max</code>, use:</p>
+<code>Math.random() * (max - min) + min</code>
+<p>For an integer that is greater than or equal to <code>min</code> and less than or equal to <code>max</code>, use:</p>
+<code>Math.floor(Math.random() * (max - min + 1)) + min</code></div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - a value that is greater than or equal to 0 and less than 1</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="round_Number_" id="round_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">round</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> round</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Retrieves the nearest integer to the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the nearest integer to the specified number</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="sin_Number_" id="sin_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">sin</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> sin</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> theta)</code></dt>
+<dd><br>
+<div>Computes the sine of the specified angle.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>theta</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified angle</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result in the range -1 through 1</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="sqrt_Number_" id="sqrt_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">sqrt</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> sqrt</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> value)</code></dt>
+<dd><br>
+<div>Retrieves the square root of the specified number.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified number</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the square root of the specified number or <code>Number.NaN</code> if the specified number is negative</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="tan_Number_" id="tan_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">tan</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> tan</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> theta)</code></dt>
+<dd><br>
+<div>Computes the tangent of the specified angle.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>theta</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the specified angle</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the result</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | CONSTR | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | CONSTR | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/ecmascript/object/Global.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/w3c/dom/events/MouseEvent.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/object/Math.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="Math.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

@@ -1,0 +1,1330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>AdfProfiler</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="AdfProfiler";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfPopupOpeningEvent.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/profiling/AdfProfilerDataDetail.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/profiling/AdfProfiler.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfProfiler.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">oracle.adf.view.js.profiling</span><br>
+Class AdfProfiler</h1>
+<pre>
+<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<strong>oracle.adf.view.js.profiling.AdfProfiler</strong>
+</pre>
+<hr>
+<pre>
+public class <strong>AdfProfiler</strong>
+extends <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a>
+</pre>
+<div>This object is responsible for adding the instrumentation code to methods. It leverages the <code><a href="../../../../../oracle/adf/view/js/profiling/AdfCheckpoint.html" title="class in oracle.adf.view.js.profiling">AdfCheckpoint</a></code> class in order to perform timings and data collection. To get an instance, you must use the <code><a href="#getInstance__" title="method in this class">getInstance()</a></code> method.</div>
+<p><br></p>
+<dl>
+<dt>Since:</dt>
+<dd>1.0</dd>
+</dl>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_index" title="field in this class">_index</a></strong></code></dt>
+<dd>
+<div>This is a counter for generating uids</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROFILER_GROUP" title="field in this class">_PROFILER_GROUP</a></strong></code></dt>
+<dd>
+<div>The group id of all checkpoints added by the profiler class</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_CLASS_ID" title="field in this class">_PROP_CLASS_ID</a></strong></code></dt>
+<dd>
+<div>This is put as a property on instance objects so that we can maintain consistant methodIds.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_CLASSNAME" title="field in this class">_PROP_CLASSNAME</a></strong></code></dt>
+<dd>
+<div>This is put as a property on every method that is registered and contains a flag as to whether this method was actually present on the object when it was instantiated</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_REGISTERED" title="field in this class">_PROP_REGISTERED</a></strong></code></dt>
+<dd>
+<div>This is put as a property on every method that is registered and contains the method's name</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_REGISTERED_CHECKPOINT" title="field in this class">_PROP_REGISTERED_CHECKPOINT</a></strong></code></dt>
+<dd>
+<div>This is put as a property on every method that is registered and contains the method's checkpoint</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_REGISTERED_INST_METHOD" title="field in this class">_PROP_REGISTERED_INST_METHOD</a></strong></code></dt>
+<dd>
+<div>This is put as a property on every method that is registered and contains the origional method</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_REGISTERED_IS_PRESENT" title="field in this class">_PROP_REGISTERED_IS_PRESENT</a></strong></code></dt>
+<dd>
+<div>This is put as a property on every method that is registered and contains a flag as to whether this method was actually present on the object when it was instantiated</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_REGISTERED_METHOD_NAME" title="field in this class">_PROP_REGISTERED_METHOD_NAME</a></strong></code></dt>
+<dd>
+<div>This is put as a property on every method that is registered and contains the method name</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_PROP_REGISTERED_OBJECT" title="field in this class">_PROP_REGISTERED_OBJECT</a></strong></code></dt>
+<dd>
+<div>This is put as a property on every method that is registered and contains a reference to the containing object</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_REGEXP_FUNCTION" title="field in this class">_REGEXP_FUNCTION</a></strong></code></dt>
+<dd>
+<div>This regular expression is for retrieving the BODY of a function.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_REGEXP_FUNCTION_NAME" title="field in this class">_REGEXP_FUNCTION_NAME</a></strong></code></dt>
+<dd>
+<div>This is the regular expression for retrieving the name of a function or object in the format of "function f(x)".</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_REGEXP_REGEXP" title="field in this class">_REGEXP_REGEXP</a></strong></code></dt>
+<dd>
+<div>This regular expression is used to detect and parse a regular expression.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_REGEXP_REPLACE_METHOD" title="field in this class">_REGEXP_REPLACE_METHOD</a></strong></code></dt>
+<dd>
+<div>This regular expression is for replacing the $methodname$ token in the body of the instrumentation function with another value.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private&nbsp;static&nbsp;<a href="../../../../../oracle/adf/view/js/profiling/AdfProfiler.html" title="class in oracle.adf.view.js.profiling">AdfProfiler</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_THE_INSTANCE" title="field in this class">_THE_INSTANCE</a></strong></code></dt>
+<dd>
+<div>The reference to the profiler singleton.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#AdfProfiler__" title="constructor in this class">AdfProfiler</a></strong>()</code></dt>
+<dd>
+<div>This object is responsible for adding the instrumentation code to methods.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_getClassId_Object_" title="method in this class">_getClassId</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd>
+<div>Returns a unique class id.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_getClassName_Object_" title="method in this class">_getClassName</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd>
+<div>Returns this objects class name or "[anonymous]" if the object name is anonymous.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#getInstance__" title="method in this class">getInstance</a></strong>()</code></dt>
+<dd>
+<div>Returns the singleton instance of the AdfProfiler.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_getMethodId_String__Object_" title="method in this class">_getMethodId</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd>
+<div>Returns a unique method id that is duplicatable based on the methodName and the given object.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O__getRegisteredMethods__" title="method in this class">__getRegisteredMethods</a></strong>()</code></dt>
+<dd>
+<div>Returns a list of instrumented methods by method id</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_hasOwnMethod_Object__String_" title="method in this class">_hasOwnMethod</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd>
+<div>Returns true if the object has its own version of the method.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_instrumenterFunction__" title="method in this class">_instrumenterFunction</a></strong>()</code></dt>
+<dd>
+<div>This is a "prototype" of the function that will be used for instrumentation.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_instrumentFunction_String__String__Object__Object_" title="method in this class">_instrumentFunction</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodId, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> checkpoint)</code></dt>
+<dd>
+<div>Instruments a function on the object and returns a reference to the new function.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_isInstrumentable_Object__Object_" title="method in this class">_isInstrumentable</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> property)</code></dt>
+<dd>
+<div>Returns true if this function is one which should be instrumented or not.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_isInstrumented_Object_" title="method in this class">_isInstrumented</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> method)</code></dt>
+<dd>
+<div>Returns true if this method is part of the instrumentation.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_isPrototype_Object__String_" title="method in this class">_isPrototype</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> classname)</code></dt>
+<dd>
+<div>Returns true if the given object is the prototype of its base class or false if it is either an instance or the class itself.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_isWindow_Object_" title="method in this class">_isWindow</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd>
+<div>Returns true if the given object is the window object or false if it is not.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#register_Object__String_" title="method in this class">register</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd>
+<div><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">Please use registerMethod instead</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#registerFunction_String_" title="method in this class">registerFunction</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> functionName)</code></dt>
+<dd>
+<div>Registers a javascript function with the AdfProfiler.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#registerMethod_Object__String_" title="method in this class">registerMethod</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd>
+<div>Registers a javascript method with the AdfProfiler.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#startProfiling__" title="method in this class">startProfiling</a></strong>()</code></dt>
+<dd>
+<div>Starts recording profiling data for checkpoints registered by this AdfProfiler.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#stopProfiling__" title="method in this class">stopProfiling</a></strong>()</code></dt>
+<dd>
+<div>Stops recording profiling data for checkpoints registered by this AdfProfiler.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor HiddenPrivate">
+<td align="right" valign="top" width="1%" nowrap><code>private static <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#O_uninstrumentFunction_Object_" title="method in this class">_uninstrumentFunction</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> func)</code></dt>
+<dd>
+<div>Removes instrumentation from a method and reverts the method back to its origional state.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#unregister_Object__String_" title="method in this class">unregister</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd>
+<div><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use unregisterMethod</span></div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#unregisterAll__" title="method in this class">unregisterAll</a></strong>()</code></dt>
+<dd>
+<div>Unregisters all of the registered functions</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#unregisterFunction_String_" title="method in this class">unregisterFunction</a></strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> functionName)</code></dt>
+<dd>
+<div>Unregisters functions that have been registered with the Javascript AdfProfiler.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#unregisterMethod_Object__String_" title="method in this class">unregisterMethod</a></strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object, <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd>
+<div>Unregisters methods which have been registered with the Javascript AdfProfiler.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="O_index" id="O_index"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_index</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>_index</strong></code></dt>
+<dd><br>
+<div>This is a counter for generating uids</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROFILER_GROUP" id="O_PROFILER_GROUP"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROFILER_GROUP</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROFILER_GROUP</strong></code></dt>
+<dd><br>
+<div>The group id of all checkpoints added by the profiler class</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_CLASS_ID" id="O_PROP_CLASS_ID"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_CLASS_ID</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_CLASS_ID</strong></code></dt>
+<dd><br>
+<div>This is put as a property on instance objects so that we can maintain consistant methodIds.</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_CLASSNAME" id="O_PROP_CLASSNAME"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_CLASSNAME</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_CLASSNAME</strong></code></dt>
+<dd><br>
+<div>This is put as a property on every method that is registered and contains a flag as to whether this method was actually present on the object when it was instantiated</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_REGISTERED" id="O_PROP_REGISTERED"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_REGISTERED</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_REGISTERED</strong></code></dt>
+<dd><br>
+<div>This is put as a property on every method that is registered and contains the method's name</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_REGISTERED_CHECKPOINT" id="O_PROP_REGISTERED_CHECKPOINT"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_REGISTERED_CHECKPOINT</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_REGISTERED_CHECKPOINT</strong></code></dt>
+<dd><br>
+<div>This is put as a property on every method that is registered and contains the method's checkpoint</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_REGISTERED_INST_METHOD" id="O_PROP_REGISTERED_INST_METHOD"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_REGISTERED_INST_METHOD</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_REGISTERED_INST_METHOD</strong></code></dt>
+<dd><br>
+<div>This is put as a property on every method that is registered and contains the origional method</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_REGISTERED_IS_PRESENT" id="O_PROP_REGISTERED_IS_PRESENT"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_REGISTERED_IS_PRESENT</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_REGISTERED_IS_PRESENT</strong></code></dt>
+<dd><br>
+<div>This is put as a property on every method that is registered and contains a flag as to whether this method was actually present on the object when it was instantiated</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_REGISTERED_METHOD_NAME" id="O_PROP_REGISTERED_METHOD_NAME"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_REGISTERED_METHOD_NAME</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_REGISTERED_METHOD_NAME</strong></code></dt>
+<dd><br>
+<div>This is put as a property on every method that is registered and contains the method name</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_PROP_REGISTERED_OBJECT" id="O_PROP_REGISTERED_OBJECT"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_PROP_REGISTERED_OBJECT</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> <strong>_PROP_REGISTERED_OBJECT</strong></code></dt>
+<dd><br>
+<div>This is put as a property on every method that is registered and contains a reference to the containing object</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_REGEXP_FUNCTION" id="O_REGEXP_FUNCTION"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_REGEXP_FUNCTION</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> <strong>_REGEXP_FUNCTION</strong></code></dt>
+<dd><br>
+<div>This regular expression is for retrieving the BODY of a function. It is used for retrieving the instrumentation function from the AdfProfiler.</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_REGEXP_FUNCTION_NAME" id="O_REGEXP_FUNCTION_NAME"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_REGEXP_FUNCTION_NAME</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> <strong>_REGEXP_FUNCTION_NAME</strong></code></dt>
+<dd><br>
+<div>This is the regular expression for retrieving the name of a function or object in the format of "function f(x)". Anonymous functions return a blank.</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_REGEXP_REGEXP" id="O_REGEXP_REGEXP"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_REGEXP_REGEXP</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> <strong>_REGEXP_REGEXP</strong></code></dt>
+<dd><br>
+<div>This regular expression is used to detect and parse a regular expression. It is used to determine if something is instrumentable or not because in Mozilla regular expressions are a function and bad things happen when we instrument regular expressions. Match[1] will be the regular expression and Match[2] will contain the flags (if any).</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_REGEXP_REPLACE_METHOD" id="O_REGEXP_REPLACE_METHOD"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_REGEXP_REPLACE_METHOD</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> <strong>_REGEXP_REPLACE_METHOD</strong></code></dt>
+<dd><br>
+<div>This regular expression is for replacing the $methodname$ token in the body of the instrumentation function with another value. It is multiline, global, and case-insensitive.</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_THE_INSTANCE" id="O_THE_INSTANCE"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_THE_INSTANCE</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <a href="../../../../../oracle/adf/view/js/profiling/AdfProfiler.html" title="class in oracle.adf.view.js.profiling">AdfProfiler</a> <strong>_THE_INSTANCE</strong></code></dt>
+<dd><br>
+<div>The reference to the profiler singleton.</div>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="AdfProfiler__" id="AdfProfiler__"><!-- --></a></p>
+<h3 class="DetailHeader">AdfProfiler</h3>
+<dl>
+<dt><code>public <strong>AdfProfiler</strong>()</code></dt>
+<dd><br>
+<div>This object is responsible for adding the instrumentation code to methods. It leverages the <code><a href="../../../../../oracle/adf/view/js/profiling/AdfCheckpoint.html" title="class in oracle.adf.view.js.profiling">AdfCheckpoint</a></code> class in order to perform timings and data collection. To get an instance, you must use the <code><a href="#getInstance__" title="method in this class">getInstance()</a></code> method.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="O_getClassId_Object_" id="O_getClassId_Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_getClassId</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _getClassId</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd><br>
+<div>Returns a unique class id. If the object passed in is a function, the the classname is returned by itself. If the object is a prototype of a class then className.prototype will be returned. If the object is an instance of the class then className.[INSTANCE###] will be returned where instance is a unique number signifying this instance. In the last case, a property will be added to the object allowing us to keep the same ID throughout multiple calls to registered functions.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object to get the class id for</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - the class id</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_getClassName_Object_" id="O_getClassName_Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_getClassName</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _getClassName</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd><br>
+<div>Returns this objects class name or "[anonymous]" if the object name is anonymous.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object to get the name of</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - a String representation of this object</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="getInstance__" id="getInstance__"><!-- --></a></p>
+<h3 class="DetailHeader">getInstance</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> getInstance</strong>()</code></dt>
+<dd><br>
+<div>Returns the singleton instance of the AdfProfiler. Use this instead of the constructor.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - an instace of the ProflerClass</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="O_getMethodId_String__Object_" id="O_getMethodId_String__Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_getMethodId</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _getMethodId</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd><br>
+<div>Returns a unique method id that is duplicatable based on the methodName and the given object. The format of this method Id is "classID.methodName".</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>methodName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the method</td>
+</tr>
+<tr>
+<td valign="top"><code>object</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - a methodId</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O__getRegisteredMethods__" id="O__getRegisteredMethods__"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">__getRegisteredMethods</h3>
+<dl class="HiddenPrivate">
+<dt><code>private <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> __getRegisteredMethods</strong>()</code></dt>
+<dd><br>
+<div>Returns a list of instrumented methods by method id</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - a String contining a list of registered methodIds</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_hasOwnMethod_Object__String_" id="O_hasOwnMethod_Object__String_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_hasOwnMethod</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _hasOwnMethod</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd><br>
+<div>Returns true if the object has its own version of the method. If the object is the window object, this method will always return true.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object which contains the property</td>
+</tr>
+<tr>
+<td valign="top"><code>methodName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the method to test</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - true if this object has its own version of the method</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_instrumenterFunction__" id="O_instrumenterFunction__"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_instrumenterFunction</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _instrumenterFunction</strong>()</code></dt>
+<dd><br>
+<div>This is a "prototype" of the function that will be used for instrumentation. It will replace the origional method and will set up and use the checkpoint. The $methodName$ key will be replaced with the method name when it is retrieved. This will never be executed directly.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_instrumentFunction_String__String__Object__Object_" id="O_instrumentFunction_String__String__Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_instrumentFunction</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _instrumentFunction</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodId,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> checkpoint)</code></dt>
+<dd><br>
+<div>Instruments a function on the object and returns a reference to the new function.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>methodName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the method to instrument</td>
+</tr>
+<tr>
+<td valign="top"><code>methodId</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the id of this instrumented method</td>
+</tr>
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object containing this method</td>
+</tr>
+<tr>
+<td valign="top"><code>checkpoint</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - a reference to the new function</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_isInstrumentable_Object__Object_" id="O_isInstrumentable_Object__Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_isInstrumentable</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _isInstrumentable</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> property)</code></dt>
+<dd><br>
+<div>Returns true if this function is one which should be instrumented or not. It judges this on a number of criteria. First, it will return false if the variable is not a function. Second, it will return false if the variable is a function that has already been instrumented. Third it will return false if the variable is a constructor. Bad things happen when constructors are automatically instrumented, ESPECIALLY in the Rich Client. Finally it will return false if the function is a Regular Expression. They show up as functions in Mozilla (in IE they are objects) and bad things happen when you instrument them.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object that contains the property</td>
+</tr>
+<tr>
+<td valign="top"><code>property</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the property to test</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - null <code>true</code> if this variable is able to be instrumented.</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_isInstrumented_Object_" id="O_isInstrumented_Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_isInstrumented</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _isInstrumented</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> method)</code></dt>
+<dd><br>
+<div>Returns true if this method is part of the instrumentation. This will check if a method is either an INSTRUMENTER or an INSTRUMENTEE.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>method</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the method to test</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - true if this method is either already instrumented or is part of the instrumentation framework</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_isPrototype_Object__String_" id="O_isPrototype_Object__String_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_isPrototype</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _isPrototype</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> classname)</code></dt>
+<dd><br>
+<div>Returns true if the given object is the prototype of its base class or false if it is either an instance or the class itself.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object to test</td>
+</tr>
+<tr>
+<td valign="top"><code>classname</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">an optional parameter containing the classname. This parameter is provided for performance and prevents us from having to recalculate the classname for the object.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - true of this object is a prototype of its parent class.</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="O_isWindow_Object_" id="O_isWindow_Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_isWindow</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _isWindow</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object)</code></dt>
+<dd><br>
+<div>Returns true if the given object is the window object or false if it is not.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object to test</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code> - true if this object is the window object</dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="register_Object__String_" id="register_Object__String_"><!-- --></a></p>
+<h3 class="DetailHeader">register</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> register</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd><br>
+<div>Registers a javascript method with the AdfProfiler. The profiler will replace this method with a proxy which will, in turn, execute the origional method. If methodName is null then every function on the object will be instrumented.</div>
+</dd>
+<dd><br>
+<dl>
+<dt><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">Please use registerMethod instead</span></dt>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object which contains this method</td>
+</tr>
+<tr>
+<td valign="top"><code>methodName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the method that needs to be instrumented</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/error/Error.html" title="class in org.ecmascript.object.error">Error</a></code> if asserts are enabled and if object is null or the method does not exist in the object</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="registerFunction_String_" id="registerFunction_String_"><!-- --></a></p>
+<h3 class="DetailHeader">registerFunction</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> registerFunction</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> functionName)</code></dt>
+<dd><br>
+<div>Registers a javascript function with the AdfProfiler. The profiler will replace this function with a proxy which will, in turn, execute the origional function. This method assumes that the function defined by functionName is accessible from the window object. If it is not then use the registerMethod function and supply the base object.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>functionName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the function that needs to be instrumented</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/error/Error.html" title="class in org.ecmascript.object.error">Error</a></code> if asserts are enabled and if the functionName is null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="registerMethod_Object__String_" id="registerMethod_Object__String_"><!-- --></a></p>
+<h3 class="DetailHeader">registerMethod</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> registerMethod</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd><br>
+<div>Registers a javascript method with the AdfProfiler. The profiler will replace this method with a proxy which will, in turn, execute the origional method. If methodName is null then every function on the object will be instrumented.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object which contains this method</td>
+</tr>
+<tr>
+<td valign="top"><code>methodName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the method that needs to be instrumented</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/error/Error.html" title="class in org.ecmascript.object.error">Error</a></code> if asserts are enabled and if object is null or the method does not exist in the object</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="startProfiling__" id="startProfiling__"><!-- --></a></p>
+<h3 class="DetailHeader">startProfiling</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> startProfiling</strong>()</code></dt>
+<dd><br>
+<div>Starts recording profiling data for checkpoints registered by this AdfProfiler. Manual AdfCheckpoints are not effected by this. Essentially this sets a checkpoint override using <code><a href="../../../../../oracle/adf/view/js/profiling/AdfCheckpoint.html#setCheckpointOverride_String__String__Boolean_" title="method in oracle.adf.view.js.profiling.AdfCheckpoint">AdfCheckpoint.setCheckpointOverride(String, String, Boolean)</a></code> for the profilers group to true.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="stopProfiling__" id="stopProfiling__"><!-- --></a></p>
+<h3 class="DetailHeader">stopProfiling</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> stopProfiling</strong>()</code></dt>
+<dd><br>
+<div>Stops recording profiling data for checkpoints registered by this AdfProfiler. Manual AdfCheckpoints are not effected by this. Essentially this sets a checkpoint override using <code><a href="../../../../../oracle/adf/view/js/profiling/AdfCheckpoint.html#setCheckpointOverride_String__String__Boolean_" title="method in oracle.adf.view.js.profiling.AdfCheckpoint">AdfCheckpoint.setCheckpointOverride(String, String, Boolean)</a></code> for the profilers group to false.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="O_uninstrumentFunction_Object_" id="O_uninstrumentFunction_Object_"><!-- --></a></p>
+<h3 class="DetailHeader HiddenPrivate">_uninstrumentFunction</h3>
+<dl class="HiddenPrivate">
+<dt><code>private static <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> _uninstrumentFunction</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> func)</code></dt>
+<dd><br>
+<div>Removes instrumentation from a method and reverts the method back to its origional state.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>func</code></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr class="HiddenPrivate">
+<p><a name="unregister_Object__String_" id="unregister_Object__String_"><!-- --></a></p>
+<h3 class="DetailHeader">unregister</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> unregister</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd><br>
+<div>Unregisters methods which have been registered with the Javascript AdfProfiler. The profiler will undo changes made to the object by the Register method. It is important to note that collected data for this method will NOT be removed nor will the checkpoint. If the method name is null then every registered method on the object will be unregistered.</div>
+</dd>
+<dd><br>
+<dl>
+<dt><span class="DeprecatedIndicator">Deprecated:</span> <span class="DeprecatedDetail">use unregisterMethod</span></dt>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object that contains the instrumented method</td>
+</tr>
+<tr>
+<td valign="top"><code>methodName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the method to remove</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/error/Error.html" title="class in org.ecmascript.object.error">Error</a></code> if asserts are enabled and if object is null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="unregisterAll__" id="unregisterAll__"><!-- --></a></p>
+<h3 class="DetailHeader">unregisterAll</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> unregisterAll</strong>()</code></dt>
+<dd><br>
+<div>Unregisters all of the registered functions</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="unregisterFunction_String_" id="unregisterFunction_String_"><!-- --></a></p>
+<h3 class="DetailHeader">unregisterFunction</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> unregisterFunction</strong>(<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> functionName)</code></dt>
+<dd><br>
+<div>Unregisters functions that have been registered with the Javascript AdfProfiler. The profiler will undo changes made to the object by registerFunction. It is important to note that collected data for this function will NOT be removed nor will the checkpoint.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>functionName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name od the function to unregister from the profiler.</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/error/Error.html" title="class in org.ecmascript.object.error">Error</a></code> if asserts are enabled and if the functionName is null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="unregisterMethod_Object__String_" id="unregisterMethod_Object__String_"><!-- --></a></p>
+<h3 class="DetailHeader">unregisterMethod</h3>
+<dl>
+<dt><code>public <strong><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> unregisterMethod</strong>(<a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a> object,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> methodName)</code></dt>
+<dd><br>
+<div>Unregisters methods which have been registered with the Javascript AdfProfiler. The profiler will undo changes made to the object by the Register method. It is important to note that collected data for this method will NOT be removed nor will the checkpoint. If the method name is null then every registered method on the object will be unregistered.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>object</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the object that contains the instrumented method</td>
+</tr>
+<tr>
+<td valign="top"><code>methodName</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the name of the method to remove</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="../../../../../org/ecmascript/object/error/Error.html" title="class in org.ecmascript.object.error">Error</a></code> if asserts are enabled and if object is null</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../../../oracle/adf/view/js/event/AdfPopupOpeningEvent.html">PREV</a>&nbsp; &nbsp;<a href="../../../../../oracle/adf/view/js/profiling/AdfProfilerDataDetail.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../../../index.html?oracle/adf/view/js/profiling/AdfProfiler.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="AdfProfiler.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

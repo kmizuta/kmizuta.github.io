@@ -1,0 +1,1213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-US">
+<head>
+<title>String</title>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+<script type="text/javascript">
+function handleOnload()
+{
+  if ((""+self.location).indexOf("file://") == 0)
+    return;
+  if (parent.document.documentElement.getAttribute("showprivate")=="true")
+  {
+    document.body.setAttribute("showprivate", "true");
+  }
+  else
+  {
+    document.body.setAttribute("showprivate", "false");
+  }
+  parent.document.title="String";
+}
+function togglePrivate(desiredFlag)
+{
+  var currentFlag = document.body.getAttribute("showprivate")=="true";
+  var newFlag = "" + (!currentFlag);
+  if (desiredFlag != null)
+  {
+    newFlag = desiredFlag;
+  }  document.body.setAttribute("showprivate", newFlag);
+}
+</script>
+<meta name="generator" content="Oracle ST-Doc Jadey 2.3">
+</head>
+<body onload="handleOnload()">
+<h1 style="color:#0D4988;font-size:18px;font-weight:bold;font-family:Tahoma, Verdana,Helvetica,sans-serif"><img alt="Oracle" src="../../.././doc-files/logo-oracle-red.png" align="top">JavaScript API Reference for Oracle ADF Faces</h1>
+<!-- ====== START OF NAVBAR ====== -->
+<p><a name="navbar_top" id="navbar_top"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a name="navbar_top_firstrow" id="navbar_top_firstrow"><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/ecmascript/object/RegExp.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/ecmascript/object/error/SyntaxError.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/primitive/String.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="String.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<hr>
+<h1><span style="font-size: smaller">org.ecmascript.primitive</span><br>
+Class String</h1>
+<pre>
+<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">org.ecmascript.object.Object</a>
+   |
+   +--<strong>org.ecmascript.primitive.String</strong>
+</pre>
+<hr>
+<pre>
+public class <strong>String</strong>
+extends <a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a>
+</pre>
+<div>The native browser JavaScript object used to work with text.<br>
+An instance can also be created with the shorthand <code>"initial value"</code>.<br>
+<br>
+Note that this object is implemented and supported by the web browser and results of its use may vary.</div>
+<p><br></p>
+<hr>
+<p><a name="field_summary" id="field_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#length" title="field in this class">length</a></strong></code></dt>
+<dd>
+<div>The number of characters in the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="fields_inherited_from_class_org_ecmascript_object_Object" id="fields_inherited_from_class_org_ecmascript_object_Object"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr class="TableSubHeadingColor">
+<td>
+<h3>Fields inherited from org.ecmascript.object.<a href="../../../org/ecmascript/object/Object.html" title="class in org.ecmascript.object">Object</a></h3>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td><code><a href="../../../org/ecmascript/object/Object.html#constructor" title="field in org.ecmascript.object.Object">constructor</a>, <a href="../../../org/ecmascript/object/Object.html#prototype" title="field in org.ecmascript.object.Object">prototype</a></code></td>
+</tr>
+</table>
+<p><br>
+<a name="constructor_summary" id="constructor_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%"><code>public</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#String_String_" title="constructor in this class">String</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> value)</code></dt>
+<dd>
+<div>The native browser JavaScript object used to work with text.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="method_summary" id="method_summary"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Summary</h2>
+</th>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#anchor_String_" title="method in this class">anchor</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> name)</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>a</code> tag where the body of the tag is the value of the string and the specified value is the <code>name</code> attribute.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#big__" title="method in this class">big</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>big</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#blink__" title="method in this class">blink</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>blink</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#bold__" title="method in this class">bold</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>b</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#charAt_Number_" title="method in this class">charAt</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> index)</code></dt>
+<dd>
+<div>Retrieves the character in the string at the specified index.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#charCodeAt_Number_" title="method in this class">charCodeAt</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> index)</code></dt>
+<dd>
+<div>Retrieves the Unicode value of the character in the string at the specified index.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#concat_String____" title="method in this class">concat</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a>... stringToAppend)</code></dt>
+<dd>
+<div>Creates a new <code>String</code> that combines this <code>String</code> with the specified <code>String</code>s.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#fixed__" title="method in this class">fixed</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>tt</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#fontcolor_String_" title="method in this class">fontcolor</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> color)</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>font</code> tag where the body of the tag is the value of the string and the specified value is the <code>color</code> attribute.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#fontsize_String_" title="method in this class">fontsize</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> size)</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>font</code> tag where the body of the tag is the value of the string and the specified value is the <code>size</code> attribute.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public static <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#fromCharCode_Number____" title="method in this class">fromCharCode</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a>... charCodes)</code></dt>
+<dd>
+<div>Generates a new <code>String</code> using characters specified by Unicode values.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#indexOf_String__Number_" title="method in this class">indexOf</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> substring, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> startingIndex)</code></dt>
+<dd>
+<div>Retrieves the index at which the specified substring is found.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#italics__" title="method in this class">italics</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>i</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#lastIndexOf_String__Number_" title="method in this class">lastIndexOf</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> substring, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> startingIndex)</code></dt>
+<dd>
+<div>Retrieves the last index at which the specified substring is found.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#link_String_" title="method in this class">link</a></strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> href)</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>a</code> tag where the body of the tag is the value of the string and the specified value is the <code>href</code> attribute.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#match_RegExp_" title="method in this class">match</a></strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern)</code></dt>
+<dd>
+<div>Retrieves the match in this string for the given pattern.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#replace_RegExp__String_" title="method in this class">replace</a></strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern, <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> replacement)</code></dt>
+<dd>
+<div>Exchanges the match or matches in this string for the given pattern with the given replacement.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#search_RegExp_" title="method in this class">search</a></strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern)</code></dt>
+<dd>
+<div>Searches this string for the given pattern.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#slice_Number__Number_" title="method in this class">slice</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> start, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> end)</code></dt>
+<dd>
+<div>Retrieves a substring of of this string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#small__" title="method in this class">small</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>small</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a>&gt;</code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#split_RegExp__Number_" title="method in this class">split</a></strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> splitsToInclude)</code></dt>
+<dd>
+<div>Splits this string into an array of pieces.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#strike__" title="method in this class">strike</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>strike</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#sub__" title="method in this class">sub</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>sub</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#substr_Number__Number_" title="method in this class">substr</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> start, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> length)</code></dt>
+<dd>
+<div>Retrieves a substring of of this string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#substring_Number__Number_" title="method in this class">substring</a></strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> start, <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> end)</code></dt>
+<dd>
+<div>Retrieves a substring of of this string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#sup__" title="method in this class">sup</a></strong>()</code></dt>
+<dd>
+<div>Creates HTML markup representing an HTML <code>sup</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toLowerCase__" title="method in this class">toLowerCase</a></strong>()</code></dt>
+<dd>
+<div>Creates a lower case representation of this string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="TableRowColor">
+<td align="right" valign="top" width="1%" nowrap><code>public <a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code></td>
+<td>
+<dl>
+<dt><code><strong><a href="#toUpperCase__" title="method in this class">toUpperCase</a></strong>()</code></dt>
+<dd>
+<div>Creates an upper case representation of this string.</div>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+<a name="field_detail" id="field_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Field Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="length" id="length"><!-- --></a></p>
+<h3 class="DetailHeader">length</h3>
+<dl>
+<dt><code>public <a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> <strong>length</strong></code></dt>
+<dd><br>
+<div>The number of characters in the string.</div>
+</dd>
+</dl>
+<hr>
+<p><a name="constructor_detail" id="constructor_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Constructor Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="String_String_" id="String_String_"><!-- --></a></p>
+<h3 class="DetailHeader">String</h3>
+<dl>
+<dt><code>public <strong>String</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> value)</code></dt>
+<dd><br>
+<div>The native browser JavaScript object used to work with text.<br>
+An instance can also be created with the shorthand <code>"initial value"</code>.<br>
+<br>
+Note that this object is implemented and supported by the web browser and results of its use may vary.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>value</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the initial value</td>
+</tr>
+</table>
+</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="method_detail" id="method_detail"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="1" width="100%" cellpadding="3" cellspacing="0">
+<tr class="TableHeadingColor">
+<th align="left" colspan="2">
+<h2>Method Detail</h2>
+</th>
+</tr>
+</table>
+<p><br>
+<a name="anchor_String_" id="anchor_String_"><!-- --></a></p>
+<h3 class="DetailHeader">anchor</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> anchor</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> name)</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>a</code> tag where the body of the tag is the value of the string and the specified value is the <code>name</code> attribute.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>name</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the value to be used in the <code>name</code> attribute</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="big__" id="big__"><!-- --></a></p>
+<h3 class="DetailHeader">big</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> big</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>big</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="blink__" id="blink__"><!-- --></a></p>
+<h3 class="DetailHeader">blink</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> blink</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>blink</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="bold__" id="bold__"><!-- --></a></p>
+<h3 class="DetailHeader">bold</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> bold</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>b</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="charAt_Number_" id="charAt_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">charAt</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> charAt</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> index)</code></dt>
+<dd><br>
+<div>Retrieves the character in the string at the specified index.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>index</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the character index to retrieve</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - the specified character or empty string if no character was found</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="charCodeAt_Number_" id="charCodeAt_Number_"><!-- --></a></p>
+<h3 class="DetailHeader">charCodeAt</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> charCodeAt</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> index)</code></dt>
+<dd><br>
+<div>Retrieves the Unicode value of the character in the string at the specified index.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>index</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the character index to retrieve</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the Unicode value of the specified character or <code>Number.NaN</code> if no character was found</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="concat_String____" id="concat_String____"><!-- --></a></p>
+<h3 class="DetailHeader">concat</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> concat</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a>... stringToAppend)</code></dt>
+<dd><br>
+<div>Creates a new <code>String</code> that combines this <code>String</code> with the specified <code>String</code>s.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>stringToAppend</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the <code>String</code>s to append to this <code>String</code></td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a new <code>String</code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="fixed__" id="fixed__"><!-- --></a></p>
+<h3 class="DetailHeader">fixed</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> fixed</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>tt</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="fontcolor_String_" id="fontcolor_String_"><!-- --></a></p>
+<h3 class="DetailHeader">fontcolor</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> fontcolor</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> color)</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>font</code> tag where the body of the tag is the value of the string and the specified value is the <code>color</code> attribute.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>color</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the value to be used in the <code>color</code> attribute</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="fontsize_String_" id="fontsize_String_"><!-- --></a></p>
+<h3 class="DetailHeader">fontsize</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> fontsize</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> size)</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>font</code> tag where the body of the tag is the value of the string and the specified value is the <code>size</code> attribute.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>size</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the value (e.g. 1-7) to be used in the <code>size</code> attribute</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="fromCharCode_Number____" id="fromCharCode_Number____"><!-- --></a></p>
+<h3 class="DetailHeader">fromCharCode</h3>
+<dl>
+<dt><code>public static <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> fromCharCode</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a>... charCodes)</code></dt>
+<dd><br>
+<div>Generates a new <code>String</code> using characters specified by Unicode values.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>charCodes</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the Unicode values to be used to generate the <code>String</code></td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - a new <code>String</code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="indexOf_String__Number_" id="indexOf_String__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">indexOf</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> indexOf</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> substring,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> startingIndex)</code></dt>
+<dd><br>
+<div>Retrieves the index at which the specified substring is found.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>substring</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the substring to search for</td>
+</tr>
+<tr>
+<td valign="top"><code>startingIndex</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional index at which to begin the search
+<div class="DefaultValue">Default value = 0</div>
+</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the index where the substring was found or -1 if not found</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="italics__" id="italics__"><!-- --></a></p>
+<h3 class="DetailHeader">italics</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> italics</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>i</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="lastIndexOf_String__Number_" id="lastIndexOf_String__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">lastIndexOf</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> lastIndexOf</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> substring,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> startingIndex)</code></dt>
+<dd><br>
+<div>Retrieves the last index at which the specified substring is found.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>substring</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the substring to search for</td>
+</tr>
+<tr>
+<td valign="top"><code>startingIndex</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional index at which to begin the search
+<div class="DefaultValue">Default value = 0</div>
+</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the index where the substring was found or -1 if not found</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="link_String_" id="link_String_"><!-- --></a></p>
+<h3 class="DetailHeader">link</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> link</strong>(<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> href)</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>a</code> tag where the body of the tag is the value of the string and the specified value is the <code>href</code> attribute.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>href</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the value to be used in the <code>href</code> attribute</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="match_RegExp_" id="match_RegExp_"><!-- --></a></p>
+<h3 class="DetailHeader">match</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> match</strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern)</code></dt>
+<dd><br>
+<div>Retrieves the match in this string for the given pattern.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>pattern</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the regular expression pattern</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - the match in this string where the pattern matches, or null if not found</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="replace_RegExp__String_" id="replace_RegExp__String_"><!-- --></a></p>
+<h3 class="DetailHeader">replace</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> replace</strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> replacement)</code></dt>
+<dd><br>
+<div>Exchanges the match or matches in this string for the given pattern with the given replacement.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>pattern</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the regular expression pattern</td>
+</tr>
+<tr>
+<td valign="top"><code>replacement</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the replacement to use where the matches are found</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - this string where the pattern matches are exchanged with the replacement</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="search_RegExp_" id="search_RegExp_"><!-- --></a></p>
+<h3 class="DetailHeader">search</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> search</strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern)</code></dt>
+<dd><br>
+<div>Searches this string for the given pattern.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>pattern</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the regular expression pattern</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the index in this string where the pattern matches, or -1 if not found</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="slice_Number__Number_" id="slice_Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">slice</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> slice</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> start,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> end)</code></dt>
+<dd><br>
+<div>Retrieves a substring of of this string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>start</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional index at which to begin the substring; a negative number will cause the index to be counted at the end of the this string
+<div class="DefaultValue">Default value = 0</div>
+</td>
+</tr>
+<tr>
+<td valign="top"><code>end</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional index at which to end the search, the character at this index will not be included; a negative number will cause the index to be counted at the end of this string</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the specified substring</dd>
+<dt>See also:</dt>
+<dd><code><a href="#substr_Number__Number_" title="method in this class">substr(Number, Number)</a></code></dd>
+<dd><code><a href="#substring_Number__Number_" title="method in this class">substring(Number, Number)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="small__" id="small__"><!-- --></a></p>
+<h3 class="DetailHeader">small</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> small</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>small</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="split_RegExp__Number_" id="split_RegExp__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">split</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a>&gt; split</strong>(<a href="../../../org/ecmascript/object/RegExp.html" title="class in org.ecmascript.object">RegExp</a> pattern,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> splitsToInclude)</code></dt>
+<dd><br>
+<div>Splits this string into an array of pieces.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>pattern</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the regular expression pattern</td>
+</tr>
+<tr>
+<td valign="top"><code>splitsToInclude</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">optional number of splits to include in the result</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/object/Array.html" title="class in org.ecmascript.object">Array</a>&lt;<a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a>&gt;</code> - the split up sections of this string</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="strike__" id="strike__"><!-- --></a></p>
+<h3 class="DetailHeader">strike</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> strike</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>strike</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="sub__" id="sub__"><!-- --></a></p>
+<h3 class="DetailHeader">sub</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> sub</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>sub</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="substr_Number__Number_" id="substr_Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">substr</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> substr</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> start,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> length)</code></dt>
+<dd><br>
+<div>Retrieves a substring of of this string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>start</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional index at which to begin the substring; a negative number will cause the index to be counted at the end of the this string
+<div class="DefaultValue">Default value = 0</div>
+</td>
+</tr>
+<tr>
+<td valign="top"><code>length</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional number of characters to include; if not specified, all of the remaining characters will be included</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the specified substring</dd>
+<dt>See also:</dt>
+<dd><code><a href="#slice_Number__Number_" title="method in this class">slice(Number, Number)</a></code></dd>
+<dd><code><a href="#substring_Number__Number_" title="method in this class">substring(Number, Number)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="substring_Number__Number_" id="substring_Number__Number_"><!-- --></a></p>
+<h3 class="DetailHeader">substring</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> substring</strong>(<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> start,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a> end)</code></dt>
+<dd><br>
+<div>Retrieves a substring of of this string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Parameters:</dt>
+<dd>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><code>start</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional non-negative index at which to begin the substring
+<div class="DefaultValue">Default value = 0</div>
+</td>
+</tr>
+<tr>
+<td valign="top"><code>end</code></td>
+<td valign="top">&nbsp;-&nbsp;</td>
+<td valign="top">the optional non-negative index at which to end the search, the character at this index will not be included</td>
+</tr>
+</table>
+</dd>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/Number.html" title="class in org.ecmascript.primitive">Number</a></code> - the specified substring</dd>
+<dt>See also:</dt>
+<dd><code><a href="#slice_Number__Number_" title="method in this class">slice(Number, Number)</a></code></dd>
+<dd><code><a href="#substr_Number__Number_" title="method in this class">substr(Number, Number)</a></code></dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="sup__" id="sup__"><!-- --></a></p>
+<h3 class="DetailHeader">sup</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> sup</strong>()</code></dt>
+<dd><br>
+<div>Creates HTML markup representing an HTML <code>sup</code> tag where the body of the tag is the value of the string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - HTML markup</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toLowerCase__" id="toLowerCase__"><!-- --></a></p>
+<h3 class="DetailHeader">toLowerCase</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toLowerCase</strong>()</code></dt>
+<dd><br>
+<div>Creates a lower case representation of this string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - the lower case representation of this string</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<p><a name="toUpperCase__" id="toUpperCase__"><!-- --></a></p>
+<h3 class="DetailHeader">toUpperCase</h3>
+<dl>
+<dt><code>public <strong><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a> toUpperCase</strong>()</code></dt>
+<dd><br>
+<div>Creates an upper case representation of this string.</div>
+</dd>
+<dd><br>
+<dl>
+<dt>Return:</dt>
+<dd><code><a href="../../../org/ecmascript/primitive/String.html" title="class in org.ecmascript.primitive">String</a></code> - the upper case representation of this string</dd>
+</dl>
+</dd>
+</dl>
+<hr>
+<div><span style="font-size: smaller">SUMMARY: <a href="#field_summary">FIELD</a> | <a href="#constructor_summary">CONSTR</a> | <a href="#method_summary">METHOD</a>&nbsp;&nbsp;&nbsp;&nbsp;DETAIL: <a href="#field_detail">FIELD</a> | <a href="#constructor_detail">CONSTR</a> | <a href="#method_detail">METHOD</a></span></div>
+<!-- ====== START OF NAVBAR ====== -->
+<hr>
+<p><a name="navbar_bottom" id="navbar_bottom"><!-- --></a></p>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan="2" valign="top"><a><!-- --></a>
+<table class="oac_no_warn" summary="Layout table... probably." border="0" cellpadding="0" cellspacing="3" class="NavBarTable1">
+<tr align="center" valign="top">
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-summary.html"><span class="NavBarFont1"><strong>Overview</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="package-summary.html"><span class="NavBarFont1"><strong>Package</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1Rev">&nbsp;<span class="NavBarFont1Rev"><strong>Class</strong></span>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../overview-tree.html"><span class="NavBarFont1"><strong>Tree</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../deprecated-list.html"><span class="NavBarFont1"><strong>Deprecated</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../index-all.html"><span class="NavBarFont1"><strong>Index</strong></span></a>&nbsp;</td>
+<td class="NavBarCell1">&nbsp;<a href="../../../help-doc.html"><span class="NavBarFont1"><strong>Help</strong></span></a>&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="NavBarProjectCell" align="right"><em><strong><b>Oracle&reg; Fusion Middleware JavaScript API Reference for Oracle ADF Faces<br>
+11<i>g</i> Release 1 (11.1.1.9.0)<br>
+E52937-01</b></strong></em></td>
+</tr>
+<tr>
+<td class="NavBarCell2"><span style="font-size: smaller">&nbsp;<a href="../../../org/ecmascript/object/RegExp.html">PREV</a>&nbsp; &nbsp;<a href="../../../org/ecmascript/object/error/SyntaxError.html">NEXT</a>&nbsp;</span></td>
+<td class="NavBarCell2"><span style="font-size: smaller"><a href="../../../index.html?org/ecmascript/primitive/String.html" target="_top"><strong>FRAMES</strong></a> &nbsp; &nbsp;<a href="String.html" target="_top"><strong>NO FRAMES</strong></a> <script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes<\/strong><\/a>');
+  }
+  //-->
+</script> <noscript>&nbsp;&nbsp;<a href="../../../allclasses-noframe.html"><strong>All Classes</strong></a></noscript> &nbsp;&nbsp; <span class="HiddenPrivate PrivatesShownWarning">Warning: private items are visible</span></span></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!-- ====== END OF NAVBAR ====== -->
+<div class="CreationTime">Generated on 2015.03.13 19:33 UTC</div>
+<center>Copyright (c) 1998, 2015, Oracle and/or its affiliates. All rights reserved.</center>
+</body>
+</html>

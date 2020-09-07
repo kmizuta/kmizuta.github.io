@@ -1,0 +1,13 @@
+oracle.adf.controller.binding
+oracle.adf.controller.faces.lifecycle
+oracle.adf.controller.jsp.taglib
+oracle.adf.controller.lifecycle
+oracle.adf.controller.struts.actions
+oracle.adf.controller.struts.forms
+oracle.adf.controller.struts.util
+oracle.adf.controller.v2.context
+oracle.adf.controller.v2.lifecycle
+oracle.adf.controller.v2.struts.actions
+oracle.adf.controller.v2.struts.context
+oracle.adf.controller.v2.struts.forms
+oracle.adf.controller.v2.struts.lifecycle

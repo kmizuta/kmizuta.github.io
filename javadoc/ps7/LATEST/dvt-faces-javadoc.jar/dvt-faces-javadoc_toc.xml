@@ -1,0 +1,1224 @@
+<?xml version = '1.0'?>
+<toc version="1.0">
+   <tocitem text="Reference">
+      <tocitem text="Oracle Fusion Middleware Java API Reference for Oracle Data Visualization Components">
+         <tocitem text="Overview" target="dvt-faces-javadoc__overview-summary_html" topicType="external" image="javadocicon_png"/>
+         <tocitem text="Tree" target="dvt-faces-javadoc__overview-tree_html" topicType="external" image="javadocicon_png"/>
+         <tocitem text="Deprecated" target="dvt-faces-javadoc__deprecated-list_html" topicType="external" image="javadocicon_png"/>
+         <tocitem text="Index" target="dvt-faces-javadoc__index-files__index-1_html" topicType="external" image="javadocicon_png"/>
+         <tocitem text="Help" target="dvt-faces-javadoc__help-doc_html" topicType="external" image="javadocicon_png"/>
+         <tocitem text="Classes">
+            <tocitem text="oracle.adf.view.faces.bi">
+               <tocitem text="BIFacesException" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__BIFacesException_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.bean">
+               <tocitem text="BIFacesBeanImpl" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__bean__BIFacesBeanImpl_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.bean.BIFacesBeanImpl">
+               <tocitem text="Type" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__bean__BIFacesBeanImpl_Type_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.bean">
+               <tocitem text="BIPropertyKey" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__bean__BIPropertyKey_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component">
+               <tocitem text="BIComplexAttributeBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__BIComplexAttributeBase_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BIComponentBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__BIComponentBase_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIViewComponent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__UIViewComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewPersistable" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__ViewPersistable_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.attributeGroups">
+               <tocitem text="UIAttributeExceptionRule" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__attributeGroups__UIAttributeExceptionRule_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIAttributeGroups" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__attributeGroups__UIAttributeGroups_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIAttributeMatchRule" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__attributeGroups__UIAttributeMatchRule_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.chart">
+               <tocitem text="UIAreaChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIAreaChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIAxisBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIAxisBase_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIAxisLine" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIAxisLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIBarChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIBarChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIBubbleChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIBubbleChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIChartBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIChartBase_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIChartValueFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIChartValueFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIComboChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIComboChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDataItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIDataItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIFunnelChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIFunnelChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIFunnelDataItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIFunnelDataItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIHorizontalBarChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIHorizontalBarChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UILegend" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UILegend_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UILineChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UILineChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPieChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIPieChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPieDataItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIPieDataItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIScatterChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIScatterChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UISeriesStyle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UISeriesStyle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UITickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIXAxis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIXAxis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIY2Axis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIY2Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIYAxis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIYAxis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIYAxisBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__chart__UIYAxisBase_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.common">
+               <tocitem text="UIMajorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIMajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIMarker" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIMinorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIMinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIReferenceArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIReferenceArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIReferenceAreaItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIReferenceAreaItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIReferenceLine" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIReferenceLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIReferenceLineItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIReferenceLineItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIReferenceObjectBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__common__UIReferenceObjectBase_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.dataView">
+               <tocitem text="BaseFont" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__dataView__BaseFont_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDataView" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__dataView__UIDataView_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.diagram">
+               <tocitem text="UIClientLayout" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UIClientLayout_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDiagram" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UIDiagram_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDiagramLink" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UIDiagramLink_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDiagramLinks" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UIDiagramLinks_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDiagramNode" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UIDiagramNode_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDiagramNodes" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UIDiagramNodes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UILinkAttributes" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UILinkAttributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UINodeAttributes" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__diagram__UINodeAttributes_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.gantt">
+               <tocitem text="BackgroundBarFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__BackgroundBarFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Filter" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__Filter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FilterManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__FilterManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GanttCalendar" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__GanttCalendar_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GanttPrinter" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__GanttPrinter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InvalidScaleException" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__InvalidScaleException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Legend" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__Legend_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MetricFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__MetricFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TaskDragInfo" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__TaskDragInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TaskbarFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__TaskbarFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TaskbarFormatManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__TaskbarFormatManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeAxis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__TimeAxis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeAxisDateFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__TimeAxisDateFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGantt" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__UIGantt_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIProjectGantt" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__UIProjectGantt_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIResourceUtilizationGantt" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__UIResourceUtilizationGantt_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UISchedulingGantt" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__UISchedulingGantt_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UndoManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__UndoManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UndoableEdit" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__UndoableEdit_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Utils" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__Utils_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.gauge">
+               <tocitem text="BaseElement" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__BaseElement_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__BaseFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__BaseLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseLabelFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__BaseLabelFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseText" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__BaseText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BottomLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__BottomLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CoreGauge" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__CoreGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ElementA" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__ElementA_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ElementB" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__ElementB_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeBackground" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__GaugeBackground_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeFont" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__GaugeFont_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__GaugeFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugePersistable" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__GaugePersistable_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeSetBackground" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__GaugeSetBackground_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Indicator" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__Indicator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="IndicatorBar" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__IndicatorBar_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="IndicatorBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__IndicatorBase_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="IntersectionAB" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__IntersectionAB_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__LegendArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendText" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__LegendText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendTitle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__LegendTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LowerLabelFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__LowerLabelFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MetricLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__MetricLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PlotArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__PlotArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Threshold" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__Threshold_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThresholdSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__ThresholdSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TickMark" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__TickMark_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TopLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__TopLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDialGauge" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UIDialGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGauge" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UIGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGaugeBase" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UIGaugeBase_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UILedGauge" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UILedGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIMetricLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UIMetricLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIRatingGauge" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UIRatingGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIStatusMeterGauge" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UIStatusMeterGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIThreshold" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UIThreshold_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UITickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UpperLabelFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gauge__UpperLabelFrame_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.geoMap">
+               <tocitem text="BarChartThemeFOI" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__BarChartThemeFOI_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BarThemeInfoItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__BarThemeInfoItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BarThemeInfoSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__BarThemeInfoSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ColorThemeFOI" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__ColorThemeFOI_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataContent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__DataContent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendContent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__LegendContent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__LegendItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapConfiguration" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__MapConfiguration_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapInfoCallbackObject" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__MapInfoCallbackObject_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapStyleReader" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__MapStyleReader_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapUtil" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__MapUtil_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NSDPTheme" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__NSDPTheme_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PieChartThemeFOI" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__PieChartThemeFOI_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PointContent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__PointContent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PointFOI" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__PointFOI_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PointStyleItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__PointStyleItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PointStyleSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__PointStyleSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PredefinedThemeFOI" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__PredefinedThemeFOI_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Slice" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__Slice_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SliceSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__SliceSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThemeFOI" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__ThemeFOI_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThemeSelectionDialog" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__ThemeSelectionDialog_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGeoMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__UIGeoMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGeoMapLegend" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__UIGeoMapLegend_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGeoMapToolbar" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__UIGeoMapToolbar_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGeoOverviewMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__UIGeoOverviewMap_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.graph">
+               <tocitem text="ActiveDataProperties" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__ActiveDataProperties_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Alert" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Alert_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AlertSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__AlertSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Annotation" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Annotation_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AnnotationSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__AnnotationSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Background" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Background_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseAxis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseAxis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseAxisTitle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseAxisTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseDataAxis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseDataAxis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseDataAxisTickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseDataAxisTickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseLine" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseMajorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseMajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseMinorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseMinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTextComponent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseTextComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTitle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__BaseTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CoreGraph" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__CoreGraph_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataContext" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__DataContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataFilter" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__DataFilter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataSelection" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__DataSelection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FunnelFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__FunnelFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphContext" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphFont" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphFont_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphFootnote" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphFootnote_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphPersistable" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphPersistable_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSelection" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphSelection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSelectionAttributeChange" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphSelectionAttributeChange_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSelectionSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphSelectionSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSubtitle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphSubtitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphTitle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__LegendArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendText" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__LegendText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendTitle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__LegendTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MarkerText" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__MarkerText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1Axis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__O1Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1MajorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__O1MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1TickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__O1TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1Title" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__O1Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ParetoLine" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__ParetoLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ParetoMarker" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__ParetoMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PieFeeler" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__PieFeeler_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PieFrame" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__PieFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PieLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__PieLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PlotArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__PlotArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ReferenceObject" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__ReferenceObject_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ReferenceObjectSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__ReferenceObjectSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RichSparkChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__RichSparkChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectPointLegendText" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__SelectPointLegendText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectPointMarker" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__SelectPointMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Series" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Series_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SeriesSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__SeriesSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Slice" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Slice_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SliceLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__SliceLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="StockMarker" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__StockMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Threshold" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Threshold_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThresholdSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__ThresholdSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeAxisDateFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__TimeAxisDateFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeSelector" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__TimeSelector_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGraph" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__UIGraph_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UISparkChart" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__UISparkChart_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UISparkItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__UISparkItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="VolumeMarker" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__VolumeMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1Axis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__X1Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1MajorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__X1MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1MinorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__X1MinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1TickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__X1TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1Title" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__X1Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1Axis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y1Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1BaseLine" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y1BaseLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1MajorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y1MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1MinorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y1MinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1TickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y1TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1Title" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y1Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2Axis" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y2Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2BaseLine" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y2BaseLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2MajorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y2MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2MinorTick" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y2MinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2TickLabel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y2TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2Title" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__Y2Title_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.hierarchyViewer">
+               <tocitem text="Link" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__Link_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Node" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__Node_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PanelCard" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__PanelCard_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Search" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__Search_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SearchResults" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__SearchResults_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIHierarchyViewer" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__UIHierarchyViewer_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.imageView">
+               <tocitem text="GradientStopStyle" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__GradientStopStyle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ShapeAttributes" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__ShapeAttributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ShapeAttributesSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__ShapeAttributesSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SpecialEffects" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__SpecialEffects_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Threshold" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__Threshold_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThresholdSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__ThresholdSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIImageView" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__UIImageView_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.legend">
+               <tocitem text="UILegend" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__legend__UILegend_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UILegendSection" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__legend__UILegendSection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIShowLegendGroup" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__legend__UIShowLegendGroup_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.nBox">
+               <tocitem text="UINBox" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__nBox__UINBox_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UINBoxCell" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__nBox__UINBoxCell_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UINBoxColumn" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__nBox__UINBoxColumn_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UINBoxNode" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__nBox__UINBoxNode_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UINBoxRow" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__nBox__UINBoxRow_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.overview">
+               <tocitem text="UIOverview" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__overview__UIOverview_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.overviewWindow">
+               <tocitem text="UIOverviewWindow" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__overviewWindow__UIOverviewWindow_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.palette">
+               <tocitem text="UIPalette" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__palette__UIPalette_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPaletteItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__palette__UIPaletteItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPaletteLink" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__palette__UIPaletteLink_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPaletteLinkDefs" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__palette__UIPaletteLinkDefs_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPaletteSection" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__palette__UIPaletteSection_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.pivotFilterBar">
+               <tocitem text="UIPivotFilterBar" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotFilterBar__UIPivotFilterBar_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.pivotTable">
+               <tocitem text="CellFormat" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__CellFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CellImage" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__CellImage_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CellRange" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__CellRange_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataBlock" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__DataBlock_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCellContext" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__DataCellContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCellRange" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__DataCellRange_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCellSelectionSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__DataCellSelectionSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataFormatManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__DataFormatManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderCellContext" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__HeaderCellContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderCellRange" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__HeaderCellRange_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderCellSelectionSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__HeaderCellSelectionSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderFormatManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__HeaderFormatManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayerSizingRule" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__LayerSizingRule_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayerSizingRuleImpl" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__LayerSizingRuleImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Member" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__Member_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Selection" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__Selection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectionSet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SelectionSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SerializableLayerSizingRuleImpl" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SerializableLayerSizingRuleImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SerializableMember" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SerializableMember_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SerializableSliceSizingRuleImpl" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SerializableSliceSizingRuleImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SizingManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SizingManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SizingManagerAttributeChange" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SizingManagerAttributeChange_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SizingManagerImpl" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SizingManagerImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SizingRule" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SizingRule_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SliceSizingRule" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SliceSizingRule_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SliceSizingRuleImpl" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__SliceSizingRuleImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDataCell" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIDataCell_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGrid" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIGrid_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.pivotTable.UIGrid">
+               <tocitem text="DefaultClientKeyManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIGrid_DefaultClientKeyManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NullCellKey" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIGrid_NullCellKey_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.pivotTable">
+               <tocitem text="UIHeaderCell" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIHeaderCell_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPivotTable" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIPivotTable_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.pivotTable.UIPivotTable">
+               <tocitem text="DataCellHeaderCellsMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIPivotTable_DataCellHeaderCellsMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="EdgeLayerIndex" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIPivotTable_EdgeLayerIndex_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderCellMetadata" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIPivotTable_HeaderCellMetadata_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayersMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIPivotTable_LayersMap_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.sunburst">
+               <tocitem text="UISunburst" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__sunburst__UISunburst_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UISunburstNode" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__sunburst__UISunburstNode_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.thematicMap">
+               <tocitem text="UIArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIAreaDataLayer" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIAreaDataLayer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIAreaLayer" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIAreaLayer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIAreaLocation" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIAreaLocation_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UICustomArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UICustomArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UICustomAreaLayer" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UICustomAreaLayer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDataLayer" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIDataLayer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPointDataLayer" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIPointDataLayer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIPointLocation" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIPointLocation_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIThematicMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__UIThematicMap_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.thematicMap.mapProvider">
+               <tocitem text="LayerArea" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__mapProvider__LayerArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapProvider" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__mapProvider__MapProvider_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.thematicMap.mapProvider.utils">
+               <tocitem text="MapProviderUtils" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__thematicMap__mapProvider__utils__MapProviderUtils_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.timeline">
+               <tocitem text="FormattedTimeRange" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__timeline__FormattedTimeRange_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITimeline" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__timeline__UITimeline_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITimelineItem" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__timeline__UITimelineItem_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITimelineOverview" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__timeline__UITimelineOverview_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITimelineSeries" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__timeline__UITimelineSeries_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.treemap">
+               <tocitem text="UITreemap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__treemap__UITreemap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITreemapNode" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__treemap__UITreemapNode_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITreemapNodeHeader" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__treemap__UITreemapNodeHeader_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.dnd">
+               <tocitem text="GraphDragContext" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__dnd__GraphDragContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphDropSite" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__dnd__GraphDropSite_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapDragContext" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__dnd__MapDragContext_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event">
+               <tocitem text="BaseZoomAndScrollEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__BaseZoomAndScrollEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ClickEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ClickEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataChangeEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DataChangeEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DoubleClickEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DoubleClickEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DrillEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillReplaceEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DrillReplaceEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FilterEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__FilterEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GanttActionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__GanttActionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapClickActionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__MapClickActionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapSelectionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__MapSelectionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapThemeChangeEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__MapThemeChangeEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapZoomChangeEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__MapZoomChangeEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PageEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__PageEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PivotEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__PivotEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PointSelectionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__PointSelectionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ResourceSelectionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ResourceSelectionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ScrollEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ScrollEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TaskSelectionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TaskSelectionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThematicMapClickEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ThematicMapClickEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThematicMapEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ThematicMapEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeAxisEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeAxisEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeBucketDoubleClickEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeBucketDoubleClickEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeBucketSelectionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeBucketSelectionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeSelectorEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeSelectorEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZoomAndScrollEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ZoomAndScrollEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZoomEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ZoomEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.chart">
+               <tocitem text="ChartSelectionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__chart__ChartSelectionEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.diagram">
+               <tocitem text="DiagramChangeLinkEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DiagramChangeLinkEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DiagramCreateLinkEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DiagramCreateLinkEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DiagramCreateNodeEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DiagramCreateNodeEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DiagramDeleteLinkEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DiagramDeleteLinkEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DiagramDeleteNodeEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DiagramDeleteNodeEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DvtActionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DvtActionEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.graph">
+               <tocitem text="SelectionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__graph__SelectionEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.hierarchyViewer">
+               <tocitem text="NodeActionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__hierarchyViewer__NodeActionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NodeEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__hierarchyViewer__NodeEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NodeExpandChildrenEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__hierarchyViewer__NodeExpandChildrenEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ResultEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__hierarchyViewer__ResultEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.pivotFilterBar">
+               <tocitem text="QueryPivotEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__pivotFilterBar__QueryPivotEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.pivotTable">
+               <tocitem text="CellImageClickEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__pivotTable__CellImageClickEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SortEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__pivotTable__SortEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.thematicMap">
+               <tocitem text="ThematicMapActionEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__thematicMap__ThematicMapActionEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.timeline">
+               <tocitem text="TimeRangeChangeEvent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__timeline__TimeRangeChangeEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.model">
+               <tocitem text="ActiveDataModelDecorator" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ActiveDataModelDecorator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ActiveGaugeDataModelDecorator" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ActiveGaugeDataModelDecorator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ActiveGeoMapDataModelDecorator" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ActiveGeoMapDataModelDecorator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CellIndex" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__CellIndex_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CellKey" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__CellKey_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ClientKeyManager" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ClientKeyManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCellIndex" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__DataCellIndex_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCellKey" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__DataCellKey_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataModel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__DataModel_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.model.DataModel">
+               <tocitem text="DataValueMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__DataModel_DataValueMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderValueMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__DataModel_HeaderValueMap_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.model">
+               <tocitem text="GaugeDataModel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__GaugeDataModel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GenericGeoObject" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__GenericGeoObject_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GeoMapDataModel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__GeoMapDataModel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GeoObject" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__GeoObject_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GeoRowObject" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__GeoRowObject_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GeocodedObject" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__GeocodedObject_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphDataModel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__GraphDataModel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderCellIndex" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__HeaderCellIndex_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderCellKey" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__HeaderCellKey_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ImageViewDataModel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ImageViewDataModel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="KeyMap" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__KeyMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PivotTableModel" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__PivotTableModel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PivotableQueryDescriptor" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__PivotableQueryDescriptor_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.webapp">
+               <tocitem text="GaugeServlet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__webapp__GaugeServlet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphServlet" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__webapp__GraphServlet_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView">
+               <tocitem text="AdornmentLayout" target="dvt-faces-javadoc__oracle__dss__dataView__AdornmentLayout_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AlertEvent" target="dvt-faces-javadoc__oracle__dss__dataView__AlertEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AnnotationComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__AnnotationComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AttributeFormatUtils" target="dvt-faces-javadoc__oracle__dss__dataView__AttributeFormatUtils_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Attributes" target="dvt-faces-javadoc__oracle__dss__dataView__Attributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseComponentXML" target="dvt-faces-javadoc__oracle__dss__dataView__BaseComponentXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseMergeableHandle" target="dvt-faces-javadoc__oracle__dss__dataView__BaseMergeableHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BasePayloadHelper" target="dvt-faces-javadoc__oracle__dss__dataView__BasePayloadHelper_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTitle" target="dvt-faces-javadoc__oracle__dss__dataView__BaseTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTitleXML" target="dvt-faces-javadoc__oracle__dss__dataView__BaseTitleXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BorderPainter" target="dvt-faces-javadoc__oracle__dss__dataView__BorderPainter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BoxPlotDataComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__BoxPlotDataComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BubbleDataComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__BubbleDataComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CSSStyle" target="dvt-faces-javadoc__oracle__dss__dataView__CSSStyle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CellBorderPainter" target="dvt-faces-javadoc__oracle__dss__dataView__CellBorderPainter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ColumnComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__ColumnComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ColumnRangeComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__ColumnRangeComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CommonBaseTitle" target="dvt-faces-javadoc__oracle__dss__dataView__CommonBaseTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CommonDataview" target="dvt-faces-javadoc__oracle__dss__dataView__CommonDataview_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView.CommonDataview">
+               <tocitem text="DefaultAttributeFormatter" target="dvt-faces-javadoc__oracle__dss__dataView__CommonDataview_DefaultAttributeFormatter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NullObject" target="dvt-faces-javadoc__oracle__dss__dataView__CommonDataview_NullObject_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView">
+               <tocitem text="ComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__ComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ConditionElement" target="dvt-faces-javadoc__oracle__dss__dataView__ConditionElement_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ControllerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ControllerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ControllerEvent" target="dvt-faces-javadoc__oracle__dss__dataView__ControllerEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ControllerListenerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ControllerListenerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__DataComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataHintEncoder" target="dvt-faces-javadoc__oracle__dss__dataView__DataHintEncoder_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataListenerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__DataListenerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataRangeComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__DataRangeComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataSubsetRecord" target="dvt-faces-javadoc__oracle__dss__dataView__DataSubsetRecord_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataUpdateCache" target="dvt-faces-javadoc__oracle__dss__dataView__DataUpdateCache_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Dataview" target="dvt-faces-javadoc__oracle__dss__dataView__Dataview_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewDefaultValues" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewDefaultValues_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewEvent" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewUtils" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewUtils_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewXML" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DimensionMetadata" target="dvt-faces-javadoc__oracle__dss__dataView__DimensionMetadata_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__DrillComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillEvent" target="dvt-faces-javadoc__oracle__dss__dataView__DrillEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="EdgeComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__EdgeComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="EdgeRangeComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__EdgeRangeComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FontList" target="dvt-faces-javadoc__oracle__dss__dataView__FontList_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Footnote" target="dvt-faces-javadoc__oracle__dss__dataView__Footnote_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FootnoteXML" target="dvt-faces-javadoc__oracle__dss__dataView__FootnoteXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GroupComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__GroupComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HeaderAndFooterPainter" target="dvt-faces-javadoc__oracle__dss__dataView__HeaderAndFooterPainter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ImageViewExportXMLWriter" target="dvt-faces-javadoc__oracle__dss__dataView__ImageViewExportXMLWriter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LocalDataSource" target="dvt-faces-javadoc__oracle__dss__dataView__LocalDataSource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LocalPivotTableDataSource" target="dvt-faces-javadoc__oracle__dss__dataView__LocalPivotTableDataSource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LocalXMLDataSource" target="dvt-faces-javadoc__oracle__dss__dataView__LocalXMLDataSource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ManagerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ManagerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ModelAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ModelAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NonDataComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__NonDataComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NonDataIndexComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__NonDataIndexComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PageEvent" target="dvt-faces-javadoc__oracle__dss__dataView__PageEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PaginationRecord" target="dvt-faces-javadoc__oracle__dss__dataView__PaginationRecord_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PivotEvent" target="dvt-faces-javadoc__oracle__dss__dataView__PivotEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RowComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__RowComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RowRangeComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__RowRangeComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ScatterDataComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__ScatterDataComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectEvent" target="dvt-faces-javadoc__oracle__dss__dataView__SelectEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SeriesComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__SeriesComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SizeEvent" target="dvt-faces-javadoc__oracle__dss__dataView__SizeEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="StockDataComponentHandle" target="dvt-faces-javadoc__oracle__dss__dataView__StockDataComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Subtitle" target="dvt-faces-javadoc__oracle__dss__dataView__Subtitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SubtitleXML" target="dvt-faces-javadoc__oracle__dss__dataView__SubtitleXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThresholdOutOfRangeException" target="dvt-faces-javadoc__oracle__dss__dataView__ThresholdOutOfRangeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Title" target="dvt-faces-javadoc__oracle__dss__dataView__Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TitleXML" target="dvt-faces-javadoc__oracle__dss__dataView__TitleXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TokenSubstitutionAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__TokenSubstitutionAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TokenSubstitutionExtendedAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__TokenSubstitutionExtendedAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDataviewAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__UIDataviewAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewControllerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ViewControllerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewFocusEvent" target="dvt-faces-javadoc__oracle__dss__dataView__ViewFocusEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewFocusListenerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ViewFocusListenerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewFormatHandle" target="dvt-faces-javadoc__oracle__dss__dataView__ViewFormatHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewKeyEvent" target="dvt-faces-javadoc__oracle__dss__dataView__ViewKeyEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewKeyListenerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ViewKeyListenerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewListenerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ViewListenerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewMouseEvent" target="dvt-faces-javadoc__oracle__dss__dataView__ViewMouseEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewMouseListenerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ViewMouseListenerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewMouseMotionListenerAdapter" target="dvt-faces-javadoc__oracle__dss__dataView__ViewMouseMotionListenerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewPrinter" target="dvt-faces-javadoc__oracle__dss__dataView__ViewPrinter_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView.ViewPrinter">
+               <tocitem text="HPosWrapper" target="dvt-faces-javadoc__oracle__dss__dataView__ViewPrinter_HPosWrapper_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView">
+               <tocitem text="ViewStyleHandle" target="dvt-faces-javadoc__oracle__dss__dataView__ViewStyleHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="XMLWriterCallback" target="dvt-faces-javadoc__oracle__dss__dataView__XMLWriterCallback_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView.managers">
+               <tocitem text="DrillOutLink" target="dvt-faces-javadoc__oracle__dss__dataView__managers__DrillOutLink_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RuleManager" target="dvt-faces-javadoc__oracle__dss__dataView__managers__RuleManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewFormat" target="dvt-faces-javadoc__oracle__dss__dataView__managers__ViewFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewSizing" target="dvt-faces-javadoc__oracle__dss__dataView__managers__ViewSizing_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewStyle" target="dvt-faces-javadoc__oracle__dss__dataView__managers__ViewStyle_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.gauge">
+               <tocitem text="BaseElement" target="dvt-faces-javadoc__oracle__dss__gauge__BaseElement_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseFrame" target="dvt-faces-javadoc__oracle__dss__gauge__BaseFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseGaugeComponent" target="dvt-faces-javadoc__oracle__dss__gauge__BaseGaugeComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseLabel" target="dvt-faces-javadoc__oracle__dss__gauge__BaseLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseText" target="dvt-faces-javadoc__oracle__dss__gauge__BaseText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BottomLabel" target="dvt-faces-javadoc__oracle__dss__gauge__BottomLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CommonGauge" target="dvt-faces-javadoc__oracle__dss__gauge__CommonGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CustomShape" target="dvt-faces-javadoc__oracle__dss__gauge__CustomShape_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CustomShapesParser" target="dvt-faces-javadoc__oracle__dss__gauge__CustomShapesParser_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataSpecification" target="dvt-faces-javadoc__oracle__dss__gauge__DataSpecification_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DialGauge" target="dvt-faces-javadoc__oracle__dss__gauge__DialGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrawableObject" target="dvt-faces-javadoc__oracle__dss__gauge__DrawableObject_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.gauge.DrawableObject">
+               <tocitem text="Image" target="dvt-faces-javadoc__oracle__dss__gauge__DrawableObject_Image_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Label" target="dvt-faces-javadoc__oracle__dss__gauge__DrawableObject_Label_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Shape" target="dvt-faces-javadoc__oracle__dss__gauge__DrawableObject_Shape_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TickLabel" target="dvt-faces-javadoc__oracle__dss__gauge__DrawableObject_TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Transform" target="dvt-faces-javadoc__oracle__dss__gauge__DrawableObject_Transform_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.gauge">
+               <tocitem text="ElementA" target="dvt-faces-javadoc__oracle__dss__gauge__ElementA_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ElementB" target="dvt-faces-javadoc__oracle__dss__gauge__ElementB_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Gauge" target="dvt-faces-javadoc__oracle__dss__gauge__Gauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeBackground" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeBackground_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeControllerAdapter" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeControllerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeDefaultValues" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeDefaultValues_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeEngine" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeEngine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeException" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeExportXMLWriter" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeExportXMLWriter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeFrame" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeLayout" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeLayout_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeLocalDataSource" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeLocalDataSource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeModelAdapter" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeModelAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugePanel" target="dvt-faces-javadoc__oracle__dss__gauge__GaugePanel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeSVGWriter" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeSVGWriter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeSetBackground" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeSetBackground_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeSetTitle" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeSetTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeType" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeType_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeXML" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeXMLWriterCallback" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeXMLWriterCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Graphics2DRenderer" target="dvt-faces-javadoc__oracle__dss__gauge__Graphics2DRenderer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Indicator" target="dvt-faces-javadoc__oracle__dss__gauge__Indicator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="IntersectionAB" target="dvt-faces-javadoc__oracle__dss__gauge__IntersectionAB_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="KPIStyleCallback" target="dvt-faces-javadoc__oracle__dss__gauge__KPIStyleCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LEDGauge" target="dvt-faces-javadoc__oracle__dss__gauge__LEDGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LEDStyleCallback" target="dvt-faces-javadoc__oracle__dss__gauge__LEDStyleCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LabelGauge" target="dvt-faces-javadoc__oracle__dss__gauge__LabelGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendArea" target="dvt-faces-javadoc__oracle__dss__gauge__LegendArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendText" target="dvt-faces-javadoc__oracle__dss__gauge__LegendText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendTitle" target="dvt-faces-javadoc__oracle__dss__gauge__LegendTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LowerLabelFrame" target="dvt-faces-javadoc__oracle__dss__gauge__LowerLabelFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MetricLabel" target="dvt-faces-javadoc__oracle__dss__gauge__MetricLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MetricOutOfBoundsException" target="dvt-faces-javadoc__oracle__dss__gauge__MetricOutOfBoundsException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MetricUnavailableException" target="dvt-faces-javadoc__oracle__dss__gauge__MetricUnavailableException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PlotArea" target="dvt-faces-javadoc__oracle__dss__gauge__PlotArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SFX" target="dvt-faces-javadoc__oracle__dss__gauge__SFX_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SVGParser" target="dvt-faces-javadoc__oracle__dss__gauge__SVGParser_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SVGShapesHandler" target="dvt-faces-javadoc__oracle__dss__gauge__SVGShapesHandler_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="StatusMeterGauge" target="dvt-faces-javadoc__oracle__dss__gauge__StatusMeterGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Threshold" target="dvt-faces-javadoc__oracle__dss__gauge__Threshold_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThresholdComponentHandle" target="dvt-faces-javadoc__oracle__dss__gauge__ThresholdComponentHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThresholdSFX" target="dvt-faces-javadoc__oracle__dss__gauge__ThresholdSFX_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TickLabel" target="dvt-faces-javadoc__oracle__dss__gauge__TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TickMark" target="dvt-faces-javadoc__oracle__dss__gauge__TickMark_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ToolTips" target="dvt-faces-javadoc__oracle__dss__gauge__ToolTips_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TopLabel" target="dvt-faces-javadoc__oracle__dss__gauge__TopLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UpperLabelFrame" target="dvt-faces-javadoc__oracle__dss__gauge__UpperLabelFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="VennGauge" target="dvt-faces-javadoc__oracle__dss__gauge__VennGauge_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="VerticalStatusMeterGauge" target="dvt-faces-javadoc__oracle__dss__gauge__VerticalStatusMeterGauge_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph">
+               <tocitem text="Alert" target="dvt-faces-javadoc__oracle__dss__graph__Alert_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Annotation" target="dvt-faces-javadoc__oracle__dss__graph__Annotation_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AreaMarker" target="dvt-faces-javadoc__oracle__dss__graph__AreaMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Base3DPanel" target="dvt-faces-javadoc__oracle__dss__graph__Base3DPanel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseAxisTitle" target="dvt-faces-javadoc__oracle__dss__graph__BaseAxisTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseBorderLine" target="dvt-faces-javadoc__oracle__dss__graph__BaseBorderLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseDataAxis" target="dvt-faces-javadoc__oracle__dss__graph__BaseDataAxis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseDataComponent" target="dvt-faces-javadoc__oracle__dss__graph__BaseDataComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseFrame" target="dvt-faces-javadoc__oracle__dss__graph__BaseFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseGraphComponent" target="dvt-faces-javadoc__oracle__dss__graph__BaseGraphComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseGraphFrame" target="dvt-faces-javadoc__oracle__dss__graph__BaseGraphFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseGraphTitle" target="dvt-faces-javadoc__oracle__dss__graph__BaseGraphTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseLegendMarker" target="dvt-faces-javadoc__oracle__dss__graph__BaseLegendMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseLegendText" target="dvt-faces-javadoc__oracle__dss__graph__BaseLegendText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseLine" target="dvt-faces-javadoc__oracle__dss__graph__BaseLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseMajorTick" target="dvt-faces-javadoc__oracle__dss__graph__BaseMajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseMinorTick" target="dvt-faces-javadoc__oracle__dss__graph__BaseMinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseText" target="dvt-faces-javadoc__oracle__dss__graph__BaseText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTickLabel" target="dvt-faces-javadoc__oracle__dss__graph__BaseTickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTitle" target="dvt-faces-javadoc__oracle__dss__graph__BaseTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CommonGraph" target="dvt-faces-javadoc__oracle__dss__graph__CommonGraph_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph.CommonGraph">
+               <tocitem text="GraphBadDogCallback" target="dvt-faces-javadoc__oracle__dss__graph__CommonGraph_GraphBadDogCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphTDGListener" target="dvt-faces-javadoc__oracle__dss__graph__CommonGraph_GraphTDGListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph">
+               <tocitem text="Connector" target="dvt-faces-javadoc__oracle__dss__graph__Connector_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCallback" target="dvt-faces-javadoc__oracle__dss__graph__DataCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataEndPoints" target="dvt-faces-javadoc__oracle__dss__graph__DataEndPoints_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataFilterImpl" target="dvt-faces-javadoc__oracle__dss__graph__DataFilterImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataLine" target="dvt-faces-javadoc__oracle__dss__graph__DataLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataMarker" target="dvt-faces-javadoc__oracle__dss__graph__DataMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataSelection" target="dvt-faces-javadoc__oracle__dss__graph__DataSelection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataStyleContext" target="dvt-faces-javadoc__oracle__dss__graph__DataStyleContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataTickLabelInfo" target="dvt-faces-javadoc__oracle__dss__graph__DataTickLabelInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillDataCallback" target="dvt-faces-javadoc__oracle__dss__graph__DrillDataCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillMarker" target="dvt-faces-javadoc__oracle__dss__graph__DrillMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillText" target="dvt-faces-javadoc__oracle__dss__graph__DrillText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ExceptionalRiser" target="dvt-faces-javadoc__oracle__dss__graph__ExceptionalRiser_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Fitline" target="dvt-faces-javadoc__oracle__dss__graph__Fitline_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FunnelFrame" target="dvt-faces-javadoc__oracle__dss__graph__FunnelFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Graph" target="dvt-faces-javadoc__oracle__dss__graph__Graph_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphBackground" target="dvt-faces-javadoc__oracle__dss__graph__GraphBackground_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphControllerAdapter" target="dvt-faces-javadoc__oracle__dss__graph__GraphControllerAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphDefaultValues" target="dvt-faces-javadoc__oracle__dss__graph__GraphDefaultValues_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphEvent" target="dvt-faces-javadoc__oracle__dss__graph__GraphEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphEventHandler" target="dvt-faces-javadoc__oracle__dss__graph__GraphEventHandler_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphExtendedStyleManager" target="dvt-faces-javadoc__oracle__dss__graph__GraphExtendedStyleManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphFont" target="dvt-faces-javadoc__oracle__dss__graph__GraphFont_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphFootnote" target="dvt-faces-javadoc__oracle__dss__graph__GraphFootnote_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphModelAdapter" target="dvt-faces-javadoc__oracle__dss__graph__GraphModelAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphNumberFormatCallback" target="dvt-faces-javadoc__oracle__dss__graph__GraphNumberFormatCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphPrinter" target="dvt-faces-javadoc__oracle__dss__graph__GraphPrinter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSelection" target="dvt-faces-javadoc__oracle__dss__graph__GraphSelection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSelectionSet" target="dvt-faces-javadoc__oracle__dss__graph__GraphSelectionSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSubtitle" target="dvt-faces-javadoc__oracle__dss__graph__GraphSubtitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphTitle" target="dvt-faces-javadoc__oracle__dss__graph__GraphTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphTypeAndSubtype" target="dvt-faces-javadoc__oracle__dss__graph__GraphTypeAndSubtype_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphUtils" target="dvt-faces-javadoc__oracle__dss__graph__GraphUtils_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphXML" target="dvt-faces-javadoc__oracle__dss__graph__GraphXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphXMLWriterCallback" target="dvt-faces-javadoc__oracle__dss__graph__GraphXMLWriterCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ImagemapComponent" target="dvt-faces-javadoc__oracle__dss__graph__ImagemapComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="KeyMap" target="dvt-faces-javadoc__oracle__dss__graph__KeyMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendArea" target="dvt-faces-javadoc__oracle__dss__graph__LegendArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendMarker" target="dvt-faces-javadoc__oracle__dss__graph__LegendMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendText" target="dvt-faces-javadoc__oracle__dss__graph__LegendText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendTitle" target="dvt-faces-javadoc__oracle__dss__graph__LegendTitle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MarkerText" target="dvt-faces-javadoc__oracle__dss__graph__MarkerText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NotEnoughData" target="dvt-faces-javadoc__oracle__dss__graph__NotEnoughData_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1Axis" target="dvt-faces-javadoc__oracle__dss__graph__O1Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1DrillLabel" target="dvt-faces-javadoc__oracle__dss__graph__O1DrillLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1MajorTick" target="dvt-faces-javadoc__oracle__dss__graph__O1MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1TickLabel" target="dvt-faces-javadoc__oracle__dss__graph__O1TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="O1Title" target="dvt-faces-javadoc__oracle__dss__graph__O1Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="OrdinalTickLabelInfo" target="dvt-faces-javadoc__oracle__dss__graph__OrdinalTickLabelInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PFJ" target="dvt-faces-javadoc__oracle__dss__graph__PFJ_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PFJDateFormat" target="dvt-faces-javadoc__oracle__dss__graph__PFJDateFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PanelGrid" target="dvt-faces-javadoc__oracle__dss__graph__PanelGrid_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ParetoLine" target="dvt-faces-javadoc__oracle__dss__graph__ParetoLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ParetoMarker" target="dvt-faces-javadoc__oracle__dss__graph__ParetoMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PieFeeler" target="dvt-faces-javadoc__oracle__dss__graph__PieFeeler_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PieFrame" target="dvt-faces-javadoc__oracle__dss__graph__PieFrame_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PieLabel" target="dvt-faces-javadoc__oracle__dss__graph__PieLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PlotArea" target="dvt-faces-javadoc__oracle__dss__graph__PlotArea_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="QuadrantLine" target="dvt-faces-javadoc__oracle__dss__graph__QuadrantLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ReferenceObject" target="dvt-faces-javadoc__oracle__dss__graph__ReferenceObject_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ReferenceObjectMarker" target="dvt-faces-javadoc__oracle__dss__graph__ReferenceObjectMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ReferenceObjectText" target="dvt-faces-javadoc__oracle__dss__graph__ReferenceObjectText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RingTotalLabel" target="dvt-faces-javadoc__oracle__dss__graph__RingTotalLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SFX" target="dvt-faces-javadoc__oracle__dss__graph__SFX_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SampleDataSource" target="dvt-faces-javadoc__oracle__dss__graph__SampleDataSource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Scrollbar" target="dvt-faces-javadoc__oracle__dss__graph__Scrollbar_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectPointLegendMarker" target="dvt-faces-javadoc__oracle__dss__graph__SelectPointLegendMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectPointLegendText" target="dvt-faces-javadoc__oracle__dss__graph__SelectPointLegendText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectPointMarker" target="dvt-faces-javadoc__oracle__dss__graph__SelectPointMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectionEvent" target="dvt-faces-javadoc__oracle__dss__graph__SelectionEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Series" target="dvt-faces-javadoc__oracle__dss__graph__Series_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Slice" target="dvt-faces-javadoc__oracle__dss__graph__Slice_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SliceLabel" target="dvt-faces-javadoc__oracle__dss__graph__SliceLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SplitDivider" target="dvt-faces-javadoc__oracle__dss__graph__SplitDivider_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="StockMarker" target="dvt-faces-javadoc__oracle__dss__graph__StockMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Subtype" target="dvt-faces-javadoc__oracle__dss__graph__Subtype_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThreeDFloor" target="dvt-faces-javadoc__oracle__dss__graph__ThreeDFloor_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThreeDLeftWall" target="dvt-faces-javadoc__oracle__dss__graph__ThreeDLeftWall_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThreeDMarker" target="dvt-faces-javadoc__oracle__dss__graph__ThreeDMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThreeDRightWall" target="dvt-faces-javadoc__oracle__dss__graph__ThreeDRightWall_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThreeDViewMatrix" target="dvt-faces-javadoc__oracle__dss__graph__ThreeDViewMatrix_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Threshold" target="dvt-faces-javadoc__oracle__dss__graph__Threshold_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TickLabelInfo" target="dvt-faces-javadoc__oracle__dss__graph__TickLabelInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeSelector" target="dvt-faces-javadoc__oracle__dss__graph__TimeSelector_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeSelectorEvent" target="dvt-faces-javadoc__oracle__dss__graph__TimeSelectorEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ToolTipTextCallback" target="dvt-faces-javadoc__oracle__dss__graph__ToolTipTextCallback_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph.ToolTipTextCallback">
+               <tocitem text="DimValuePairs" target="dvt-faces-javadoc__oracle__dss__graph__ToolTipTextCallback_DimValuePairs_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph">
+               <tocitem text="ToolTips" target="dvt-faces-javadoc__oracle__dss__graph__ToolTips_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TwoDMarker" target="dvt-faces-javadoc__oracle__dss__graph__TwoDMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Type" target="dvt-faces-javadoc__oracle__dss__graph__Type_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UndefinedComponent" target="dvt-faces-javadoc__oracle__dss__graph__UndefinedComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="VolumeMarker" target="dvt-faces-javadoc__oracle__dss__graph__VolumeMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1Axis" target="dvt-faces-javadoc__oracle__dss__graph__X1Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1MajorTick" target="dvt-faces-javadoc__oracle__dss__graph__X1MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1MinorTick" target="dvt-faces-javadoc__oracle__dss__graph__X1MinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1TickLabel" target="dvt-faces-javadoc__oracle__dss__graph__X1TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="X1Title" target="dvt-faces-javadoc__oracle__dss__graph__X1Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="XPanelGrid" target="dvt-faces-javadoc__oracle__dss__graph__XPanelGrid_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1Axis" target="dvt-faces-javadoc__oracle__dss__graph__Y1Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1BaseLine" target="dvt-faces-javadoc__oracle__dss__graph__Y1BaseLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1MajorTick" target="dvt-faces-javadoc__oracle__dss__graph__Y1MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1MinorTick" target="dvt-faces-javadoc__oracle__dss__graph__Y1MinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1TickLabel" target="dvt-faces-javadoc__oracle__dss__graph__Y1TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1Title" target="dvt-faces-javadoc__oracle__dss__graph__Y1Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y1ZeroLine" target="dvt-faces-javadoc__oracle__dss__graph__Y1ZeroLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2Axis" target="dvt-faces-javadoc__oracle__dss__graph__Y2Axis_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2BaseLine" target="dvt-faces-javadoc__oracle__dss__graph__Y2BaseLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2MajorTick" target="dvt-faces-javadoc__oracle__dss__graph__Y2MajorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2MinorTick" target="dvt-faces-javadoc__oracle__dss__graph__Y2MinorTick_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2TickLabel" target="dvt-faces-javadoc__oracle__dss__graph__Y2TickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2Title" target="dvt-faces-javadoc__oracle__dss__graph__Y2Title_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y2ZeroLine" target="dvt-faces-javadoc__oracle__dss__graph__Y2ZeroLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Y3DMarkerGrid" target="dvt-faces-javadoc__oracle__dss__graph__Y3DMarkerGrid_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="YPanelGrid" target="dvt-faces-javadoc__oracle__dss__graph__YPanelGrid_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZDrillLabel" target="dvt-faces-javadoc__oracle__dss__graph__ZDrillLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZPanelGrid" target="dvt-faces-javadoc__oracle__dss__graph__ZPanelGrid_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZTickLabel" target="dvt-faces-javadoc__oracle__dss__graph__ZTickLabel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZTitle" target="dvt-faces-javadoc__oracle__dss__graph__ZTitle_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph.managers">
+               <tocitem text="GraphRuleFormatter" target="dvt-faces-javadoc__oracle__dss__graph__managers__GraphRuleFormatter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphRuleStyles" target="dvt-faces-javadoc__oracle__dss__graph__managers__GraphRuleStyles_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphStyle" target="dvt-faces-javadoc__oracle__dss__graph__managers__GraphStyle_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.rules">
+               <tocitem text="DiscriminatorRule" target="dvt-faces-javadoc__oracle__dss__rules__DiscriminatorRule_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ResolutionService" target="dvt-faces-javadoc__oracle__dss__rules__ResolutionService_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Rule" target="dvt-faces-javadoc__oracle__dss__rules__Rule_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RuleBundle" target="dvt-faces-javadoc__oracle__dss__rules__RuleBundle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RuleBundleEvent" target="dvt-faces-javadoc__oracle__dss__rules__RuleBundleEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RuleContext" target="dvt-faces-javadoc__oracle__dss__rules__RuleContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RuleException" target="dvt-faces-javadoc__oracle__dss__rules__RuleException_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.rules.discriminator">
+               <tocitem text="ComponentTypeDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__ComponentTypeDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CompositeDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__CompositeDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ConditionDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__ConditionDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DateValueDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__DateValueDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NumberValueDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__NumberValueDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PositionDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__PositionDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="QDRDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__QDRDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="StringValueDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__StringValueDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TotalsDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__TotalsDiscriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ValueDiscriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__ValueDiscriminator_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util">
+               <tocitem text="AbstractMap" target="dvt-faces-javadoc__oracle__dss__util__AbstractMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ArrayMap" target="dvt-faces-javadoc__oracle__dss__util__ArrayMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BASE64Decoder" target="dvt-faces-javadoc__oracle__dss__util__BASE64Decoder_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BASE64Encoder" target="dvt-faces-javadoc__oracle__dss__util__BASE64Encoder_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BIBaseException" target="dvt-faces-javadoc__oracle__dss__util__BIBaseException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BIBaseRuntimeException" target="dvt-faces-javadoc__oracle__dss__util__BIBaseRuntimeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BIExceptionSupport" target="dvt-faces-javadoc__oracle__dss__util__BIExceptionSupport_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ColumnComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__ColumnComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ColumnOutOfRangeException" target="dvt-faces-javadoc__oracle__dss__util__ColumnOutOfRangeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ColumnSortInfo" target="dvt-faces-javadoc__oracle__dss__util__ColumnSortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__ComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CompoundCondition" target="dvt-faces-javadoc__oracle__dss__util__CompoundCondition_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CubicSortInfo" target="dvt-faces-javadoc__oracle__dss__util__CubicSortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CustomStyle" target="dvt-faces-javadoc__oracle__dss__util__CustomStyle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataAccessAdapter" target="dvt-faces-javadoc__oracle__dss__util__DataAccessAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataAvailableEvent" target="dvt-faces-javadoc__oracle__dss__util__DataAvailableEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataChangedEvent" target="dvt-faces-javadoc__oracle__dss__util__DataChangedEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__DataComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataDirectorException" target="dvt-faces-javadoc__oracle__dss__util__DataDirectorException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataException" target="dvt-faces-javadoc__oracle__dss__util__DataException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataMap" target="dvt-faces-javadoc__oracle__dss__util__DataMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DefaultErrorHandler" target="dvt-faces-javadoc__oracle__dss__util__DefaultErrorHandler_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DefaultMetadataPrinter" target="dvt-faces-javadoc__oracle__dss__util__DefaultMetadataPrinter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DimensionSortInfo" target="dvt-faces-javadoc__oracle__dss__util__DimensionSortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__DrillComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DumpContext" target="dvt-faces-javadoc__oracle__dss__util__DumpContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="EdgeComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__EdgeComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="EdgeOutOfRangeException" target="dvt-faces-javadoc__oracle__dss__util__EdgeOutOfRangeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ExtendedBitSet" target="dvt-faces-javadoc__oracle__dss__util__ExtendedBitSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FocusUtility" target="dvt-faces-javadoc__oracle__dss__util__FocusUtility_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GroupComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__GroupComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HierarchicalQDR" target="dvt-faces-javadoc__oracle__dss__util__HierarchicalQDR_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HierarchicalQDRMember" target="dvt-faces-javadoc__oracle__dss__util__HierarchicalQDRMember_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ImageUtils" target="dvt-faces-javadoc__oracle__dss__util__ImageUtils_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InvalidDrillPathException" target="dvt-faces-javadoc__oracle__dss__util__InvalidDrillPathException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InvalidDrillTargetException" target="dvt-faces-javadoc__oracle__dss__util__InvalidDrillTargetException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InvalidMeasureRuntimeException" target="dvt-faces-javadoc__oracle__dss__util__InvalidMeasureRuntimeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayerMetadataMap" target="dvt-faces-javadoc__oracle__dss__util__LayerMetadataMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayerOutOfRangeException" target="dvt-faces-javadoc__oracle__dss__util__LayerOutOfRangeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayerSortInfo" target="dvt-faces-javadoc__oracle__dss__util__LayerSortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LocaleUtils" target="dvt-faces-javadoc__oracle__dss__util__LocaleUtils_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MemberSortInfo" target="dvt-faces-javadoc__oracle__dss__util__MemberSortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MetadataMap" target="dvt-faces-javadoc__oracle__dss__util__MetadataMap_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ModelEvent" target="dvt-faces-javadoc__oracle__dss__util__ModelEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Operation" target="dvt-faces-javadoc__oracle__dss__util__Operation_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PageItemComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__PageItemComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PagingControlAttributesAdapter" target="dvt-faces-javadoc__oracle__dss__util__PagingControlAttributesAdapter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Parameter" target="dvt-faces-javadoc__oracle__dss__util__Parameter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PollingRequiredEvent" target="dvt-faces-javadoc__oracle__dss__util__PollingRequiredEvent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="QDR" target="dvt-faces-javadoc__oracle__dss__util__QDR_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util.QDR">
+               <tocitem text="QDRMapEntry" target="dvt-faces-javadoc__oracle__dss__util__QDR_QDRMapEntry_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util">
+               <tocitem text="QDRMember" target="dvt-faces-javadoc__oracle__dss__util__QDRMember_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="QDRSliceSortInfo" target="dvt-faces-javadoc__oracle__dss__util__QDRSliceSortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="QDRSortInfo" target="dvt-faces-javadoc__oracle__dss__util__QDRSortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Range" target="dvt-faces-javadoc__oracle__dss__util__Range_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RangeCollection" target="dvt-faces-javadoc__oracle__dss__util__RangeCollection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RowComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__RowComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RowOutOfRangeException" target="dvt-faces-javadoc__oracle__dss__util__RowOutOfRangeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RuleMemberContext" target="dvt-faces-javadoc__oracle__dss__util__RuleMemberContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SeriesComponentInfo" target="dvt-faces-javadoc__oracle__dss__util__SeriesComponentInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SeriesOutOfRangeException" target="dvt-faces-javadoc__oracle__dss__util__SeriesOutOfRangeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SimpleCondition" target="dvt-faces-javadoc__oracle__dss__util__SimpleCondition_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SliceOutOfRangeException" target="dvt-faces-javadoc__oracle__dss__util__SliceOutOfRangeException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SortInfo" target="dvt-faces-javadoc__oracle__dss__util__SortInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="StatusInfo" target="dvt-faces-javadoc__oracle__dss__util__StatusInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Timer" target="dvt-faces-javadoc__oracle__dss__util__Timer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TypeNotSupportedException" target="dvt-faces-javadoc__oracle__dss__util__TypeNotSupportedException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UpdatableBagImpl" target="dvt-faces-javadoc__oracle__dss__util__UpdatableBagImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UpdatableSetImpl" target="dvt-faces-javadoc__oracle__dss__util__UpdatableSetImpl_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Utility" target="dvt-faces-javadoc__oracle__dss__util__Utility_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util.Utility">
+               <tocitem text="PropertyType" target="dvt-faces-javadoc__oracle__dss__util__Utility_PropertyType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util">
+               <tocitem text="ValidationProperties" target="dvt-faces-javadoc__oracle__dss__util__ValidationProperties_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="VersionInfo" target="dvt-faces-javadoc__oracle__dss__util__VersionInfo_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="WaitData" target="dvt-faces-javadoc__oracle__dss__util__WaitData_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="WaitDataAvailableEvent" target="dvt-faces-javadoc__oracle__dss__util__WaitDataAvailableEvent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util.format">
+               <tocitem text="BaseMergeableHandle" target="dvt-faces-javadoc__oracle__dss__util__format__BaseMergeableHandle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseViewFormat" target="dvt-faces-javadoc__oracle__dss__util__format__BaseViewFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseViewFormatHandle" target="dvt-faces-javadoc__oracle__dss__util__format__BaseViewFormatHandle_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+         </tocitem>
+         <tocitem text="Interfaces">
+            <tocitem text="oracle.adf.view.faces.bi">
+               <tocitem text="BIFacesConstants" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__BIFacesConstants_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.gantt">
+               <tocitem text="CustomTimeScale" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__CustomTimeScale_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GanttConstants" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__GanttConstants_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.geoMap">
+               <tocitem text="MapConstants" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__MapConstants_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="StyleThemeFOI" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__geoMap__StyleThemeFOI_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.hierarchyViewer">
+               <tocitem text="HierarchyViewerConstants" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__HierarchyViewerConstants_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NodeConstants" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__hierarchyViewer__NodeConstants_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.imageView">
+               <tocitem text="ShapeAttributesCallback" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__imageView__ShapeAttributesCallback_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event">
+               <tocitem text="ClickListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ClickListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataChangeListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DataChangeListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DoubleClickListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DoubleClickListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DrillListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillReplaceListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__DrillReplaceListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FilterListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__FilterListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GanttActionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__GanttActionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapClickActionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__MapClickActionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapSelectionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__MapSelectionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MapZoomChangeListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__MapZoomChangeListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PageListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__PageListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PivotListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__PivotListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PointSelectionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__PointSelectionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ResourceSelectionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ResourceSelectionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ScrollListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ScrollListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TaskSelectionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TaskSelectionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeAxisListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeAxisListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeBucketDoubleClickListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeBucketDoubleClickListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeBucketSelectionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeBucketSelectionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeSelectorListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__TimeSelectorListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZoomAndScrollListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ZoomAndScrollListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ZoomListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__ZoomListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.diagram">
+               <tocitem text="ChangeLinkListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__ChangeLinkListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CreateLinkListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__CreateLinkListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CreateNodeListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__CreateNodeListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DeleteLinkListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DeleteLinkListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DeleteNodeListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DeleteNodeListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.graph">
+               <tocitem text="SelectionListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__graph__SelectionListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.pivotFilterBar">
+               <tocitem text="QueryPivotListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__pivotFilterBar__QueryPivotListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.pivotTable">
+               <tocitem text="CellImageClickListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__pivotTable__CellImageClickListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SortListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__pivotTable__SortListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.timeline">
+               <tocitem text="TimeRangeChangeListener" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__timeline__TimeRangeChangeListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.model">
+               <tocitem text="BaseResource" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__BaseResource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Dependency" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__Dependency_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NodeWrapper" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__NodeWrapper_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ProjectTask" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ProjectTask_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RecurringTask" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__RecurringTask_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Resource" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__Resource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ResourceIndex" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ResourceIndex_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ScheduleTask" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__ScheduleTask_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SplitTask" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__SplitTask_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Task" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__Task_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TaskIndex" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__TaskIndex_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeBucket" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__TimeBucket_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeBucketAttributeDetail" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__TimeBucketAttributeDetail_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UtilizationResource" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__UtilizationResource_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.rich.model">
+               <tocitem text="ActiveDataModel" target="dvt-faces-javadoc__oracle__adf__view__rich__model__ActiveDataModel_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView">
+               <tocitem text="AlertListener" target="dvt-faces-javadoc__oracle__dss__dataView__AlertListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AttributeFormatter" target="dvt-faces-javadoc__oracle__dss__dataView__AttributeFormatter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Background" target="dvt-faces-javadoc__oracle__dss__dataView__Background_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTitleAttributes" target="dvt-faces-javadoc__oracle__dss__dataView__BaseTitleAttributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CSSStyleDefaults" target="dvt-faces-javadoc__oracle__dss__dataView__CSSStyleDefaults_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Controller" target="dvt-faces-javadoc__oracle__dss__dataView__Controller_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ControllerActions" target="dvt-faces-javadoc__oracle__dss__dataView__ControllerActions_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ControllerListener" target="dvt-faces-javadoc__oracle__dss__dataView__ControllerListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CustomHeaderAndFooterCallback" target="dvt-faces-javadoc__oracle__dss__dataView__CustomHeaderAndFooterCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DVTResources" target="dvt-faces-javadoc__oracle__dss__dataView__DVTResources_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataListener" target="dvt-faces-javadoc__oracle__dss__dataView__DataListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewAttributes" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewAttributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewCommon" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewCommon_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewConstants" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewConstants_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewFont" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewFont_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewFontAttribute" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewFontAttribute_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataviewTitles" target="dvt-faces-javadoc__oracle__dss__dataView__DataviewTitles_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ExportableGraph" target="dvt-faces-javadoc__oracle__dss__dataView__ExportableGraph_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Fill" target="dvt-faces-javadoc__oracle__dss__dataView__Fill_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FontAttribute" target="dvt-faces-javadoc__oracle__dss__dataView__FontAttribute_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FormatManager" target="dvt-faces-javadoc__oracle__dss__dataView__FormatManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphAttribute" target="dvt-faces-javadoc__oracle__dss__dataView__GraphAttribute_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GridViewAttribute" target="dvt-faces-javadoc__oracle__dss__dataView__GridViewAttribute_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="HorizontalAlignment" target="dvt-faces-javadoc__oracle__dss__dataView__HorizontalAlignment_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ImageView" target="dvt-faces-javadoc__oracle__dss__dataView__ImageView_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Manager" target="dvt-faces-javadoc__oracle__dss__dataView__Manager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Model" target="dvt-faces-javadoc__oracle__dss__dataView__Model_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ModelListener" target="dvt-faces-javadoc__oracle__dss__dataView__ModelListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PopupManager" target="dvt-faces-javadoc__oracle__dss__dataView__PopupManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RolloverTextManager" target="dvt-faces-javadoc__oracle__dss__dataView__RolloverTextManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SVGWriterProvider" target="dvt-faces-javadoc__oracle__dss__dataView__SVGWriterProvider_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectionManager" target="dvt-faces-javadoc__oracle__dss__dataView__SelectionManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Style" target="dvt-faces-javadoc__oracle__dss__dataView__Style_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThickDataview" target="dvt-faces-javadoc__oracle__dss__dataView__ThickDataview_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Titles" target="dvt-faces-javadoc__oracle__dss__dataView__Titles_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TokenSubstitution" target="dvt-faces-javadoc__oracle__dss__dataView__TokenSubstitution_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIBundle" target="dvt-faces-javadoc__oracle__dss__dataView__UIBundle_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIDataview" target="dvt-faces-javadoc__oracle__dss__dataView__UIDataview_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIFillColor" target="dvt-faces-javadoc__oracle__dss__dataView__UIFillColor_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIParetoLine" target="dvt-faces-javadoc__oracle__dss__dataView__UIParetoLine_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UISeriesColor" target="dvt-faces-javadoc__oracle__dss__dataView__UISeriesColor_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIStockMarker" target="dvt-faces-javadoc__oracle__dss__dataView__UIStockMarker_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIThresholdColor" target="dvt-faces-javadoc__oracle__dss__dataView__UIThresholdColor_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UITransparentFillColor" target="dvt-faces-javadoc__oracle__dss__dataView__UITransparentFillColor_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIView" target="dvt-faces-javadoc__oracle__dss__dataView__UIView_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIViewPrinter" target="dvt-faces-javadoc__oracle__dss__dataView__UIViewPrinter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="VerticalAlignment" target="dvt-faces-javadoc__oracle__dss__dataView__VerticalAlignment_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewComponent" target="dvt-faces-javadoc__oracle__dss__dataView__ViewComponent_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewController" target="dvt-faces-javadoc__oracle__dss__dataView__ViewController_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewFocusListener" target="dvt-faces-javadoc__oracle__dss__dataView__ViewFocusListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewKeyListener" target="dvt-faces-javadoc__oracle__dss__dataView__ViewKeyListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewListener" target="dvt-faces-javadoc__oracle__dss__dataView__ViewListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewMouseListener" target="dvt-faces-javadoc__oracle__dss__dataView__ViewMouseListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewMouseMotionListener" target="dvt-faces-javadoc__oracle__dss__dataView__ViewMouseMotionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="WordWrapEnabled" target="dvt-faces-javadoc__oracle__dss__dataView__WordWrapEnabled_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.dataView.managers">
+               <tocitem text="Formattable" target="dvt-faces-javadoc__oracle__dss__dataView__managers__Formattable_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Styleable" target="dvt-faces-javadoc__oracle__dss__dataView__managers__Styleable_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewFormatCallback" target="dvt-faces-javadoc__oracle__dss__dataView__managers__ViewFormatCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ViewStyleCallback" target="dvt-faces-javadoc__oracle__dss__dataView__managers__ViewStyleCallback_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.gauge">
+               <tocitem text="CustomToolTipCallback" target="dvt-faces-javadoc__oracle__dss__gauge__CustomToolTipCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeAttributes" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeAttributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeConstants" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeConstants_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeController" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeController_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeModel" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeModel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeRenderer" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeRenderer_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GaugeSetAttributes" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeSetAttributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThickGauge" target="dvt-faces-javadoc__oracle__dss__gauge__ThickGauge_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph">
+               <tocitem text="Border" target="dvt-faces-javadoc__oracle__dss__graph__Border_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CustomMarkerTextCallback" target="dvt-faces-javadoc__oracle__dss__graph__CustomMarkerTextCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CustomToolTipCallback" target="dvt-faces-javadoc__oracle__dss__graph__CustomToolTipCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataErrorTextCallback" target="dvt-faces-javadoc__oracle__dss__graph__DataErrorTextCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataFilter" target="dvt-faces-javadoc__oracle__dss__graph__DataFilter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataStyleCallback" target="dvt-faces-javadoc__oracle__dss__graph__DataStyleCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphConstants" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphController" target="dvt-faces-javadoc__oracle__dss__graph__GraphController_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphFormatManager" target="dvt-faces-javadoc__oracle__dss__graph__GraphFormatManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphModel" target="dvt-faces-javadoc__oracle__dss__graph__GraphModel_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphSVGWriterProvider" target="dvt-faces-javadoc__oracle__dss__graph__GraphSVGWriterProvider_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphStyleManager" target="dvt-faces-javadoc__oracle__dss__graph__GraphStyleManager_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="GraphTypeConverter" target="dvt-faces-javadoc__oracle__dss__graph__GraphTypeConverter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Line" target="dvt-faces-javadoc__oracle__dss__graph__Line_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Rect" target="dvt-faces-javadoc__oracle__dss__graph__Rect_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="SelectionListener" target="dvt-faces-javadoc__oracle__dss__graph__SelectionListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ThickGraph" target="dvt-faces-javadoc__oracle__dss__graph__ThickGraph_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TickLabelCallback" target="dvt-faces-javadoc__oracle__dss__graph__TickLabelCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="TimeSelectorListener" target="dvt-faces-javadoc__oracle__dss__graph__TimeSelectorListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UIGraphType" target="dvt-faces-javadoc__oracle__dss__graph__UIGraphType_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Visible" target="dvt-faces-javadoc__oracle__dss__graph__Visible_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.rules">
+               <tocitem text="ComponentTypeConverter" target="dvt-faces-javadoc__oracle__dss__rules__ComponentTypeConverter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Mergeable" target="dvt-faces-javadoc__oracle__dss__rules__Mergeable_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MergeableXML" target="dvt-faces-javadoc__oracle__dss__rules__MergeableXML_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RuleBundleListener" target="dvt-faces-javadoc__oracle__dss__rules__RuleBundleListener_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.rules.discriminator">
+               <tocitem text="Discriminator" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__Discriminator_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DiscriminatorState" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__DiscriminatorState_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DiscriminatorXML" target="dvt-faces-javadoc__oracle__dss__rules__discriminator__DiscriminatorXML_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util">
+               <tocitem text="AsyncDataSource" target="dvt-faces-javadoc__oracle__dss__util__AsyncDataSource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BIException" target="dvt-faces-javadoc__oracle__dss__util__BIException_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BaseTokenSubstitution" target="dvt-faces-javadoc__oracle__dss__util__BaseTokenSubstitution_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CDFDataAccess" target="dvt-faces-javadoc__oracle__dss__util__CDFDataAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Collection" target="dvt-faces-javadoc__oracle__dss__util__Collection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Comparison" target="dvt-faces-javadoc__oracle__dss__util__Comparison_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CubeDataAccess" target="dvt-faces-javadoc__oracle__dss__util__CubeDataAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="CubeDataDirector" target="dvt-faces-javadoc__oracle__dss__util__CubeDataDirector_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataAccess" target="dvt-faces-javadoc__oracle__dss__util__DataAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataDirector" target="dvt-faces-javadoc__oracle__dss__util__DataDirector_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataDirectorListener" target="dvt-faces-javadoc__oracle__dss__util__DataDirectorListener_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataSource" target="dvt-faces-javadoc__oracle__dss__util__DataSource_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DependentID" target="dvt-faces-javadoc__oracle__dss__util__DependentID_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DependentResolver" target="dvt-faces-javadoc__oracle__dss__util__DependentResolver_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillPathMetadata" target="dvt-faces-javadoc__oracle__dss__util__DrillPathMetadata_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DrillTargetMetadata" target="dvt-faces-javadoc__oracle__dss__util__DrillTargetMetadata_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ErrorHandler" target="dvt-faces-javadoc__oracle__dss__util__ErrorHandler_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ErrorHandlerCallback" target="dvt-faces-javadoc__oracle__dss__util__ErrorHandlerCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FormattedText" target="dvt-faces-javadoc__oracle__dss__util__FormattedText_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="IDResolver" target="dvt-faces-javadoc__oracle__dss__util__IDResolver_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InsertableRowDataAccess" target="dvt-faces-javadoc__oracle__dss__util__InsertableRowDataAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InsertableTreeDataAccess" target="dvt-faces-javadoc__oracle__dss__util__InsertableTreeDataAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayoutAccess" target="dvt-faces-javadoc__oracle__dss__util__LayoutAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayoutAccess2" target="dvt-faces-javadoc__oracle__dss__util__LayoutAccess2_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LayoutContext" target="dvt-faces-javadoc__oracle__dss__util__LayoutContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Localizable" target="dvt-faces-javadoc__oracle__dss__util__Localizable_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MemberContext" target="dvt-faces-javadoc__oracle__dss__util__MemberContext_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MemberListAccess" target="dvt-faces-javadoc__oracle__dss__util__MemberListAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MetadataPrinter" target="dvt-faces-javadoc__oracle__dss__util__MetadataPrinter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NameConverter" target="dvt-faces-javadoc__oracle__dss__util__NameConverter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NumberFormat" target="dvt-faces-javadoc__oracle__dss__util__NumberFormat_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NumberFormatType" target="dvt-faces-javadoc__oracle__dss__util__NumberFormatType_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="PagingControlAttributes" target="dvt-faces-javadoc__oracle__dss__util__PagingControlAttributes_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="QDRInterface" target="dvt-faces-javadoc__oracle__dss__util__QDRInterface_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RelationalDataAccess" target="dvt-faces-javadoc__oracle__dss__util__RelationalDataAccess_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="RelationalDataDirector" target="dvt-faces-javadoc__oracle__dss__util__RelationalDataDirector_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UpdatableBag" target="dvt-faces-javadoc__oracle__dss__util__UpdatableBag_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UpdatableCollection" target="dvt-faces-javadoc__oracle__dss__util__UpdatableCollection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="UpdatableSet" target="dvt-faces-javadoc__oracle__dss__util__UpdatableSet_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="VectorClone" target="dvt-faces-javadoc__oracle__dss__util__VectorClone_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.util.format">
+               <tocitem text="BaseViewFormatCallback" target="dvt-faces-javadoc__oracle__dss__util__format__BaseViewFormatCallback_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DvtNumberConverter" target="dvt-faces-javadoc__oracle__dss__util__format__DvtNumberConverter_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="NumberConverter" target="dvt-faces-javadoc__oracle__dss__util__format__NumberConverter_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+         </tocitem>
+         <tocitem text="Enumerations">
+            <tocitem text="oracle.adf.view.faces.bi.component.gantt.MetricFormat">
+               <tocitem text="Display" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__gantt__MetricFormat_Display_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.graph.DataContext">
+               <tocitem text="DataType" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__DataContext_DataType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.graph.GraphSelection">
+               <tocitem text="SelectionType" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__graph__GraphSelection_SelectionType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.component.pivotTable.UIPivotTable">
+               <tocitem text="ActionType" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIPivotTable_ActionType_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCellContent" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__component__pivotTable__UIPivotTable_DataCellContent_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.diagram.DiagramChangeLinkEvent">
+               <tocitem text="EndpointType" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__diagram__DiagramChangeLinkEvent_EndpointType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.event.pivotTable.SortEvent">
+               <tocitem text="SortType" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__event__pivotTable__SortEvent_SortType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.faces.bi.model.PivotableQueryDescriptor">
+               <tocitem text="PivotOperation" target="dvt-faces-javadoc__oracle__adf__view__faces__bi__model__PivotableQueryDescriptor_PivotOperation_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.adf.view.rich.model.ActiveDataModel">
+               <tocitem text="ActiveDataPolicy" target="dvt-faces-javadoc__oracle__adf__view__rich__model__ActiveDataModel_ActiveDataPolicy_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.gauge.GaugeConstants">
+               <tocitem text="HorizontalAlignment" target="dvt-faces-javadoc__oracle__dss__gauge__GaugeConstants_HorizontalAlignment_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph">
+               <tocitem text="DataStyleType" target="dvt-faces-javadoc__oracle__dss__graph__DataStyleType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph.DataStyleType">
+               <tocitem text="Shape" target="dvt-faces-javadoc__oracle__dss__graph__DataStyleType_Shape_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph">
+               <tocitem text="DataType" target="dvt-faces-javadoc__oracle__dss__graph__DataType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph.GraphConstants">
+               <tocitem text="AnnotationLocation" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_AnnotationLocation_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AnnotationPosition" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_AnnotationPosition_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="AxisScaledFromBaseline" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_AxisScaledFromBaseline_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="BubbleMarkerSizing" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_BubbleMarkerSizing_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCursor" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_DataCursor_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataCursorBehavior" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_DataCursorBehavior_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="DataSelection" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_DataSelection_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="FormFactor" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_FormFactor_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InteractiveSliceBehavior" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_InteractiveSliceBehavior_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="InteractivityBehavior" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_InteractivityBehavior_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendAreaPositionHint" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_LegendAreaPositionHint_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="LegendItemSpacing" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_LegendItemSpacing_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MagnifyLens" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_MagnifyLens_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="Markers" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_Markers_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="MinorGridStepType" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_MinorGridStepType_html" topicType="external" image="javadocicon_png"/>
+               <tocitem text="ScatterLineType" target="dvt-faces-javadoc__oracle__dss__graph__GraphConstants_ScatterLineType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+            <tocitem text="oracle.dss.graph.GraphSelection">
+               <tocitem text="SelectionType" target="dvt-faces-javadoc__oracle__dss__graph__GraphSelection_SelectionType_html" topicType="external" image="javadocicon_png"/>
+            </tocitem>
+         </tocitem>
+      </tocitem>
+   </tocitem>
+</toc>
