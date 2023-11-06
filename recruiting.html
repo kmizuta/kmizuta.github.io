@@ -47,15 +47,32 @@
 	  width: 100px
 */
       }
-/*
       .req {
+/*
 	  width: 200px
 */
+      }
+      .status {
+	  width: 400px;
       }
     </style>
   </head>
 
   <body>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+
+      var style = document.createElement('style');
+      style.type = 'text/css';
+      if ("true" === urlParams.get("internal")) {
+	  style.innerHTML = '.internal { background-color: yellow; }';
+      } else {
+	  style.innerHTML = '.internal { display:none; }';
+      }
+      document.getElementsByTagName('head')[0].appendChild(style);
+    </script>
+
 
    <table class="hiring">
       <tr>
@@ -64,6 +81,7 @@
 	<th class="country">Country</th>
 	<th class="manager">Hiring Manager</th>
 	<th class="req">Level - Job Req</th>
+	<th class="status internal">Status</th>
       </tr>
 
       <tr>
@@ -71,7 +89,8 @@
 	<td rowspan=2>The policy service will be the definitive store for the application policies and related information (roles, artifacts, permissions, etc).  It will also serve the authorization endpoint for all Spectra services.  This service is critical to the success of the Spectra platform, and we're looking for strong engineering talent to join us.  We will work primarily in Go, and look for strong cloud native experience and experience with SaaS and identity and policy systems.</td>
 	<td>US</td>
 	<td><a href="https://www.linkedin.com/in/sa-verma/">Saurabh Verma</a></td>
-	<td><a href="https://www.linkedin.com/jobs/view/3674045088/">IC5 - 206891</a></td>
+	<td><a href="https://www.linkedin.com/jobs/view/3674045088/">IC5 - 206891</a></td><!-- Replacement for Dex -->
+	<td class="internal">206891 - Replacement for Dex Chen</td>
       </tr>
 
       <tr>
@@ -79,25 +98,60 @@
 	<td>Datha Krishnabhat</td>
 	<td>
 	  <a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/206807">IC4 - 206807</a><br>
-	  <del><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212031">IC4 - 212031</a></del><br><!-- Offer to Archit Agarwal -->
-	  <del><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212143">IC3 - 212143</a></del><br><!-- Offer to Nimish Jain -->
+	  <span class="internal"><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212031">IC4 - 212031</a><br></span>
+	  <span class="internal"><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212143">IC3 - 212143</a><br></span>
 	  <a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212411">IC3 - 212411</a>
+	</td>
+	<td class="internal">
+	  206807 - Approved New<br>
+	  212031 - Approved New, Offer to Archit Agarwal<br>
+	  212143 - Approved New, Offer to Nimish Jain<br>
+	  212411 - Approved New
 	</td>
       </tr>
 
       <tr>
-	<td>Messaging</td>
-	<td>We are currently looking for a candidate with experience in cloud native architecture specifically around messaging technologies. This includes use of streaming (Kafka) in addition to queue semantics, push notifications, and general eventing constructs. These solutions will be used by our enterprise SaaS product offerings.</td>
+	<td rowspan="2">Messaging</td>
+	<td rowspan="2">We are currently looking for a candidate with experience in cloud native architecture specifically around messaging technologies. This includes use of streaming (Kafka) in addition to queue semantics, push notifications, and general eventing constructs. These solutions will be used by our enterprise SaaS product offerings.</td>
+	<td>US</td>
+	<td><a href="https://www.linkedin.com/in/ajaijoy/">Ajai Joy</a></td>
+	<td><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/210983">IC4 - 210983</a><br>
+	</td>
+	<td class="internal">
+	  210983 - Replacement for Anupam Sharma
+	</td>
+      </tr>
+
+      <tr>
 	<td>India</td>
 	<td><a href="https://www.linkedin.com/in/ajaijoy/">Ajai Joy</a></td>
 	<td><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212190">IC5 - 212190</a><br>
-	  <a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/214745">IC4 - 214745</a><!-- Replacement for Sahana -->
+	  <a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/214745">IC4 - 214745</a>
+	</td>
+	<td class="internal">
+	  212190 - Approved New<br>
+	  214745 - Replacement for Sahana
 	</td>
       </tr>
 
       <tr>
-	<td>Data</td>
-	<td>The new Spectra Data Architecture is aimed to provide highly performant and scalable data infrastructure for a variety of use-cases. Data Architecture involves all facets of a modern Data platform that should leverage cloud-native principles built on Oracle Cloud Infrastructure.</td>
+	<td>Batch</td>
+	<td>We are currently looking for experienced SaaS engineer to join the Fusion Applications Technical Architecture team. Enterprise SaaS business processes and batch jobs can be complex long running processes that interact with many different modules. You will be responsible for defining the architecture, standards and best practices for how Fusion Applications developers will move away from an architecture that relies on reliable, ACID transactions running on a single monolithic database to an architecture that provides performant and resilient processes based on a microservice architecture with distributed databases and BASE transactions. You will be responsible for identifying and building the infrastructure needed to support this transition.</td>
+	<td>India</td>
+	<td><a href="https://www.linkedin.com/in/shyamkumar-allamsetty-25a0b721/">Shyamkumar Allamsetty</a></td>
+	<td>
+	  <span class="internal"><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/202428">IC4 - 202428</a><br></span>
+	  <a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/207188">IC4 - 207188</a><br>
+	</td>
+	<td class="internal">
+	  202428 - Not approved<br>
+	  207188 - Replacement for Vivek Agarwal
+	</td>
+      </tr>
+      
+      <tr>
+	<td rowspan="2">Data</td>
+	<td rowspan="2">The new Spectra Data Architecture is aimed to provide highly performant and scalable data infrastructure for a variety of use-cases. Data Architecture involves all facets of a modern Data platform that should leverage cloud-native principles built on Oracle Cloud Infrastructure.</td>
 	<td>US</td>
 	<td><a href="https://www.linkedin.com/in/purvi-mehrotra-689973b8/">Purvi Mehrotra</a></td>
 	<td>
@@ -105,16 +159,26 @@
 	  <a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212174">IC4 - 212174</a><br>
 	  <a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/210868">IC2 - 210868</a>
 	</td>
+	<td class="internal">
+	  212173 - Approved New<br>
+	  212174 - Approved New<br>
+	  210868 - Approved New - Post no longer available
+	</td>
+      </tr>
+      <tr class="internal">
+	<td>India</td>
+	<td><a href="https://www.linkedin.com/in/purvi-mehrotra-689973b8/">Purvi Mehrotra</a></td>
+	<td>
+	  <del><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/206938">IC4 - 206938</a></del><br>
+	</td>
+	<td class="internal">
+	  206938 - Replacement for Manjay Kumar (Offer made to Prabhanshu Katiyar)
+	</td>
       </tr>
 
-      <tr>
-	<td>Product Management</td>
-	<td>We are currently looking for experienced Product Managers (Sr Principal or Principal) who are passionate about improving the experience for our development teams as well as our customers and partners.  You must be able to thrive and succeed in an entrepreneurial environment, not be hindered by ambiguity, competing priorities or fluid team structure. You should be ready to roll up your sleeves, dig in and get the job done alongside architects, engineering and product leadership teams. </td>
-	<td>US</td>
-	<td><a href="https://www.linkedin.com/in/mattlandau/">Matt Landau</a></td>
-	<td><a href="https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/212763">IC5 - 212763</a></td>
-      </tr>
     </table> 
    
+
   </body>
 </html>
+
