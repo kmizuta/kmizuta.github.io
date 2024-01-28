@@ -6,41 +6,45 @@
     <style>
 {{#online}}
       body {
-	  background-image: url("resources/redwood-strip.png");
-	  background-repeat: repeat-x;
+	     background-image: url("resources/redwood-strip.png");
+	     background-repeat: repeat-x;
       }
       table.hiring { 
-	  position: absolute;
-	  top: 30px;
-	  left: 50%;
-	  transform: translate(-50%, 0%);
+	     position: absolute;
+	     top: 30px;
+	     left: 50%;
+	     transform: translate(-50%, 0%);
+      }
+{{/online}}
+{{^online}}
+      .internal {
+         display:none;
       }
 {{/online}}
       table.hiring {
 {{^online}}
-      margin: auto;
+         margin: auto;
 {{/online}}
-	  font-family: 'Oracle Sans',-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
-	  table-layout: fixed;
-	  width: 80%;
+	     font-family: 'Oracle Sans',-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+	     table-layout: fixed;
+	     width: 80%;
       }
       table.hiring, table.hiring th, table.hiring td {
-
-	  border-collapse: collapse;
-	  border-color: gray;
-	  border: 1px solid;
-	  padding: 10px;
+	     border-collapse: collapse;
+	     border-color: gray;
+	     border: 1px solid;
+	     padding: 10px;
       }
       table.hiring th {
-	  background-color: #F4F5F7;
+	     background-color: #F4F5F7;
       }
       table.hiring td {
-	  vertical-align: top;
+	     vertical-align: top;
       }
       .area {
       }
       .description {
-	  width: 500px
+	     width: 500px
       }
       .country {
       }
@@ -49,7 +53,7 @@
       .req {
       }
       .status {
-	  width: 400px;
+	     width: 400px;
       }
     </style>
 {{#online}}
