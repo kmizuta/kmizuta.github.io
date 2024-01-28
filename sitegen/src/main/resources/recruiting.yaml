@@ -118,8 +118,8 @@ hiring:
       status: filled
     - reqno: 210868
       level: IC2
-      notes: Approved New - Post no longer available
-      status: open
+      notes: Approved New - Unposted due to overflow of candidates. Getting old....
+      status: reviewpending
   - country: India
     manager: pumehrot
     jobreqs:
@@ -129,5 +129,13 @@ hiring:
       status: filled
     - reqno: 218181
       level: IC4
-      notes: Replacement for Diljith. Pending job req approval
+      notes: Replacement for Diljith.
+      status: open
+    - reqno: 224336
+      level: IC4
+      notes: Replacement for Nagababu SV
+      status: jobreqpending
+    - reqno: 224334
+      level: IC4
+      notes: Replacement for Omkar Ghotavadekar
       status: jobreqpending
