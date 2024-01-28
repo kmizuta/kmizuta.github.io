@@ -1,0 +1,133 @@
+---
+managers:
+  ssaverma:
+    name: Saurabh Verma
+    linkedInId: sa-verma
+    email: saurabh.sv.verma@oracle.com
+  datkrish:
+    name: Datha Krishnabhat
+    email: datha.krishnabhat@oracle.com
+  ajjoy:
+    name: Ajai Joy
+    linkedInId: ajaijoy
+    email: ajai.joy@oracle.com
+  sallamse:
+    name: Shyamkumar Allamsetty
+    linkedInId: shyamkumar-allamsetty-25a0b721
+    email: shyamkumar.allamsetty@oracle.com
+  pumehrot:
+    name: Purvi Mehrotra
+    linkedInId: purvi-mehrotra-689973b8
+    email: purvi.mehrotra@oracle.com
+hiring:
+- area: Authorization Service
+  description: The policy service will be the definitive store for the application
+    policies and related information (roles, artifacts, permissions, etc).  It will
+    also serve the authorization endpoint for all Spectra services.  This service
+    is critical to the success of the Spectra platform, and we're looking for strong
+    engineering talent to join us.  We will work primarily in Go, and look for strong
+    cloud native experience and experience with SaaS and identity and policy systems.
+  countries:
+  - country: US
+    manager: ssaverma
+    jobreqs:
+    - reqno: 206891
+      level: IC5
+      linkedInJobId: 3773263046
+      notes: Replacement for Dex Chen, Expired
+      status: expired
+    - reqno: 222746
+      level: IC5
+      notes: Replacement for Dex Chen and replaces job req 206891
+      status: open
+  - country: India
+    manager: datkrish
+    jobreqs:
+    - reqno: 206807
+      level: IC4
+      notes: Approved New, Expired
+      status: expired
+    - reqno: 212031
+      level: IC4
+      notes: Approved New, Offer to Archi Agarwal, Hired
+      status: filled
+    - reqno: 212143
+      level: IC3
+      notes: Approved New, <del>Offer to Nimish Jain,</del> Offer to Aparajita Roy - Approved
+      status: filled
+    - reqno: 212411
+      level: IC3
+      notes: Approved New
+      status: open
+    - reqno: 222791
+      level: IC4
+      notes: Approved New, Replaces job req 206807
+      status: open
+- area: Messaging
+  description: We are currently looking for a candidate with experience in cloud native architecture specifically around messaging technologies. This includes use of streaming (Kafka) in addition to queue semantics, push notifications, and general eventing constructs. These solutions will be used by our enterprise SaaS product offerings.
+  countries:
+  - country: US
+    manager: ajjoy
+    jobreqs:
+    - reqno: 210983
+      level: IC4
+      notes: Replacement for Anupam Sharma
+      status: open
+  - country: India
+    manager: ajjoy
+    jobreqs:
+    - reqno: 212190
+      level: IC5
+      notes: Approved New
+      status: open
+    - reqno: 214745
+      level: IC4
+      notes: Replacement for Sahana, Offer to internal Chunhe Dai
+      status: filled
+    - reqno: 218967
+      level: IC3
+      notes: Replacement for Ravi Teja Muddada
+      status: open
+- area: Batch
+  description: We are currently looking for experienced SaaS engineer to join the Fusion Applications Technical Architecture team. Enterprise SaaS business processes and batch jobs can be complex long running processes that interact with many different modules. You will be responsible for defining the architecture, standards and best practices for how Fusion Applications developers will move away from an architecture that relies on reliable, ACID transactions running on a single monolithic database to an architecture that provides performant and resilient processes based on a microservice architecture with distributed databases and BASE transactions. You will be responsible for identifying and building the infrastructure needed to support this transition.
+  countries: 
+  - country: India
+    manager: sallamse
+    jobreqs:
+    - reqno: 202428
+      level: IC4
+      notes: Not approved
+      status: closed
+    - reqno: 207188
+      level: IC4
+      notes: Replacement for Vivek Agarwal
+      status: open
+- area: Data
+  description: The new Spectra Data Architecture is aimed to provide highly performant and scalable data infrastructure for a variety of use-cases. Data Architecture involves all facets of a modern Data platform that should leverage cloud-native principles built on Oracle Cloud Infrastructure.
+  countries:
+  - country: US
+    manager: pumehrot
+    jobreqs:
+    - reqno: 212173
+      level: IC4
+      notes: Approved New, Offer pending approval for Dhiraj Thakkar
+      status: offerpending
+    - reqno: 212174
+      level: IC4
+      notes: Approved New, Offer approved for Madhu Narasimhan
+      status: filled
+    - reqno: 210868
+      level: IC2
+      notes: Approved New - Post no longer available
+      status: open
+  - country: India
+    manager: pumehrot
+    jobreqs:
+    - reqno: 206938
+      level: IC4
+      notes: Replacement for Manjay Kumar (Offer made to Prabhanshu Katiyar and accepted on 11/15)
+      status: filled
+    - reqno: 218181
+      level: IC4
+      notes: Replacement for Diljith. Pending job req approval
+      status: jobreqpending

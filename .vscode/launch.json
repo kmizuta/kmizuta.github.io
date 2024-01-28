@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Site",
+            "request": "launch",
+            "mainClass": "kmizuta.Site",
+            "projectName": "sitegen",
+            "args": "/Users/kmizuta/git/github/kmizuta/kmizuta.github.io/sitegen"
+        },
+        {
+            "type": "java",
+            "name": "Formatter",
+            "request": "launch",
+            "mainClass": "kmizuta.recruiting.Formatter",
+            "projectName": "sitegen"
+        },
+        {
+            "type": "java",
+            "name": "Recruiting",
+            "request": "launch",
+            "mainClass": "kmizuta.recruiting.Recruiting",
+            "projectName": "sitegen"
+        },
+        {
+            "type": "java",
+            "name": "Formatter(1)",
+            "request": "launch",
+            "mainClass": "kmizuta.recruiting.mustache.Formatter",
+            "projectName": "sitegen"
+        }
+    ]
+}
