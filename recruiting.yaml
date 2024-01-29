@@ -101,6 +101,10 @@ hiring:
     - reqno: 207188
       level: IC4
       notes: Replacement for Vivek Agarwal
+      status: expired
+    - reqno: 225126
+      level: IC4
+      notes: Replacement for expired req 207188
       status: open
 - area: Data
   description: The new Spectra Data Architecture is aimed to provide highly performant and scalable data infrastructure for a variety of use-cases. Data Architecture involves all facets of a modern Data platform that should leverage cloud-native principles built on Oracle Cloud Infrastructure.
@@ -134,8 +138,8 @@ hiring:
     - reqno: 224336
       level: IC4
       notes: Replacement for Nagababu SV
-      status: jobreqpending
+      status: open
     - reqno: 224334
       level: IC4
       notes: Replacement for Omkar Ghotavadekar
-      status: jobreqpending
+      status: open

@@ -57,6 +57,11 @@
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
+          <annotationProcessors>
+            <annotationProcessor>
+              lombok.launch.AnnotationProcessorHider$AnnotationProcessor
+            </annotationProcessor>
+          </annotationProcessors>
         </configuration>
       </plugin>
 
@@ -79,6 +84,8 @@
             <argument>-classpath</argument>
             <classpath/>
             <argument>kmizuta.Site</argument>
+            <argument>${project.basedir}/../recruiting.yaml</argument>
+            <argument>${project.basedir}/..</argument>
             <argument>${project.basedir}</argument>
           </arguments>
         </configuration>

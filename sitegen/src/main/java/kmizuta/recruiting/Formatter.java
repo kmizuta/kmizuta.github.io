@@ -211,10 +211,4 @@ public class Formatter {
         return s == null || "".equals(s);
     }
 
-    public static void main(String[] args) {
-        PrintWriter writer = new PrintWriter(System.out);
-        new Formatter(Recruiting.getDefaultInstance()).printConfluence(writer);
-        writer.flush();
-        writer.close();
-    }
 }

@@ -14,17 +14,6 @@ import lombok.Setter;
 public class Recruiting {
     private static Yaml yaml = new Yaml();
 
-    public static void main(String[] args) {
-        Recruiting recruiting = getDefaultInstance();
-        System.out.println(recruiting.managers.size());
-    }
-
-    public static Recruiting getDefaultInstance() {
-        return getInstance(Recruiting.class
-                        .getClassLoader()
-                        .getResourceAsStream("recruiting.yaml"));
-    }
-
     public static Recruiting getInstance(InputStream inputStream) {
         return yaml.loadAs(inputStream, Recruiting.class);
     }

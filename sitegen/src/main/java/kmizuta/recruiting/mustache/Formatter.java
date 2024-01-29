@@ -130,14 +130,4 @@ public class Formatter {
                 .build();
     }
 
-    public static void main(String[] args) throws IOException {
-        Target target = (args.length > 0 && "confluence".equalsIgnoreCase(args[0]) ? Target.CONFLUENCE : Target.ONLINE);
-
-        Formatter formatter = new Formatter();
-        Recruiting recruiting = Recruiting.getDefaultInstance();
-        Writer writer = new OutputStreamWriter(System.out);
-        formatter.write(writer, recruiting, target);
-        writer.flush();
-    }
-    
 }
