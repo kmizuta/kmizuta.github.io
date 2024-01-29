@@ -86,8 +86,8 @@ hiring:
       status: filled
     - reqno: 218967
       level: IC3
-      notes: Replacement for Ravi Teja Muddada
-      status: open
+      notes: Replacement for Ravi Teja Muddada. Offer pending to Sourav Roy
+      status: offerpending
 - area: Batch
   description: We are currently looking for experienced SaaS engineer to join the Fusion Applications Technical Architecture team. Enterprise SaaS business processes and batch jobs can be complex long running processes that interact with many different modules. You will be responsible for defining the architecture, standards and best practices for how Fusion Applications developers will move away from an architecture that relies on reliable, ACID transactions running on a single monolithic database to an architecture that provides performant and resilient processes based on a microservice architecture with distributed databases and BASE transactions. You will be responsible for identifying and building the infrastructure needed to support this transition.
   countries: 
