@@ -1,0 +1,3 @@
+
+To regenerate the site, run....
+```% mvn clean package exec:exec```

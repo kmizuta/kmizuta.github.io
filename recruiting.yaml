@@ -72,6 +72,10 @@ hiring:
     - reqno: 210983
       level: IC4
       notes: Replacement for Anupam Sharma
+      status: expired
+    - reqno: 227210
+      level: IC4
+      notes: Replacement for expired req 210983
       status: open
   - country: India
     manager: ajjoy
@@ -87,7 +91,7 @@ hiring:
     - reqno: 218967
       level: IC3
       notes: Replacement for Ravi Teja Muddada. Offer pending to Sourav Roy
-      status: offerpending
+      status: offeraccept-pending
 - area: Batch
   description: We are currently looking for experienced SaaS engineer to join the Fusion Applications Technical Architecture team. Enterprise SaaS business processes and batch jobs can be complex long running processes that interact with many different modules. You will be responsible for defining the architecture, standards and best practices for how Fusion Applications developers will move away from an architecture that relies on reliable, ACID transactions running on a single monolithic database to an architecture that provides performant and resilient processes based on a microservice architecture with distributed databases and BASE transactions. You will be responsible for identifying and building the infrastructure needed to support this transition.
   countries: 
@@ -115,7 +119,7 @@ hiring:
     - reqno: 212173
       level: IC4
       notes: Approved New, Offer pending approval for Dhiraj Thakkar
-      status: offerpending
+      status: offeraccept-pending
     - reqno: 212174
       level: IC4
       notes: Approved New, Offer approved for Madhu Narasimhan
@@ -123,7 +127,7 @@ hiring:
     - reqno: 210868
       level: IC2
       notes: Approved New - Unposted due to overflow of candidates. Getting old....
-      status: reviewpending
+      status: review-pending
   - country: India
     manager: pumehrot
     jobreqs:
