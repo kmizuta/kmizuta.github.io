@@ -77,21 +77,29 @@ hiring:
       level: IC4
       notes: Replacement for expired req 210983
       status: open
+    - reqno: 232561
+      level: IC3
+      notes: Replacement for Kamran Orhun
+      status: open
   - country: India
     manager: ajjoy
     jobreqs:
     - reqno: 212190
       level: IC5
       notes: Approved New
-      status: open
+      status: expired
     - reqno: 214745
       level: IC4
       notes: Replacement for Sahana, Offer to internal Chunhe Dai
       status: filled
     - reqno: 218967
       level: IC3
-      notes: Replacement for Ravi Teja Muddada. Offer pending to Sourav Roy
-      status: offeraccept-pending
+      notes: Replacement for Ravi Teja Muddada. Offer rejected by Sourav Roy
+      status: open
+    - reqno: 230187
+      level: IC5
+      notes: Replacement for job req #212190 which expired.
+      status: open
 - area: Batch
   description: We are currently looking for experienced SaaS engineer to join the Fusion Applications Technical Architecture team. Enterprise SaaS business processes and batch jobs can be complex long running processes that interact with many different modules. You will be responsible for defining the architecture, standards and best practices for how Fusion Applications developers will move away from an architecture that relies on reliable, ACID transactions running on a single monolithic database to an architecture that provides performant and resilient processes based on a microservice architecture with distributed databases and BASE transactions. You will be responsible for identifying and building the infrastructure needed to support this transition.
   countries: 
@@ -126,8 +134,8 @@ hiring:
       status: filled
     - reqno: 210868
       level: IC2
-      notes: Approved New - Unposted due to overflow of candidates. Getting old....
-      status: review-pending
+      notes: Approved New - Unposted due to overflow of candidates. Expired
+      status: expired
   - country: India
     manager: pumehrot
     jobreqs:
@@ -146,4 +154,8 @@ hiring:
     - reqno: 224334
       level: IC4
       notes: Replacement for Omkar Ghotavadekar
+      status: open
+    - reqno: 229983
+      level: IC4
+      notes: Replacement for Kumaran Mani
       status: open
