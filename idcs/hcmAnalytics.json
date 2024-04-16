@@ -1,66 +1,67 @@
 {
-  "app": {
-    "displayName": "hcmAnalytics",
-    "resourcePrefix": "/hcmAnalytics",
-    "operation": "add",
-    "faVersion": "11.13.25.01.0",
-    "description": "hcmAnalytics",
-    "landingPageURL": "@podUrl@/hcmAnalytics",
-    "resourceUrls": [
-      {
-        "name": "/hcmAnalytics/adfAuthentication.*",
+    "$schema": "https://kmizuta.github.io/idcs/schema.json",
+    "app": {
+        "displayName": "hcmAnalytics",
+        "resourcePrefix": "/hcmAnalytics",
         "operation": "add",
         "faVersion": "11.13.25.01.0",
-        "resourceURL": "/hcmAnalytics/adfAuthentication.*",
-        "isRegex": true,
-        "description": "/hcmAnalytics/adfAuthentication.*",
-        "authnMethod": "oauth+logout"
-      },
-      {
-        "name": "/hcmAnalytics/adfAuthentication/.*",
-        "operation": "add",
-        "faVersion": "11.13.25.01.0",
-        "resourceURL": "/hcmAnalytics/adfAuthentication/.*",
-        "isRegex": true,
-        "description": "/hcmAnalytics/adfAuthentication/.*",
-        "authnMethod": "oauth+logout"
-      },
-      {
-        "name": "/hcmAnalytics/obieebroker.*",
-        "operation": "add",
-        "faVersion": "11.13.25.01.0",
-        "resourceURL": "/hcmAnalytics/obieebroker.*",
-        "isRegex": true,
-        "description": "/hcmAnalytics/obieebroker.*",
-        "authnMethod": "public"
-      },
-      {
-        "name": "/hcmAnalytics/obieebroker/.*",
-        "operation": "add",
-        "faVersion": "11.13.25.01.0",
-        "resourceURL": "/hcmAnalytics/obieebroker/.*",
-        "isRegex": true,
-        "description": "/hcmAnalytics/obieebroker/.*",
-        "authnMethod": "public"
-      },
-      {
-        "name": "/hcmAnalytics.*",
-        "operation": "add",
-        "faVersion": "11.13.25.01.0",
-        "resourceURL": "/hcmAnalytics.*",
-        "isRegex": true,
-        "description": "/hcmAnalytics.*",
-        "authnMethod": "anonymous"
-      },
-      {
-        "name": "/hcmAnalytics/.*",
-        "operation": "add",
-        "faVersion": "11.13.25.01.0",
-        "resourceURL": "/hcmAnalytics/.*",
-        "isRegex": true,
-        "description": "/hcmAnalytics/.*",
-        "authnMethod": "anonymous"
-      }
-    ]
-  }
+        "description": "hcmAnalytics",
+        "landingPageURL": "@podUrl@/hcmAnalytics",
+        "resourceUrls": [
+            {
+                "name": "/hcmAnalytics/adfAuthentication.*",
+                "operation": "add",
+                "faVersion": "11.13.25.01.0",
+                "resourceURL": "/hcmAnalytics/adfAuthentication.*",
+                "isRegex": true,
+                "description": "/hcmAnalytics/adfAuthentication.*",
+                "authnMethod": "oauth+logout"
+            },
+            {
+                "name": "/hcmAnalytics/adfAuthentication/.*",
+                "operation": "add",
+                "faVersion": "11.13.25.01.0",
+                "resourceURL": "/hcmAnalytics/adfAuthentication/.*",
+                "isRegex": true,
+                "description": "/hcmAnalytics/adfAuthentication/.*",
+                "authnMethod": "oauth+logout"
+            },
+            {
+                "name": "/hcmAnalytics/obieebroker.*",
+                "operation": "add",
+                "faVersion": "11.13.25.01.0",
+                "resourceURL": "/hcmAnalytics/obieebroker.*",
+                "isRegex": true,
+                "description": "/hcmAnalytics/obieebroker.*",
+                "authnMethod": "public"
+            },
+            {
+                "name": "/hcmAnalytics/obieebroker/.*",
+                "operation": "add",
+                "faVersion": "11.13.25.01.0",
+                "resourceURL": "/hcmAnalytics/obieebroker/.*",
+                "isRegex": true,
+                "description": "/hcmAnalytics/obieebroker/.*",
+                "authnMethod": "public"
+            },
+            {
+                "name": "/hcmAnalytics.*",
+                "operation": "add",
+                "faVersion": "11.13.25.01.0",
+                "resourceURL": "/hcmAnalytics.*",
+                "isRegex": true,
+                "description": "/hcmAnalytics.*",
+                "authnMethod": "anonymous"
+            },
+            {
+                "name": "/hcmAnalytics/.*",
+                "operation": "add",
+                "faVersion": "11.13.25.01.0",
+                "resourceURL": "/hcmAnalytics/.*",
+                "isRegex": true,
+                "description": "/hcmAnalytics/.*",
+                "authnMethod": "anonymous"
+            }
+        ]
+    }
 }
