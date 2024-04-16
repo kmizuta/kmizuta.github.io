@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "app": {
+            "type": "object",
+            "properties": {
+                "displayName": {
+                    "type": "string"
+                },
+                "resourcePrefix": {
+                    "type": "string",
+                    "pattern": "^/.*"
+                },
+                "operation": {
+                    "enum": [
+                        "add"
+                    ]
+                },
+                "faVersion": {
+                    "enum": [
+                        "11.13.25.01.0"
+                    ]
+                },
+                "description": {
+                    "type": "string"
+                },
+                "landingPageURL": {
+                    "type": "string"
+                },
+                "resourceUrls": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "operation": {
+                                    "enum": [
+                                        "add"
+                                    ]
+                                },
+                                "faVersion": {
+                                    "enum": [
+                                        "11.13.25.01.0"
+                                    ]
+                                },
+                                "resourceURL": {
+                                    "type": "string",
+                                    "pattern": "^/.*"
+                                },
+                                "isRegex": {
+                                    "type": "boolean"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "authnMethod": {
+                                    "enum": [
+                                        "oauth+logout",
+                                        "anonymous",
+                                        "public"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "operation",
+                                "faVersion",
+                                "resourceURL",
+                                "isRegex",
+                                "description",
+                                "authnMethod"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "displayName",
+                "resourcePrefix",
+                "operation",
+                "faVersion",
+                "description",
+                "landingPageURL",
+                "resourceUrls"
+            ]
+        }
+    },
+    "required": [
+        "app"
+    ]
+}
