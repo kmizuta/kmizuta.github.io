@@ -128,11 +128,17 @@ public class Formatter {
         recruiting.hiring.forEach(hiringArea -> {
             final AtomicBoolean isFirstCountry = new AtomicBoolean(true);
 
+	    final AtomicBoolean serviceHasOpenReq = new AtomicBoolean(false);
             final AtomicInteger countriesWithOpenReqs = new AtomicInteger(0);
             final HashMap<String, Boolean> countryHasOpenReq = new HashMap<>();
             hiringArea.countries.forEach(country -> {
                 AtomicBoolean hasOpenReqs = new AtomicBoolean(false);
-                country.jobreqs.forEach(jobreq -> { if ("open".equals(jobreq.status)) hasOpenReqs.set(true); });
+                country.jobreqs.forEach(jobreq -> {
+			if ("open".equals(jobreq.status)) {
+			    hasOpenReqs.set(true);
+			    serviceHasOpenReq.set(true);
+			}
+		    });
                 if (hasOpenReqs.get()) countriesWithOpenReqs.incrementAndGet();
                 countryHasOpenReq.put(country.country, hasOpenReqs.get());
             });
@@ -173,19 +179,21 @@ public class Formatter {
                 });
 
                 boolean hasOpenReq = countryHasOpenReq.get(country.country);
+		String serviceInternal = serviceHasOpenReq.get() ? "" : "class=\"internal\"";
                 if (isFirstCountry.get()) {
                     int countryCount = hasOpenReq ? countriesWithOpenReqs.get() : 1;
                     writer.println(String.format(
                         (hasOpenReq ? "<tr>" : "<tr class=\"internal\">") + newLine + 
-                        "  <td rowspan=%d>%s</td>" + newLine +
-                        "  <td rowspan=%d>%s</td>" + newLine +
+                        "  <td rowspan=%d %s>%s</td>" + newLine +
+                        "  <td rowspan=%d %s>%s</td>" + newLine +
                         "  <td>%s</td>" + newLine +
                         "  <td>%s</td>" + newLine +
                         "  <td>%s</td>" + newLine +
                         "  <td class=\"internal\">%s" + newLine +
                         "  </td>" + newLine +
                         "</tr>" + newLine,
-                        countryCount, hiringArea.area, countryCount, hiringArea.description, 
+                        countryCount, serviceInternal, hiringArea.area,
+			countryCount, serviceInternal, hiringArea.description, 
                         country.country, managerLine, jobReqLine.toString(), notesLine.toString()
                     ));
                     if (hasOpenReq) isFirstCountry.set(false);

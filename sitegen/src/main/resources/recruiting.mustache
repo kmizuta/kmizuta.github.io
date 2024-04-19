@@ -89,8 +89,8 @@
          {{#countries}}
       <tr>
             {{#first}}
-        <td rowspan={{count}}>{{name}}</td>
-        <td rowspan={{count}}>{{description}}</td>
+        <td rowspan={{count}} {{^areaHasOpenReqs}}class="internal"{{/areaHasOpenReqs}}>{{name}}</td>
+        <td rowspan={{count}} {{^areaHasOpenReqs}}class="internal"{{/areaHasOpenReqs}}>{{description}}</td>
             {{/first}}
         <td {{^hasOpenReqs}}class="internal"{{/hasOpenReqs}}>{{country}}</td>
         <td {{^hasOpenReqs}}class="internal"{{/hasOpenReqs}}>

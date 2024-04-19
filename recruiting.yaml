@@ -19,6 +19,14 @@ managers:
     name: Purvi Mehrotra
     linkedInId: purvi-mehrotra-689973b8
     email: purvi.mehrotra@oracle.com
+  beilwang:
+    name: Beilei Wang
+    linkedInId: beilei-wang-36507335
+    email: beilei.wang@oracle.com
+  radwara:
+    name: Rakesh Dev Dwara
+    linkedInId: dwara
+    email: rakesh.dev.dwara@oracle.com
 hiring:
 - area: Authorization Service
   description: The policy service will be the definitive store for the application
@@ -40,6 +48,13 @@ hiring:
       level: IC5
       notes: Replacement for Dex Chen and replaces job req 206891
       status: open
+  - country: US
+    manager: radwara
+    jobreqs:
+    - reqno: 238047
+      level: IC3
+      notes: 
+      status: open
   - country: India
     manager: datkrish
     jobreqs:
@@ -57,8 +72,8 @@ hiring:
       status: filled
     - reqno: 212411
       level: IC3
-      notes: Approved New
-      status: open
+      notes: Approved New, Offer to Azhaheswaran Subramaniyan
+      status: offerpending
     - reqno: 222791
       level: IC4
       notes: Approved New, Replaces job req 206807
@@ -126,7 +141,7 @@ hiring:
     jobreqs:
     - reqno: 212173
       level: IC4
-      notes: Approved New, Offer pending approval for Dhiraj Thakkar
+      notes: Approved New, Filled - Dhiraj Thakkar
       status: filled
     - reqno: 212174
       level: IC4
@@ -159,3 +174,13 @@ hiring:
       level: IC4
       notes: Replacement for Kumaran Mani
       status: open
+- area: Chaos
+  description: As we build Spectra Services in a distributed architrecture, there are more points of failure and services must be built to be resilient to failures. Chaos provides the platform for performing chaos testing for Spectra Services.
+  countries:
+  - country: US
+    manager: beilwang
+    jobreqs:
+    - reqno: 238069
+      level: IC4
+      status: open
+      notes: 

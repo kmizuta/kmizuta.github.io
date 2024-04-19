@@ -16,4 +16,8 @@ public class AreaModel {
     String description;
     int count;
     List<CountryModel> countries;
+
+    public boolean isAreaHasOpenReqs() {
+	return ! countries.stream().filter(country -> country.isHasOpenReqs()).findFirst().isEmpty();
+    }
 }
