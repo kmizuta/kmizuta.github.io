@@ -27,6 +27,10 @@ managers:
     name: Rakesh Dev Dwara
     linkedInId: dwara
     email: rakesh.dev.dwara@oracle.com
+  kbaldani:
+    name: Kirit Baldaniya
+    linkedInId: kirit-baldaniya-6b8a4953
+    email: kirit.baldaniya@oracle.com
 hiring:
 - area: Authorization Service
   description: The policy service will be the definitive store for the application
@@ -184,3 +188,17 @@ hiring:
       level: IC4
       status: open
       notes: 
+- area: SUIS
+  description: >
+    The SaaS UI Infrastructure Services (SUIS) team is building set of services that support UIs build in Visual Builder
+    or APEX. SUIS provides a consistent infrastructure that can be used for local development all the way to production
+    environments. SUIS also provides the infrastructure necessary to support online deployments for use in production
+    as well as in CI/CD pipelines. 
+  countries:
+  - country: US
+    manager: kbaldani
+    jobreqs:
+    - reqno: 238209
+      level: IC4
+      status: open
+      notes:
