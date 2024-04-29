@@ -52,6 +52,10 @@ hiring:
       level: IC5
       notes: Replacement for Dex Chen and replaces job req 206891
       status: open
+    - reqno: 239155
+      level: IC4
+      status: offerpending
+      notes: Req opened specifically for Maddie
   - country: US
     manager: radwara
     jobreqs:
@@ -80,8 +84,8 @@ hiring:
       status: offerpending
     - reqno: 222791
       level: IC4
-      notes: Approved New, Replaces job req 206807
-      status: open
+      notes: Approved New, Replaces job req 206807, Offer (internal transfer) extended to Arnab Pal
+      status: offerpending
 - area: Messaging
   description: We are currently looking for a candidate with experience in cloud native architecture specifically around messaging technologies. This includes use of streaming (Kafka) in addition to queue semantics, push notifications, and general eventing constructs. These solutions will be used by our enterprise SaaS product offerings.
   countries:
