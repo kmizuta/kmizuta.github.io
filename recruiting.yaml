@@ -168,7 +168,7 @@ hiring:
       status: filled
     - reqno: 218181
       level: IC4
-      notes: Replacement for Diljith.
+      notes: Replacement for Kumaran Mani
       status: open
     - reqno: 224336
       level: IC4
@@ -180,8 +180,8 @@ hiring:
       status: open
     - reqno: 229983
       level: IC4
-      notes: Replacement for Kumaran Mani
-      status: open
+      notes: Replacement for Diljith. Offer pending for Kona Reddy
+      status: offerpending
 - area: Chaos
   description: As we build Spectra Services in a distributed architrecture, there are more points of failure and services must be built to be resilient to failures. Chaos provides the platform for performing chaos testing for Spectra Services.
   countries:
@@ -190,6 +190,10 @@ hiring:
     jobreqs:
     - reqno: 238069
       level: IC4
+      status: open
+      notes: 
+    - reqno: 239187
+      level: IC3
       status: open
       notes: 
 - area: SUIS
