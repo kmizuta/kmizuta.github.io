@@ -94,6 +94,14 @@ hiring:
       level: IC4
       notes: Approved New, Replaces job req 206807, Offer (internal transfer) extended to Arnab Pal
       status: offerpending
+    - reqno: 243111
+      level: IC3
+      status: open
+      notes:
+    - reqno: 243114
+      level: IC3
+      status: open
+      notes:
 - area: Messaging
   description: We are currently looking for a candidate with experience in cloud native architecture specifically around messaging technologies. This includes use of streaming (Kafka) in addition to queue semantics, push notifications, and general eventing constructs. These solutions will be used by our enterprise SaaS product offerings.
   countries:
@@ -242,4 +250,5 @@ hiring:
     - reqno: 239634
       level: IC5
       status: open
-      notes: 
+      notes:
+    
