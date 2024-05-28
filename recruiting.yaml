@@ -161,6 +161,14 @@ hiring:
       level: IC4
       notes: Replacement for expired req 207188
       status: open
+    - reqno: 243460
+      level: IC4
+      notes:
+      status: open
+    - reqno: 243458
+      level: IC4
+      notes:
+      status: open
 - area: Data
   description: The new Spectra Data Architecture is aimed to provide highly performant and scalable data infrastructure for a variety of use-cases. Data Architecture involves all facets of a modern Data platform that should leverage cloud-native principles built on Oracle Cloud Infrastructure.
   countries:
