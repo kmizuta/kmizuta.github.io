@@ -118,8 +118,8 @@ hiring:
       status: open
     - reqno: 232561
       level: IC3
-      notes: Replacement for Kamran Orhun
-      status: open
+      notes: Replacement for Kamran Orhun. Offer pending approval for Yanbo Li.
+      status: offerpending
   - country: India
     manager: ajjoy
     jobreqs:
