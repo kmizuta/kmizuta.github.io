@@ -1,5 +1,9 @@
 ---
 managers:
+  kmizuta:
+    name: Ken Mizuta
+    linkedInId: kenmizuta
+    email: kenichi.mizuta@oracle.com
   ssaverma:
     name: Saurabh Verma
     linkedInId: sa-verma
@@ -40,6 +44,21 @@ managers:
     linkedInId: sivaprakashkarna
     email: siva.karna@oracle.com
 hiring:
+- area: Technical Architecture
+  description: We are seeking a highly skilled and experienced Vice President of Security
+    Architecture to lead a new team within the Technical Architecture organization. This
+    visionary leader will provide architectural leadership in security and related fields
+    such as compliance and identity management. The VP of Security Architecture will be
+    instrumental in shaping the security landscape for our applications and services,
+    ensuring they meet the highest standards of secure coding and compliance.
+  countries: 
+  - country: US
+    manager: kmizuta
+    jobreqs:
+    - reqno: 243501
+      level: M6
+      notes:
+      status: open
 - area: Authorization Service
   description: The policy service will be the definitive store for the application
     policies and related information (roles, artifacts, permissions, etc).  It will
@@ -159,8 +178,8 @@ hiring:
       status: expired
     - reqno: 225126
       level: IC4
-      notes: Replacement for expired req 207188
-      status: open
+      notes: Replacement for expired req 207188. Offer pending Hemanth Verma.
+      status: offerpending
     - reqno: 243460
       level: IC4
       notes:
