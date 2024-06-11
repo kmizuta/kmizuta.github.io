@@ -53,5 +53,6 @@ public class Recruiting {
         public String linkedInJobId;
         public String notes;
         public String status;
+	public String filledDate;
     }
 }

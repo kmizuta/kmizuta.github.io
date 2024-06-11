@@ -81,8 +81,9 @@ hiring:
       status: offerpending
     - reqno: 239155
       level: IC4
-      status: offerpending
+      status: filled
       notes: Req opened specifically for Maddie
+      filledDate: 2024-06-02
   - country: US
     manager: radwara
     jobreqs:
@@ -108,11 +109,12 @@ hiring:
     - reqno: 212411
       level: IC3
       notes: Approved New, Offer to Azhaheswaran Subramaniyan
-      status: offerpending
+      status: filled
     - reqno: 222791
       level: IC4
       notes: Approved New, Replaces job req 206807, Offer (internal transfer) extended to Arnab Pal
-      status: offerpending
+      status: filled
+      filledDate: 2024-05-22
     - reqno: 243111
       level: IC3
       status: open
@@ -239,7 +241,8 @@ hiring:
     - reqno: 229983
       level: IC4
       notes: Replacement for Diljith. Offer pending for Kona Reddy
-      status: offerpending
+      status: filled
+      filledDate: 2024-05-29
 - area: Chaos
   description: As we build Spectra Services in a distributed architrecture, there are more points of failure and services must be built to be resilient to failures. Chaos provides the platform for performing chaos testing for Spectra Services.
   countries:
