@@ -104,7 +104,7 @@
             {{/jobreqs}}
         </td>
         <td class="internal">
-            {{#jobreqs}}{{reqno}} ({{status}}) - {{{notes}}}{{^last}}<br>{{/last}}{{/jobreqs}}
+            {{#jobreqs}}{{reqno}} ({{#offerPending}}<a href="{{notificationUrl}}">{{status}}</a>{{/offerPending}}{{^offerPending}}{{status}}{{/offerPending}}) - {{{notes}}}{{^last}}<br>{{/last}}{{/jobreqs}}
         </td>
       </tr>
         {{/countries}}

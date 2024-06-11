@@ -28,7 +28,17 @@ public class JobReqModel {
         return !isOpen() && !isPending();
     }
 
+    public boolean isOfferPending() {
+	return "offerpending".equals(status);
+    }
+
     public String getReqUrl() {
         return String.format("https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions/preview/%s", reqno);
     }
+
+    public String getNotificationUrl() {
+	return String.format("https://eeho.fa.us2.oraclecloud.com/fscmUI/redwood/core/approvals/approval-processes?appliedFiltersStr=%%5B%%7B%%22filter%%22%%3A%%22keyword%%22%%2C%%22label%%22%%3A%%22%s%%22%%2C%%22value%%22%%3A%%22%s%%22%%7D%%5D", reqno, reqno);
+    }
 }
+
+

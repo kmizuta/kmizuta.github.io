@@ -5,6 +5,10 @@ import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/*
+ * This class is NO LONGER USED. We have switched to using Mustache and so look at kmizuta/mustache/Formatter.java
+ */
+@Deprecated
 public class Formatter {
     
     private Recruiting recruiting;
