@@ -91,6 +91,10 @@ hiring:
       level: IC3
       notes: 
       status: open
+    - reqno: 245872
+      level: IC3
+      notes:
+      status: open
   - country: India
     manager: datkrish
     jobreqs:
@@ -273,22 +277,22 @@ hiring:
       notes:
     - reqno: 243939
       level: IC4
-      status: openpending
+      status: open
       notes:
     - reqno: 243947
       level: IC3
-      status: openpending
+      status: open
       notes:
   - country: India
     manager: kbaldani
     jobreqs:
     - reqno: 243943
       level: IC4
-      status: openpending
+      status: open
       notes:
     - reqno: 243949
       level: IC3
-      status: openpending
+      status: open
       notes:
 - area: Product Management
   description: Come help build the future of Oracle applications. Oracle Fusion Applications serve the needs of thousands of enterprise customers every day in enterprise resource planning, human capital management, customer relationship management, supply chain management, marketing, sales, and service. Now we're building the next generation of Oracle applications on a new set of cloud-native technologies.
