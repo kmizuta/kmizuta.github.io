@@ -194,6 +194,10 @@ hiring:
       level: IC4
       notes:
       status: open
+    - reqno: 246429
+      level: IC3
+      status: open
+      notes:
 - area: Data
   description: The new Spectra Data Architecture is aimed to provide highly performant and scalable data infrastructure for a variety of use-cases. Data Architecture involves all facets of a modern Data platform that should leverage cloud-native principles built on Oracle Cloud Infrastructure.
   countries:
@@ -260,7 +264,11 @@ hiring:
     - reqno: 239187
       level: IC3
       status: open
-      notes: 
+      notes:
+    - reqno: 246522
+      level: IC2
+      status: open
+      notes:
 - area: SUIS
   description: >
     The SaaS UI Infrastructure Services (SUIS) team is building set of services that support UIs build in Visual Builder
