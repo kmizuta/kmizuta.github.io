@@ -89,12 +89,12 @@ hiring:
     jobreqs:
     - reqno: 238047
       level: IC3
-      notes: 
-      status: open
+      notes: Offer pending approval for Naveen Kanuri
+      status: offerpending
     - reqno: 245872
       level: IC3
-      notes:
-      status: open
+      notes: Offer pending approval for Sandeep Gupta Koleti
+      status: offerpending 
   - country: India
     manager: datkrish
     jobreqs:
