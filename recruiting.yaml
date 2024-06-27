@@ -158,14 +158,18 @@ hiring:
       status: filled
     - reqno: 218967
       level: IC3
-      notes: Replacement for Ravi Teja Muddada. Offer rejected by Sourav Roy
-      status: open
+      notes: Replacement for Ravi Teja Muddada. Offer rejected by Sourav Roy. Offer to Venkata Sukesh. Starting on 7/1.
+      status: filled
     - reqno: 230187
       level: IC5
       notes: Replacement for job req #212190 which expired.
       status: open
     - reqno: 241287
       level: M2
+      notes:
+      status: open
+    - reqno: 247592
+      level: IC3
       notes:
       status: open
 - area: Batch
