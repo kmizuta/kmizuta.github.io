@@ -1,48 +1,52 @@
 ---
 managers:
-  kmizuta:
-    name: Ken Mizuta
-    linkedInId: kenmizuta
-    email: kenichi.mizuta@oracle.com
-  ssaverma:
-    name: Saurabh Verma
-    linkedInId: sa-verma
-    email: saurabh.sv.verma@oracle.com
-  datkrish:
-    name: Datha Krishnabhat
-    email: datha.krishnabhat@oracle.com
   ajjoy:
     name: Ajai Joy
     linkedInId: ajaijoy
     email: ajai.joy@oracle.com
-  sallamse:
-    name: Shyamkumar Allamsetty
-    linkedInId: shyamkumar-allamsetty-25a0b721
-    email: shyamkumar.allamsetty@oracle.com
-  pumehrot:
-    name: Purvi Mehrotra
-    linkedInId: purvi-mehrotra-689973b8
-    email: purvi.mehrotra@oracle.com
   beilwang:
     name: Beilei Wang
     linkedInId: beilei-wang-36507335
     email: beilei.wang@oracle.com
-  radwara:
-    name: Rakesh Dev Dwara
-    linkedInId: dwara
-    email: rakesh.dev.dwara@oracle.com
+  datkrish:
+    name: Datha Krishnabhat
+    email: datha.krishnabhat@oracle.com
+  gmaggess:
+    name: George Maggessy
+    linkedInId: georgemaggessy
+    email: george.maggessy@oracle.com
   kbaldani:
     name: Kirit Baldaniya
     linkedInId: kirit-baldaniya-6b8a4953
     email: kirit.baldaniya@oracle.com
+  kmizuta:
+    name: Ken Mizuta
+    linkedInId: kenmizuta
+    email: kenichi.mizuta@oracle.com
   mlandau:
     name: Matt Landau
     linkedInId: mattlandau
     email: matt.landau@oracle.com
+  pumehrot:
+    name: Purvi Mehrotra
+    linkedInId: purvi-mehrotra-689973b8
+    email: purvi.mehrotra@oracle.com
+  radwara:
+    name: Rakesh Dev Dwara
+    linkedInId: dwara
+    email: rakesh.dev.dwara@oracle.com
+  sallamse:
+    name: Shyamkumar Allamsetty
+    linkedInId: shyamkumar-allamsetty-25a0b721
+    email: shyamkumar.allamsetty@oracle.com
   skarna:
     name: Siva Karna
     linkedInId: sivaprakashkarna
     email: siva.karna@oracle.com
+  ssaverma:
+    name: Saurabh Verma
+    linkedInId: sa-verma
+    email: saurabh.sv.verma@oracle.com
 hiring:
 - area: Technical Architecture
   description: We are seeking a highly skilled and experienced Vice President of Security
@@ -145,6 +149,10 @@ hiring:
       level: IC3
       notes: Replacement for Kamran Orhun. Offer pending approval for Yanbo Li.
       status: offerpending
+    - reqno: 247569
+      level: IC3
+      status: open
+      notes:
   - country: India
     manager: ajjoy
     jobreqs:
@@ -271,6 +279,10 @@ hiring:
       notes:
     - reqno: 246522
       level: IC2
+      status: offerpending
+      notes: Offer sent to Dhrumil Sheth
+    - reqno: 247813
+      level: M2
       status: open
       notes:
 - area: SUIS
@@ -293,6 +305,13 @@ hiring:
       notes:
     - reqno: 243947
       level: IC3
+      status: open
+      notes:
+  - country: India
+    manager: gmaggess
+    jobreqs:
+    - reqno: 247573
+      level: M2
       status: open
       notes:
   - country: India
