@@ -271,12 +271,12 @@ hiring:
     jobreqs:
     - reqno: 238069
       level: IC4
-      status: open
-      notes: 
+      status: offerpending
+      notes: Offer pending Kavya Puligundla
     - reqno: 239187
       level: IC3
       status: open
-      notes:
+      notes: Possible offer to Yi Quin
     - reqno: 246522
       level: IC2
       status: offerpending
@@ -306,7 +306,7 @@ hiring:
     - reqno: 243947
       level: IC3
       status: open
-      notes:
+      notes: Possible offer to Gouthami Bokka
   - country: India
     manager: gmaggess
     jobreqs:
