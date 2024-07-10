@@ -333,6 +333,10 @@ hiring:
     jobreqs:
     - reqno: 239634
       level: IC5
+      status: filled
+      notes: Filled by Stephen McCullough
+    - reqno: 248756
+      level: IC5
       status: open
-      notes:
+      notes: 
     
