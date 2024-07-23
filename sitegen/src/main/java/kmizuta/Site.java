@@ -11,7 +11,7 @@ import kmizuta.recruiting.mustache.Formatter;
 
 public class Site {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         if (args.length != 3) {
             System.err.printf("Syntax: java %s <recruiting.yaml> <web root> <project directory>", Site.class.getCanonicalName());
             System.exit(-1);
@@ -26,14 +26,16 @@ public class Site {
         System.out.printf("Project Directory = %s\n", projectDir.getAbsolutePath());
 
         Formatter formatter = new Formatter();
-        try (FileInputStream recruitingStream = new FileInputStream(recruitingYaml)) {
-            Recruiting recruiting = Recruiting.getInstance(recruitingStream);
+        try {
+            Recruiting recruiting = Recruiting.getInstance();
             try (FileWriter writer = new FileWriter(new File(webRoot, "recruiting.html"))) {
                 formatter.write(writer, recruiting, Target.ONLINE);
             }
             try (FileWriter writer = new FileWriter(new File(projectDir, "target/recruiting-confluence.html"))) {
                 formatter.write(writer, recruiting, Target.CONFLUENCE);
             }
+        } catch(IOException ioe) {
+            ioe.printStackTrace();
         }
     }
     

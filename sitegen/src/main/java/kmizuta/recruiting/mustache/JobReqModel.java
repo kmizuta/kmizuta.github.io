@@ -17,11 +17,13 @@ public class JobReqModel {
     String status;
 
     public boolean isOpen() {
-        return "open".equals(status);
+        return "open".equals(status) ||
+                "OPEN".equals(status);
     }
 
     public boolean isPending() {
-        return status != null && status.contains("pending");
+        return status != null &&
+                (status.contains("pending") || status.contains("PENDING"));
     }
 
     public boolean isClosed() {
@@ -29,7 +31,10 @@ public class JobReqModel {
     }
 
     public boolean isOfferPending() {
-	return "offerpending".equals(status);
+	    return "offerpending".equals(status) ||
+                "OFFER_PENDING".equals(status) ||
+                "OFFER_ACCEPT_PENDING".equals(status) ||
+                "EMPLOYMENT_PENDING".equals(status);
     }
 
     public String getReqUrl() {

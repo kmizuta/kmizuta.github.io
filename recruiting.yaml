@@ -88,6 +88,10 @@ hiring:
       status: filled
       notes: Req opened specifically for Maddie
       filledDate: 2024-06-02
+    - reqno: 248895
+      level: M3
+      status: rejected
+      notes: Will not hire second manager until first is overloaded
   - country: US
     manager: radwara
     jobreqs:
@@ -144,15 +148,15 @@ hiring:
     - reqno: 227210
       level: IC4
       notes: Replacement for expired req 210983
+      status: expired
+    - reqno: 249678
+      level: IC4
       status: open
+      notes: Replacement for expired req 227210
     - reqno: 232561
       level: IC3
       notes: Replacement for Kamran Orhun. Offer pending approval for Yanbo Li.
       status: offerpending
-    - reqno: 247569
-      level: IC3
-      status: open
-      notes:
   - country: India
     manager: ajjoy
     jobreqs:
@@ -180,6 +184,10 @@ hiring:
       level: IC3
       notes:
       status: open
+    - reqno: 247569
+      level: IC3
+      status: open
+      notes:
 - area: Batch
   description: We are currently looking for experienced SaaS engineer to join the Fusion Applications Technical Architecture team. Enterprise SaaS business processes and batch jobs can be complex long running processes that interact with many different modules. You will be responsible for defining the architecture, standards and best practices for how Fusion Applications developers will move away from an architecture that relies on reliable, ACID transactions running on a single monolithic database to an architecture that provides performant and resilient processes based on a microservice architecture with distributed databases and BASE transactions. You will be responsible for identifying and building the infrastructure needed to support this transition.
   countries: 
@@ -204,12 +212,31 @@ hiring:
       status: open
     - reqno: 243458
       level: IC4
-      notes:
+      notes: Possible offer to Rammya Nair (internal transfer)
       status: open
     - reqno: 246429
       level: IC3
       status: open
       notes:
+    - reqno: 249552
+      level: IC3
+      status: open
+      notes:
+    - reqno: 249553
+      level: IC3
+      status: open
+      notes:
+  - country: US
+    manager: sallamse
+    jobreqs:
+    - reqno: 249554
+      level: IC3
+      status: open
+      notes:
+    - reqno: 249045
+      level: IC3
+      status: open
+      notes: Release Management
 - area: Data
   description: The new Spectra Data Architecture is aimed to provide highly performant and scalable data infrastructure for a variety of use-cases. Data Architecture involves all facets of a modern Data platform that should leverage cloud-native principles built on Oracle Cloud Infrastructure.
   countries:
@@ -263,8 +290,12 @@ hiring:
       notes: Replacement for Diljith. Offer pending for Kona Reddy
       status: filled
       filledDate: 2024-05-29
+    - reqno: 248906
+      level: IC4
+      status: jobreqpending
+      notes:
 - area: Chaos
-  description: As we build Spectra Services in a distributed architrecture, there are more points of failure and services must be built to be resilient to failures. Chaos provides the platform for performing chaos testing for Spectra Services.
+  description: As we build Spectra Services in a distributed architecture, there are more points of failure and services must be built to be resilient to failures. Chaos provides the platform for performing chaos testing for Spectra Services.
   countries:
   - country: US
     manager: beilwang
@@ -305,8 +336,12 @@ hiring:
       notes:
     - reqno: 243947
       level: IC3
+      status: offerpending
+      notes: Offer pending to Gouthami Bokka
+    - reqno: 248508
+      level: IC4
       status: open
-      notes: Possible offer to Gouthami Bokka
+      notes:
   - country: India
     manager: gmaggess
     jobreqs:
